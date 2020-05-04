@@ -8,3 +8,9 @@ command = "hugo --gc -s . --minify"
   HUGO_VERSION = "0.69.2"
   GO_VERSION="1.12"
   
+
+[context.branch-deploy]
+command = "hugo --gc -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview]
+command = "hugo --gc -b $DEPLOY_PRIME_URL"
