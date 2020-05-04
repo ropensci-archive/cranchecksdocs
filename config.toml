@@ -1,0 +1,8 @@
+
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "CRAN checks API"
+
+[module]
+  [[module.imports]]
+    path = "github.com/bep/docuapi"
