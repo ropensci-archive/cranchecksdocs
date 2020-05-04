@@ -1,2 +1,16 @@
-GO_VERSION="1.12"
-HUGO_VERSION = "0.69.2"
+[build]
+  command = "hugo -F"
+
+[context.production.environment]
+  HUGO_VERSION = "0.69.2"
+  GO_VERSION="1.12"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.69.2"
+  GO_VERSION="1.12"
+  
+[context.deploy-preview]
+  command = "hugo -b $DEPLOY_PRIME_URL --buildFuture"
+
+[context.branch-deploy]
+  command = "hugo -b $DEPLOY_PRIME_URL --buildFuture"
