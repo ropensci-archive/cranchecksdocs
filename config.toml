@@ -1,5 +1,5 @@
 
-baseURL = "https://cran-checks-docs.netlify.app/"
+baseURL = "https://cran-checks-docs.netlify.app"
 languageCode = "en-us"
 title = "CRAN checks API"
 
