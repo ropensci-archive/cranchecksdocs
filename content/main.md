@@ -3,9 +3,20 @@ weight: 10
 title: API Reference
 ---
 
+# Introduction
+
 ## Base URL
 
 <https://cranchecks.info/>
+
+## R package cchecks
+
+All endpoints are supported in the `cchecks` R client.
+
+```r
+remotes::install_github("ropenscilabs/cchecks")
+library("cchecks")
+```
 
 ## HTTP methods
 

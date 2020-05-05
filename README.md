@@ -1,6 +1,6 @@
 # CRAN checks API docs
 
-Generated with Hugo using the docuapi theme.
+Generated with Hugo using the [docuapi theme](https://github.com/bep/docuapi).
 
 ## Developer notes
 
