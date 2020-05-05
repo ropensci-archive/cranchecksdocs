@@ -56,6 +56,12 @@ knitr::knit_hooks$set(
 
 # Maintainers
 
+## Maintainers
+
+Get all maintainers.
+
+Default limit of 10.
+
 ```{r shell="shell"}
 args <- c("https://cranchecks.info/maintainers/")
 jqr::jq(
@@ -69,4 +75,21 @@ jqr::jq(
 
 ```{r}
 cchecks::cch_maintainers()
+```
+
+## Maintainers by email
+
+```{r shell="shell"}
+args <- c("https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com")
+jqr::jq(
+  processx::run(
+  "curl", 
+  args
+  )$stdout,
+  "."
+)
+```
+
+```{r}
+cchecks::cch_maintainers(x = "csardi.gabor_at_gmail.com")
 ```

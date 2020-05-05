@@ -31,4 +31,4 @@ name = "Shell"
 key = "json"
 name = "JSON"
 
-ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", "/content/*\\.html"]
+ignoreFiles = ["\\.Rmd$", "\\.html$"]
