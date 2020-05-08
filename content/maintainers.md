@@ -21,7 +21,7 @@ curl https://cranchecks.info/maintainers/ | jq .
 ```
 ```json
 {
-    "found": 9371,
+    "found": 9383,
     "count": 10,
     "offset": null,
     "error": null,
@@ -58,7 +58,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         },
         {
             "_id": "hyasrebi_at_yahoo.com",
@@ -111,7 +111,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         },
         {
             "_id": "ly_ding_at_126.com",
@@ -138,7 +138,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         },
         {
             "_id": "bodri.mh3_at_gmail.com",
@@ -172,7 +172,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         },
         {
             "_id": "erich.neuwirth_at_univie.ac.at",
@@ -192,9 +192,9 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "package": "RcmdrPlugin.mosaic",
                     "any": true,
                     "ok": 0,
-                    "note": 11,
+                    "note": 12,
                     "warn": 0,
-                    "error": 1
+                    "error": 0
                 },
                 {
                     "package": "RColorBrewer",
@@ -210,10 +210,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "package": "ENmisc",
                     "url": "https://cloud.r-project.org/web/checks/check_results_ENmisc.html",
                     "check_result": [
-                        {
-                            "category": "NOTE",
-                            "number_checks": 12
-                        }
+
                     ],
                     "version": null
                 },
@@ -221,14 +218,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "package": "RcmdrPlugin.mosaic",
                     "url": "https://cloud.r-project.org/web/checks/check_results_RcmdrPlugin.mosaic.html",
                     "check_result": [
-                        {
-                            "category": "ERROR",
-                            "number_checks": 1
-                        },
-                        {
-                            "category": "NOTE",
-                            "number_checks": 11
-                        }
+
                     ],
                     "version": null
                 },
@@ -236,15 +226,12 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "package": "RColorBrewer",
                     "url": "https://cloud.r-project.org/web/checks/check_results_RColorBrewer.html",
                     "check_result": [
-                        {
-                            "category": "NOTE",
-                            "number_checks": 12
-                        }
+
                     ],
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         },
         {
             "_id": "markus.boenn.sf_at_googlemail.com",
@@ -278,7 +265,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         },
         {
             "_id": "clement.benard_at_safrangroup.com",
@@ -312,7 +299,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         },
         {
             "_id": "s.greilich_at_dkfz.de",
@@ -346,7 +333,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         },
         {
             "_id": "eric_at_opsani.com",
@@ -380,7 +367,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         },
         {
             "_id": "egor_at_tillt.net",
@@ -407,7 +394,7 @@ curl https://cranchecks.info/maintainers/ | jq .
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-05T12:02:32.751Z"
+            "date_updated": "2020-05-08T12:02:27.220Z"
         }
     ]
 }
@@ -420,7 +407,7 @@ cchecks::cch_maintainers()
 ```
 ```r
 $found
-[1] 9371
+[1] 9383
 
 $count
 [1] 10
@@ -470,38 +457,40 @@ $data
 2                                    survJamda, survJamda.data, FALSE, TRUE, 12, 5, 0, 7, 0, 0, 0, 0
 3                                                                         SP2000, FALSE, 12, 0, 0, 0
 4                                                                             rCUR, TRUE, 0, 5, 0, 9
-5  ENmisc, RcmdrPlugin.mosaic, RColorBrewer, TRUE, TRUE, TRUE, 0, 0, 0, 12, 11, 12, 0, 0, 0, 0, 1, 0
+5  ENmisc, RcmdrPlugin.mosaic, RColorBrewer, TRUE, TRUE, TRUE, 0, 0, 0, 12, 12, 12, 0, 0, 0, 0, 0, 0
 6                                                                         hypergea, TRUE, 6, 6, 0, 0
 7                                                                            sirus, TRUE, 9, 3, 0, 0
 8                                                                      libamtrack, TRUE, 2, 10, 0, 0
 9                                                                        soobench, TRUE, 11, 1, 0, 0
 10                                                                          egor, FALSE, 12, 0, 0, 0
-                                                                                                                                                                                                                                                                                                               packages
-1                                                                                                                                                                                                                    ggnetwork, https://cloud.r-project.org/web/checks/check_results_ggnetwork.html, NOTE, OK, 5, 7, NA
-2                                                                                                              survJamda, survJamda.data, https://cloud.r-project.org/web/checks/check_results_survJamda.html, https://cloud.r-project.org/web/checks/check_results_survJamda.data.html, OK, 12, NOTE, OK, 7, 5, NA, NA
-3                                                                                                                                                                                                                                          SP2000, https://cloud.r-project.org/web/checks/check_results_SP2000.html, NA
-4                                                                                                                                                                                                                           rCUR, https://cloud.r-project.org/web/checks/check_results_rCUR.html, ERROR, NOTE, 9, 5, NA
-5  ENmisc, RcmdrPlugin.mosaic, RColorBrewer, https://cloud.r-project.org/web/checks/check_results_ENmisc.html, https://cloud.r-project.org/web/checks/check_results_RcmdrPlugin.mosaic.html, https://cloud.r-project.org/web/checks/check_results_RColorBrewer.html, NOTE, 12, ERROR, NOTE, 1, 11, NOTE, 12, NA, NA, NA
-6                                                                                                                                                                                                                      hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
-7                                                                                                                                                                                                                            sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
-8                                                                                                                                                                                                                 libamtrack, https://cloud.r-project.org/web/checks/check_results_libamtrack.html, NOTE, OK, 10, 2, NA
-9                                                                                                                                                                                                                     soobench, https://cloud.r-project.org/web/checks/check_results_soobench.html, NOTE, OK, 1, 11, NA
-10                                                                                                                                                                                                                                             egor, https://cloud.r-project.org/web/checks/check_results_egor.html, NA
+                                                                                                                                                                                                                                                                       packages
+1                                                                                                                                                                            ggnetwork, https://cloud.r-project.org/web/checks/check_results_ggnetwork.html, NOTE, OK, 5, 7, NA
+2                                                                      survJamda, survJamda.data, https://cloud.r-project.org/web/checks/check_results_survJamda.html, https://cloud.r-project.org/web/checks/check_results_survJamda.data.html, OK, 12, NOTE, OK, 7, 5, NA, NA
+3                                                                                                                                                                                                  SP2000, https://cloud.r-project.org/web/checks/check_results_SP2000.html, NA
+4                                                                                                                                                                                   rCUR, https://cloud.r-project.org/web/checks/check_results_rCUR.html, ERROR, NOTE, 9, 5, NA
+5  ENmisc, RcmdrPlugin.mosaic, RColorBrewer, https://cloud.r-project.org/web/checks/check_results_ENmisc.html, https://cloud.r-project.org/web/checks/check_results_RcmdrPlugin.mosaic.html, https://cloud.r-project.org/web/checks/check_results_RColorBrewer.html, NA, NA, NA
+6                                                                                                                                                                              hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
+7                                                                                                                                                                                    sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
+8                                                                                                                                                                         libamtrack, https://cloud.r-project.org/web/checks/check_results_libamtrack.html, NOTE, OK, 10, 2, NA
+9                                                                                                                                                                             soobench, https://cloud.r-project.org/web/checks/check_results_soobench.html, NOTE, OK, 1, 11, NA
+10                                                                                                                                                                                                     egor, https://cloud.r-project.org/web/checks/check_results_egor.html, NA
                date_updated
-1  2020-05-05T12:02:32.751Z
-2  2020-05-05T12:02:32.751Z
-3  2020-05-05T12:02:32.751Z
-4  2020-05-05T12:02:32.751Z
-5  2020-05-05T12:02:32.751Z
-6  2020-05-05T12:02:32.751Z
-7  2020-05-05T12:02:32.751Z
-8  2020-05-05T12:02:32.751Z
-9  2020-05-05T12:02:32.751Z
-10 2020-05-05T12:02:32.751Z
+1  2020-05-08T12:02:27.220Z
+2  2020-05-08T12:02:27.220Z
+3  2020-05-08T12:02:27.220Z
+4  2020-05-08T12:02:27.220Z
+5  2020-05-08T12:02:27.220Z
+6  2020-05-08T12:02:27.220Z
+7  2020-05-08T12:02:27.220Z
+8  2020-05-08T12:02:27.220Z
+9  2020-05-08T12:02:27.220Z
+10 2020-05-08T12:02:27.220Z
 
 ```
 
 ## Maintainers by email
+
+Get maintainer summary by email.
 
 ```shell
 curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
@@ -756,6 +745,14 @@ curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
                 "error": 0
             },
             {
+                "package": "presser",
+                "any": true,
+                "ok": 7,
+                "note": 0,
+                "warn": 0,
+                "error": 1
+            },
+            {
                 "package": "prettycode",
                 "any": false,
                 "ok": 12,
@@ -850,6 +847,14 @@ curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
                 "note": 0,
                 "warn": 0,
                 "error": 0
+            },
+            {
+                "package": "secret",
+                "any": true,
+                "ok": 5,
+                "note": 0,
+                "warn": 0,
+                "error": 1
             },
             {
                 "package": "sessioninfo",
@@ -1272,6 +1277,21 @@ curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
                 "version": null
             },
             {
+                "package": "presser",
+                "url": "https://cloud.r-project.org/web/checks/check_results_presser.html",
+                "check_result": [
+                    {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 7
+                    }
+                ],
+                "version": null
+            },
+            {
                 "package": "prettycode",
                 "url": "https://cloud.r-project.org/web/checks/check_results_prettycode.html",
                 "check_result": [
@@ -1420,6 +1440,21 @@ curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
                 "version": null
             },
             {
+                "package": "secret",
+                "url": "https://cloud.r-project.org/web/checks/check_results_secret.html",
+                "check_result": [
+                    {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 5
+                    }
+                ],
+                "version": null
+            },
+            {
                 "package": "sessioninfo",
                 "url": "https://cloud.r-project.org/web/checks/check_results_sessioninfo.html",
                 "check_result": [
@@ -1508,7 +1543,7 @@ curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
                 "version": null
             }
         ],
-        "date_updated": "2020-05-05T12:02:33.205Z"
+        "date_updated": "2020-05-08T12:02:27.631Z"
     }
 }
 
@@ -1567,26 +1602,28 @@ $data$table
 28    pkgconfig FALSE 12    0    0     0
 29    pkgsearch FALSE 12    0    0     0
 30       praise FALSE 12    0    0     0
-31   prettycode FALSE 12    0    0     0
-32  prettyunits FALSE 12    0    0     0
-33     processx  TRUE 11    0    1     0
-34     progress FALSE 12    0    0     0
-35           ps  TRUE 11    0    0     1
-36    rcmdcheck FALSE 12    0    0     0
-37     rcorpora  TRUE  5    7    0     0
-38     rematch2 FALSE 12    0    0     0
-39         rhub FALSE 12    0    0     0
-40    rversions FALSE 12    0    0     0
-41         sand  TRUE  1   11    0     0
-42       sankey FALSE 12    0    0     0
-43  sessioninfo FALSE 12    0    0     0
-44    showimage FALSE 12    0    0     0
-45       tracer FALSE 12    0    0     0
-46    webdriver FALSE 12    0    0     0
-47       whoami FALSE 12    0    0     0
-48 xmlparsedata FALSE 12    0    0     0
-49        xopen FALSE 12    0    0     0
-50          zip FALSE 12    0    0     0
+31      presser  TRUE  7    0    0     1
+32   prettycode FALSE 12    0    0     0
+33  prettyunits FALSE 12    0    0     0
+34     processx  TRUE 11    0    1     0
+35     progress FALSE 12    0    0     0
+36           ps  TRUE 11    0    0     1
+37    rcmdcheck FALSE 12    0    0     0
+38     rcorpora  TRUE  5    7    0     0
+39     rematch2 FALSE 12    0    0     0
+40         rhub FALSE 12    0    0     0
+41    rversions FALSE 12    0    0     0
+42         sand  TRUE  1   11    0     0
+43       sankey FALSE 12    0    0     0
+44       secret  TRUE  5    0    0     1
+45  sessioninfo FALSE 12    0    0     0
+46    showimage FALSE 12    0    0     0
+47       tracer FALSE 12    0    0     0
+48    webdriver FALSE 12    0    0     0
+49       whoami FALSE 12    0    0     0
+50 xmlparsedata FALSE 12    0    0     0
+51        xopen FALSE 12    0    0     0
+52          zip FALSE 12    0    0     0
 
 $data$packages
         package
@@ -1620,26 +1657,28 @@ $data$packages
 28    pkgconfig
 29    pkgsearch
 30       praise
-31   prettycode
-32  prettyunits
-33     processx
-34     progress
-35           ps
-36    rcmdcheck
-37     rcorpora
-38     rematch2
-39         rhub
-40    rversions
-41         sand
-42       sankey
-43  sessioninfo
-44    showimage
-45       tracer
-46    webdriver
-47       whoami
-48 xmlparsedata
-49        xopen
-50          zip
+31      presser
+32   prettycode
+33  prettyunits
+34     processx
+35     progress
+36           ps
+37    rcmdcheck
+38     rcorpora
+39     rematch2
+40         rhub
+41    rversions
+42         sand
+43       sankey
+44       secret
+45  sessioninfo
+46    showimage
+47       tracer
+48    webdriver
+49       whoami
+50 xmlparsedata
+51        xopen
+52          zip
                                                                       url
 1     https://cloud.r-project.org/web/checks/check_results_asciicast.html
 2         https://cloud.r-project.org/web/checks/check_results_callr.html
@@ -1671,26 +1710,28 @@ $data$packages
 28    https://cloud.r-project.org/web/checks/check_results_pkgconfig.html
 29    https://cloud.r-project.org/web/checks/check_results_pkgsearch.html
 30       https://cloud.r-project.org/web/checks/check_results_praise.html
-31   https://cloud.r-project.org/web/checks/check_results_prettycode.html
-32  https://cloud.r-project.org/web/checks/check_results_prettyunits.html
-33     https://cloud.r-project.org/web/checks/check_results_processx.html
-34     https://cloud.r-project.org/web/checks/check_results_progress.html
-35           https://cloud.r-project.org/web/checks/check_results_ps.html
-36    https://cloud.r-project.org/web/checks/check_results_rcmdcheck.html
-37     https://cloud.r-project.org/web/checks/check_results_rcorpora.html
-38     https://cloud.r-project.org/web/checks/check_results_rematch2.html
-39         https://cloud.r-project.org/web/checks/check_results_rhub.html
-40    https://cloud.r-project.org/web/checks/check_results_rversions.html
-41         https://cloud.r-project.org/web/checks/check_results_sand.html
-42       https://cloud.r-project.org/web/checks/check_results_sankey.html
-43  https://cloud.r-project.org/web/checks/check_results_sessioninfo.html
-44    https://cloud.r-project.org/web/checks/check_results_showimage.html
-45       https://cloud.r-project.org/web/checks/check_results_tracer.html
-46    https://cloud.r-project.org/web/checks/check_results_webdriver.html
-47       https://cloud.r-project.org/web/checks/check_results_whoami.html
-48 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
-49        https://cloud.r-project.org/web/checks/check_results_xopen.html
-50          https://cloud.r-project.org/web/checks/check_results_zip.html
+31      https://cloud.r-project.org/web/checks/check_results_presser.html
+32   https://cloud.r-project.org/web/checks/check_results_prettycode.html
+33  https://cloud.r-project.org/web/checks/check_results_prettyunits.html
+34     https://cloud.r-project.org/web/checks/check_results_processx.html
+35     https://cloud.r-project.org/web/checks/check_results_progress.html
+36           https://cloud.r-project.org/web/checks/check_results_ps.html
+37    https://cloud.r-project.org/web/checks/check_results_rcmdcheck.html
+38     https://cloud.r-project.org/web/checks/check_results_rcorpora.html
+39     https://cloud.r-project.org/web/checks/check_results_rematch2.html
+40         https://cloud.r-project.org/web/checks/check_results_rhub.html
+41    https://cloud.r-project.org/web/checks/check_results_rversions.html
+42         https://cloud.r-project.org/web/checks/check_results_sand.html
+43       https://cloud.r-project.org/web/checks/check_results_sankey.html
+44       https://cloud.r-project.org/web/checks/check_results_secret.html
+45  https://cloud.r-project.org/web/checks/check_results_sessioninfo.html
+46    https://cloud.r-project.org/web/checks/check_results_showimage.html
+47       https://cloud.r-project.org/web/checks/check_results_tracer.html
+48    https://cloud.r-project.org/web/checks/check_results_webdriver.html
+49       https://cloud.r-project.org/web/checks/check_results_whoami.html
+50 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
+51        https://cloud.r-project.org/web/checks/check_results_xopen.html
+52          https://cloud.r-project.org/web/checks/check_results_zip.html
        check_result version
 1            OK, 12      NA
 2            OK, 12      NA
@@ -1722,28 +1763,30 @@ $data$packages
 28           OK, 12      NA
 29           OK, 12      NA
 30           OK, 12      NA
-31           OK, 12      NA
+31  ERROR, OK, 1, 7      NA
 32           OK, 12      NA
-33  WARN, OK, 1, 11      NA
-34           OK, 12      NA
-35 ERROR, OK, 1, 11      NA
-36           OK, 12      NA
-37   NOTE, OK, 7, 5      NA
-38           OK, 12      NA
+33           OK, 12      NA
+34  WARN, OK, 1, 11      NA
+35           OK, 12      NA
+36 ERROR, OK, 1, 11      NA
+37           OK, 12      NA
+38   NOTE, OK, 7, 5      NA
 39           OK, 12      NA
 40           OK, 12      NA
-41  NOTE, OK, 11, 1      NA
-42           OK, 12      NA
+41           OK, 12      NA
+42  NOTE, OK, 11, 1      NA
 43           OK, 12      NA
-44           OK, 12      NA
+44  ERROR, OK, 1, 5      NA
 45           OK, 12      NA
 46           OK, 12      NA
 47           OK, 12      NA
 48           OK, 12      NA
 49           OK, 12      NA
 50           OK, 12      NA
+51           OK, 12      NA
+52           OK, 12      NA
 
 $data$date_updated
-[1] "2020-05-05T12:02:33.205Z"
+[1] "2020-05-08T12:02:27.631Z"
 
 ```

@@ -7,51 +7,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-# Options to have images saved in the post folder
-# And to disable symbols before output
-knitr::opts_chunk$set(fig.path = "", comment = "")
-
-
-# knitr hooks
-knitr::knit_hooks$set(
-  source = function(x, options) {
-  if(!is.null(options$shell)) {
-    paste0(
-      "```shell\n",
-      paste("curl",
-            gsub('\\"\\)*', "",
-        gsub('args <- c\\(\\"', "", x[1])
-        )
-        ),
-      " | jq .\n```\n"
-    )
-  } else {
-    paste0("\n```r\n",
-           x,
-           "\n```\n")
-  }
-  }
-)
-
-knitr::knit_hooks$set(
-  output = function(x, options) {
-    if(!is.null(options$shell)) {
-    paste0(
-      "```json\n",
-      x,
-      "\n```\n"
-    )
-      
-    } else {
-         paste0(
-      "```r\n",
-      x,
-      "\n```\n"
-    ) 
-    }
-  }
-  
-)
+source("hooks.R")
 ```
 
 # Maintainers
@@ -64,13 +20,7 @@ Default limit of 10.
 
 ```{r shell="shell"}
 args <- c("https://cranchecks.info/maintainers/")
-jqr::jq(
-  processx::run(
-  "curl", 
-  args
-  )$stdout,
-  "."
-)
+get_and_show(args)
 ```
 
 ```{r}
@@ -79,15 +29,11 @@ cchecks::cch_maintainers()
 
 ## Maintainers by email
 
+Get maintainer summary by email.
+
 ```{r shell="shell"}
 args <- c("https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com")
-jqr::jq(
-  processx::run(
-  "curl", 
-  args
-  )$stdout,
-  "."
-)
+get_and_show(args)
 ```
 
 ```{r}

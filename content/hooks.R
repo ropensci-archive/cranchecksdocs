@@ -1,0 +1,55 @@
+# Options to have images saved in the post folder
+# And to disable symbols before output
+knitr::opts_chunk$set(fig.path = "", comment = "")
+
+
+# knitr hooks
+knitr::knit_hooks$set(
+  source = function(x, options) {
+    if(!is.null(options$shell)) {
+      paste0(
+        "```shell\n",
+        paste("curl",
+              gsub('\\"\\)*', "",
+                   gsub('args <- c\\(\\"', "", x[1])
+              )
+        ),
+        " | jq .\n```\n"
+      )
+    } else {
+      paste0("\n```r\n",
+             x,
+             "\n```\n")
+    }
+  }
+)
+
+knitr::knit_hooks$set(
+  output = function(x, options) {
+    if(!is.null(options$shell)) {
+      paste0(
+        "```json\n",
+        x,
+        "\n```\n"
+      )
+      
+    } else {
+      paste0(
+        "```r\n",
+        x,
+        "\n```\n"
+      ) 
+    }
+  }
+  
+)
+
+get_and_show <- function(args) {
+  jqr::jq(
+    processx::run(
+      "curl", 
+      args
+    )$stdout,
+    "."
+  )
+}
