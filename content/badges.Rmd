@@ -1,0 +1,28 @@
+---
+weight: 15
+title: Badges
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+source("hooks.R")
+```
+
+# Badges
+
+Get packages based checks.
+
+## Summary badges
+
+Get badge for CRAN checks summary by package name.
+
+`GET [/badges/summary/{package_name}]`
+
+![Badges example, summary for the rhub package](https://cranchecks.info/badges/summary/rhub)
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/badges/summary/rhub")
+get_and_show(args)
+```

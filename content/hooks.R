@@ -59,12 +59,26 @@ get_and_show <- function(args) {
       return(cat(headers))
     }
     
+    transform_output <- function(output) {
+      if (grepl("^<svg", output)) {
+        cat(as.character(xml2::read_xml(output)))
+      } else {
+        print(jqr::jq(output, "."))
+      }
+    }
+    
+    if (limit+1 == length(curl_output_l)) {
+      output <- curl_output_l[limit + 1]
+    } else {
+      output <- paste0(curl_output_l[(limit + 1):length(curl_output_l)], collapse = "\n")
+    }
+    
     cat(
     paste0(
         headers,
         "```JavaScript\n",
         paste0(
-        capture.output(print(jqr::jq(curl_output_l[limit + 1], "."))),
+          capture.output(transform_output(output)),
         collapse = "\n"),
         "\n```\n"
       )

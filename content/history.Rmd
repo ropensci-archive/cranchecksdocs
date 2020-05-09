@@ -21,7 +21,7 @@ Follow redirects to make sure that you are redirected to the link.
 If you don't follow redirects, you'll get a JSON body telling you to redirect to the Location header link.
 
 ```{r results="asis"}
-args <- c(paste0("https://cranchecks.info/history/", Sys.Date() -1))
+args <- c("https://cranchecks.info/history/2020-04-01")
 get_and_show(args)
 ```
 
