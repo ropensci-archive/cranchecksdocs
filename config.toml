@@ -26,7 +26,7 @@ search = true
 key = "r"
 name = "R" 
 [[params.language_tabs]]
-key = "json"
+key = "JavaScript"
 name = "Shell"
 [[params.language_tabs]]
 key = "yaml"

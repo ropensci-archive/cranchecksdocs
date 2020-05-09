@@ -20,7 +20,7 @@ Get all maintainers.
 
 Default limit of 10.
 
-```shell
+```JavaScript
 curl https://cranchecks.info/maintainers/ | jq .
 ```
 ```yaml
@@ -32,10 +32,10 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 5744
-date: Sat, 09 May 2020 14:07:10 GMT
+date: Sat, 09 May 2020 14:13:12 GMT
 
 ```
-```json
+```JavaScript
 {
     "found": 9396,
     "count": 10,
@@ -507,7 +507,7 @@ $data
 
 Get maintainer summary by email.
 
-```shell
+```JavaScript
 curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
 ```
 ```yaml
@@ -519,10 +519,10 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 12898
-date: Sat, 09 May 2020 14:07:13 GMT
+date: Sat, 09 May 2020 14:13:15 GMT
 
 ```
-```json
+```JavaScript
 {
     "error": null,
     "data": {
