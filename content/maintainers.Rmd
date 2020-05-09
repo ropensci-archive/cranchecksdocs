@@ -18,7 +18,7 @@ Get all maintainers.
 
 Default limit of 10.
 
-```{r shell="shell"}
+```{r results="asis"}
 args <- c("https://cranchecks.info/maintainers/")
 get_and_show(args)
 ```
@@ -31,7 +31,7 @@ cchecks::cch_maintainers()
 
 Get maintainer summary by email.
 
-```{r shell="shell"}
+```{r results="asis"}
 args <- c("https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com")
 get_and_show(args)
 ```

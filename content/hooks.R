@@ -6,7 +6,7 @@ knitr::opts_chunk$set(fig.path = "", comment = "")
 # knitr hooks
 knitr::knit_hooks$set(
   source = function(x, options) {
-    if(!is.null(options$shell)) {
+    if(options$results == "asis") {
       paste0(
         "```shell\n",
         paste("curl",
@@ -26,13 +26,8 @@ knitr::knit_hooks$set(
 
 knitr::knit_hooks$set(
   output = function(x, options) {
-    if(!is.null(options$shell)) {
-      paste0(
-        "```json\n",
-        x,
-        "\n```\n"
-      )
-      
+    if(options$results == "asis") {
+      x
     } else {
       paste0(
         "```r\n",
@@ -45,11 +40,32 @@ knitr::knit_hooks$set(
 )
 
 get_and_show <- function(args) {
-  jqr::jq(
-    processx::run(
+    curl_output <- processx::run(
       "curl", 
-      args
-    )$stdout,
-    "."
-  )
+      c("-i", args)
+    )$stdout
+    
+    curl_output_l  <- unlist(strsplit(curl_output, "\n"))
+    limit <- which(curl_output_l == "\r")
+    
+    headers <- paste0(
+        "```yaml\n",
+        paste0(curl_output_l[1:limit], collapse = "\n"),
+        "\n```\n"
+      )
+      
+    
+    if (limit == length(curl_output_l)) {
+      return(headers)
+    }
+    
+    cat(
+    paste0(
+        headers,
+        "```json\n",
+        jqr::jq(curl_output_l[limit + 1], "."),
+        "\n```\n"
+      )
+      )
+    
 }

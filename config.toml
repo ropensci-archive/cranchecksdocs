@@ -2,6 +2,7 @@ baseURL = "https://cran-checks-docs.netlify.app"
 languageCode = "en-us"
 title = "CRAN checks API"
 disableKinds = ["taxonomyTerm"]
+enableEmoji = true
 
 [module]
   [[module.imports]]
@@ -30,5 +31,8 @@ name = "Shell"
 [[params.language_tabs]]
 key = "json"
 name = "JSON"
+[[params.language_tabs]]
+key = "yaml"
+name = "YAML (headers)"
 
 ignoreFiles = ["\\.Rmd$", "\\.html$"]
