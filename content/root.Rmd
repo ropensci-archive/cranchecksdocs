@@ -1,5 +1,5 @@
 ---
-weight: 11
+weight: 10
 title: Root
 output: 
   html_document:
@@ -12,15 +12,9 @@ source("hooks.R")
 
 # Root
 
-Get heartbeat for the cranchecks API
-
-[Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cch_heartbeat.html).
+This path redirects to /heartbeat
 
 ```{r results="asis"}
-args <- c("https://cranchecks.info/heartbeat")
+args <- c("https://cranchecks.info/")
 get_and_show(args)
-```
-
-```{r}
-cchecks::cch_heartbeat()
 ```

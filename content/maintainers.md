@@ -23,6 +23,8 @@ Default limit of 10.
 ```JavaScript
 curl https://cranchecks.info/maintainers/ | jq .
 ```
+https://cranchecks.info/maintainers/ 
+
 ```yaml
 HTTP/2 200 
 access-control-allow-methods: HEAD, GET
@@ -32,9 +34,10 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 5744
-date: Sat, 09 May 2020 14:13:12 GMT
+date: Sat, 09 May 2020 14:24:30 GMT
 
 ```
+
 ```JavaScript
 {
     "found": 9396,
@@ -510,6 +513,8 @@ Get maintainer summary by email.
 ```JavaScript
 curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
 ```
+https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com 
+
 ```yaml
 HTTP/2 200 
 access-control-allow-methods: HEAD, GET
@@ -519,9 +524,10 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 12898
-date: Sat, 09 May 2020 14:13:15 GMT
+date: Sat, 09 May 2020 14:24:31 GMT
 
 ```
+
 ```JavaScript
 {
     "error": null,

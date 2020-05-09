@@ -28,4 +28,6 @@ For that I added two knitr hooks, see content/maintainers.Rmd and its results in
 
 * Code chunks with no shell option are rendered in R code fences (output included)
 
-* Code chunks with shell option have the shell part of their source rendered in Shell code fences and the pretty output in JSON code fences.
+* Code chunks with results="asis" (for shell code) have the shell part of their source and the pretty output in JSON code fences rendered in JS code fences. Why JS? I wanted both the shell script and output to appear in the same language tab and with Slatedocs it seems you can't get several languages in a tab so I chose a language that'd work ok as highlighting for both shell and JSON.
+
+* From code chunks with results="asis", headers are rendered in YAML code fences in a header tab.

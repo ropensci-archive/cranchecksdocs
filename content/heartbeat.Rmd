@@ -1,0 +1,26 @@
+---
+weight: 11
+title: Hearbeat
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+source("hooks.R")
+```
+
+# Heartbeat
+
+Get heartbeat for the cranchecks API
+
+[Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cch_heartbeat.html).
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/heartbeat")
+get_and_show(args)
+```
+
+```{r}
+cchecks::cch_heartbeat()
+```

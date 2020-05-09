@@ -1,252 +1,484 @@
 ---
 weight: 10
-title: General response description
+title: Responses
+output: 
+  html_document:
+    keep_md: true
 ---
 
-## Response codes
-
-* 200 (OK) - request good!
-* 204 (No Content) - given on a delete request, indicating success, response body should be empty
-* 302 (Found) - the root `/`, redirects to `/heartbeat`, and `/docs` redirects to these documents
-* 400 (Bad request) - When you have a malformed request, fix it and try again
-* 404 (Not found) - When you request a route that does not exist, fix it and try again
-* 405 (Method not allowed) - When you use a prohibited HTTP method (we only allow `GET` and `HEAD`)
-* 500 (Internal server error) - Server got itself in trouble; get in touch with us. (in [Issues](https://github.com/ropensci/roapi/issues))
 
 
-`400` responses will look something like
+# Response codes
 
-```yaml
-HTTP/1.1 400 Bad Request
-Cache-Control: public, must-revalidate, max-age=60
-Connection: close
-Content-Length: 61
-Content-Type: application/json
-Date: Thu, 26 Feb 2015 23:27:57 GMT
-Server: nginx/1.7.9
-Status: 400 Bad Request
-X-Content-Type-Options: nosniff
+## 200 (OK) 
 
-{
-    "error": "invalid request",
-    "message": "maximum limit is 5000"
-}
+Request good!
+
+```JavaScript
+curl https://cranchecks.info/maintainers | jq .
 ```
-
-`404` responses will look something like
-
 ```yaml
-HTTP/1.1 404 Not Found
-Cache-Control: public, must-revalidate, max-age=60
-Connection: close
-Content-Length: 27
-Content-Type: application/json
-Date: Thu, 26 Feb 2015 23:27:16 GMT
-Server: nginx/1.7.9
-Status: 404 Not Found
-X-Cascade: pass
-X-Content-Type-Options: nosniff
-
-{
-    "error": "route not found"
-}
-```
-
-`405` responses will look something like (with an empty body)
-
-```yaml
-HTTP/1.1 405 Method Not Allowed
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Connection: close
-Content-Length: 0
-Content-Type: application/json; charset=utf8
-Date: Mon, 27 Jul 2015 20:48:27 GMT
-Server: nginx/1.9.3
-Status: 405 Method Not Allowed
-X-Content-Type-Options: nosniff
-```
-
-`500` responses will look something like
-
-```yaml
-HTTP/1.1 500 Internal Server Error
-Cache-Control: public, must-revalidate, max-age=60
-Connection: close
-Content-Length: 24
-Content-Type: application/json
-Date: Thu, 26 Feb 2015 23:19:57 GMT
-Server: nginx/1.7.9
-Status: 500 Internal Server Error
-X-Content-Type-Options: nosniff
-
-{
-    "error": "server error"
-}
-```
-
-## Response headers
-
-`200` response header will look something like
-
-```yaml
-HTTP/2 200
+HTTP/2 200 
 access-control-allow-methods: HEAD, GET
 access-control-allow-origin: *
 cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 2823
-date: Thu, 17 May 2018 21:40:32 GMT
+content-length: 5744
+date: Sat, 09 May 2020 14:39:42 GMT
+
+```
+```JavaScript
+{
+    "found": 9396,
+    "count": 10,
+    "offset": null,
+    "error": null,
+    "data": [
+        {
+            "_id": "f.briatte_at_gmail.com",
+            "email": "f.briatte_at_gmail.com",
+            "name": "François Briatte",
+            "url": "https://cloud.r-project.org/web/checks/check_results_f.briatte_at_gmail.com.html",
+            "table": [
+                {
+                    "package": "ggnetwork",
+                    "any": true,
+                    "ok": 7,
+                    "note": 5,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "ggnetwork",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_ggnetwork.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 5
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 7
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.559Z"
+        },
+        {
+            "_id": "hyasrebi_at_yahoo.com",
+            "email": "hyasrebi_at_yahoo.com",
+            "name": "Haleh Yasrebi",
+            "url": "https://cloud.r-project.org/web/checks/check_results_hyasrebi_at_yahoo.com.html",
+            "table": [
+                {
+                    "package": "survJamda",
+                    "any": false,
+                    "ok": 12,
+                    "note": 0,
+                    "warn": 0,
+                    "error": 0
+                },
+                {
+                    "package": "survJamda.data",
+                    "any": true,
+                    "ok": 5,
+                    "note": 7,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "survJamda",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_survJamda.html",
+                    "check_result": [
+                        {
+                            "category": "OK",
+                            "number_checks": 12
+                        }
+                    ],
+                    "version": null
+                },
+                {
+                    "package": "survJamda.data",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_survJamda.data.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 7
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 5
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "ly_ding_at_126.com",
+            "email": "ly_ding_at_126.com",
+            "name": "Liuyong Ding",
+            "url": "https://cloud.r-project.org/web/checks/check_results_ly_ding_at_126.com.html",
+            "table": [
+                {
+                    "package": "SP2000",
+                    "any": false,
+                    "ok": 12,
+                    "note": 0,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "SP2000",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_SP2000.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "bodri.mh3_at_gmail.com",
+            "email": "bodri.mh3_at_gmail.com",
+            "name": "Andras Bodor",
+            "url": "https://cloud.r-project.org/web/checks/check_results_bodri.mh3_at_gmail.com.html",
+            "table": [
+                {
+                    "package": "rCUR",
+                    "any": true,
+                    "ok": 0,
+                    "note": 5,
+                    "warn": 0,
+                    "error": 9
+                }
+            ],
+            "packages": [
+                {
+                    "package": "rCUR",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_rCUR.html",
+                    "check_result": [
+                        {
+                            "category": "ERROR",
+                            "number_checks": 9
+                        },
+                        {
+                            "category": "NOTE",
+                            "number_checks": 5
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "erich.neuwirth_at_univie.ac.at",
+            "email": "erich.neuwirth_at_univie.ac.at",
+            "name": "Erich Neuwirth",
+            "url": "https://cloud.r-project.org/web/checks/check_results_erich.neuwirth_at_univie.ac.at.html",
+            "table": [
+                {
+                    "package": "ENmisc",
+                    "any": true,
+                    "ok": 0,
+                    "note": 12,
+                    "warn": 0,
+                    "error": 0
+                },
+                {
+                    "package": "RcmdrPlugin.mosaic",
+                    "any": true,
+                    "ok": 0,
+                    "note": 12,
+                    "warn": 0,
+                    "error": 0
+                },
+                {
+                    "package": "RColorBrewer",
+                    "any": true,
+                    "ok": 0,
+                    "note": 12,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "ENmisc",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_ENmisc.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                },
+                {
+                    "package": "RcmdrPlugin.mosaic",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_RcmdrPlugin.mosaic.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                },
+                {
+                    "package": "RColorBrewer",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_RColorBrewer.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "markus.boenn.sf_at_googlemail.com",
+            "email": "markus.boenn.sf_at_googlemail.com",
+            "name": "Markus Boenn",
+            "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
+            "table": [
+                {
+                    "package": "hypergea",
+                    "any": true,
+                    "ok": 6,
+                    "note": 6,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "hypergea",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_hypergea.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 6
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 6
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "clement.benard_at_safrangroup.com",
+            "email": "clement.benard_at_safrangroup.com",
+            "name": "Clement Benard",
+            "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
+            "table": [
+                {
+                    "package": "sirus",
+                    "any": true,
+                    "ok": 9,
+                    "note": 3,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "sirus",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_sirus.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 3
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 9
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "s.greilich_at_dkfz.de",
+            "email": "s.greilich_at_dkfz.de",
+            "name": "Steffen Greilich",
+            "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
+            "table": [
+                {
+                    "package": "libamtrack",
+                    "any": true,
+                    "ok": 2,
+                    "note": 10,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "libamtrack",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_libamtrack.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 10
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 2
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "eric_at_opsani.com",
+            "email": "eric_at_opsani.com",
+            "name": "Eric Kalosa-Kenyon",
+            "url": "https://cloud.r-project.org/web/checks/check_results_eric_at_opsani.com.html",
+            "table": [
+                {
+                    "package": "soobench",
+                    "any": true,
+                    "ok": 11,
+                    "note": 1,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "soobench",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_soobench.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 1
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 11
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "egor_at_tillt.net",
+            "email": "egor_at_tillt.net",
+            "name": "Till Krenz",
+            "url": "https://cloud.r-project.org/web/checks/check_results_egor_at_tillt.net.html",
+            "table": [
+                {
+                    "package": "egor",
+                    "any": false,
+                    "ok": 12,
+                    "note": 0,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "egor",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_egor.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        }
+    ]
+}
 ```
 
-## Badge Response headers
+## 204 (No Content) 
 
-`200` response header will look something like
+Given on a delete request, indicating success, response body should be empty
 
+## 302 (Found) 
+
+The root `/`, redirects to `/heartbeat`, and `/docs` redirects to these documents
+
+```JavaScript
+curl https://cranchecks.info/ | jq .
+```
+[1] "```yaml\nHTTP/2 302 \r\naccess-control-allow-methods: HEAD, GET\r\naccess-control-allow-origin: *\r\ncache-control: public, must-revalidate, max-age=60\r\ncontent-type: application/json; charset=utf8\r\nlocation: https://cranchecks.info/heartbeat\r\nserver: Caddy\r\nx-content-type-options: nosniff\r\ncontent-length: 0\r\ndate: Sat, 09 May 2020 14:39:44 GMT\r\n\r\n```\n"
+
+## 400 (Bad request)
+
+When you have a malformed request, fix it and try again
+
+```JavaScript
+curl https://cranchecks.info/maintainers/blablabla | jq .
+```
 ```yaml
-HTTP/2 200
-cache-control: max-age=300, public
-content-type: image/svg+xml; charset=utf-8
-expires: Thu, 17 May 2018 21:39:42 GMT
+HTTP/2 400 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 855
-date: Thu, 17 May 2018 21:39:41 GMT
+content-length: 52
+date: Sat, 09 May 2020 14:39:44 GMT
+
 ```
-
-## Response bodies
-
-Response bodies generally look like:
-
-```json
+```JavaScript
 {
-
-    "error": null,
-    "data": {
-        "_id": "crul",
-        "package": "crul",
-        "url": "https://cloud.r-project.org/web/checks/check_results_crul.html",
-        "summary": {
-            "any": false,
-            "ok": 12,
-            "note": 0,
-            "warn": 0,
-            "error": 0,
-            "fail": 0
-        },
-        "checks": [
-            {
-                "flavor": "r-devel-linux-x86_64-debian-clang",
-                "version": "0.7.4",
-                "tinstall": 6.81,
-                "tcheck": 34.84,
-                "ttotal": 41.65,
-                "status": "OK",
-                "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/crul-00check.html"
-            },
-            {
-                "flavor": "r-devel-linux-x86_64-debian-gcc",
-                "version": "0.7.4",
-                "tinstall": 5.93,
-                "tcheck": 28.31,
-                "ttotal": 34.24,
-                "status": "OK",
-                "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/crul-00check.html"
-            },
-            ...<cutoff>
-        ],
-        "check_details": null,
-        "date_updated": "2019-06-03T15:02:32.258Z"
-    }
-
-}
-```
-
-Successful requests have 4 slots:
-
-* found: Number records found
-* count: Number records returned
-* offset: offset value
-* error: If an error did not occur this is `null`, otherwise, an error message.
-* data: The hash of data if any data returned. If no data found, this is an empty hash (hash of length zero)
-
-
-## Response svg
-
-svg response bodies generally look like:
-
-```xml
-<svg xmlns="http://www.w3.org/2000/svg" width="70" height="20">
-  <linearGradient id="b" x2="0" y2="100%">
-    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
-    <stop offset="1" stop-opacity=".1"/>
-  </linearGradient>
-  <mask id="a">
-    <rect width="70" height="20" rx="3" fill="#fff"/>
-  </mask>
-  <g mask="url(#a)">
-    <path fill="#555" d="M0 0h43v20H0z"/>
-    <path fill="#4c1" d="M43 0h46.5v20H43z"/>
-    <path fill="url(#b)" d="M0 0h70v20H0z"/>
-  </g>
-  <g fill="#fff" text-anchor="middle"
-     font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
-    <text x="21.5" y="15" fill="#010101" fill-opacity=".3">
-      CRAN
-    </text>
-    <text x="21.5" y="14">
-      CRAN
-    </text>
-    <text x="55.5" y="15" fill="#010101" fill-opacity=".3">
-      OK
-    </text>
-    <text x="55.5" y="14">
-      OK
-    </text>
-  </g>
-</svg>
-```
-
-## Rule Response bodies
-
-```json
-{
-  "error": null,
-  "data": [
-    {
-      "id": 7,
-      "user_id": 1,
-      "package": "citecorp",
-      "rule_status": "error",
-      "rule_time": 2,
-      "rule_platforms": null,
-      "rule_regex": null
+    "error": {
+        "message": "no results found"
     },
-    {
-      "id": 8,
-      "user_id": 1,
-      "package": "conditionz",
-      "rule_status": "error",
-      "rule_time": 2,
-      "rule_platforms": null,
-      "rule_regex": null
-    }
-  ]
+    "data": null
 }
 ```
 
-## Media Types
+## 404 (Not found) 
 
-We serve up only JSON in this API. All responses will have `Content-Type: application/json; charset=utf8`.
+When you request a route that does not exist, fix it and try again
 
-## Pagination
+```JavaScript
+curl https://cranchecks.info/maintainer | jq .
+```
+```yaml
+HTTP/2 404 
+content-type: application/json
+server: Caddy
+x-cascade: pass
+x-content-type-options: nosniff
+content-length: 27
+date: Sat, 09 May 2020 14:39:45 GMT
 
-The query parameters `limit` (default = 10) and `offset` (default = 0) can be sent.
+```
+```JavaScript
+{
+    "error": "route not found"
+}
+```
 
-The response body from the server will include data on records found in `found` and number returned in `count`:
+## 405 (Method not allowed)
 
-* `"found": 1056`
-* `"count": 10`
+When you use a prohibited HTTP method for a given route.
+
+
+## 500 (Internal server error) 
+
+Server got itself in trouble; [get in touch with us](https://github.com/ropenscilabs/cchecksapi/issues).

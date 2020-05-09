@@ -1,0 +1,62 @@
+---
+weight: 10
+title: Responses
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+source("hooks.R")
+```
+
+# Response codes
+
+## 200 (OK) 
+
+Request good!
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/maintainers")
+get_and_show(args)
+```
+
+## 204 (No Content) 
+
+Given on a delete request, indicating success, response body should be empty
+
+## 302 (Found) 
+
+The root `/`, redirects to `/heartbeat`, and `/docs` redirects to these documents
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/")
+get_and_show(args)
+```
+
+## 400 (Bad request)
+
+When you have a malformed request, fix it and try again
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/maintainers/blablabla")
+get_and_show(args)
+```
+
+## 404 (Not found) 
+
+When you request a route that does not exist, fix it and try again
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/maintainer")
+get_and_show(args)
+```
+
+## 405 (Method not allowed)
+
+When you use a prohibited HTTP method for a given route.
+
+
+## 500 (Internal server error) 
+
+Server got itself in trouble; [get in touch with us](https://github.com/ropenscilabs/cchecksapi/issues).
