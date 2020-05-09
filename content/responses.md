@@ -26,7 +26,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 5744
-date: Sat, 09 May 2020 14:39:42 GMT
+date: Sat, 09 May 2020 14:48:28 GMT
 
 ```
 ```JavaScript
@@ -421,7 +421,19 @@ The root `/`, redirects to `/heartbeat`, and `/docs` redirects to these document
 ```JavaScript
 curl https://cranchecks.info/ | jq .
 ```
-[1] "```yaml\nHTTP/2 302 \r\naccess-control-allow-methods: HEAD, GET\r\naccess-control-allow-origin: *\r\ncache-control: public, must-revalidate, max-age=60\r\ncontent-type: application/json; charset=utf8\r\nlocation: https://cranchecks.info/heartbeat\r\nserver: Caddy\r\nx-content-type-options: nosniff\r\ncontent-length: 0\r\ndate: Sat, 09 May 2020 14:39:44 GMT\r\n\r\n```\n"
+```yaml
+HTTP/2 302 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+location: https://cranchecks.info/heartbeat
+server: Caddy
+x-content-type-options: nosniff
+content-length: 0
+date: Sat, 09 May 2020 14:48:32 GMT
+
+```
 
 ## 400 (Bad request)
 
@@ -439,7 +451,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 52
-date: Sat, 09 May 2020 14:39:44 GMT
+date: Sat, 09 May 2020 14:48:33 GMT
 
 ```
 ```JavaScript
@@ -465,7 +477,7 @@ server: Caddy
 x-cascade: pass
 x-content-type-options: nosniff
 content-length: 27
-date: Sat, 09 May 2020 14:39:45 GMT
+date: Sat, 09 May 2020 14:48:34 GMT
 
 ```
 ```JavaScript

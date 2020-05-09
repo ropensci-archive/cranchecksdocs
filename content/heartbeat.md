@@ -17,8 +17,6 @@ Get heartbeat for the cranchecks API
 ```JavaScript
 curl https://cranchecks.info/heartbeat | jq .
 ```
-https://cranchecks.info/heartbeat 
-
 ```yaml
 HTTP/2 200 
 access-control-allow-methods: HEAD, GET
@@ -28,10 +26,9 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 246
-date: Sat, 09 May 2020 14:25:40 GMT
+date: Sat, 09 May 2020 14:47:55 GMT
 
 ```
-
 ```JavaScript
 {
     "routes": [

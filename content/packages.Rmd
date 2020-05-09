@@ -1,0 +1,54 @@
+---
+weight: 12
+title: Packages
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+source("hooks.R")
+```
+
+# Packages
+
+Get packages based checks.
+
+[Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cch_pkgs.html).
+
+## Packages
+
+Get all packages.
+
+Default limit of 10.
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/pkgs/")
+get_and_show(args)
+```
+
+```{r}
+cchecks::cch_pkgs()
+```
+
+## Packages by name
+
+Get package summary by name.
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/pkgs/rhub")
+get_and_show(args)
+```
+
+```{r}
+cchecks::cch_pkgs(x = "rhub")
+```
+
+## Packages by name (history)
+
+Get package history by name.
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/pkgs/rhub/history")
+get_and_show(args)
+```

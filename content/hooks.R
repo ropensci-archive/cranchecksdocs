@@ -56,7 +56,7 @@ get_and_show <- function(args) {
       
     
     if (limit == length(curl_output_l)) {
-      return(headers)
+      return(cat(headers))
     }
     
     cat(

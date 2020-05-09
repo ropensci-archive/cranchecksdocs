@@ -15,8 +15,6 @@ This path redirects to /heartbeat
 ```JavaScript
 curl https://cranchecks.info/ | jq .
 ```
-https://cranchecks.info/ 
-
 ```yaml
 HTTP/2 302 
 access-control-allow-methods: HEAD, GET
@@ -27,6 +25,6 @@ location: https://cranchecks.info/heartbeat
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Sat, 09 May 2020 14:25:11 GMT
+date: Sat, 09 May 2020 14:48:37 GMT
 
 ```

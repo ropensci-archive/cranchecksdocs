@@ -1,0 +1,27 @@
+---
+weight: 20
+title: History
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+source("hooks.R")
+```
+
+# History
+
+Get link for compressed json file of historical CRAN checks results for a given date - across all packages.
+
+On success, you'll get a 302 redirect, with a temporary link (expires in 15 minutes) for the Amazon S3 file in the Location response header.
+
+Follow redirects to make sure that you are redirected to the link.
+
+If you don't follow redirects, you'll get a JSON body telling you to redirect to the Location header link.
+
+```{r results="asis"}
+args <- c(paste0("https://cranchecks.info/history/", Sys.Date() -1))
+get_and_show(args)
+```
+
