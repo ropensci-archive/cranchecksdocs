@@ -34,9 +34,6 @@ Requests of all other types will be rejected with appropriate `405` code.
 
 JSON mostly, image/svg+xml for badges.
 
-## Common pagination parameters
-
-
 ## Pagination
 
 The query parameters limit (default = 10) and offset (default = 0) can be sent.
