@@ -8,7 +8,7 @@ knitr::knit_hooks$set(
   source = function(x, options) {
     if(options$results == "asis") {
       paste0(
-        "```shell\n",
+        "```json\n",
         paste("curl",
               gsub('\\"\\)*', "",
                    gsub('args <- c\\(\\"', "", x[1])
@@ -63,7 +63,9 @@ get_and_show <- function(args) {
     paste0(
         headers,
         "```json\n",
-        jqr::jq(curl_output_l[limit + 1], "."),
+        paste0(
+        capture.output(print(jqr::jq(curl_output_l[limit + 1], "."))),
+        collapse = "\n"),
         "\n```\n"
       )
       )

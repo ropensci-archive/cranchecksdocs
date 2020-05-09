@@ -10,6 +10,10 @@ output:
 
 # Maintainers
 
+Get maintainer based checks.
+
+[Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cch_maintainers.html).
+
 ## Maintainers
 
 Get all maintainers.
@@ -28,11 +32,388 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 5744
-date: Sat, 09 May 2020 13:21:33 GMT
+date: Sat, 09 May 2020 14:07:10 GMT
 
 ```
 ```json
-{"found":9396,"count":10,"offset":null,"error":null,"data":[{"_id":"f.briatte_at_gmail.com","email":"f.briatte_at_gmail.com","name":"François Briatte","url":"https://cloud.r-project.org/web/checks/check_results_f.briatte_at_gmail.com.html","table":[{"package":"ggnetwork","any":true,"ok":7,"note":5,"warn":0,"error":0}],"packages":[{"package":"ggnetwork","url":"https://cloud.r-project.org/web/checks/check_results_ggnetwork.html","check_result":[{"category":"NOTE","number_checks":5},{"category":"OK","number_checks":7}],"version":null}],"date_updated":"2020-05-09T12:02:27.559Z"},{"_id":"hyasrebi_at_yahoo.com","email":"hyasrebi_at_yahoo.com","name":"Haleh Yasrebi","url":"https://cloud.r-project.org/web/checks/check_results_hyasrebi_at_yahoo.com.html","table":[{"package":"survJamda","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"survJamda.data","any":true,"ok":5,"note":7,"warn":0,"error":0}],"packages":[{"package":"survJamda","url":"https://cloud.r-project.org/web/checks/check_results_survJamda.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"survJamda.data","url":"https://cloud.r-project.org/web/checks/check_results_survJamda.data.html","check_result":[{"category":"NOTE","number_checks":7},{"category":"OK","number_checks":5}],"version":null}],"date_updated":"2020-05-09T12:02:27.560Z"},{"_id":"ly_ding_at_126.com","email":"ly_ding_at_126.com","name":"Liuyong Ding","url":"https://cloud.r-project.org/web/checks/check_results_ly_ding_at_126.com.html","table":[{"package":"SP2000","any":false,"ok":12,"note":0,"warn":0,"error":0}],"packages":[{"package":"SP2000","url":"https://cloud.r-project.org/web/checks/check_results_SP2000.html","check_result":[],"version":null}],"date_updated":"2020-05-09T12:02:27.560Z"},{"_id":"bodri.mh3_at_gmail.com","email":"bodri.mh3_at_gmail.com","name":"Andras Bodor","url":"https://cloud.r-project.org/web/checks/check_results_bodri.mh3_at_gmail.com.html","table":[{"package":"rCUR","any":true,"ok":0,"note":5,"warn":0,"error":9}],"packages":[{"package":"rCUR","url":"https://cloud.r-project.org/web/checks/check_results_rCUR.html","check_result":[{"category":"ERROR","number_checks":9},{"category":"NOTE","number_checks":5}],"version":null}],"date_updated":"2020-05-09T12:02:27.560Z"},{"_id":"erich.neuwirth_at_univie.ac.at","email":"erich.neuwirth_at_univie.ac.at","name":"Erich Neuwirth","url":"https://cloud.r-project.org/web/checks/check_results_erich.neuwirth_at_univie.ac.at.html","table":[{"package":"ENmisc","any":true,"ok":0,"note":12,"warn":0,"error":0},{"package":"RcmdrPlugin.mosaic","any":true,"ok":0,"note":12,"warn":0,"error":0},{"package":"RColorBrewer","any":true,"ok":0,"note":12,"warn":0,"error":0}],"packages":[{"package":"ENmisc","url":"https://cloud.r-project.org/web/checks/check_results_ENmisc.html","check_result":[],"version":null},{"package":"RcmdrPlugin.mosaic","url":"https://cloud.r-project.org/web/checks/check_results_RcmdrPlugin.mosaic.html","check_result":[],"version":null},{"package":"RColorBrewer","url":"https://cloud.r-project.org/web/checks/check_results_RColorBrewer.html","check_result":[],"version":null}],"date_updated":"2020-05-09T12:02:27.560Z"},{"_id":"markus.boenn.sf_at_googlemail.com","email":"markus.boenn.sf_at_googlemail.com","name":"Markus Boenn","url":"https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html","table":[{"package":"hypergea","any":true,"ok":6,"note":6,"warn":0,"error":0}],"packages":[{"package":"hypergea","url":"https://cloud.r-project.org/web/checks/check_results_hypergea.html","check_result":[{"category":"NOTE","number_checks":6},{"category":"OK","number_checks":6}],"version":null}],"date_updated":"2020-05-09T12:02:27.560Z"},{"_id":"clement.benard_at_safrangroup.com","email":"clement.benard_at_safrangroup.com","name":"Clement Benard","url":"https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html","table":[{"package":"sirus","any":true,"ok":9,"note":3,"warn":0,"error":0}],"packages":[{"package":"sirus","url":"https://cloud.r-project.org/web/checks/check_results_sirus.html","check_result":[{"category":"NOTE","number_checks":3},{"category":"OK","number_checks":9}],"version":null}],"date_updated":"2020-05-09T12:02:27.560Z"},{"_id":"s.greilich_at_dkfz.de","email":"s.greilich_at_dkfz.de","name":"Steffen Greilich","url":"https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html","table":[{"package":"libamtrack","any":true,"ok":2,"note":10,"warn":0,"error":0}],"packages":[{"package":"libamtrack","url":"https://cloud.r-project.org/web/checks/check_results_libamtrack.html","check_result":[{"category":"NOTE","number_checks":10},{"category":"OK","number_checks":2}],"version":null}],"date_updated":"2020-05-09T12:02:27.560Z"},{"_id":"eric_at_opsani.com","email":"eric_at_opsani.com","name":"Eric Kalosa-Kenyon","url":"https://cloud.r-project.org/web/checks/check_results_eric_at_opsani.com.html","table":[{"package":"soobench","any":true,"ok":11,"note":1,"warn":0,"error":0}],"packages":[{"package":"soobench","url":"https://cloud.r-project.org/web/checks/check_results_soobench.html","check_result":[{"category":"NOTE","number_checks":1},{"category":"OK","number_checks":11}],"version":null}],"date_updated":"2020-05-09T12:02:27.560Z"},{"_id":"egor_at_tillt.net","email":"egor_at_tillt.net","name":"Till Krenz","url":"https://cloud.r-project.org/web/checks/check_results_egor_at_tillt.net.html","table":[{"package":"egor","any":false,"ok":12,"note":0,"warn":0,"error":0}],"packages":[{"package":"egor","url":"https://cloud.r-project.org/web/checks/check_results_egor.html","check_result":[],"version":null}],"date_updated":"2020-05-09T12:02:27.560Z"}]}
+{
+    "found": 9396,
+    "count": 10,
+    "offset": null,
+    "error": null,
+    "data": [
+        {
+            "_id": "f.briatte_at_gmail.com",
+            "email": "f.briatte_at_gmail.com",
+            "name": "François Briatte",
+            "url": "https://cloud.r-project.org/web/checks/check_results_f.briatte_at_gmail.com.html",
+            "table": [
+                {
+                    "package": "ggnetwork",
+                    "any": true,
+                    "ok": 7,
+                    "note": 5,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "ggnetwork",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_ggnetwork.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 5
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 7
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.559Z"
+        },
+        {
+            "_id": "hyasrebi_at_yahoo.com",
+            "email": "hyasrebi_at_yahoo.com",
+            "name": "Haleh Yasrebi",
+            "url": "https://cloud.r-project.org/web/checks/check_results_hyasrebi_at_yahoo.com.html",
+            "table": [
+                {
+                    "package": "survJamda",
+                    "any": false,
+                    "ok": 12,
+                    "note": 0,
+                    "warn": 0,
+                    "error": 0
+                },
+                {
+                    "package": "survJamda.data",
+                    "any": true,
+                    "ok": 5,
+                    "note": 7,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "survJamda",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_survJamda.html",
+                    "check_result": [
+                        {
+                            "category": "OK",
+                            "number_checks": 12
+                        }
+                    ],
+                    "version": null
+                },
+                {
+                    "package": "survJamda.data",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_survJamda.data.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 7
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 5
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "ly_ding_at_126.com",
+            "email": "ly_ding_at_126.com",
+            "name": "Liuyong Ding",
+            "url": "https://cloud.r-project.org/web/checks/check_results_ly_ding_at_126.com.html",
+            "table": [
+                {
+                    "package": "SP2000",
+                    "any": false,
+                    "ok": 12,
+                    "note": 0,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "SP2000",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_SP2000.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "bodri.mh3_at_gmail.com",
+            "email": "bodri.mh3_at_gmail.com",
+            "name": "Andras Bodor",
+            "url": "https://cloud.r-project.org/web/checks/check_results_bodri.mh3_at_gmail.com.html",
+            "table": [
+                {
+                    "package": "rCUR",
+                    "any": true,
+                    "ok": 0,
+                    "note": 5,
+                    "warn": 0,
+                    "error": 9
+                }
+            ],
+            "packages": [
+                {
+                    "package": "rCUR",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_rCUR.html",
+                    "check_result": [
+                        {
+                            "category": "ERROR",
+                            "number_checks": 9
+                        },
+                        {
+                            "category": "NOTE",
+                            "number_checks": 5
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "erich.neuwirth_at_univie.ac.at",
+            "email": "erich.neuwirth_at_univie.ac.at",
+            "name": "Erich Neuwirth",
+            "url": "https://cloud.r-project.org/web/checks/check_results_erich.neuwirth_at_univie.ac.at.html",
+            "table": [
+                {
+                    "package": "ENmisc",
+                    "any": true,
+                    "ok": 0,
+                    "note": 12,
+                    "warn": 0,
+                    "error": 0
+                },
+                {
+                    "package": "RcmdrPlugin.mosaic",
+                    "any": true,
+                    "ok": 0,
+                    "note": 12,
+                    "warn": 0,
+                    "error": 0
+                },
+                {
+                    "package": "RColorBrewer",
+                    "any": true,
+                    "ok": 0,
+                    "note": 12,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "ENmisc",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_ENmisc.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                },
+                {
+                    "package": "RcmdrPlugin.mosaic",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_RcmdrPlugin.mosaic.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                },
+                {
+                    "package": "RColorBrewer",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_RColorBrewer.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "markus.boenn.sf_at_googlemail.com",
+            "email": "markus.boenn.sf_at_googlemail.com",
+            "name": "Markus Boenn",
+            "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
+            "table": [
+                {
+                    "package": "hypergea",
+                    "any": true,
+                    "ok": 6,
+                    "note": 6,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "hypergea",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_hypergea.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 6
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 6
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "clement.benard_at_safrangroup.com",
+            "email": "clement.benard_at_safrangroup.com",
+            "name": "Clement Benard",
+            "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
+            "table": [
+                {
+                    "package": "sirus",
+                    "any": true,
+                    "ok": 9,
+                    "note": 3,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "sirus",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_sirus.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 3
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 9
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "s.greilich_at_dkfz.de",
+            "email": "s.greilich_at_dkfz.de",
+            "name": "Steffen Greilich",
+            "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
+            "table": [
+                {
+                    "package": "libamtrack",
+                    "any": true,
+                    "ok": 2,
+                    "note": 10,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "libamtrack",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_libamtrack.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 10
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 2
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "eric_at_opsani.com",
+            "email": "eric_at_opsani.com",
+            "name": "Eric Kalosa-Kenyon",
+            "url": "https://cloud.r-project.org/web/checks/check_results_eric_at_opsani.com.html",
+            "table": [
+                {
+                    "package": "soobench",
+                    "any": true,
+                    "ok": 11,
+                    "note": 1,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "soobench",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_soobench.html",
+                    "check_result": [
+                        {
+                            "category": "NOTE",
+                            "number_checks": 1
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 11
+                        }
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        },
+        {
+            "_id": "egor_at_tillt.net",
+            "email": "egor_at_tillt.net",
+            "name": "Till Krenz",
+            "url": "https://cloud.r-project.org/web/checks/check_results_egor_at_tillt.net.html",
+            "table": [
+                {
+                    "package": "egor",
+                    "any": false,
+                    "ok": 12,
+                    "note": 0,
+                    "warn": 0,
+                    "error": 0
+                }
+            ],
+            "packages": [
+                {
+                    "package": "egor",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_egor.html",
+                    "check_result": [
+
+                    ],
+                    "version": null
+                }
+            ],
+            "date_updated": "2020-05-09T12:02:27.560Z"
+        }
+    ]
+}
 ```
 
 
@@ -53,17 +434,28 @@ $error
 NULL
 
 $data
-                                 _id                             email               name
-1             f.briatte_at_gmail.com            f.briatte_at_gmail.com   François Briatte
-2              hyasrebi_at_yahoo.com             hyasrebi_at_yahoo.com      Haleh Yasrebi
-3                 ly_ding_at_126.com                ly_ding_at_126.com       Liuyong Ding
-4             bodri.mh3_at_gmail.com            bodri.mh3_at_gmail.com       Andras Bodor
-5     erich.neuwirth_at_univie.ac.at    erich.neuwirth_at_univie.ac.at     Erich Neuwirth
-6  markus.boenn.sf_at_googlemail.com markus.boenn.sf_at_googlemail.com       Markus Boenn
-7  clement.benard_at_safrangroup.com clement.benard_at_safrangroup.com     Clement Benard
-8              s.greilich_at_dkfz.de             s.greilich_at_dkfz.de   Steffen Greilich
-9                 eric_at_opsani.com                eric_at_opsani.com Eric Kalosa-Kenyon
-10                 egor_at_tillt.net                 egor_at_tillt.net         Till Krenz
+                                 _id                             email
+1             f.briatte_at_gmail.com            f.briatte_at_gmail.com
+2              hyasrebi_at_yahoo.com             hyasrebi_at_yahoo.com
+3                 ly_ding_at_126.com                ly_ding_at_126.com
+4             bodri.mh3_at_gmail.com            bodri.mh3_at_gmail.com
+5     erich.neuwirth_at_univie.ac.at    erich.neuwirth_at_univie.ac.at
+6  markus.boenn.sf_at_googlemail.com markus.boenn.sf_at_googlemail.com
+7  clement.benard_at_safrangroup.com clement.benard_at_safrangroup.com
+8              s.greilich_at_dkfz.de             s.greilich_at_dkfz.de
+9                 eric_at_opsani.com                eric_at_opsani.com
+10                 egor_at_tillt.net                 egor_at_tillt.net
+                 name
+1    François Briatte
+2       Haleh Yasrebi
+3        Liuyong Ding
+4        Andras Bodor
+5      Erich Neuwirth
+6        Markus Boenn
+7      Clement Benard
+8    Steffen Greilich
+9  Eric Kalosa-Kenyon
+10         Till Krenz
                                                                                            url
 1             https://cloud.r-project.org/web/checks/check_results_f.briatte_at_gmail.com.html
 2              https://cloud.r-project.org/web/checks/check_results_hyasrebi_at_yahoo.com.html
@@ -127,11 +519,1056 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 12898
-date: Sat, 09 May 2020 13:21:34 GMT
+date: Sat, 09 May 2020 14:07:13 GMT
 
 ```
 ```json
-{"error":null,"data":{"_id":"csardi.gabor_at_gmail.com","email":"csardi.gabor_at_gmail.com","name":"Gábor Csárdi","url":"https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html","table":[{"package":"asciicast","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"callr","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"cleancall","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"cli","any":true,"ok":11,"note":0,"warn":1,"error":0},{"package":"cliapp","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"clisymbols","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"cranlike","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"cranlogs","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"crayon","any":true,"ok":11,"note":0,"warn":0,"error":1},{"package":"debugme","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"desc","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"disposables","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"dotenv","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"filelock","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"franc","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"gh","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"igraph","any":true,"ok":5,"note":7,"warn":0,"error":0},{"package":"igraphdata","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"isa2","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"keypress","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"keyring","any":true,"ok":10,"note":2,"warn":0,"error":0},{"package":"liteq","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"lpSolve","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"pak","any":true,"ok":11,"note":1,"warn":0,"error":0},{"package":"parsedate","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"pingr","any":true,"ok":9,"note":0,"warn":0,"error":3},{"package":"pkgcache","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"pkgconfig","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"pkgsearch","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"praise","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"presser","any":true,"ok":10,"note":0,"warn":0,"error":1},{"package":"prettycode","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"prettyunits","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"processx","any":true,"ok":11,"note":0,"warn":1,"error":0},{"package":"progress","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"ps","any":true,"ok":11,"note":0,"warn":0,"error":1},{"package":"rcmdcheck","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"rcorpora","any":true,"ok":5,"note":7,"warn":0,"error":0},{"package":"rematch2","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"rhub","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"rversions","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"sand","any":true,"ok":1,"note":11,"warn":0,"error":0},{"package":"sankey","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"secret","any":false,"ok":9,"note":0,"warn":0,"error":0},{"package":"sessioninfo","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"showimage","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"tracer","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"webdriver","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"whoami","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"xmlparsedata","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"xopen","any":false,"ok":12,"note":0,"warn":0,"error":0},{"package":"zip","any":false,"ok":12,"note":0,"warn":0,"error":0}],"packages":[{"package":"asciicast","url":"https://cloud.r-project.org/web/checks/check_results_asciicast.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"callr","url":"https://cloud.r-project.org/web/checks/check_results_callr.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"cleancall","url":"https://cloud.r-project.org/web/checks/check_results_cleancall.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"cli","url":"https://cloud.r-project.org/web/checks/check_results_cli.html","check_result":[{"category":"WARN","number_checks":1},{"category":"OK","number_checks":11}],"version":null},{"package":"cliapp","url":"https://cloud.r-project.org/web/checks/check_results_cliapp.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"clisymbols","url":"https://cloud.r-project.org/web/checks/check_results_clisymbols.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"cranlike","url":"https://cloud.r-project.org/web/checks/check_results_cranlike.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"cranlogs","url":"https://cloud.r-project.org/web/checks/check_results_cranlogs.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"crayon","url":"https://cloud.r-project.org/web/checks/check_results_crayon.html","check_result":[{"category":"ERROR","number_checks":1},{"category":"OK","number_checks":11}],"version":null},{"package":"debugme","url":"https://cloud.r-project.org/web/checks/check_results_debugme.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"desc","url":"https://cloud.r-project.org/web/checks/check_results_desc.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"disposables","url":"https://cloud.r-project.org/web/checks/check_results_disposables.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"dotenv","url":"https://cloud.r-project.org/web/checks/check_results_dotenv.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"filelock","url":"https://cloud.r-project.org/web/checks/check_results_filelock.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"franc","url":"https://cloud.r-project.org/web/checks/check_results_franc.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"gh","url":"https://cloud.r-project.org/web/checks/check_results_gh.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"igraph","url":"https://cloud.r-project.org/web/checks/check_results_igraph.html","check_result":[{"category":"NOTE","number_checks":7},{"category":"OK","number_checks":5}],"version":null},{"package":"igraphdata","url":"https://cloud.r-project.org/web/checks/check_results_igraphdata.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"isa2","url":"https://cloud.r-project.org/web/checks/check_results_isa2.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"keypress","url":"https://cloud.r-project.org/web/checks/check_results_keypress.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"keyring","url":"https://cloud.r-project.org/web/checks/check_results_keyring.html","check_result":[{"category":"NOTE","number_checks":2},{"category":"OK","number_checks":10}],"version":null},{"package":"liteq","url":"https://cloud.r-project.org/web/checks/check_results_liteq.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"lpSolve","url":"https://cloud.r-project.org/web/checks/check_results_lpSolve.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"pak","url":"https://cloud.r-project.org/web/checks/check_results_pak.html","check_result":[{"category":"NOTE","number_checks":1},{"category":"OK","number_checks":11}],"version":null},{"package":"parsedate","url":"https://cloud.r-project.org/web/checks/check_results_parsedate.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"pingr","url":"https://cloud.r-project.org/web/checks/check_results_pingr.html","check_result":[{"category":"ERROR","number_checks":3},{"category":"OK","number_checks":9}],"version":null},{"package":"pkgcache","url":"https://cloud.r-project.org/web/checks/check_results_pkgcache.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"pkgconfig","url":"https://cloud.r-project.org/web/checks/check_results_pkgconfig.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"pkgsearch","url":"https://cloud.r-project.org/web/checks/check_results_pkgsearch.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"praise","url":"https://cloud.r-project.org/web/checks/check_results_praise.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"presser","url":"https://cloud.r-project.org/web/checks/check_results_presser.html","check_result":[{"category":"ERROR","number_checks":1},{"category":"OK","number_checks":10}],"version":null},{"package":"prettycode","url":"https://cloud.r-project.org/web/checks/check_results_prettycode.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"prettyunits","url":"https://cloud.r-project.org/web/checks/check_results_prettyunits.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"processx","url":"https://cloud.r-project.org/web/checks/check_results_processx.html","check_result":[{"category":"WARN","number_checks":1},{"category":"OK","number_checks":11}],"version":null},{"package":"progress","url":"https://cloud.r-project.org/web/checks/check_results_progress.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"ps","url":"https://cloud.r-project.org/web/checks/check_results_ps.html","check_result":[{"category":"ERROR","number_checks":1},{"category":"OK","number_checks":11}],"version":null},{"package":"rcmdcheck","url":"https://cloud.r-project.org/web/checks/check_results_rcmdcheck.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"rcorpora","url":"https://cloud.r-project.org/web/checks/check_results_rcorpora.html","check_result":[{"category":"NOTE","number_checks":7},{"category":"OK","number_checks":5}],"version":null},{"package":"rematch2","url":"https://cloud.r-project.org/web/checks/check_results_rematch2.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"rhub","url":"https://cloud.r-project.org/web/checks/check_results_rhub.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"rversions","url":"https://cloud.r-project.org/web/checks/check_results_rversions.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"sand","url":"https://cloud.r-project.org/web/checks/check_results_sand.html","check_result":[{"category":"NOTE","number_checks":11},{"category":"OK","number_checks":1}],"version":null},{"package":"sankey","url":"https://cloud.r-project.org/web/checks/check_results_sankey.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"secret","url":"https://cloud.r-project.org/web/checks/check_results_secret.html","check_result":[{"category":"OK","number_checks":9}],"version":null},{"package":"sessioninfo","url":"https://cloud.r-project.org/web/checks/check_results_sessioninfo.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"showimage","url":"https://cloud.r-project.org/web/checks/check_results_showimage.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"tracer","url":"https://cloud.r-project.org/web/checks/check_results_tracer.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"webdriver","url":"https://cloud.r-project.org/web/checks/check_results_webdriver.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"whoami","url":"https://cloud.r-project.org/web/checks/check_results_whoami.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"xmlparsedata","url":"https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"xopen","url":"https://cloud.r-project.org/web/checks/check_results_xopen.html","check_result":[{"category":"OK","number_checks":12}],"version":null},{"package":"zip","url":"https://cloud.r-project.org/web/checks/check_results_zip.html","check_result":[{"category":"OK","number_checks":12}],"version":null}],"date_updated":"2020-05-09T12:02:28.032Z"}}
+{
+    "error": null,
+    "data": {
+        "_id": "csardi.gabor_at_gmail.com",
+        "email": "csardi.gabor_at_gmail.com",
+        "name": "Gábor Csárdi",
+        "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
+        "table": [
+            {
+                "package": "asciicast",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "callr",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "cleancall",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "cli",
+                "any": true,
+                "ok": 11,
+                "note": 0,
+                "warn": 1,
+                "error": 0
+            },
+            {
+                "package": "cliapp",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "clisymbols",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "cranlike",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "cranlogs",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "crayon",
+                "any": true,
+                "ok": 11,
+                "note": 0,
+                "warn": 0,
+                "error": 1
+            },
+            {
+                "package": "debugme",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "desc",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "disposables",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "dotenv",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "filelock",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "franc",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "gh",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "igraph",
+                "any": true,
+                "ok": 5,
+                "note": 7,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "igraphdata",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "isa2",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "keypress",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "keyring",
+                "any": true,
+                "ok": 10,
+                "note": 2,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "liteq",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "lpSolve",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "pak",
+                "any": true,
+                "ok": 11,
+                "note": 1,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "parsedate",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "pingr",
+                "any": true,
+                "ok": 9,
+                "note": 0,
+                "warn": 0,
+                "error": 3
+            },
+            {
+                "package": "pkgcache",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "pkgconfig",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "pkgsearch",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "praise",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "presser",
+                "any": true,
+                "ok": 10,
+                "note": 0,
+                "warn": 0,
+                "error": 1
+            },
+            {
+                "package": "prettycode",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "prettyunits",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "processx",
+                "any": true,
+                "ok": 11,
+                "note": 0,
+                "warn": 1,
+                "error": 0
+            },
+            {
+                "package": "progress",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "ps",
+                "any": true,
+                "ok": 11,
+                "note": 0,
+                "warn": 0,
+                "error": 1
+            },
+            {
+                "package": "rcmdcheck",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "rcorpora",
+                "any": true,
+                "ok": 5,
+                "note": 7,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "rematch2",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "rhub",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "rversions",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "sand",
+                "any": true,
+                "ok": 1,
+                "note": 11,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "sankey",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "secret",
+                "any": false,
+                "ok": 9,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "sessioninfo",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "showimage",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "tracer",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "webdriver",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "whoami",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "xmlparsedata",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "xopen",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "zip",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            }
+        ],
+        "packages": [
+            {
+                "package": "asciicast",
+                "url": "https://cloud.r-project.org/web/checks/check_results_asciicast.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "callr",
+                "url": "https://cloud.r-project.org/web/checks/check_results_callr.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "cleancall",
+                "url": "https://cloud.r-project.org/web/checks/check_results_cleancall.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "cli",
+                "url": "https://cloud.r-project.org/web/checks/check_results_cli.html",
+                "check_result": [
+                    {
+                        "category": "WARN",
+                        "number_checks": 1
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 11
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "cliapp",
+                "url": "https://cloud.r-project.org/web/checks/check_results_cliapp.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "clisymbols",
+                "url": "https://cloud.r-project.org/web/checks/check_results_clisymbols.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "cranlike",
+                "url": "https://cloud.r-project.org/web/checks/check_results_cranlike.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "cranlogs",
+                "url": "https://cloud.r-project.org/web/checks/check_results_cranlogs.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "crayon",
+                "url": "https://cloud.r-project.org/web/checks/check_results_crayon.html",
+                "check_result": [
+                    {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 11
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "debugme",
+                "url": "https://cloud.r-project.org/web/checks/check_results_debugme.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "desc",
+                "url": "https://cloud.r-project.org/web/checks/check_results_desc.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "disposables",
+                "url": "https://cloud.r-project.org/web/checks/check_results_disposables.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "dotenv",
+                "url": "https://cloud.r-project.org/web/checks/check_results_dotenv.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "filelock",
+                "url": "https://cloud.r-project.org/web/checks/check_results_filelock.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "franc",
+                "url": "https://cloud.r-project.org/web/checks/check_results_franc.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "gh",
+                "url": "https://cloud.r-project.org/web/checks/check_results_gh.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "igraph",
+                "url": "https://cloud.r-project.org/web/checks/check_results_igraph.html",
+                "check_result": [
+                    {
+                        "category": "NOTE",
+                        "number_checks": 7
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 5
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "igraphdata",
+                "url": "https://cloud.r-project.org/web/checks/check_results_igraphdata.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "isa2",
+                "url": "https://cloud.r-project.org/web/checks/check_results_isa2.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "keypress",
+                "url": "https://cloud.r-project.org/web/checks/check_results_keypress.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "keyring",
+                "url": "https://cloud.r-project.org/web/checks/check_results_keyring.html",
+                "check_result": [
+                    {
+                        "category": "NOTE",
+                        "number_checks": 2
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 10
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "liteq",
+                "url": "https://cloud.r-project.org/web/checks/check_results_liteq.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "lpSolve",
+                "url": "https://cloud.r-project.org/web/checks/check_results_lpSolve.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "pak",
+                "url": "https://cloud.r-project.org/web/checks/check_results_pak.html",
+                "check_result": [
+                    {
+                        "category": "NOTE",
+                        "number_checks": 1
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 11
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "parsedate",
+                "url": "https://cloud.r-project.org/web/checks/check_results_parsedate.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "pingr",
+                "url": "https://cloud.r-project.org/web/checks/check_results_pingr.html",
+                "check_result": [
+                    {
+                        "category": "ERROR",
+                        "number_checks": 3
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 9
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "pkgcache",
+                "url": "https://cloud.r-project.org/web/checks/check_results_pkgcache.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "pkgconfig",
+                "url": "https://cloud.r-project.org/web/checks/check_results_pkgconfig.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "pkgsearch",
+                "url": "https://cloud.r-project.org/web/checks/check_results_pkgsearch.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "praise",
+                "url": "https://cloud.r-project.org/web/checks/check_results_praise.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "presser",
+                "url": "https://cloud.r-project.org/web/checks/check_results_presser.html",
+                "check_result": [
+                    {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 10
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "prettycode",
+                "url": "https://cloud.r-project.org/web/checks/check_results_prettycode.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "prettyunits",
+                "url": "https://cloud.r-project.org/web/checks/check_results_prettyunits.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "processx",
+                "url": "https://cloud.r-project.org/web/checks/check_results_processx.html",
+                "check_result": [
+                    {
+                        "category": "WARN",
+                        "number_checks": 1
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 11
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "progress",
+                "url": "https://cloud.r-project.org/web/checks/check_results_progress.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "ps",
+                "url": "https://cloud.r-project.org/web/checks/check_results_ps.html",
+                "check_result": [
+                    {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 11
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "rcmdcheck",
+                "url": "https://cloud.r-project.org/web/checks/check_results_rcmdcheck.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "rcorpora",
+                "url": "https://cloud.r-project.org/web/checks/check_results_rcorpora.html",
+                "check_result": [
+                    {
+                        "category": "NOTE",
+                        "number_checks": 7
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 5
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "rematch2",
+                "url": "https://cloud.r-project.org/web/checks/check_results_rematch2.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "rhub",
+                "url": "https://cloud.r-project.org/web/checks/check_results_rhub.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "rversions",
+                "url": "https://cloud.r-project.org/web/checks/check_results_rversions.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "sand",
+                "url": "https://cloud.r-project.org/web/checks/check_results_sand.html",
+                "check_result": [
+                    {
+                        "category": "NOTE",
+                        "number_checks": 11
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 1
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "sankey",
+                "url": "https://cloud.r-project.org/web/checks/check_results_sankey.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "secret",
+                "url": "https://cloud.r-project.org/web/checks/check_results_secret.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 9
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "sessioninfo",
+                "url": "https://cloud.r-project.org/web/checks/check_results_sessioninfo.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "showimage",
+                "url": "https://cloud.r-project.org/web/checks/check_results_showimage.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "tracer",
+                "url": "https://cloud.r-project.org/web/checks/check_results_tracer.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "webdriver",
+                "url": "https://cloud.r-project.org/web/checks/check_results_webdriver.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "whoami",
+                "url": "https://cloud.r-project.org/web/checks/check_results_whoami.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "xmlparsedata",
+                "url": "https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "xopen",
+                "url": "https://cloud.r-project.org/web/checks/check_results_xopen.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "zip",
+                "url": "https://cloud.r-project.org/web/checks/check_results_zip.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            }
+        ],
+        "date_updated": "2020-05-09T12:02:28.032Z"
+    }
+}
 ```
 
 

@@ -26,13 +26,10 @@ search = true
 key = "r"
 name = "R" 
 [[params.language_tabs]]
-key = "shell"
-name = "Shell" 
-[[params.language_tabs]]
 key = "json"
-name = "JSON"
+name = "Shell"
 [[params.language_tabs]]
 key = "yaml"
-name = "YAML (headers)"
+name = "Headers"
 
 ignoreFiles = ["\\.Rmd$", "\\.html$"]

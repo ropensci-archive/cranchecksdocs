@@ -12,6 +12,10 @@ source("hooks.R")
 
 # Maintainers
 
+Get maintainer based checks.
+
+[Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cch_maintainers.html).
+
 ## Maintainers
 
 Get all maintainers.
