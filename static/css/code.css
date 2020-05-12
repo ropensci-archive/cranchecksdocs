@@ -50,13 +50,13 @@
 /* LiteralStringRegex */ .chroma .sr { color: #0086d2 }
 /* LiteralStringSingle */ .chroma .s1 { color: #0086d2 }
 /* LiteralStringSymbol */ .chroma .ss { color: #0086d2 }
-/* LiteralNumber */ .chroma .m { color: #0086f7; font-weight: bold }
-/* LiteralNumberBin */ .chroma .mb { color: #0086f7; font-weight: bold }
-/* LiteralNumberFloat */ .chroma .mf { color: #0086f7; font-weight: bold }
-/* LiteralNumberHex */ .chroma .mh { color: #0086f7; font-weight: bold }
-/* LiteralNumberInteger */ .chroma .mi { color: #0086f7; font-weight: bold }
-/* LiteralNumberIntegerLong */ .chroma .il { color: #0086f7; font-weight: bold }
-/* LiteralNumberOct */ .chroma .mo { color: #0086f7; font-weight: bold }
+/* LiteralNumber */ .chroma .m { color: #70A5FF; font-weight: bold }
+/* LiteralNumberBin */ .chroma .mb { color: #70A5FF; font-weight: bold }
+/* LiteralNumberFloat */ .chroma .mf { color: #70A5FF; font-weight: bold }
+/* LiteralNumberHex */ .chroma .mh { color: #70A5FF; font-weight: bold }
+/* LiteralNumberInteger */ .chroma .mi { color: #70A5FF; font-weight: bold }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #70A5FF; font-weight: bold }
+/* LiteralNumberOct */ .chroma .mo { color: #70A5FF; font-weight: bold }
 /* Operator */ .chroma .o {  }
 /* OperatorWord */ .chroma .ow {  }
 /* Punctuation */ .chroma .p {  }
