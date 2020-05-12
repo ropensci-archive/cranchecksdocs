@@ -5,6 +5,7 @@
  *    user zoom.
  */
 @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -369,8 +370,8 @@ html, body, .content h3, .content h4, .content h5, .content h6, .content h2, .co
   font-weight: 700; }
 
 .content pre, .content code {
-  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
-  font-size: 12px;
+  font-family: inconsolata, Menlo, Monaco, courier new, monospace;
+  font-size: 14px;
   line-height: 1.5; }
 
 .content code {

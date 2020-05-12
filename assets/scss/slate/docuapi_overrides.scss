@@ -10,5 +10,8 @@ $nav-active-bg: #000 !default;
 // FONTS
 ////////////////////
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 $font-default-family: 'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-code-family: inconsolata, Menlo, Monaco, courier new, monospace !default;
+$font-code-size: 14px !default;
