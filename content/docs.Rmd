@@ -1,0 +1,20 @@
+---
+weight: 10
+title: Docs
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+source("hooks.R")
+```
+
+# Docs
+
+This path redirects to the docs (hopefully here! :smile_cat:). See Headers tab.
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/docs")
+get_and_show(args)
+```
