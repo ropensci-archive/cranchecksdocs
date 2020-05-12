@@ -14,7 +14,7 @@
 /* KeywordReserved */ .chroma .kr { color: #FF7642; font-weight: bold }
 /* KeywordType */ .chroma .kt { color: #cdcaa9; font-weight: bold }
 /* Name */ .chroma .n {  }
-/* NameAttribute */ .chroma .na { color: #ff0086; font-weight: bold }
+/* NameAttribute */ .chroma .na { color: #FF75A5; font-weight: bold }
 /* NameBuiltin */ .chroma .nb {  }
 /* NameBuiltinPseudo */ .chroma .bp {  }
 /* NameClass */ .chroma .nc {  }
@@ -22,7 +22,7 @@
 /* NameDecorator */ .chroma .nd {  }
 /* NameEntity */ .chroma .ni {  }
 /* NameException */ .chroma .ne {  }
-/* NameFunction */ .chroma .nf { color: #ff0086; font-weight: bold }
+/* NameFunction */ .chroma .nf { color: #FF75A5; font-weight: bold }
 /* NameFunctionMagic */ .chroma .fm {  }
 /* NameLabel */ .chroma .nl {  }
 /* NameNamespace */ .chroma .nn {  }
@@ -60,11 +60,11 @@
 /* Operator */ .chroma .o {  }
 /* OperatorWord */ .chroma .ow {  }
 /* Punctuation */ .chroma .p {  }
-/* Comment */ .chroma .c { color: #008800; background-color: #0f140f; font-style: italic }
-/* CommentHashbang */ .chroma .ch { color: #008800; background-color: #0f140f; font-style: italic }
-/* CommentMultiline */ .chroma .cm { color: #008800; background-color: #0f140f; font-style: italic }
-/* CommentSingle */ .chroma .c1 { color: #008800; background-color: #0f140f; font-style: italic }
-/* CommentSpecial */ .chroma .cs { color: #008800; background-color: #0f140f; font-style: italic }
+/* Comment */ .chroma .c { color: #51B651; background-color: #0f140f; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: #51B651; background-color: #0f140f; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: #51B651; background-color: #0f140f; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: #51B651; background-color: #0f140f; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: #51B651; background-color: #0f140f; font-style: italic }
 /* CommentPreproc */ .chroma .cp { color: #ff0007; background-color: #0f140f; font-weight: bold; font-style: italic }
 /* CommentPreprocFile */ .chroma .cpf { color: #ff0007; background-color: #0f140f; font-weight: bold; font-style: italic }
 /* Generic */ .chroma .g {  }
