@@ -46,9 +46,11 @@ cchecks::cch_pkgs(x = "rhub")
 
 ## Packages by name (history)
 
-Get package history by name.
+Get package history by name. 
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/pkgs/rhub/history")
 get_and_show(args)
 ```
+
+For historical data across packages see the [history endpoint](#history).

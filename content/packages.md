@@ -32,7 +32,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 30691
-date: Tue, 12 May 2020 11:10:40 GMT
+date: Tue, 12 May 2020 13:33:33 GMT
 
 ```
 ```json
@@ -165,7 +165,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
                 }
             ],
             "check_details": null,
-            "date_updated": "2020-05-12T09:03:10.775Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         },
         {
             "_id": "di",
@@ -290,7 +290,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
                 }
             ],
             "check_details": null,
-            "date_updated": "2020-05-12T09:03:10.776Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         },
         {
             "_id": "GAR",
@@ -435,7 +435,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
 
                 ]
             },
-            "date_updated": "2020-05-12T09:03:10.776Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         },
         {
             "_id": "MetABEL",
@@ -581,7 +581,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
 
                 ]
             },
-            "date_updated": "2020-05-12T09:03:10.776Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         },
         {
             "_id": "quantable",
@@ -706,7 +706,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
                 }
             ],
             "check_details": null,
-            "date_updated": "2020-05-12T09:03:10.776Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         },
         {
             "_id": "ibb",
@@ -772,7 +772,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
 
                 ]
             },
-            "date_updated": "2020-05-12T09:03:10.776Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         },
         {
             "_id": "ChIPtest",
@@ -909,7 +909,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
 
                 ]
             },
-            "date_updated": "2020-05-12T09:03:10.776Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         },
         {
             "_id": "TSF",
@@ -1034,7 +1034,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
                 }
             ],
             "check_details": null,
-            "date_updated": "2020-05-12T09:03:10.776Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         },
         {
             "_id": "apercu",
@@ -1174,7 +1174,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
 
                 ]
             },
-            "date_updated": "2020-05-12T09:03:10.776Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         },
         {
             "_id": "SPRT",
@@ -1319,7 +1319,7 @@ date: Tue, 12 May 2020 11:10:40 GMT
 
                 ]
             },
-            "date_updated": "2020-05-12T09:03:10.776Z"
+            "date_updated": "2020-05-12T12:04:06.450Z"
         }
     ]
 }
@@ -1421,16 +1421,16 @@ $data
 9                                                                                                                                                                                  r-devel-linux-x86_64-fedora-clang, r-devel-linux-x86_64-fedora-gcc, r-patched-solaris-x86, r-release-osx-x86_64, r-oldrel-osx-x86_64
 10                      r-devel-linux-x86_64-debian-clang, r-devel-linux-x86_64-debian-gcc, r-devel-linux-x86_64-fedora-clang, r-devel-linux-x86_64-fedora-gcc, r-devel-windows-ix86+x86_64, r-patched-linux-x86_64, r-patched-solaris-x86, r-release-linux-x86_64, r-release-osx-x86_64, r-release-windows-ix86+x86_64
    check_details.additional_issues             date_updated
-1                             NULL 2020-05-12T09:03:10.775Z
-2                             NULL 2020-05-12T09:03:10.776Z
-3                             NULL 2020-05-12T09:03:10.776Z
-4                             NULL 2020-05-12T09:03:10.776Z
-5                             NULL 2020-05-12T09:03:10.776Z
-6                             NULL 2020-05-12T09:03:10.776Z
-7                             NULL 2020-05-12T09:03:10.776Z
-8                             NULL 2020-05-12T09:03:10.776Z
-9                             NULL 2020-05-12T09:03:10.776Z
-10                            NULL 2020-05-12T09:03:10.776Z
+1                             NULL 2020-05-12T12:04:06.450Z
+2                             NULL 2020-05-12T12:04:06.450Z
+3                             NULL 2020-05-12T12:04:06.450Z
+4                             NULL 2020-05-12T12:04:06.450Z
+5                             NULL 2020-05-12T12:04:06.450Z
+6                             NULL 2020-05-12T12:04:06.450Z
+7                             NULL 2020-05-12T12:04:06.450Z
+8                             NULL 2020-05-12T12:04:06.450Z
+9                             NULL 2020-05-12T12:04:06.450Z
+10                            NULL 2020-05-12T12:04:06.450Z
 
 ```
 
@@ -1450,7 +1450,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 2854
-date: Tue, 12 May 2020 11:10:42 GMT
+date: Tue, 12 May 2020 13:33:35 GMT
 
 ```
 ```json
@@ -1579,7 +1579,7 @@ date: Tue, 12 May 2020 11:10:42 GMT
             }
         ],
         "check_details": null,
-        "date_updated": "2020-05-12T09:03:10.985Z"
+        "date_updated": "2020-05-12T12:04:06.662Z"
     }
 }
 ```
@@ -1654,13 +1654,13 @@ $data$check_details
 NULL
 
 $data$date_updated
-[1] "2020-05-12T09:03:10.985Z"
+[1] "2020-05-12T12:04:06.662Z"
 
 ```
 
 ## Packages by name (history)
 
-Get package history by name.
+Get package history by name. 
 
 ```shell
 curl https://cranchecks.info/pkgs/rhub/history | jq .
@@ -1674,7 +1674,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 27367
-date: Tue, 12 May 2020 11:10:43 GMT
+date: Tue, 12 May 2020 13:33:36 GMT
 
 ```
 ```json
@@ -2907,3 +2907,5 @@ date: Tue, 12 May 2020 11:10:43 GMT
     }
 }
 ```
+
+For historical data across packages see the [history endpoint](#history).

@@ -27,11 +27,11 @@ curl https://cranchecks.info/badges/summary/rhub | jq .
 HTTP/2 200 
 cache-control: max-age=300, public
 content-type: image/svg+xml; charset=utf-8
-expires: Tue, 12 May 2020 13:36:01 GMT
+expires: Tue, 12 May 2020 13:38:12 GMT
 server: Caddy
 x-content-type-options: nosniff
 content-length: 855
-date: Tue, 12 May 2020 13:31:01 GMT
+date: Tue, 12 May 2020 13:33:12 GMT
 
 ```
 ```xml
@@ -81,11 +81,11 @@ curl https://cranchecks.info/badges/worst/stringi | jq .
 HTTP/2 200 
 cache-control: max-age=300, public
 content-type: image/svg+xml; charset=utf-8
-expires: Tue, 12 May 2020 13:36:02 GMT
+expires: Tue, 12 May 2020 13:38:13 GMT
 server: Caddy
 x-content-type-options: nosniff
 content-length: 862
-date: Tue, 12 May 2020 13:31:02 GMT
+date: Tue, 12 May 2020 13:33:13 GMT
 
 ```
 ```xml
@@ -137,11 +137,11 @@ curl https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhu
 HTTP/2 200 
 cache-control: max-age=300, public
 content-type: image/svg+xml; charset=utf-8
-expires: Tue, 12 May 2020 13:36:03 GMT
+expires: Tue, 12 May 2020 13:38:14 GMT
 server: Caddy
 x-content-type-options: nosniff
 content-length: 855
-date: Tue, 12 May 2020 13:31:03 GMT
+date: Tue, 12 May 2020 13:33:14 GMT
 
 ```
 ```xml

@@ -25,8 +25,8 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 5970
-date: Tue, 12 May 2020 11:10:46 GMT
+content-length: 5818
+date: Tue, 12 May 2020 13:33:39 GMT
 
 ```
 ```json
@@ -45,7 +45,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                 {
                     "package": "ggnetwork",
                     "any": true,
-                    "ok": 6,
+                    "ok": 7,
                     "note": 5,
                     "warn": 0,
                     "error": 0
@@ -57,22 +57,18 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "url": "https://cloud.r-project.org/web/checks/check_results_ggnetwork.html",
                     "check_result": [
                         {
-                            "category": "FAIL",
-                            "number_checks": 1
-                        },
-                        {
                             "category": "NOTE",
                             "number_checks": 5
                         },
                         {
                             "category": "OK",
-                            "number_checks": 6
+                            "number_checks": 7
                         }
                     ],
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         },
         {
             "_id": "hyasrebi_at_yahoo.com",
@@ -125,7 +121,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         },
         {
             "_id": "ly_ding_at_126.com",
@@ -152,7 +148,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         },
         {
             "_id": "bodri.mh3_at_gmail.com",
@@ -186,7 +182,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         },
         {
             "_id": "erich.neuwirth_at_univie.ac.at",
@@ -245,7 +241,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         },
         {
             "_id": "markus.boenn.sf_at_googlemail.com",
@@ -279,7 +275,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         },
         {
             "_id": "clement.benard_at_safrangroup.com",
@@ -290,7 +286,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                 {
                     "package": "sirus",
                     "any": true,
-                    "ok": 8,
+                    "ok": 9,
                     "note": 3,
                     "warn": 0,
                     "error": 0
@@ -302,22 +298,18 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "url": "https://cloud.r-project.org/web/checks/check_results_sirus.html",
                     "check_result": [
                         {
-                            "category": "FAIL",
-                            "number_checks": 1
-                        },
-                        {
                             "category": "NOTE",
                             "number_checks": 3
                         },
                         {
                             "category": "OK",
-                            "number_checks": 8
+                            "number_checks": 9
                         }
                     ],
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         },
         {
             "_id": "s.greilich_at_dkfz.de",
@@ -351,7 +343,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         },
         {
             "_id": "eric_at_opsani.com",
@@ -362,7 +354,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                 {
                     "package": "soobench",
                     "any": true,
-                    "ok": 10,
+                    "ok": 11,
                     "note": 1,
                     "warn": 0,
                     "error": 0
@@ -374,22 +366,18 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "url": "https://cloud.r-project.org/web/checks/check_results_soobench.html",
                     "check_result": [
                         {
-                            "category": "FAIL",
-                            "number_checks": 1
-                        },
-                        {
                             "category": "NOTE",
                             "number_checks": 1
                         },
                         {
                             "category": "OK",
-                            "number_checks": 10
+                            "number_checks": 11
                         }
                     ],
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         },
         {
             "_id": "egor_at_tillt.net",
@@ -400,7 +388,7 @@ date: Tue, 12 May 2020 11:10:46 GMT
                 {
                     "package": "egor",
                     "any": true,
-                    "ok": 10,
+                    "ok": 11,
                     "note": 0,
                     "warn": 0,
                     "error": 1
@@ -412,22 +400,18 @@ date: Tue, 12 May 2020 11:10:46 GMT
                     "url": "https://cloud.r-project.org/web/checks/check_results_egor.html",
                     "check_result": [
                         {
-                            "category": "FAIL",
-                            "number_checks": 1
-                        },
-                        {
                             "category": "ERROR",
                             "number_checks": 1
                         },
                         {
                             "category": "OK",
-                            "number_checks": 10
+                            "number_checks": 11
                         }
                     ],
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-12T08:00:54.885Z"
+            "date_updated": "2020-05-12T12:02:32.677Z"
         }
     ]
 }
@@ -454,7 +438,7 @@ location: https://cranchecks.info/heartbeat
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Tue, 12 May 2020 11:10:47 GMT
+date: Tue, 12 May 2020 13:33:40 GMT
 
 ```
 
@@ -474,7 +458,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 52
-date: Tue, 12 May 2020 11:10:48 GMT
+date: Tue, 12 May 2020 13:33:40 GMT
 
 ```
 ```json
@@ -500,7 +484,7 @@ server: Caddy
 x-cascade: pass
 x-content-type-options: nosniff
 content-length: 27
-date: Tue, 12 May 2020 11:10:48 GMT
+date: Tue, 12 May 2020 13:33:41 GMT
 
 ```
 ```json

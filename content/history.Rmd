@@ -18,6 +18,8 @@ On success, you'll get a 302 redirect, with a temporary link (expires in 15 minu
 
 Follow redirects to make sure that you are redirected to the link.
 
+For historical data _by package_ refer to the [package history endpoint](#packages-by-name-history).
+
 If you don't follow redirects, you'll get a JSON body telling you to redirect to the Location header link.
 
 ```{r results="asis"}
