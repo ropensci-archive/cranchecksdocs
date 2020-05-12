@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -361,7 +361,7 @@ th {
   clear: none; }
 
 html, body, .content h3, .content h4, .content h5, .content h6, .content h2, .content h1 {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   font-weight: 400; }
 
@@ -447,7 +447,7 @@ html, body {
   left: 0;
   bottom: 0;
   width: 230px;
-  background-color: #254E70;
+  background-color: #002642;
   font-size: 13px;
   font-weight: bold; }
   .toc-wrapper .lang-selector {
@@ -462,7 +462,7 @@ html, body {
   .toc-wrapper > .search {
     position: relative; }
     .toc-wrapper > .search input {
-      background: #254E70;
+      background: #002642;
       border-width: 0 0 1px 0;
       border-color: #666;
       padding: 6px 0 6px 20px;
@@ -510,7 +510,7 @@ html, body {
     transition-timing-function: linear;
     transition-duration: 200ms; }
   .toc-wrapper .toc-link.active {
-    background-color: #0F75D4;
+    background-color: #000;
     color: #fff; }
   .toc-wrapper .toc-link.active-parent {
     background-color: #1E2224;
@@ -728,7 +728,7 @@ html, body {
     background: linear-gradient(to top left, #F7E633 0%, #F1D32F 100%); }
 
 .content pre, .content blockquote {
-  background-color: #1E2224;
+  background-color: #000;
   color: #fff;
   margin: 0;
   width: 50%;
@@ -784,6 +784,6 @@ html, body {
   color: #909090; }
 
 .highlight, .highlight .w {
-  background-color: #1E2224; }
+  background-color: #000; }
 
 /*# sourceMappingURL=screen.css.map */

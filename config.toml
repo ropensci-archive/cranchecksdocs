@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "CRAN checks API"
 disableKinds = ["taxonomyTerm"]
 enableEmoji = true
+pygmentsUseClasses=true
 
 theme = "docuapi"
 themesdir = "themes"
@@ -25,7 +26,7 @@ toc_footers = [
 
 [params]
 search = true
-custom_css = ["css/custom.css"]
+custom_css = ["css/custom.css", "css/code.css"]
   
 # Configure the language example tabs.
 [[params.language_tabs]]
