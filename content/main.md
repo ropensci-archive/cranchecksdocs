@@ -3,11 +3,13 @@ weight: 10
 title: API Reference
 ---
 
-# Introduction
+# CRAN checks API
 
 CRAN checks API is an API providing access to [CRAN checks](https://blog.r-hub.io/2019/04/25/r-devel-linux-x86-64-debian-clang/) data in a machine-readable format.
 
 For a recent overview of the API, check out the [Overview of the CRAN checks API](https://blog.r-hub.io/2019/06/10/cran-checks-api/) blog post on the R-Hub blog.
+
+The API was created and is maintained by [Scott Chamberlain](https://ropensci.org/author/scott-chamberlain/).
 
 ## Base URL
 
