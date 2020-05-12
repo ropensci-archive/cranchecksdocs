@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 12
 title: Docs
 output: 
   html_document:
@@ -25,6 +25,6 @@ location: https://github.com/ropensci/cchecksapi/blob/master/docs/api_docs.md
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Tue, 12 May 2020 13:21:28 GMT
+date: Tue, 12 May 2020 13:22:31 GMT
 
 ```

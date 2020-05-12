@@ -12,7 +12,7 @@ source("hooks.R")
 
 # Badges
 
-Get packages based checks.
+Get packages based checks to display in your package README for instance.
 
 ## Summary badges
 
@@ -24,5 +24,33 @@ Get badge for CRAN checks summary by package name.
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/badges/summary/rhub")
+get_and_show(args)
+```
+
+## "Worst" badges
+
+Get badge for CRAN checks worst result by package name. :cold_sweat:
+
+`GET [/badges/worst/{package_name}]`
+
+![Badges example, worst for the stringi package](https://cranchecks.info/badges/worst/stringi)
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/badges/worst/stringi")
+get_and_show(args)
+```
+
+## Flavor badges
+
+Get badge for summary of CRAN checks by flavor and package name.
+
+`GET [/badges/flavor/{flavor}/{package}]`
+
+[List of platforms/flavors](https://cran.r-project.org/web/checks/check_flavors.html)
+
+![Badges example, worst for the stringi package](https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub)
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub")
 get_and_show(args)
 ```
