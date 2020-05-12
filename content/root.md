@@ -12,7 +12,7 @@ output:
 
 This path redirects to /heartbeat
 
-```JavaScript
+```shell
 curl https://cranchecks.info/ | jq .
 ```
 ```yaml
@@ -25,6 +25,6 @@ location: https://cranchecks.info/heartbeat
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Sat, 09 May 2020 15:26:03 GMT
+date: Tue, 12 May 2020 11:10:50 GMT
 
 ```

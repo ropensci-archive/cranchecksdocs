@@ -8,7 +8,7 @@ knitr::knit_hooks$set(
   source = function(x, options) {
     if(options$results == "asis") {
       paste0(
-        "```JavaScript\n",
+        "```shell\n",
         paste("curl",
               gsub('\\"\\)*', "",
                    gsub('args <- c\\(\\"', "", x[1])
@@ -59,6 +59,14 @@ get_and_show <- function(args) {
       return(cat(headers))
     }
     
+    lang <- function(output) {
+      if (grepl("^<svg", output)) {
+        return("xml")
+      }
+      
+      return("json")
+    }
+    
     transform_output <- function(output) {
       if (grepl("^<svg", output)) {
         cat(as.character(xml2::read_xml(output)))
@@ -76,7 +84,7 @@ get_and_show <- function(args) {
     cat(
     paste0(
         headers,
-        "```JavaScript\n",
+        "```", lang(output),"\n",
         paste0(
           capture.output(transform_output(output)),
         collapse = "\n"),

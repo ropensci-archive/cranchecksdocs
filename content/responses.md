@@ -14,7 +14,7 @@ output:
 
 Request good!
 
-```JavaScript
+```shell
 curl https://cranchecks.info/maintainers | jq .
 ```
 ```yaml
@@ -25,13 +25,13 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 5744
-date: Sat, 09 May 2020 15:25:59 GMT
+content-length: 5970
+date: Tue, 12 May 2020 11:10:46 GMT
 
 ```
-```JavaScript
+```json
 {
-    "found": 9396,
+    "found": 9412,
     "count": 10,
     "offset": null,
     "error": null,
@@ -45,7 +45,7 @@ date: Sat, 09 May 2020 15:25:59 GMT
                 {
                     "package": "ggnetwork",
                     "any": true,
-                    "ok": 7,
+                    "ok": 6,
                     "note": 5,
                     "warn": 0,
                     "error": 0
@@ -57,18 +57,22 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "url": "https://cloud.r-project.org/web/checks/check_results_ggnetwork.html",
                     "check_result": [
                         {
+                            "category": "FAIL",
+                            "number_checks": 1
+                        },
+                        {
                             "category": "NOTE",
                             "number_checks": 5
                         },
                         {
                             "category": "OK",
-                            "number_checks": 7
+                            "number_checks": 6
                         }
                     ],
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.559Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         },
         {
             "_id": "hyasrebi_at_yahoo.com",
@@ -121,7 +125,7 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.560Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         },
         {
             "_id": "ly_ding_at_126.com",
@@ -148,7 +152,7 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.560Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         },
         {
             "_id": "bodri.mh3_at_gmail.com",
@@ -182,7 +186,7 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.560Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         },
         {
             "_id": "erich.neuwirth_at_univie.ac.at",
@@ -241,7 +245,7 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.560Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         },
         {
             "_id": "markus.boenn.sf_at_googlemail.com",
@@ -275,7 +279,7 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.560Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         },
         {
             "_id": "clement.benard_at_safrangroup.com",
@@ -286,7 +290,7 @@ date: Sat, 09 May 2020 15:25:59 GMT
                 {
                     "package": "sirus",
                     "any": true,
-                    "ok": 9,
+                    "ok": 8,
                     "note": 3,
                     "warn": 0,
                     "error": 0
@@ -298,18 +302,22 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "url": "https://cloud.r-project.org/web/checks/check_results_sirus.html",
                     "check_result": [
                         {
+                            "category": "FAIL",
+                            "number_checks": 1
+                        },
+                        {
                             "category": "NOTE",
                             "number_checks": 3
                         },
                         {
                             "category": "OK",
-                            "number_checks": 9
+                            "number_checks": 8
                         }
                     ],
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.560Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         },
         {
             "_id": "s.greilich_at_dkfz.de",
@@ -343,7 +351,7 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.560Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         },
         {
             "_id": "eric_at_opsani.com",
@@ -354,7 +362,7 @@ date: Sat, 09 May 2020 15:25:59 GMT
                 {
                     "package": "soobench",
                     "any": true,
-                    "ok": 11,
+                    "ok": 10,
                     "note": 1,
                     "warn": 0,
                     "error": 0
@@ -366,18 +374,22 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "url": "https://cloud.r-project.org/web/checks/check_results_soobench.html",
                     "check_result": [
                         {
+                            "category": "FAIL",
+                            "number_checks": 1
+                        },
+                        {
                             "category": "NOTE",
                             "number_checks": 1
                         },
                         {
                             "category": "OK",
-                            "number_checks": 11
+                            "number_checks": 10
                         }
                     ],
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.560Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         },
         {
             "_id": "egor_at_tillt.net",
@@ -387,11 +399,11 @@ date: Sat, 09 May 2020 15:25:59 GMT
             "table": [
                 {
                     "package": "egor",
-                    "any": false,
-                    "ok": 12,
+                    "any": true,
+                    "ok": 10,
                     "note": 0,
                     "warn": 0,
-                    "error": 0
+                    "error": 1
                 }
             ],
             "packages": [
@@ -399,12 +411,23 @@ date: Sat, 09 May 2020 15:25:59 GMT
                     "package": "egor",
                     "url": "https://cloud.r-project.org/web/checks/check_results_egor.html",
                     "check_result": [
-
+                        {
+                            "category": "FAIL",
+                            "number_checks": 1
+                        },
+                        {
+                            "category": "ERROR",
+                            "number_checks": 1
+                        },
+                        {
+                            "category": "OK",
+                            "number_checks": 10
+                        }
                     ],
                     "version": null
                 }
             ],
-            "date_updated": "2020-05-09T12:02:27.560Z"
+            "date_updated": "2020-05-12T08:00:54.885Z"
         }
     ]
 }
@@ -418,7 +441,7 @@ Given on a delete request, indicating success, response body should be empty
 
 The root `/`, redirects to `/heartbeat`, and `/docs` redirects to these documents
 
-```JavaScript
+```shell
 curl https://cranchecks.info/ | jq .
 ```
 ```yaml
@@ -431,7 +454,7 @@ location: https://cranchecks.info/heartbeat
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Sat, 09 May 2020 15:26:00 GMT
+date: Tue, 12 May 2020 11:10:47 GMT
 
 ```
 
@@ -439,7 +462,7 @@ date: Sat, 09 May 2020 15:26:00 GMT
 
 When you have a malformed request, fix it and try again
 
-```JavaScript
+```shell
 curl https://cranchecks.info/maintainers/blablabla | jq .
 ```
 ```yaml
@@ -451,10 +474,10 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 52
-date: Sat, 09 May 2020 15:26:01 GMT
+date: Tue, 12 May 2020 11:10:48 GMT
 
 ```
-```JavaScript
+```json
 {
     "error": {
         "message": "no results found"
@@ -467,7 +490,7 @@ date: Sat, 09 May 2020 15:26:01 GMT
 
 When you request a route that does not exist, fix it and try again
 
-```JavaScript
+```shell
 curl https://cranchecks.info/maintainer | jq .
 ```
 ```yaml
@@ -477,10 +500,10 @@ server: Caddy
 x-cascade: pass
 x-content-type-options: nosniff
 content-length: 27
-date: Sat, 09 May 2020 15:26:01 GMT
+date: Tue, 12 May 2020 11:10:48 GMT
 
 ```
-```JavaScript
+```json
 {
     "error": "route not found"
 }

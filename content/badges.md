@@ -20,21 +20,21 @@ Get badge for CRAN checks summary by package name.
 
 ![Badges example, summary for the rhub package](https://cranchecks.info/badges/summary/rhub)
 
-```JavaScript
+```shell
 curl https://cranchecks.info/badges/summary/rhub | jq .
 ```
 ```yaml
 HTTP/2 200 
 cache-control: max-age=300, public
 content-type: image/svg+xml; charset=utf-8
-expires: Sat, 09 May 2020 15:34:59 GMT
+expires: Tue, 12 May 2020 11:15:22 GMT
 server: Caddy
 x-content-type-options: nosniff
 content-length: 855
-date: Sat, 09 May 2020 15:29:59 GMT
+date: Tue, 12 May 2020 11:10:22 GMT
 
 ```
-```JavaScript
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="70" height="20">
   <linearGradient id="b" x2="0" y2="100%">

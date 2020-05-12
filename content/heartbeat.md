@@ -14,7 +14,7 @@ Get heartbeat for the cranchecks API
 
 [Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cch_heartbeat.html).
 
-```JavaScript
+```shell
 curl https://cranchecks.info/heartbeat | jq .
 ```
 ```yaml
@@ -26,10 +26,10 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 246
-date: Sat, 09 May 2020 15:25:44 GMT
+date: Tue, 12 May 2020 11:10:29 GMT
 
 ```
-```JavaScript
+```json
 {
     "routes": [
         "/",

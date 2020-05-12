@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -360,7 +361,7 @@ th {
   clear: none; }
 
 html, body, .content h3, .content h4, .content h5, .content h6, .content h2, .content h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   font-weight: 400; }
 
@@ -446,7 +447,7 @@ html, body {
   left: 0;
   bottom: 0;
   width: 230px;
-  background-color: #2E3336;
+  background-color: #254E70;
   font-size: 13px;
   font-weight: bold; }
   .toc-wrapper .lang-selector {
@@ -461,7 +462,7 @@ html, body {
   .toc-wrapper > .search {
     position: relative; }
     .toc-wrapper > .search input {
-      background: #2E3336;
+      background: #254E70;
       border-width: 0 0 1px 0;
       border-color: #666;
       padding: 6px 0 6px 20px;
@@ -584,7 +585,7 @@ html, body {
   padding-bottom: 1px; }
   .page-wrapper .dark-box {
     width: 50%;
-    background-color: #2E3336;
+    background-color: #002642;
     position: absolute;
     right: 0;
     top: 0;
@@ -592,7 +593,7 @@ html, body {
   .page-wrapper .lang-selector {
     position: fixed;
     z-index: 50;
-    border-bottom: 5px solid #2E3336; }
+    border-bottom: 5px solid #002642; }
 
 .lang-selector {
   background-color: #1E2224;
@@ -610,7 +611,7 @@ html, body {
       background-color: #111;
       color: #fff; }
     .lang-selector a.active {
-      background-color: #2E3336;
+      background-color: #002642;
       color: #fff; }
   .lang-selector:after {
     content: '';
@@ -665,7 +666,7 @@ html, body {
     font-size: 10px; }
   .content hr {
     margin: 2em 0;
-    border-top: 2px solid #2E3336;
+    border-top: 2px solid #002642;
     border-bottom: 2px solid #F3F7F9; }
   .content table {
     margin-bottom: 1em;

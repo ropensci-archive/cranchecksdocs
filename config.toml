@@ -4,9 +4,14 @@ title = "CRAN checks API"
 disableKinds = ["taxonomyTerm"]
 enableEmoji = true
 
+theme = "docuapi"
+themesdir = "themes"
+
 [module]
-  [[module.imports]]
-    path = "github.com/bep/docuapi"
+[module.hugoVersion]
+[[module.imports]]
+# We include the theme by "../.." above, but we need one module import for Hugo to detect us as a Hugo Module.
+path="github.com/bep/empty-hugo-module"
 
 [languages.en]
 languageName = "English"
@@ -20,14 +25,16 @@ toc_footers = [
 
 [params]
 search = true
+custom_css = ["css/custom.css"]
   
 # Configure the language example tabs.
 [[params.language_tabs]]
 key = "r"
 name = "R" 
 [[params.language_tabs]]
-key = "JavaScript"
+key = "shell"
 name = "Shell"
+otherlangs = ["json", "xml"]
 [[params.language_tabs]]
 key = "yaml"
 name = "Headers"
