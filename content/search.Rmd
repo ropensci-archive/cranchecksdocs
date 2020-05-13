@@ -1,0 +1,53 @@
+---
+weight: 21
+title: Search
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+source("hooks.R")
+```
+
+# Search
+
+Search package history data.
+This is a full text search ONLY of the output in `check_details` field.
+
+`GET [/search]`
+
+
+
+Parameters:
+
+q (string)
+: full text query, e.g, q=memory
+
+package (string)
+: a package name. limit results to a single package, e.g, package=taxize
+
+one_each (boolean)
+: if true, return a single result for each package; useful if you want to find out what packages have match a particular query, and don't care which day that match happened. default: false; e.g., one_each=true
+
+fields (string)
+: comma separated string with field to return, e.g., fields=package,check_details
+
+limit/offset
+: see [pagination docs](#pagination)
+
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/search?q=memory")
+get_and_show(args)
+```
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/search?q=memory&one_each=true&limit=2")
+get_and_show(args)
+```
+
+```{r results="asis"}
+args <- c("https://cranchecks.info/search?q=memory&one_each=true&fields=package")
+get_and_show(args)
+```
