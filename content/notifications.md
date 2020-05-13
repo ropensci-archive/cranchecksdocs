@@ -101,12 +101,36 @@ error details contain regex 'install'
 : `{'status' => nil, 'time' => nil, 'platforms' => nil, 'regex' => "install"}`
 
 
-## notifications list
+## Notifications list
 
 List your notifications rules
 
-[Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
+[Function of the `cchecks` R package: `cchn_pkg_rule_list()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
 
 `GET [/notifications/rules]`
 
+## Notifications get
+
+List a single notifications rule by its id
+
+`GET [/notifications/rules/{id}]`
+
+[Function of the `cchecks` R package: `cchn_rule_get()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
+
+## Notifications create
+
+Create one or more notifications rules
+
+[Function of the `cchecks` R package: `cchn_rule_add()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
+
+`POST [/notifications/rules]`
+
+### Notifications delete
+
+Delete a single notifications rule by its id
+
+[Function of the `cchecks` R package: `cchn_rule_delete()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
+
+
+`DELETE [/notifications/rules/{id}]`
 
