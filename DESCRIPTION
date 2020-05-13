@@ -17,4 +17,7 @@ Imports:
     xml2,
     processx,
     rmarkdown,
-    jqr
+    jqr,
+    cchecks
+Remotes:
+    ropenscilabs/cchecks

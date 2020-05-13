@@ -17,7 +17,18 @@ jobs:
       - uses: r-lib/actions/setup-r@v1
       - uses: r-lib/actions/setup-pandoc@v1
       - name: Install dependencies
-        run: Rscript -e 'install.packages("remotes")' -e 'remotes::install_deps(dependencies = TRUE)'
+        run: |
+          'install.packages("remotes")' -e 'remotes::install_deps(dependencies = TRUE)'
+          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
+        shell: Rscript {0}
+        
+      - name: Cache R packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: macOS-r-4.0-1-${{ hashFiles('.github/depends.Rds') }}
+          restore-keys: macOS-r-4.0-1-
+          
       - name: Render Rmd
         run: Rscript -e 'source("make.R")'
       - name: Commit results
