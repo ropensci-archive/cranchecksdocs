@@ -14,29 +14,41 @@ source("hooks.R")
 
 Get packages based checks to display in your package README for instance.
 
+In a Markdown-based README to add a badge you just need something like `![alt text](https://cranchecks.info/badges/summary/{package})`. 
+
+You might want the badge to point at either the CRAN results page or the CRAN checks API page i.e. either
+
+`[![Worst CRAN checks result for the rhub package](https://cranchecks.info/badges/worst/rhub)](https://cran.r-project.org/web/checks/check_results_rhub.html)` to obtain [![Badges example, worst for the rhub package](https://cranchecks.info/badges/worst/rhub)](https://cran.r-project.org/web/checks/check_results_rhub.html).
+
+or
+
+`[![Worst CRAN checks result for the rhub package](https://cranchecks.info/badges/worst/rhub)](https://cranchecks.info/pkgs/rhub)` to obtain [![Badges example, worst for the rhub package](https://cranchecks.info/badges/worst/rhub)](https://cranchecks.info/pkgs/rhub).
+
 ## Summary badges
 
 Get badge for CRAN checks summary by package name.
 
 `GET [/badges/summary/{package_name}]`
 
-![Badges example, summary for the rhub package](https://cranchecks.info/badges/summary/rhub)
+`[![Summary of CRAN checks results for the rhub package](https://cranchecks.info/badges/summary/rhub)](https://cranchecks.info/pkgs/rhub)` gives [![Summary of CRAN checks results for the rhub package](https://cranchecks.info/badges/summary/rhub)](https://cranchecks.info/pkgs/rhub).
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/badges/summary/rhub")
 get_and_show(args)
 ```
 
-## "Worst" badges
+## Worst badges
 
 Get badge for CRAN checks worst result by package name. :cold_sweat:
 
 `GET [/badges/worst/{package_name}]`
 
-![Badges example, worst for the stringi package](https://cranchecks.info/badges/worst/stringi)
+`[![Worst CRAN checks results for the rhub package](https://cranchecks.info/badges/summary/rhub)](https://cranchecks.info/pkgs/rhub)` gives ![Worst CRAN checks results for the rhub package](https://cranchecks.info/badges/worst/rhub).
+
+
 
 ```{r results="asis"}
-args <- c("https://cranchecks.info/badges/worst/stringi")
+args <- c("https://cranchecks.info/badges/worst/rhub")
 get_and_show(args)
 ```
 
@@ -46,9 +58,9 @@ Get badge for summary of CRAN checks by flavor and package name.
 
 `GET [/badges/flavor/{flavor}/{package}]`
 
-[List of platforms/flavors](https://cran.r-project.org/web/checks/check_flavors.html)
+:bulb: [List of platforms/flavors](https://cran.r-project.org/web/checks/check_flavors.html)
 
-![Badges example, worst for the stringi package](https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub)
+`[![CRAN checks result on r-devel-linux-x86_64-debian-clang for the rhub package](https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub)](https://cranchecks.info/pkgs/rhub)` gives [![CRAN checks result on r-devel-linux-x86_64-debian-clang for the rhub package](https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub)](https://cranchecks.info/pkgs/rhub).
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub")

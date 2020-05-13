@@ -12,28 +12,34 @@ source("hooks.R")
 
 # Maintainers
 
-Get maintainer based checks.
+Get checks data by package maintainer.
 
-[Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cch_maintainers.html).
+[Function of the `cchecks` R package: `cch_maintainers()`](https://docs.ropensci.org/cchecks/reference/cch_maintainers.html).
 
 ## Maintainers
 
-Get all maintainers.
+Get checks summaries for all maintainers.
 
-Default limit of 10.
+`GET [/maintainers]`
+
+Default [limit](#pagination) of 10. Example with [custom offset and limit](#pagination).
 
 ```{r results="asis"}
-args <- c("https://cranchecks.info/maintainers/")
+args <- c("https://cranchecks.info/maintainers/?limit=2&offset=5")
 get_and_show(args)
 ```
 
 ```{r}
-cchecks::cch_maintainers()
+cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 
 ## Maintainers by email
 
-Get maintainer summary by email.
+Get checks data by email of the package maintainer.
+
+`GET [/maintainers/{email}]`
+
+:warning: `jane.doe@example.com` has to be transformed to `jane.doe_at_example.com`.
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com")

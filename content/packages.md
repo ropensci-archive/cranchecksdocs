@@ -14,10 +14,12 @@ Get packages based checks.
 
 [Function of the `cchecks` R package: `cch_pkgs()`](https://docs.ropensci.org/cchecks/reference/cch_pkgs.html).
 
+
 ## Packages
 
 Get checks data for all packages.
 
+`GET [/pkgs]`
 Default [limit](#pagination) of 10. Example with [custom offset and limit](#pagination).
 
 ```shell
@@ -32,7 +34,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 5204
-date: Wed, 13 May 2020 06:24:45 GMT
+date: Wed, 13 May 2020 07:09:33 GMT
 
 ```
 ```json
@@ -318,6 +320,8 @@ $data
 
 Get checks summary by package name.
 
+`GET [/pkgs/{package}]`
+
 ```shell
 curl https://cranchecks.info/pkgs/rhub | jq .
 ```
@@ -330,7 +334,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 2841
-date: Wed, 13 May 2020 06:24:48 GMT
+date: Wed, 13 May 2020 07:09:35 GMT
 
 ```
 ```json
@@ -536,7 +540,9 @@ NULL
 
 ## Packages by name (history)
 
-Get checks history by package name. 
+Get checks history by package name.
+
+`GET [/pkgs/{package}/history]`
 
 ```shell
 curl https://cranchecks.info/pkgs/rhub/history | jq .
@@ -550,7 +556,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 27368
-date: Wed, 13 May 2020 06:24:49 GMT
+date: Wed, 13 May 2020 07:09:36 GMT
 
 ```
 ```json

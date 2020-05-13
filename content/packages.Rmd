@@ -16,10 +16,12 @@ Get packages based checks.
 
 [Function of the `cchecks` R package: `cch_pkgs()`](https://docs.ropensci.org/cchecks/reference/cch_pkgs.html).
 
+
 ## Packages
 
 Get checks data for all packages.
 
+`GET [/pkgs]`
 Default [limit](#pagination) of 10. Example with [custom offset and limit](#pagination).
 
 ```{r results="asis"}
@@ -38,6 +40,8 @@ cchecks::cch_pkgs(
 
 Get checks summary by package name.
 
+`GET [/pkgs/{package}]`
+
 ```{r results="asis"}
 args <- c("https://cranchecks.info/pkgs/rhub")
 get_and_show(args)
@@ -49,7 +53,9 @@ cchecks::cch_pkgs(x = "rhub")
 
 ## Packages by name (history)
 
-Get checks history by package name. 
+Get checks history by package name.
+
+`GET [/pkgs/{package}/history]`
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/pkgs/rhub/history")

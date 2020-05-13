@@ -14,6 +14,8 @@ source("hooks.R")
 
 This path redirects to the docs (hopefully here! :smile_cat:). See Headers tab.
 
+`GET [/docs]`
+
 ```{r results="asis"}
 args <- c("https://cranchecks.info/docs")
 get_and_show(args)

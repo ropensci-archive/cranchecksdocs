@@ -12,6 +12,8 @@ output:
 
 This path redirects to the docs (hopefully here! :smile_cat:). See Headers tab.
 
+`GET [/docs]`
+
 ```shell
 curl https://cranchecks.info/docs | jq .
 ```
@@ -25,6 +27,6 @@ location: https://github.com/ropensci/cchecksapi/blob/master/docs/api_docs.md
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Tue, 12 May 2020 13:33:20 GMT
+date: Wed, 13 May 2020 07:09:15 GMT
 
 ```

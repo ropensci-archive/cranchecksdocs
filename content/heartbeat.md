@@ -12,6 +12,8 @@ output:
 
 Get heartbeat for the API :heartbeat: (i.e. the list of endpoints).
 
+`GET [/heartbeat]`
+
 [Function of the `cchecks` R package: `cch_heartbeat()`](https://docs.ropensci.org/cchecks/reference/cch_heartbeat.html).
 
 ```shell
@@ -26,7 +28,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 256
-date: Wed, 13 May 2020 06:45:58 GMT
+date: Wed, 13 May 2020 07:09:17 GMT
 
 ```
 ```json
