@@ -7,7 +7,7 @@ Authors@R:
            role = c("cre", "aut"),
            email = "maelle.salmon@yahoo.se",
            comment = c(ORCID = "0000-0002-2815-0399"))
-Description: Docs the CRAN checks API
+Description: Docs the CRAN checks API with Hugo and R Markdown
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
