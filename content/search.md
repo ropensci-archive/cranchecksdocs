@@ -39,15 +39,15 @@ limit/offset
 curl https://cranchecks.info/search?q=memory | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 48763
-date: Wed, 13 May 2020 08:14:23 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 48763
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 13 May 2020 08:34:26 GMT
 
 ```
 ```json
@@ -1233,15 +1233,15 @@ date: Wed, 13 May 2020 08:14:23 GMT
 curl https://cranchecks.info/search?q=memory&one_each=true&limit=2 | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 8083
-date: Wed, 13 May 2020 08:14:26 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 8083
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 13 May 2020 08:34:26 GMT
 
 ```
 ```json
@@ -1544,15 +1544,15 @@ date: Wed, 13 May 2020 08:14:26 GMT
 curl https://cranchecks.info/search?q=memory&one_each=true&fields=package | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 1195
-date: Wed, 13 May 2020 08:14:27 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 1195
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 13 May 2020 08:34:27 GMT
 
 ```
 ```json

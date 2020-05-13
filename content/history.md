@@ -24,16 +24,16 @@ If you don't follow redirects, you'll get a JSON body telling you to redirect to
 curl https://cranchecks.info/history/2020-04-01 | jq .
 ```
 ```yaml
-HTTP/2 302 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200513T071825Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=4c5c48558090c878e5ac7cb0dde3fef7af0ef6fc77acb90024626251f69fd9ba
-server: Caddy
-x-content-type-options: nosniff
-content-length: 101
-date: Wed, 13 May 2020 07:18:25 GMT
+HTTP/1.1 302 Found
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 101
+Content-Type: application/json; charset=utf8
+Location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200513T083418Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=f70d9f8f26cc7b26979c3a612baaf6e8ff46494e9e4740fba5a94bbb75bbcbb3
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 13 May 2020 08:34:18 GMT
 
 ```
 ```json

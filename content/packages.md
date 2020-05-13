@@ -26,15 +26,15 @@ Default [limit](#pagination) of 10. Example with [custom offset and limit](#pagi
 curl https://cranchecks.info/pkgs/?offset=5&limit=2 | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 5204
-date: Wed, 13 May 2020 07:18:34 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 5204
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 13 May 2020 08:34:20 GMT
 
 ```
 ```json
@@ -326,15 +326,15 @@ Get checks summary by package name.
 curl https://cranchecks.info/pkgs/rhub | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 2841
-date: Wed, 13 May 2020 07:18:36 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 2841
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 13 May 2020 08:34:21 GMT
 
 ```
 ```json
@@ -548,15 +548,15 @@ Get checks history by package name.
 curl https://cranchecks.info/pkgs/rhub/history | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 27368
-date: Wed, 13 May 2020 07:18:38 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 27368
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 13 May 2020 08:34:21 GMT
 
 ```
 ```json

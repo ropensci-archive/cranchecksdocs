@@ -26,15 +26,15 @@ Default [limit](#pagination) of 10. Example with [custom offset and limit](#pagi
 curl https://cranchecks.info/maintainers/?limit=2&offset=5 | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 1064
-date: Wed, 13 May 2020 07:18:27 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 1064
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 13 May 2020 08:34:18 GMT
 
 ```
 ```json
@@ -48,7 +48,7 @@ date: Wed, 13 May 2020 07:18:27 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-05-13T04:00:52.136Z",
+            "date_updated": "2020-05-13T08:00:53.028Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -81,7 +81,7 @@ date: Wed, 13 May 2020 07:18:27 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-05-13T04:00:52.136Z",
+            "date_updated": "2020-05-13T08:00:53.028Z",
             "table": [
                 {
                     "package": "sirus",
@@ -139,8 +139,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-05-13T04:00:52.136Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-05-13T04:00:52.136Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-05-13T08:00:53.028Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-05-13T08:00:53.028Z    sirus, TRUE, 9, 3, 0, 0
                                                                                           packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
@@ -159,15 +159,15 @@ Get checks data by email of the package maintainer.
 curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 12828
-date: Wed, 13 May 2020 07:18:28 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 12828
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 13 May 2020 08:34:19 GMT
 
 ```
 ```json
@@ -177,7 +177,7 @@ date: Wed, 13 May 2020 07:18:28 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-05-13T04:00:52.288Z",
+        "date_updated": "2020-05-13T08:00:53.173Z",
         "table": [
             {
                 "package": "asciicast",
@@ -1233,7 +1233,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-05-13T04:00:52.288Z"
+[1] "2020-05-13T08:00:53.173Z"
 
 $data$table
         package   any ok note warn error
