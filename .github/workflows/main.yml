@@ -18,7 +18,8 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v1
       - name: Install dependencies
         run: |
-          'install.packages("remotes")' -e 'remotes::install_deps(dependencies = TRUE)'
+          install.packages("remotes")
+          remotes::install_deps(dependencies = TRUE)
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
         shell: Rscript {0}
         
