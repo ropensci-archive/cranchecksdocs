@@ -19,7 +19,7 @@ For this section of the docs, examples of (bad) requests are given in the Shell 
 Request good!
 
 ```{r results="asis"}
-args <- c("https://cranchecks.info/maintainers")
+args <- c("https://cranchecks.info/heartbeat")
 get_and_show(args)
 ```
 
