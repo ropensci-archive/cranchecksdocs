@@ -24,10 +24,13 @@ For **Netlify**,
 
 I wanted to display R code and its output as well as Shell code (curl&jq) and their output.
 
-For that I added two knitr hooks, see content/maintainers.Rmd and its results in content/maintainers.md.
+For that I tweaked the docuapi theme, and added two knitr hooks, see content/maintainers.Rmd and its results in content/maintainers.md.
 
 * Code chunks with no shell option are rendered in R code fences (output included)
 
-* Code chunks with results="asis" (for shell code) have the shell part of their source and the pretty output in JSON code fences rendered in JS code fences. Why JS? I wanted both the shell script and output to appear in the same language tab and with Slatedocs it seems you can't get several languages in a tab so I chose a language that'd work ok as highlighting for both shell and JSON.
+* Code chunks with results="asis" (for shell code) have the shell part of their source rendered in shell code fences and the pretty output in JSON code fences or XML code fences. These three languages (shell, JSON, XML) are rendered in the Shell tab.
 
-* From code chunks with results="asis", headers are rendered in YAML code fences in a header tab.
+* From code chunks with results="asis", headers are rendered in YAML code fences that are displayed in a header tab.
+
+When editing an Rmd, knit it to md using `rmarkdown::render()`. 
+When editing several Rmd, source `make.R`.

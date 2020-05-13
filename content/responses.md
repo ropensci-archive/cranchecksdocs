@@ -28,7 +28,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 5493
-date: Wed, 13 May 2020 07:09:41 GMT
+date: Wed, 13 May 2020 07:18:41 GMT
 
 ```
 ```json
@@ -430,7 +430,7 @@ location: https://cranchecks.info/heartbeat
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Wed, 13 May 2020 07:09:42 GMT
+date: Wed, 13 May 2020 07:18:42 GMT
 
 ```
 
@@ -450,7 +450,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 52
-date: Wed, 13 May 2020 07:09:43 GMT
+date: Wed, 13 May 2020 07:18:43 GMT
 
 ```
 ```json
@@ -477,7 +477,7 @@ server: Caddy
 x-cascade: pass
 x-content-type-options: nosniff
 content-length: 27
-date: Wed, 13 May 2020 07:09:44 GMT
+date: Wed, 13 May 2020 07:18:44 GMT
 
 ```
 ```json
@@ -500,7 +500,7 @@ content-type: application/json
 server: Caddy
 x-content-type-options: nosniff
 content-length: 30
-date: Wed, 13 May 2020 07:09:46 GMT
+date: Wed, 13 May 2020 07:18:45 GMT
 
 ```
 ```json

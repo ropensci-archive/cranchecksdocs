@@ -1,13 +1,18 @@
-rmds <- fs::dir_ls(
+rmds <- dir(
   "content", 
-  glob = "*.Rmd"
+  pattern = "*.Rmd",
+  full.names = TRUE
   )
 
-purrr::walk(
+lapply(
   rmds,
   rmarkdown::render
   )
 
-fs::file_delete(
-  fs::dir_ls("content", glob = "*.html")
+file.remove(
+  dir(
+    "content", 
+    pattern = "*.html",
+    full.names = TRUE
+  )
 )

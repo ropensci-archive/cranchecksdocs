@@ -1,0 +1,20 @@
+Package: cranchecksdocs
+Title: Docs the CRAN checks API
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Maëlle",
+           family = "Salmon",
+           role = c("cre", "aut"),
+           email = "maelle.salmon@yahoo.se",
+           comment = c(ORCID = "0000-0002-2815-0399"))
+Description: Docs the CRAN checks API
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Imports: 
+    knitr,
+    xml2,
+    processx,
+    rmarkdown,
+    jqr

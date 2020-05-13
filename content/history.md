@@ -29,11 +29,11 @@ access-control-allow-methods: HEAD, GET
 access-control-allow-origin: *
 cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
-location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200513T070921Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=b255d9579e0218b28c9a91eab31fdc5e809750daeffe6e7385835503af778801
+location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200513T071825Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=4c5c48558090c878e5ac7cb0dde3fef7af0ef6fc77acb90024626251f69fd9ba
 server: Caddy
 x-content-type-options: nosniff
 content-length: 101
-date: Wed, 13 May 2020 07:09:21 GMT
+date: Wed, 13 May 2020 07:18:25 GMT
 
 ```
 ```json

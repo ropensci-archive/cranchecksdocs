@@ -27,6 +27,6 @@ location: https://github.com/ropensci/cchecksapi/blob/master/docs/api_docs.md
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Wed, 13 May 2020 07:09:15 GMT
+date: Wed, 13 May 2020 07:18:16 GMT
 
 ```
