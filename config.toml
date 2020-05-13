@@ -1,6 +1,6 @@
 baseURL = "https://cran-checks-docs.netlify.app"
 languageCode = "en-us"
-title = "CRAN checks API"
+title = "CRAN Checks API Docs"
 disableKinds = ["taxonomyTerm"]
 enableEmoji = true
 pygmentsUseClasses=true
