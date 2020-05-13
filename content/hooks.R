@@ -32,8 +32,6 @@ knitr::knit_hooks$set(
 # vs shell code (results == "asis")
 knitr::knit_hooks$set(
   output = function(x, options) {
-    # never show my token!
-    x <- gsub(Sys.getenv("CCHKS_TOKEN"), "***", x)
     
     if(options$results == "asis") {
       x
