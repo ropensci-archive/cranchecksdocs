@@ -40,4 +40,4 @@ otherlangs = ["json", "xml"]
 key = "yaml"
 name = "Headers"
 
-ignoreFiles = ["\\.Rmd$", "\\.html$"]
+ignoreFiles = ["\\.Rmd$", "\\.html$", "\\_cache"]
