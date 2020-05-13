@@ -32,5 +32,14 @@ For that I tweaked the docuapi theme, and added two knitr hooks, see content/mai
 
 * From code chunks with results="asis", headers are rendered in YAML code fences that are displayed in a header tab.
 
+#### Local knitting
+
 When editing an Rmd, knit it to md using `rmarkdown::render()`. 
 When editing several Rmd, source `make.R`.
+
+#### Knitting on the cloud
+
+There is a [GitHub Action workflow](.github/workflows/main.yml) that renders all Rmd
+
+* If a commit **to master** contains the string "[docs]" (inspired by [Jenny Bryan's googledrive pkgdown workflow](https://github.com/tidyverse/googledrive/blob/master/.github/workflows/pkgdown.yaml))
+* Once a week, at 12:30 UTC on Mondays.
