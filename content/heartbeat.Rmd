@@ -12,9 +12,9 @@ source("hooks.R")
 
 # Heartbeat
 
-Get heartbeat for the cranchecks API
+Get heartbeat for the API :heartbeat: (i.e. the list of endpoints).
 
-[Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cch_heartbeat.html).
+[Function of the `cchecks` R package: `cch_heartbeat()`](https://docs.ropensci.org/cchecks/reference/cch_heartbeat.html).
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/heartbeat")

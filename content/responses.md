@@ -10,6 +10,8 @@ output:
 
 # Response codes
 
+For this section of the docs, examples of (bad) requests are given in the Shell tab on the right, and the headers are in the Headers tab.
+
 ## 200 (OK) 
 
 Request good!
@@ -25,22 +27,22 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 5818
-date: Tue, 12 May 2020 13:33:39 GMT
+content-length: 5493
+date: Wed, 13 May 2020 06:34:34 GMT
 
 ```
 ```json
 {
-    "found": 9412,
+    "found": 9423,
     "count": 10,
     "offset": null,
     "error": null,
     "data": [
         {
-            "_id": "f.briatte_at_gmail.com",
             "email": "f.briatte_at_gmail.com",
             "name": "François Briatte",
             "url": "https://cloud.r-project.org/web/checks/check_results_f.briatte_at_gmail.com.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "ggnetwork",
@@ -67,14 +69,13 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         },
         {
-            "_id": "hyasrebi_at_yahoo.com",
             "email": "hyasrebi_at_yahoo.com",
             "name": "Haleh Yasrebi",
             "url": "https://cloud.r-project.org/web/checks/check_results_hyasrebi_at_yahoo.com.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "survJamda",
@@ -120,14 +121,13 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         },
         {
-            "_id": "ly_ding_at_126.com",
             "email": "ly_ding_at_126.com",
             "name": "Liuyong Ding",
             "url": "https://cloud.r-project.org/web/checks/check_results_ly_ding_at_126.com.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "SP2000",
@@ -147,14 +147,13 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         },
         {
-            "_id": "bodri.mh3_at_gmail.com",
             "email": "bodri.mh3_at_gmail.com",
             "name": "Andras Bodor",
             "url": "https://cloud.r-project.org/web/checks/check_results_bodri.mh3_at_gmail.com.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "rCUR",
@@ -181,14 +180,13 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         },
         {
-            "_id": "erich.neuwirth_at_univie.ac.at",
             "email": "erich.neuwirth_at_univie.ac.at",
             "name": "Erich Neuwirth",
             "url": "https://cloud.r-project.org/web/checks/check_results_erich.neuwirth_at_univie.ac.at.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "ENmisc",
@@ -240,14 +238,13 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         },
         {
-            "_id": "markus.boenn.sf_at_googlemail.com",
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -274,14 +271,13 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         },
         {
-            "_id": "clement.benard_at_safrangroup.com",
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "sirus",
@@ -308,14 +304,13 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         },
         {
-            "_id": "s.greilich_at_dkfz.de",
             "email": "s.greilich_at_dkfz.de",
             "name": "Steffen Greilich",
             "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "libamtrack",
@@ -342,14 +337,13 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         },
         {
-            "_id": "eric_at_opsani.com",
             "email": "eric_at_opsani.com",
             "name": "Eric Kalosa-Kenyon",
             "url": "https://cloud.r-project.org/web/checks/check_results_eric_at_opsani.com.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "soobench",
@@ -376,14 +370,13 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         },
         {
-            "_id": "egor_at_tillt.net",
             "email": "egor_at_tillt.net",
             "name": "Till Krenz",
             "url": "https://cloud.r-project.org/web/checks/check_results_egor_at_tillt.net.html",
+            "date_updated": "2020-05-13T04:00:52.136Z",
             "table": [
                 {
                     "package": "egor",
@@ -410,8 +403,7 @@ date: Tue, 12 May 2020 13:33:39 GMT
                     ],
                     "version": null
                 }
-            ],
-            "date_updated": "2020-05-12T12:02:32.677Z"
+            ]
         }
     ]
 }
@@ -419,11 +411,11 @@ date: Tue, 12 May 2020 13:33:39 GMT
 
 ## 204 (No Content) 
 
-Given on a delete request, indicating success, response body should be empty
+Given on a delete request, indicating success, response body should be empty.
 
 ## 302 (Found) 
 
-The root `/`, redirects to `/heartbeat`, and `/docs` redirects to these documents
+The root `/`, redirects to `/heartbeat`, and `/docs` redirects to what you're reading right now.
 
 ```shell
 curl https://cranchecks.info/ | jq .
@@ -438,7 +430,7 @@ location: https://cranchecks.info/heartbeat
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Tue, 12 May 2020 13:33:40 GMT
+date: Wed, 13 May 2020 06:34:37 GMT
 
 ```
 
@@ -458,7 +450,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 52
-date: Tue, 12 May 2020 13:33:40 GMT
+date: Wed, 13 May 2020 06:34:39 GMT
 
 ```
 ```json
@@ -472,7 +464,8 @@ date: Tue, 12 May 2020 13:33:40 GMT
 
 ## 404 (Not found) 
 
-When you request a route that does not exist, fix it and try again
+When you request a route that does not exist, fix it and try again.
+E.g. in the example here we misspell "maintainers" to "maintainer". :see_no_evil:
 
 ```shell
 curl https://cranchecks.info/maintainer | jq .
@@ -484,7 +477,7 @@ server: Caddy
 x-cascade: pass
 x-content-type-options: nosniff
 content-length: 27
-date: Tue, 12 May 2020 13:33:41 GMT
+date: Wed, 13 May 2020 06:34:40 GMT
 
 ```
 ```json
@@ -496,6 +489,25 @@ date: Tue, 12 May 2020 13:33:41 GMT
 ## 405 (Method not allowed)
 
 When you use a prohibited HTTP method for a given route.
+Don't do that. :wink:
+
+```shell
+curl -XDELETE https://cranchecks.info/pkgs/ropenaq/ | jq .
+```
+```yaml
+HTTP/2 405 
+content-type: application/json
+server: Caddy
+x-content-type-options: nosniff
+content-length: 30
+date: Wed, 13 May 2020 06:34:41 GMT
+
+```
+```json
+{
+    "error": "Method Not Allowed"
+}
+```
 
 
 ## 500 (Internal server error) 

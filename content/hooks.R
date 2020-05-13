@@ -10,8 +10,10 @@ knitr::knit_hooks$set(
       paste0(
         "```shell\n",
         paste("curl",
+              gsub(",", "",
               gsub('\\"\\)*', "",
                    gsub('args <- c\\(\\"', "", x[1])
+              )
               )
         ),
         " | jq .\n```\n"
@@ -26,6 +28,8 @@ knitr::knit_hooks$set(
 
 knitr::knit_hooks$set(
   output = function(x, options) {
+    x <- gsub(Sys.getenv("CCHKS_TOKEN"), "***", x)
+    
     if(options$results == "asis") {
       x
     } else {

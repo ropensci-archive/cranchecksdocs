@@ -12,6 +12,8 @@ source("hooks.R")
 
 # Response codes
 
+For this section of the docs, examples of (bad) requests are given in the Shell tab on the right, and the headers are in the Headers tab.
+
 ## 200 (OK) 
 
 Request good!
@@ -23,11 +25,11 @@ get_and_show(args)
 
 ## 204 (No Content) 
 
-Given on a delete request, indicating success, response body should be empty
+Given on a delete request, indicating success, response body should be empty.
 
 ## 302 (Found) 
 
-The root `/`, redirects to `/heartbeat`, and `/docs` redirects to these documents
+The root `/`, redirects to `/heartbeat`, and `/docs` redirects to what you're reading right now.
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/")
@@ -45,7 +47,8 @@ get_and_show(args)
 
 ## 404 (Not found) 
 
-When you request a route that does not exist, fix it and try again
+When you request a route that does not exist, fix it and try again.
+E.g. in the example here we misspell "maintainers" to "maintainer". :see_no_evil:
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/maintainer")
@@ -55,6 +58,12 @@ get_and_show(args)
 ## 405 (Method not allowed)
 
 When you use a prohibited HTTP method for a given route.
+Don't do that. :wink:
+
+```{r results="asis"}
+args <- c("-XDELETE", "https://cranchecks.info/pkgs/ropenaq/")
+get_and_show(args)
+```
 
 
 ## 500 (Internal server error) 

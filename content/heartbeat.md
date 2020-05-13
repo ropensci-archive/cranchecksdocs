@@ -10,9 +10,9 @@ output:
 
 # Heartbeat
 
-Get heartbeat for the cranchecks API
+Get heartbeat for the API :heartbeat: (i.e. the list of endpoints).
 
-[Function of the `cchecks` R package](https://docs.ropensci.org/cchecks/reference/cch_heartbeat.html).
+[Function of the `cchecks` R package: `cch_heartbeat()`](https://docs.ropensci.org/cchecks/reference/cch_heartbeat.html).
 
 ```shell
 curl https://cranchecks.info/heartbeat | jq .
@@ -25,8 +25,8 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 246
-date: Tue, 12 May 2020 13:33:23 GMT
+content-length: 256
+date: Wed, 13 May 2020 06:45:58 GMT
 
 ```
 ```json
@@ -43,6 +43,7 @@ date: Tue, 12 May 2020 13:33:23 GMT
         "/badges/flavor/:flavor/:package",
         "/pkgs/:name/history",
         "/history/:date",
+        "/search",
         "/notifications/rules",
         "/notifications/rules/:id"
     ]
@@ -60,7 +61,7 @@ $routes
  [5] "/pkgs/:name"                     "/maintainers"                   
  [7] "/maintainers/:email"             "/badges/:type/:package"         
  [9] "/badges/flavor/:flavor/:package" "/pkgs/:name/history"            
-[11] "/history/:date"                  "/notifications/rules"           
-[13] "/notifications/rules/:id"       
+[11] "/history/:date"                  "/search"                        
+[13] "/notifications/rules"            "/notifications/rules/:id"       
 
 ```
