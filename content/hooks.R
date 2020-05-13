@@ -3,7 +3,9 @@
 knitr::opts_chunk$set(fig.path = "", comment = "")
 
 
-# knitr hooks
+# knitr hook to render source code
+# differently when it's shell code (results == "asis")
+# vs R code
 knitr::knit_hooks$set(
   source = function(x, options) {
     if(options$results == "asis") {
@@ -26,8 +28,11 @@ knitr::knit_hooks$set(
   }
 )
 
+# knitr hook to render output differently when it's R code
+# vs shell code (results == "asis")
 knitr::knit_hooks$set(
   output = function(x, options) {
+    # never show my token!
     x <- gsub(Sys.getenv("CCHKS_TOKEN"), "***", x)
     
     if(options$results == "asis") {
@@ -43,12 +48,14 @@ knitr::knit_hooks$set(
   
 )
 
+# Helper function to run shell code based on args given
 get_and_show <- function(args) {
     curl_output <- processx::run(
       "curl", 
-      c("-i", args)
+      c("-i", args) # -i to get headers
     )$stdout
     
+    # String manipulation to separate headers from JSON/XML output
     curl_output_l  <- unlist(strsplit(curl_output, "\n"))
     limit <- which(curl_output_l == "\r")
     
@@ -58,7 +65,6 @@ get_and_show <- function(args) {
         "\n```\n"
       )
       
-    
     if (limit == length(curl_output_l)) {
       return(cat(headers))
     }
@@ -80,20 +86,33 @@ get_and_show <- function(args) {
     }
     
     if (limit+1 == length(curl_output_l)) {
+      
       output <- curl_output_l[limit + 1]
+      
     } else {
-      output <- paste0(curl_output_l[(limit + 1):length(curl_output_l)], collapse = "\n")
+      
+      output <- paste0(
+        curl_output_l[(limit + 1):length(curl_output_l)], 
+        collapse = "\n"
+        )
     }
     
     cat(
-    paste0(
-        headers,
-        "```", lang(output),"\n",
-        paste0(
-          capture.output(transform_output(output)),
-        collapse = "\n"),
-        "\n```\n"
-      )
-      )
+      paste0(
+          headers,
+          "```", 
+          lang(output),
+          "\n",
+          paste0(
+            capture.output(
+              transform_output(
+                output
+                )
+              ),
+          collapse = "\n"
+          ),
+          "\n```\n"
+          )
+    )
     
 }

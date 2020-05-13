@@ -1,14 +1,18 @@
+# Paths to Rmd files in content
 rmds <- dir(
   "content", 
   pattern = "*.Rmd",
   full.names = TRUE
   )
 
+# Render them all
 lapply(
   rmds,
   rmarkdown::render
   )
 
+# Remove "junk" html files
+# (although they're both gitignore and Hugo ignored)
 file.remove(
   dir(
     "content", 
