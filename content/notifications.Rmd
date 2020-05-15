@@ -107,7 +107,7 @@ List your notifications rules
 
 
 ```{r, results="asis"}
-args <- c("https://cranchecks.info/notifications/rules", "-H", paste0("'Authorization: Bearer ", token, "'"))
+args <- c("https://cranchecks.info/notifications/rules", "-H", paste0('"Authorization: Bearer ', token, '"'))
 get_and_show(args)
 ```
 

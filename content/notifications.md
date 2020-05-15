@@ -114,7 +114,7 @@ List your notifications rules
 
 
 ```shell
-curl https://cranchecks.info/notifications/rules -H 'Authorization: Bearer ***' | jq .
+curl https://cranchecks.info/notifications/rules -H "Authorization: Bearer ***" | jq .
 ```
 ```yaml
 HTTP/2 200 
@@ -124,7 +124,7 @@ x-content-type-options: nosniff
 x-frame-options: SAMEORIGIN
 x-xss-protection: 1; mode=block
 content-length: 24
-date: Fri, 15 May 2020 13:57:25 GMT
+date: Fri, 15 May 2020 14:04:02 GMT
 
 ```
 ```json

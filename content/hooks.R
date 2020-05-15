@@ -46,8 +46,8 @@ knitr::knit_hooks$set(
 
 # Helper function to run shell code based on args given
 get_and_show <- function(args) {
-   args <- gsub("^'", "", args)
-   args <- gsub("'$", "", args)
+   args <- gsub('^"', "", args)
+   args <- gsub('"$', "", args)
     curl_output <- processx::run(
       "curl", 
       c("-i", args) # -i to get headers
