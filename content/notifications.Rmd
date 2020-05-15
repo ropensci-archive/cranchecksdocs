@@ -33,7 +33,15 @@ get_and_show(args)
 ```
 
 ```r
+# Interactively
 cchecks::cchn_register(email = "jane.doe@cranchecksapidocs.com")
+```
+
+```{r, echo=FALSE, message=FALSE}
+# Once you have a token
+email <- Sys.getenv("CCHECKS_EMAIL")
+token <- Sys.getenv("CCHECKS_TOKEN")
+cchecks::cchn_register(email = email, token = token)
 ```
 
 ## Notifications rules
@@ -96,6 +104,12 @@ List your notifications rules
 [Function of the `cchecks` R package: `cchn_pkg_rule_list()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
 
 `GET [/notifications/rules]`
+
+
+```{r, results="asis"}
+args <- c("https://cranchecks.info/notifications/rules", "-H", paste0("'Authorization: Bearer ", token, "'"))
+get_and_show(args)
+```
 
 ## Notifications get
 

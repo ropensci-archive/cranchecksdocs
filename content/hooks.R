@@ -9,14 +9,12 @@ knitr::opts_chunk$set(fig.path = "", comment = "")
 knitr::knit_hooks$set(
   source = function(x, options) {
     if(options$results == "asis") {
+      eval(parse(text = x[1]))
+      args <- gsub(Sys.getenv("CCHECKS_TOKEN"), "***", args)
       paste0(
         "```shell\n",
         paste("curl",
-              gsub(",", "",
-              gsub('\\"\\)*', "",
-                   gsub('args <- c\\(\\"', "", x[1])
-              )
-              )
+              paste0(args, collapse = " ")
         ),
         " | jq .\n```\n"
       )
@@ -48,6 +46,8 @@ knitr::knit_hooks$set(
 
 # Helper function to run shell code based on args given
 get_and_show <- function(args) {
+   args <- gsub("^'", "", args)
+   args <- gsub("'$", "", args)
     curl_output <- processx::run(
       "curl", 
       c("-i", args) # -i to get headers

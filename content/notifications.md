@@ -45,8 +45,11 @@ date: Wed, 13 May 2020 08:59:33 GMT
 ```
 
 ```r
+# Interactively
 cchecks::cchn_register(email = "jane.doe@cranchecksapidocs.com")
 ```
+
+
 
 ## Notifications rules
 
@@ -108,6 +111,30 @@ List your notifications rules
 [Function of the `cchecks` R package: `cchn_pkg_rule_list()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
 
 `GET [/notifications/rules]`
+
+
+```shell
+curl https://cranchecks.info/notifications/rules -H 'Authorization: Bearer ***' | jq .
+```
+```yaml
+HTTP/2 200 
+content-type: text/html;charset=utf-8
+server: Caddy
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+content-length: 24
+date: Fri, 15 May 2020 13:57:25 GMT
+
+```
+```json
+{
+    "error": null,
+    "data": [
+
+    ]
+}
+```
 
 ## Notifications get
 
