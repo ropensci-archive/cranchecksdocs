@@ -22,7 +22,9 @@ Get packages based checks.
 Get checks data for all packages.
 
 `GET [/pkgs]`
-Default [limit](#pagination) of 10. Example with [custom offset and limit](#pagination).
+Default [limit](#pagination) of 10, max of 1000. 
+
+> Example with [custom offset and limit](#pagination).
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/pkgs/?offset=5&limit=2")
@@ -54,6 +56,9 @@ cchecks::cch_pkgs(x = "rhub")
 ## Packages by name (history)
 
 Get checks history by package name.
+
+`GET [/pkgs]`
+Default [limit](#pagination) of 10, max of 50.
 
 `GET [/pkgs/{package}/history]`
 

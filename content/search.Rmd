@@ -34,7 +34,7 @@ fields (string)
 : comma separated string with field to return, e.g., fields=package,check_details
 
 limit/offset
-: see [pagination docs](#pagination)
+: see [pagination docs](#pagination). Max of 50.
 
 
 ```{r results="asis"}

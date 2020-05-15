@@ -22,7 +22,9 @@ Get checks summaries for all maintainers.
 
 `GET [/maintainers]`
 
-Default [limit](#pagination) of 10. Example with [custom offset and limit](#pagination).
+Default [limit](#pagination) of 10, max of 1000. 
+
+> Example with [custom offset and limit](#pagination).
 
 ```{r results="asis"}
 args <- c("https://cranchecks.info/maintainers/?limit=2&offset=5")

@@ -45,11 +45,11 @@ JSON mostly, image/svg+xml for badges.
 The query parameters limit (default = 10) and offset (default = 0) can be sent.
 
 limit (integer, optional)
-: number of records to return. Default: 10
+: number of records to return. Default: 10. Max: see endpoint docs.
 
 
 offset (integer, optional)
-: Record number to start at. Default: 0
+: Record number to start at. Default: 0. Max: see endpoint docs.
 
 Above parameters can be used only on `/pkgs`, `/maintainers`, and `/pkgs/{package_name}/history`.
 

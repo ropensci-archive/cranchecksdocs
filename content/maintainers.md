@@ -20,26 +20,28 @@ Get checks summaries for all maintainers.
 
 `GET [/maintainers]`
 
-Default [limit](#pagination) of 10. Example with [custom offset and limit](#pagination).
+Default [limit](#pagination) of 10, max of 1000. 
+
+> Example with [custom offset and limit](#pagination).
 
 ```shell
 curl https://cranchecks.info/maintainers/?limit=2&offset=5 | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 1064
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Wed, 13 May 2020 09:25:27 GMT
+HTTP/2 200 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 1064
+date: Fri, 15 May 2020 13:07:53 GMT
 
 ```
 ```json
 {
-    "found": 9423,
+    "found": 9434,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -48,7 +50,7 @@ Date: Wed, 13 May 2020 09:25:27 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-05-13T08:00:53.028Z",
+            "date_updated": "2020-05-15T12:02:29.491Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -81,7 +83,7 @@ Date: Wed, 13 May 2020 09:25:27 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-05-13T08:00:53.028Z",
+            "date_updated": "2020-05-15T12:02:29.491Z",
             "table": [
                 {
                     "package": "sirus",
@@ -120,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 9423
+[1] 9434
 
 $count
 [1] 2
@@ -139,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-05-13T08:00:53.028Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-05-13T08:00:53.028Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-05-15T12:02:29.491Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-05-15T12:02:29.491Z    sirus, TRUE, 9, 3, 0, 0
                                                                                           packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
@@ -159,15 +161,15 @@ Get checks data by email of the package maintainer.
 curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 12828
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Wed, 13 May 2020 09:25:28 GMT
+HTTP/2 200 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 12828
+date: Fri, 15 May 2020 13:07:55 GMT
 
 ```
 ```json
@@ -177,7 +179,7 @@ Date: Wed, 13 May 2020 09:25:28 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-05-13T08:00:53.173Z",
+        "date_updated": "2020-05-15T12:02:29.955Z",
         "table": [
             {
                 "package": "asciicast",
@@ -245,11 +247,11 @@ Date: Wed, 13 May 2020 09:25:28 GMT
             },
             {
                 "package": "crayon",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "debugme",
@@ -405,11 +407,11 @@ Date: Wed, 13 May 2020 09:25:28 GMT
             },
             {
                 "package": "pkgsearch",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "praise",
@@ -694,12 +696,8 @@ Date: Wed, 13 May 2020 09:25:28 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_crayon.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -934,8 +932,12 @@ Date: Wed, 13 May 2020 09:25:28 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_pkgsearch.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1233,7 +1235,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-05-13T08:00:53.173Z"
+[1] "2020-05-15T12:02:29.955Z"
 
 $data$table
         package   any ok note warn error
@@ -1245,7 +1247,7 @@ $data$table
 6    clisymbols FALSE 12    0    0     0
 7      cranlike FALSE 12    0    0     0
 8      cranlogs FALSE 12    0    0     0
-9        crayon  TRUE 11    0    0     1
+9        crayon FALSE 12    0    0     0
 10      debugme FALSE 12    0    0     0
 11         desc FALSE 12    0    0     0
 12  disposables FALSE 12    0    0     0
@@ -1265,7 +1267,7 @@ $data$table
 26        pingr  TRUE  9    0    0     3
 27     pkgcache FALSE 12    0    0     0
 28    pkgconfig FALSE 12    0    0     0
-29    pkgsearch FALSE 12    0    0     0
+29    pkgsearch  TRUE 11    0    0     1
 30       praise FALSE 12    0    0     0
 31      presser  TRUE 11    0    0     1
 32   prettycode FALSE 12    0    0     0
@@ -1406,7 +1408,7 @@ $data$packages
 6            OK, 12      NA
 7            OK, 12      NA
 8            OK, 12      NA
-9  ERROR, OK, 1, 11      NA
+9            OK, 12      NA
 10           OK, 12      NA
 11           OK, 12      NA
 12           OK, 12      NA
@@ -1426,7 +1428,7 @@ $data$packages
 26  ERROR, OK, 3, 9      NA
 27           OK, 12      NA
 28           OK, 12      NA
-29           OK, 12      NA
+29 ERROR, OK, 1, 11      NA
 30           OK, 12      NA
 31 ERROR, OK, 1, 11      NA
 32           OK, 12      NA
