@@ -39,130 +39,23 @@ limit/offset
 curl https://cranchecks.info/search?q=memory | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 41092
-date: Fri, 15 May 2020 13:08:10 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 36919
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 16 May 2020 14:18:37 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 482,
+    "count": 486,
     "returned": 10,
     "data": [
-        {
-            "package": "tidyft",
-            "date_updated": "2020-04-15T15:03:37.000Z",
-            "summary": {
-                "any": true,
-                "ok": 7,
-                "note": 0,
-                "warn": 2,
-                "error": 0,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "0.4.5",
-                    "tinstall": 4.26,
-                    "tcheck": 54.59,
-                    "ttotal": 58.85,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "0.4.5",
-                    "tinstall": 3.39,
-                    "tcheck": 50.43,
-                    "ttotal": 53.82,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 66.32,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 64.1,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64-gcc8",
-                    "version": "0.4.5",
-                    "tinstall": 11,
-                    "tcheck": 68,
-                    "ttotal": 79,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64-gcc8/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 4.21,
-                    "tcheck": 52.2,
-                    "ttotal": 56.41,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 75.2,
-                    "status": "WARN",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 3.99,
-                    "tcheck": 53.13,
-                    "ttotal": 57.12,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-release-osx-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "WARN",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/tidyft-00check.html"
-                }
-            ],
-            "check_details": {
-                "version": "0.4.5",
-                "check": "re-building of vignette outputs",
-                "result": "WARN",
-                "output": "Error(s) in re-building vignettes:\n  ...\n--- re-building ‘Introduction.Rmd’ using rmarkdown\nWarning in engine$weave(file, quiet = quiet, encoding = enc) :\n  Pandoc (>= 1.12.3) and/or pandoc-citeproc not available. Falling back to R Markdown v1.\n\n *** caught segfault ***\naddress 75636900, cause 'memory not mapped'\n\n *** caught segfault ***\naddress 179b1580, cause 'memory not mapped'\nWarning: stack imbalance in 'lazyLoadDBfetch', 111 then 113\nWarning: stack imbalance in 'lazyLoadDBfetch', 116 then 115\nQuitting from lines 92-105 (Introduction.Rmd) \n\nTraceback:\n 1: fstretrieve(file_name, columns, from, to)\n 2: read_fst(meta_info$path, j)\n 3: `[.fst_table`(ft, logical_vec)\n 4: ft[logical_vec]\n 5: setDT(ft[logical_vec])\n 6: select_fst(., Species, Sepal.Length, Sepal.Width)\n 7: function_list[[i]](value)\n 8: freduce(value, `_function_list`)\n 9: `_fseq`(`_lhs`)\n10: eval(quote(`_fseq`(`_lhs`)), env, env)\n11: eval(quote(`_fseq`(`_lhs`)), env, env)\n12: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))\n13: quiet(envir = (if (grepl(ft %>% select_fst(Species, \"\\\\.[Rr]rst$\",     file), rename(group = Species, sl = Sepal.Length, sw = Sepal.Width))) ft %>%     select_fst(Species, \"\\\\.[Rr]rst$\", file) %>% rename(group = Species,     sl = Sepal.Length, sw = Sepal.Width) else arrange(group,     sl)) %>% filter(sl > 5), quiet(encoding = enc, .keep_all = TRUE)) %>%     summarise(sw = max(sw), by = group)\n14: eval(substitute(expr), envir = parent.frame())\n15: eval(substitute(expr), envir = parent.frame(), names, parentenv,     handlers[[1L]])\n16: sys_time_print({    res = ft %>% select_fst(Species, Sepal.Length, Sepal.Width) %>%         rename(group = Species, sl = Sepal.Length, sw = Sepal.Width) %>%         arrange(group, sl) %>% filter(sl > 5) %>% distinct(sl,         .keep_all = TRUE) %>% summarise(sw = max(sw), by = group)})\n17: eval(expr, envir, enclos)\n18: eval(expr, envir, enclos)\n19: withVisible(eval(expr, envir, enclos))\n20: withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler,     error = eHandler, message = mHandler)\n21: handle(ev <- withCallingHandlers(withVisible(eval(expr, envir,     enclos)), warning = wHandler, error = eHandler, message = mHandler))\n22: timing_fn(handle(ev <- withCallingHandlers(withVisible(eval(expr,     envir, enclos)), warning = wHandler, error = eHandler, message = mHandler)))\n23: evaluate_call(expr, parsed$src[[i]], envir = envir, enclos = enclos,     debug = debug, last = i == length(out), use_try = stop_on_error !=         2L, keep_warning = keep_warning, keep_message = keep_message,     output_handler = output_handler, include_timing = include_timing)\n24: evaluate::evaluate(...)\n25: evaluate(code, envir = env, new_device = FALSE, keep_warning = !isFALSE(options$warning),     keep_message = !isFALSE(options$message), stop_on_error = if (options$error &&         options$include) 0L else 2L, output_handler = knit_handlers(options$render,         options))\n26: in_dir(input_dir(), evaluate(code, envir = env, new_device = FALSE,     keep_warning = !isFALSE(options$warning), keep_message = !isFALSE(options$message),     stop_on_error = if (options$error && options$include) 0L else 2L,     output_handler = knit_handlers(options$render, options)))\n27: block_exec(params)\n28: call_block(x)\n29: process_group.block(group)\n30: process_group(group)\n31: withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),     error = function(e) {        setwd(wd)        cat(res, sep = \"\\n\", file = output %n% \"\")        message(\"Quitting from lines \", paste(current_lines(i),             collapse = \"-\"), \" (\", knit_concord$get(\"infile\"),             \") \")    })\n32: process_file(text, output)\n33: knit(input, text = text, envir = envir, quiet = quiet)\n34: knit2html(..., force_v1 = TRUE)\n35: (if (grepl(\"\\\\.[Rr]md$\", file)) knit2html_v1 else if (grepl(\"\\\\.[Rr]rst$\",     file)) knit2pandoc else knit)(file, encoding = encoding,     quiet = quiet, envir = globalenv(), ...)\n36: vweave(...)\n37: engine$weave(file, quiet = quiet, encoding = enc)\n38: doTryCatch(return(expr), name, parentenv, handler)\n39: tryCatchOne(expr, names, parentenv, handlers[[1L]])\n40: tryCatchList(expr, classes, parentenv, handlers)\n41: tryCatch({    engine$weave(file, quiet = quiet, encoding = enc)    setwd(startdir)    output <- find_vignette_product(name, by = \"weave\", engine = engine)    if (!have.makefile && vignette_is_tex(output)) {        texi2pdf(file = output, clean = FALSE, quiet = quiet)        output <- find_vignette_product(name, by = \"texi2pdf\",             engine = engine)    }    outputs <- c(outputs, output)}, error = function(e) {    thisOK <<- FALSE    fails <<- c(fails, file)    message(gettextf(\"Error: processing vignette '%s' failed with diagnostics:\\n%s\",         file, conditionMessage(e)))})\n42: tools:::buildVignettes(dir = \"/home/ripley/R/packages/tests-devel/tidyft.Rcheck/vign_test/tidyft\",     ser_elibs = \"/tmp/RtmpRnaOcm/file181558bbbf1.rds\")\nAn irrecoverable exception occurred",
-                "flavors": [
-                    "r-patched-solaris-x86"
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
         {
             "package": "tidyft",
             "date_updated": "2020-04-16T15:03:31.000Z",
@@ -1305,6 +1198,140 @@ date: Fri, 15 May 2020 13:08:10 GMT
 
                 ]
             }
+        },
+        {
+            "package": "tidyft",
+            "date_updated": "2020-04-25T15:03:09.000Z",
+            "summary": {
+                "any": true,
+                "ok": 10,
+                "note": 0,
+                "warn": 2,
+                "error": 0,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "0.4.5",
+                    "tinstall": 4.35,
+                    "tcheck": 55.46,
+                    "ttotal": 59.81,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "0.4.5",
+                    "tinstall": 4.01,
+                    "tcheck": 48.96,
+                    "ttotal": 52.97,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 67.29,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 64.49,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 18,
+                    "tcheck": 71,
+                    "ttotal": 89,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 3.88,
+                    "tcheck": 52.02,
+                    "ttotal": 55.9,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 86.8,
+                    "status": "WARN",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 4.67,
+                    "tcheck": 52.06,
+                    "ttotal": 56.73,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-release-osx-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 15,
+                    "tcheck": 62,
+                    "ttotal": 77,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-osx-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "WARN",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 7,
+                    "tcheck": 92,
+                    "ttotal": 99,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/tidyft-00check.html"
+                }
+            ],
+            "check_details": {
+                "version": "0.4.5",
+                "check": "re-building of vignette outputs",
+                "result": "WARN",
+                "output": "Error(s) in re-building vignettes:\n  ...\n--- re-building ‘Introduction.Rmd’ using rmarkdown\nWarning in engine$weave(file, quiet = quiet, encoding = enc) :\n  Pandoc (>= 1.12.3) and/or pandoc-citeproc not available. Falling back to R Markdown v1.\n\n *** caught segfault ***\naddress 0, cause 'memory not mapped'\n\n *** caught segfault ***\naddress 179b69a8, cause 'memory not mapped'\nWarning: stack imbalance in '$', 48 then 47",
+                "flavors": [
+                    "r-patched-solaris-x86"
+                ],
+                "additional_issues": [
+
+                ]
+            }
         }
     ]
 }
@@ -1314,21 +1341,21 @@ date: Fri, 15 May 2020 13:08:10 GMT
 curl https://cranchecks.info/search?q=memory&one_each=true&limit=2 | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 8083
-date: Fri, 15 May 2020 13:08:11 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 8083
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 16 May 2020 14:18:37 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 27,
+    "count": 28,
     "returned": 2,
     "data": [
         {
@@ -1625,21 +1652,21 @@ date: Fri, 15 May 2020 13:08:11 GMT
 curl https://cranchecks.info/search?q=memory&one_each=true&fields=package | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 1199
-date: Fri, 15 May 2020 13:08:12 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 1199
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 16 May 2020 14:18:38 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 27,
+    "count": 28,
     "returned": 10,
     "data": [
         {
@@ -1665,7 +1692,7 @@ date: Fri, 15 May 2020 13:08:12 GMT
         },
         {
             "package": "blockmodeling",
-            "date_updated": "2020-04-15T15:03:37.000Z",
+            "date_updated": "2020-04-16T15:03:32.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -1686,14 +1713,14 @@ date: Fri, 15 May 2020 13:08:12 GMT
         },
         {
             "package": "cooccurNet",
-            "date_updated": "2020-04-15T15:03:37.000Z",
+            "date_updated": "2020-04-16T15:03:31.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
         },
         {
             "package": "cusum",
-            "date_updated": "2020-04-15T15:03:38.000Z",
+            "date_updated": "2020-04-16T15:03:32.000Z",
             "summary": null,
             "checks": null,
             "check_details": null

@@ -16,15 +16,15 @@ This path redirects to /heartbeat
 curl https://cranchecks.info/ | jq .
 ```
 ```yaml
-HTTP/2 302 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-location: https://cranchecks.info/heartbeat
-server: Caddy
-x-content-type-options: nosniff
-content-length: 0
-date: Fri, 15 May 2020 13:08:08 GMT
+HTTP/1.1 302 Found
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 0
+Content-Type: application/json; charset=utf8
+Location: https://cranchecks.info/heartbeat
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 16 May 2020 14:18:36 GMT
 
 ```

@@ -20,15 +20,15 @@ Request good!
 curl https://cranchecks.info/heartbeat | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 256
-date: Fri, 15 May 2020 13:08:03 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 256
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 16 May 2020 14:18:34 GMT
 
 ```
 ```json
@@ -64,16 +64,16 @@ The root `/`, redirects to `/heartbeat`, and `/docs` redirects to what you're re
 curl https://cranchecks.info/ | jq .
 ```
 ```yaml
-HTTP/2 302 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-location: https://cranchecks.info/heartbeat
-server: Caddy
-x-content-type-options: nosniff
-content-length: 0
-date: Fri, 15 May 2020 13:08:04 GMT
+HTTP/1.1 302 Found
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 0
+Content-Type: application/json; charset=utf8
+Location: https://cranchecks.info/heartbeat
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 16 May 2020 14:18:34 GMT
 
 ```
 
@@ -85,15 +85,15 @@ When you have a malformed request, fix it and try again
 curl https://cranchecks.info/maintainers/blablabla | jq .
 ```
 ```yaml
-HTTP/2 400 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 52
-date: Fri, 15 May 2020 13:08:05 GMT
+HTTP/1.1 400 Bad Request
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 52
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 16 May 2020 14:18:35 GMT
 
 ```
 ```json
@@ -114,13 +114,13 @@ E.g. in the example here we misspell "maintainers" to "maintainer". :see_no_evil
 curl https://cranchecks.info/maintainer | jq .
 ```
 ```yaml
-HTTP/2 404 
-content-type: application/json
-server: Caddy
-x-cascade: pass
-x-content-type-options: nosniff
-content-length: 27
-date: Fri, 15 May 2020 13:08:05 GMT
+HTTP/1.1 404 Not Found
+Content-Length: 27
+Content-Type: application/json
+Server: Caddy
+X-Cascade: pass
+X-Content-Type-Options: nosniff
+Date: Sat, 16 May 2020 14:18:35 GMT
 
 ```
 ```json
@@ -138,12 +138,12 @@ Don't do that. :wink:
 curl -XDELETE https://cranchecks.info/pkgs/ropenaq/ | jq .
 ```
 ```yaml
-HTTP/2 405 
-content-type: application/json
-server: Caddy
-x-content-type-options: nosniff
-content-length: 30
-date: Fri, 15 May 2020 13:08:06 GMT
+HTTP/1.1 405 Method Not Allowed
+Content-Length: 30
+Content-Type: application/json
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 16 May 2020 14:18:36 GMT
 
 ```
 ```json
