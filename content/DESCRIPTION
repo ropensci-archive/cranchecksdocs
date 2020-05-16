@@ -1,0 +1,7 @@
+Package: ropenaq
+Authors@R: 
+    person(given = "M",
+           family = "Salmon",
+           role = c("cre", "aut"),
+           email = "msmaellesalmon@gmail.com",
+           comment = c(ORCID = "0000-0002-2815-0399"))

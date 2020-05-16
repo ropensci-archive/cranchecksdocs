@@ -12,6 +12,8 @@ source("hooks.R")
 
 # Notifications
 
+The Notifications endpoint allow you to manage notifications sent to your email address, so you might get aware of failing CRAN checks before CRAN emails you! :dancer: :fire:
+
 ## Notifications token
 
 Get a token for CRAN checks notifications.
@@ -61,11 +63,11 @@ status (str)
 
 time (int)
 : days in a row the match occurs. an integer. can only go 30 days
-  back (history cleaned up after 30 days)
+back (history cleaned up after 30 days)
 
 platforms (str/int)
 : platform the status occurs on, including negation (e.g., "-solaris"). options:
-  solaris, osx, linux, windows, devel, release, patched, oldrel
+solaris, osx, linux, windows, devel, release, patched, oldrel
 
 regex (str)
 : a regex to match against the text of an error in check_details.output
@@ -83,7 +85,7 @@ ERROR for 2 days in a row on all release R versions
 
 WARN for 4 days in a row on any platform except Solaris
 : `{'status' => 'warn', 'time' => 4, 'platforms' => "-solaris", 'regex' => nil}`
-    
+
 WARN for 2 days in a row across 9 or more platforms
 : `{'status' => 'warn', 'time' => 2, 'platforms' => 10, 'regex' => nil}`
 
@@ -96,43 +98,104 @@ NOTE
 error details contain regex 'install'
 : `{'status' => nil, 'time' => nil, 'platforms' => nil, 'regex' => "install"}`
 
+## Notifications create
+
+Add new notification rules.
+
+[Functions of the `cchecks` R package: `cchn_rule_add()` and `cchn_pkg_rule_add()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
+
+```{r, results="asis"}
+args <- c("-XPOST", "-H", paste0('"Authorization: Bearer ', token, '"'), "\\\n", "--data", paste0("'", '[{"package": "ropenaq", "regex": "install failure"}]', "'"), "\\\n", "https://cranchecks.info/notifications/rules")
+get_and_show(args)
+```
+
+```{r}
+# From anywhere
+cchecks::cchn_rule_add(
+  email = "msmaellesalmon@gmail.com",
+  package = "ropenaq",
+  regex = "install failure"
+  )
+
+# Inside the ropenaq folder
+cchecks::cchn_pkg_rule_add(regex = "install failure")
+```
 
 ## Notifications list
 
 List your notifications rules
 
-[Function of the `cchecks` R package: `cchn_pkg_rule_list()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
+[Functions of the `cchecks` R package: `cchn_rule_list()` and `cchn_pkg_rule_list()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
 
 `GET [/notifications/rules]`
-
 
 ```{r, results="asis"}
 args <- c("https://cranchecks.info/notifications/rules", "-H", paste0('"Authorization: Bearer ', token, '"'))
 get_and_show(args)
 ```
 
+```{r}
+# From anywhere
+cchecks::cchn_rule_list()
+
+# Inside the ropenaq folder
+cchecks::cchn_pkg_rule_list()
+```
+
 ## Notifications get
 
-List a single notifications rule by its id
+Get a notifications rule by ID
+
+[Functions of the `cchecks` R package: `cchn_rule_get()` and `cchn_pkg_rule_get()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
 
 `GET [/notifications/rules/{id}]`
 
-[Function of the `cchecks` R package: `cchn_rule_get()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
+```{r}
+rule_id <- cchecks::cchn_rule_list()$data$id[1]
+```
 
-## Notifications create
+```{r, results="asis"}
+args <- c("-H", paste0('"Authorization: Bearer ', token, '"'), "\\\n", paste0("https://cranchecks.info/notifications/rules/", rule_id))
+get_and_show(args)
+```
 
-Create one or more notifications rules
+```{r}
+# From anywhere
+rule_id <- cchecks::cchn_rule_list()$data$id[1]
+rule_id
+cchecks::cchn_rule_get(rule_id)
 
-[Function of the `cchecks` R package: `cchn_rule_add()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
+# Inside the ropenaq folder
+rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
+rule_id
+cchecks::cchn_pkg_rule_get(rule_id)
+```
 
-`POST [/notifications/rules]`
+## Notifications delete
 
-### Notifications delete
+Delete a notifications rule by ID
 
-Delete a single notifications rule by its id
-
-[Function of the `cchecks` R package: `cchn_rule_delete()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
-
+[Functions of the `cchecks` R package: `cchn_rule_delete()` and `cchn_pkg_rule_delete()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
 
 `DELETE [/notifications/rules/{id}]`
 
+```{r}
+rule_id <- cchecks::cchn_rule_list()$data$id[1]
+```
+
+```{r, results="asis"}
+args <- c("-XDELETE", "-H", paste0('"Authorization: Bearer ', token, '"'), "\\\n", paste0("https://cranchecks.info/notifications/rules/", rule_id))
+get_and_show(args)
+```
+
+```{r}
+# From anywhere
+rule_id <- cchecks::cchn_rule_list()$data$id[1]
+rule_id
+cchecks::cchn_rule_delete(rule_id)
+
+# Inside the ropenaq folder
+rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
+rule_id
+cchecks::cchn_pkg_rule_delete(rule_id)
+```
