@@ -1,6 +1,6 @@
 # Paths to Rmd files in content
-rmds <- dir(
-  "content", 
+rmds <- list.files(
+  file.path(getwd(), "content"), 
   pattern = "*.Rmd",
   full.names = TRUE
   )
