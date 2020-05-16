@@ -30,10 +30,10 @@ Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
 Content-Length: 101
 Content-Type: application/json; charset=utf8
-Location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200516%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200516T143238Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=787827a3844f6d192d9a2d00dc0e5ab38c53cf59f019f229f2782e2ad990d271
+Location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200516%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200516T145014Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=60b465c0f629d7a5f34061ab0597920176b852843be46f0042d61079eb16fe6a
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 16 May 2020 14:32:38 GMT
+Date: Sat, 16 May 2020 14:50:14 GMT
 
 ```
 ```json

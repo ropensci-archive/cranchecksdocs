@@ -117,21 +117,21 @@ curl -XPOST -H "Authorization: Bearer ***" \
  https://cranchecks.info/notifications/rules | jq .
 ```
 ```yaml
-HTTP/1.1 401 Unauthorized
-Content-Length: 106
-Content-Type: application/json
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 31
+Content-Type: application/json; charset=utf8
 Server: Caddy
-Www-Authenticate: Bearer
 X-Content-Type-Options: nosniff
-Date: Sat, 16 May 2020 14:32:40 GMT
+Date: Sat, 16 May 2020 14:50:15 GMT
 
 ```
 ```json
 {
-    "error": {
-        "message": "token not found; get a token first with the /notifications/token route"
-    },
-    "data": null
+    "error": null,
+    "data": "success"
 }
 ```
 
@@ -147,9 +147,15 @@ cchecks::cchn_rule_add(
   regex = "install failure"
   )
 ```
+```r
+rule added for package [90mropenaq[39m
+rule: [35m{"package":"ropenaq","regex":"install failure"}[39m
+use [4mcchn_pkg_rule_list()/cchn_rule_list()[24m to get your rules
 
 ```
-Error: (401) token not found; get a token first with the /notifications/token route
+```r
+[1] TRUE
+
 ```
 
 ```r
@@ -159,9 +165,15 @@ Error: (401) token not found; get a token first with the /notifications/token ro
 ```r
 cchecks::cchn_pkg_rule_add(regex = "install failure")
 ```
+```r
+rule added for package [90mropenaq[39m
+rule: [35m{"package":"ropenaq","regex":"install failure"}[39m
+use [4mcchn_pkg_rule_list()/cchn_rule_list()[24m to get your rules
 
 ```
-Error: (401) token not found; get a token first with the /notifications/token route
+```r
+[1] TRUE
+
 ```
 
 ## Notifications list
@@ -176,21 +188,45 @@ List your notifications rules
 curl https://cranchecks.info/notifications/rules -H "Authorization: Bearer ***" | jq .
 ```
 ```yaml
-HTTP/1.1 401 Unauthorized
-Content-Length: 106
-Content-Type: application/json
+HTTP/1.1 200 OK
+Content-Length: 383
+Content-Type: text/html;charset=utf-8
 Server: Caddy
-Www-Authenticate: Bearer
 X-Content-Type-Options: nosniff
-Date: Sat, 16 May 2020 14:32:41 GMT
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Date: Sat, 16 May 2020 14:50:16 GMT
 
 ```
 ```json
 {
-    "error": {
-        "message": "token not found; get a token first with the /notifications/token route"
-    },
-    "data": null
+    "error": null,
+    "data": [
+        {
+            "id": 177,
+            "package": "ropenaq",
+            "rule_status": null,
+            "rule_time": null,
+            "rule_platforms": null,
+            "rule_regex": "install failure"
+        },
+        {
+            "id": 178,
+            "package": "ropenaq",
+            "rule_status": null,
+            "rule_time": null,
+            "rule_platforms": null,
+            "rule_regex": "install failure"
+        },
+        {
+            "id": 179,
+            "package": "ropenaq",
+            "rule_status": null,
+            "rule_time": null,
+            "rule_platforms": null,
+            "rule_regex": "install failure"
+        }
+    ]
 }
 ```
 
@@ -202,9 +238,16 @@ Date: Sat, 16 May 2020 14:32:41 GMT
 ```r
 cchecks::cchn_rule_list()
 ```
+```r
+$error
+NULL
 
-```
-Error: (401) token not found; get a token first with the /notifications/token route
+$data
+   id package rule_status rule_time rule_platforms      rule_regex
+1 177 ropenaq          NA        NA             NA install failure
+2 178 ropenaq          NA        NA             NA install failure
+3 179 ropenaq          NA        NA             NA install failure
+
 ```
 
 ```r
@@ -214,9 +257,16 @@ Error: (401) token not found; get a token first with the /notifications/token ro
 ```r
 cchecks::cchn_pkg_rule_list()
 ```
+```r
+$error
+NULL
 
-```
-Error: (401) token not found; get a token first with the /notifications/token route
+$data
+   id package rule_status rule_time rule_platforms      rule_regex
+1 177 ropenaq          NA        NA             NA install failure
+2 178 ropenaq          NA        NA             NA install failure
+3 179 ropenaq          NA        NA             NA install failure
+
 ```
 
 ## Notifications get
@@ -232,30 +282,32 @@ Get a notifications rule by ID
 Sys.setenv("rule_id" = cchecks::cchn_rule_list()$data$id[1])
 ```
 
-```
-Error: (401) token not found; get a token first with the /notifications/token route
-```
-
 ```shell
 curl -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/ | jq .
+ https://cranchecks.info/notifications/rules/177 | jq .
 ```
 ```yaml
-HTTP/1.1 401 Unauthorized
-Content-Length: 106
-Content-Type: application/json
+HTTP/1.1 200 OK
+Content-Length: 141
+Content-Type: text/html;charset=utf-8
 Server: Caddy
-Www-Authenticate: Bearer
 X-Content-Type-Options: nosniff
-Date: Sat, 16 May 2020 14:32:42 GMT
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Date: Sat, 16 May 2020 14:50:17 GMT
 
 ```
 ```json
 {
-    "error": {
-        "message": "token not found; get a token first with the /notifications/token route"
-    },
-    "data": null
+    "error": null,
+    "data": {
+        "id": 177,
+        "package": "ropenaq",
+        "rule_status": null,
+        "rule_time": null,
+        "rule_platforms": null,
+        "rule_regex": "install failure"
+    }
 }
 ```
 
@@ -268,24 +320,40 @@ Date: Sat, 16 May 2020 14:32:42 GMT
 rule_id <- cchecks::cchn_rule_list()$data$id[1]
 ```
 
-```
-Error: (401) token not found; get a token first with the /notifications/token route
-```
-
 ```r
 rule_id
 ```
+```r
+[1] 177
 
-```
-Error in eval(expr, envir, enclos): object 'rule_id' not found
 ```
 
 ```r
 cchecks::cchn_rule_get(rule_id)
 ```
+```r
+$error
+NULL
 
-```
-Error in assert(id, c("integer", "numeric")): object 'rule_id' not found
+$data
+$data$id
+[1] 177
+
+$data$package
+[1] "ropenaq"
+
+$data$rule_status
+NULL
+
+$data$rule_time
+NULL
+
+$data$rule_platforms
+NULL
+
+$data$rule_regex
+[1] "install failure"
+
 ```
 
 ```r
@@ -296,24 +364,40 @@ Error in assert(id, c("integer", "numeric")): object 'rule_id' not found
 rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
 ```
 
-```
-Error: (401) token not found; get a token first with the /notifications/token route
-```
-
 ```r
 rule_id
 ```
+```r
+[1] 177
 
-```
-Error in eval(expr, envir, enclos): object 'rule_id' not found
 ```
 
 ```r
 cchecks::cchn_pkg_rule_get(rule_id)
 ```
+```r
+$error
+NULL
 
-```
-Error in assert(id, c("integer", "numeric")): object 'rule_id' not found
+$data
+$data$id
+[1] 177
+
+$data$package
+[1] "ropenaq"
+
+$data$rule_status
+NULL
+
+$data$rule_time
+NULL
+
+$data$rule_platforms
+NULL
+
+$data$rule_regex
+[1] "install failure"
+
 ```
 
 ## Notifications delete
@@ -329,27 +413,17 @@ Delete a notifications rule by ID
 Sys.setenv("rule_id" = cchecks::cchn_rule_list()$data$id[1])
 ```
 
-```
-Error: (401) token not found; get a token first with the /notifications/token route
-```
-
 ```shell
 curl -XDELETE -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/ | jq .
+ https://cranchecks.info/notifications/rules/177 | jq .
 ```
 ```yaml
-HTTP/1.1 405 Method Not Allowed
-Content-Length: 30
-Content-Type: application/json
+HTTP/1.1 204 No Content
+Access-Control-Allow-Methods: DELETE
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 16 May 2020 14:32:42 GMT
+Date: Sat, 16 May 2020 14:50:18 GMT
 
-```
-```json
-{
-    "error": "Method Not Allowed"
-}
 ```
 
 
@@ -361,24 +435,19 @@ Date: Sat, 16 May 2020 14:32:42 GMT
 rule_id <- cchecks::cchn_rule_list()$data$id[1]
 ```
 
-```
-Error: (401) token not found; get a token first with the /notifications/token route
-```
-
 ```r
 rule_id
 ```
+```r
+[1] 178
 
-```
-Error in eval(expr, envir, enclos): object 'rule_id' not found
 ```
 
 ```r
 cchecks::cchn_rule_delete(rule_id)
 ```
-
-```
-Error in assert(id, c("integer", "numeric")): object 'rule_id' not found
+```r
+# ok
 ```
 
 ```r
@@ -389,22 +458,17 @@ Error in assert(id, c("integer", "numeric")): object 'rule_id' not found
 rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
 ```
 
-```
-Error: (401) token not found; get a token first with the /notifications/token route
-```
-
 ```r
 rule_id
 ```
+```r
+[1] 179
 
-```
-Error in eval(expr, envir, enclos): object 'rule_id' not found
 ```
 
 ```r
 cchecks::cchn_pkg_rule_delete(rule_id)
 ```
-
-```
-Error in assert(id, c("integer", "numeric")): object 'rule_id' not found
+```r
+# ok
 ```
