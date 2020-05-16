@@ -105,7 +105,7 @@ Add new notification rules.
 [Functions of the `cchecks` R package: `cchn_rule_add()` and `cchn_pkg_rule_add()`](https://docs.ropensci.org/cchecks/reference/cchn_rules.html).
 
 ```{r, results="asis"}
-args <- c("-XPOST", "-H", paste0('"Authorization: Bearer ', token, '"'), "\\\n", "--data", paste0("'", '[{"package": "ropenaq", "regex": "install failure"}]', "'"), "\\\n", "https://cranchecks.info/notifications/rules")
+args <- c("-XPOST", "-H", paste0('"Authorization: Bearer ', Sys.getenv("CCHECKS_TOKEN"), '"'), "\\\n", "--data", paste0("'", '[{"package": "ropenaq", "regex": "install failure"}]', "'"), "\\\n", "https://cranchecks.info/notifications/rules")
 get_and_show(args)
 ```
 
@@ -130,7 +130,7 @@ List your notifications rules
 `GET [/notifications/rules]`
 
 ```{r, results="asis"}
-args <- c("https://cranchecks.info/notifications/rules", "-H", paste0('"Authorization: Bearer ', token, '"'))
+args <- c("https://cranchecks.info/notifications/rules", "-H", paste0('"Authorization: Bearer ', Sys.getenv("CCHECKS_TOKEN"), '"'))
 get_and_show(args)
 ```
 
@@ -155,7 +155,7 @@ rule_id <- cchecks::cchn_rule_list()$data$id[1]
 ```
 
 ```{r, results="asis"}
-args <- c("-H", paste0('"Authorization: Bearer ', token, '"'), "\\\n", paste0("https://cranchecks.info/notifications/rules/", rule_id))
+args <- c("-H", paste0('"Authorization: Bearer ', Sys.getenv("CCHECKS_TOKEN"), '"'), "\\\n", paste0("https://cranchecks.info/notifications/rules/", rule_id))
 get_and_show(args)
 ```
 
@@ -184,7 +184,7 @@ rule_id <- cchecks::cchn_rule_list()$data$id[1]
 ```
 
 ```{r, results="asis"}
-args <- c("-XDELETE", "-H", paste0('"Authorization: Bearer ', token, '"'), "\\\n", paste0("https://cranchecks.info/notifications/rules/", rule_id))
+args <- c("-XDELETE", "-H", paste0('"Authorization: Bearer ', Sys.getenv("CCHECKS_TOKEN"), '"'), "\\\n", paste0("https://cranchecks.info/notifications/rules/", rule_id))
 get_and_show(args)
 ```
 
