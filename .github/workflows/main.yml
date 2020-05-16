@@ -32,6 +32,9 @@ jobs:
           
       - name: Render Rmd
         run: Rscript -e 'source("make.R")'
+        env: # Set the secret as an input
+          CCHECKS_EMAIL: ${{ secrets.CCHECKS_EMAIL }}
+          CCHECKS_TOKEN: ${{ secrets.CCHECKS_TOKEN }}
       - name: Commit results
         run: |
           git commit * -m 'Re-build docs' || echo "No changes to commit"
