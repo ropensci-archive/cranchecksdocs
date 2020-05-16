@@ -20,8 +20,9 @@ weight = 2
 title = "CRAN checks API"
 # Left sidebar footer items. Use HTMl or Markdown.
 toc_footers = [ 
-"Documentation Powered by [DocuAPI](https://github.com/bep/docuapi)",
-"Hugo Theme by [bep](https://github.com/bep)"
+"Documentation Powered by [DocuAPI](https://github.com/bep/docuapi),",
+" Hugo and R",
+"[Website source](https://maelle/cranchecksdocs)"
 ]
 
 [params]
