@@ -2,6 +2,15 @@
 # And to disable symbols before output
 knitr::opts_chunk$set(fig.path = "", comment = "")
 
+# knitr message hook
+knitr::knit_hooks$set(message = function(x, options) { 
+  paste0(
+    "```r\n",
+    paste("#", x),
+    "```\n",
+    collapse = "\n"
+  )
+})
 
 # knitr hook to render source code
 # differently when it's shell code (results == "asis")
@@ -48,6 +57,9 @@ knitr::knit_hooks$set(
 get_and_show <- function(args) {
    args <- gsub('^"', "", args)
    args <- gsub('"$', "", args)
+   args <- gsub("^'", "", args)
+   args <- gsub("'$", "", args)
+   args <- args[args != "\\\n"]
     curl_output <- processx::run(
       "curl", 
       c("-i", args) # -i to get headers
