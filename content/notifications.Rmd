@@ -45,49 +45,55 @@ email <- Sys.getenv("CCHECKS_EMAIL")
 token <- Sys.getenv("CCHECKS_TOKEN")
 cchecks::cchn_register(email = email, token = token)
 # Just to have enough for examples
-cchecks::cchn_rule_add(
+ok <- cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "riem",
   status = "note", 
   platform = 3,
-  times = 5
+  times = 5,
+  quiet = TRUE
   )
   
-cchecks::cchn_rule_add(
+ok <- cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "riem",
   status = "error", 
-  platform = 3
+  platform = 3,
+  quiet = TRUE
   )
   
-cchecks::cchn_rule_add(
+ok <- cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "codemetar",
   status = "note", 
   platform = 3,
-  times = 5
+  times = 5,
+  quiet = TRUE
   )
   
-cchecks::cchn_rule_add(
+ok <- cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "codemetar",
   status = "error", 
-  platform = 3
+  platform = 3,
+  quiet = TRUE
   )  
   
-cchecks::cchn_rule_add(
+ok <- cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "rhub",
   status = "note", 
   platform = 3,
-  times = 5
+  times = 5,
+  quiet = TRUE
   )
   
-cchecks::cchn_rule_add(
+ok <- cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "rhub",
   status = "error", 
-  platform = 3
+  platform = 3,
+  quiet = TRUE
   )
 ```
 
