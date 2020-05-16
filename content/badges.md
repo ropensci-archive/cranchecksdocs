@@ -38,10 +38,10 @@ HTTP/1.1 200 OK
 Cache-Control: max-age=300, public
 Content-Length: 855
 Content-Type: image/svg+xml; charset=utf-8
-Expires: Sat, 16 May 2020 14:55:10 GMT
+Expires: Sat, 16 May 2020 15:06:07 GMT
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 16 May 2020 14:50:10 GMT
+Date: Sat, 16 May 2020 15:01:07 GMT
 
 ```
 ```xml
@@ -94,10 +94,10 @@ HTTP/1.1 200 OK
 Cache-Control: max-age=300, public
 Content-Length: 855
 Content-Type: image/svg+xml; charset=utf-8
-Expires: Sat, 16 May 2020 14:55:10 GMT
+Expires: Sat, 16 May 2020 15:06:07 GMT
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 16 May 2020 14:50:10 GMT
+Date: Sat, 16 May 2020 15:01:07 GMT
 
 ```
 ```xml
@@ -150,10 +150,10 @@ HTTP/1.1 200 OK
 Cache-Control: max-age=300, public
 Content-Length: 855
 Content-Type: image/svg+xml; charset=utf-8
-Expires: Sat, 16 May 2020 14:55:11 GMT
+Expires: Sat, 16 May 2020 15:06:08 GMT
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 16 May 2020 14:50:11 GMT
+Date: Sat, 16 May 2020 15:01:08 GMT
 
 ```
 ```xml
