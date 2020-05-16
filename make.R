@@ -8,7 +8,7 @@ rmds <- dir(
 # Render them all
 lapply(
   rmds,
-  rmarkdown::render
+  knitr::knit
   )
 
 # Remove "junk" html files

@@ -16,7 +16,7 @@ Imports:
     knitr,
     xml2,
     processx,
-    rmarkdown,
+    knitr,
     jqr,
     cchecks
 Remotes:
