@@ -36,7 +36,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 6511
-date: Wed, 20 May 2020 13:07:31 GMT
+date: Wed, 20 May 2020 13:24:58 GMT
 
 ```
 ```json
@@ -349,12 +349,12 @@ $data
    package                                                                url
 1      ibb      https://cloud.r-project.org/web/checks/check_results_ibb.html
 2 ChIPtest https://cloud.r-project.org/web/checks/check_results_ChIPtest.html
-              date_updated summary.any summary.ok summary.note summary.warn
-1 2020-05-20T12:04:01.345Z        TRUE          7            5            0
-2 2020-05-20T12:04:01.345Z        TRUE         10            2            0
-  summary.error summary.fail
-1             0            0
-2             0            0
+              date_updated summary.any summary.ok summary.note summary.warn summary.error
+1 2020-05-20T12:04:01.345Z        TRUE          7            5            0             0
+2 2020-05-20T12:04:01.345Z        TRUE         10            2            0             0
+  summary.fail
+1            0
+2            0
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 checks
 1                         r-devel-linux-x86_64-debian-clang, r-devel-linux-x86_64-debian-gcc, r-devel-linux-x86_64-fedora-clang, r-devel-linux-x86_64-fedora-gcc, r-devel-windows-ix86+x86_64, r-patched-linux-x86_64, r-patched-solaris-x86, r-release-linux-x86_64, r-release-osx-x86_64, r-release-windows-ix86+x86_64, r-oldrel-osx-x86_64, r-oldrel-windows-ix86+x86_64, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 4.46, 3.65, 0, 0, 18, 4.32, 0, 4.23, 0, 17, 0, 10, 37.66, 28.83, 0, 0, 59, 36.66, 0, 36.72, 0, 70, 0, 67, 42.12, 32.48, 49.52, 49.05, 77, 40.98, 75.2, 40.95, 0, 87, 0, 77, OK, OK, NOTE, NOTE, OK, OK, NOTE, OK, NOTE, OK, NOTE, OK, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/ibb-00check.html
 2 r-devel-linux-x86_64-debian-clang, r-devel-linux-x86_64-debian-gcc, r-devel-linux-x86_64-fedora-clang, r-devel-linux-x86_64-fedora-gcc, r-devel-windows-ix86+x86_64, r-patched-linux-x86_64, r-patched-solaris-x86, r-release-linux-x86_64, r-release-osx-x86_64, r-release-windows-ix86+x86_64, r-oldrel-osx-x86_64, r-oldrel-windows-ix86+x86_64, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.08, 2.39, 0, 0, 12, 2.7, 0, 2.65, 0, 9, 0, 16, 23.42, 18.38, 0, 0, 57, 23.28, 0, 23.08, 0, 43, 0, 63, 26.5, 20.77, 33.9, 32.15, 69, 25.98, 50, 25.73, 0, 52, 0, 79, OK, OK, NOTE, NOTE, OK, OK, OK, OK, OK, OK, OK, OK, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/ChIPtest-00check.html
@@ -393,7 +393,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 2840
-date: Wed, 20 May 2020 13:07:35 GMT
+date: Wed, 20 May 2020 13:25:00 GMT
 
 ```
 ```json
@@ -618,7 +618,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 27343
-date: Wed, 20 May 2020 13:07:36 GMT
+date: Wed, 20 May 2020 13:25:01 GMT
 
 ```
 ```json
@@ -1866,21 +1866,20 @@ $data$package
 
 $data$history
 # A tibble: 29 x 4
-   date_updated summary$any   $ok $note $warn $error $fail checks
-   <chr>        <lgl>       <int> <int> <int>  <int> <int> <list>
- 1 2020-05-19T… FALSE          12     0     0      0     0 <df[,…
- 2 2020-05-18T… FALSE          12     0     0      0     0 <df[,…
- 3 2020-05-17T… FALSE          12     0     0      0     0 <df[,…
- 4 2020-05-16T… FALSE          12     0     0      0     0 <df[,…
- 5 2020-05-15T… FALSE          12     0     0      0     0 <df[,…
- 6 2020-05-14T… FALSE          12     0     0      0     0 <df[,…
- 7 2020-05-13T… FALSE          12     0     0      0     0 <df[,…
- 8 2020-05-12T… FALSE          12     0     0      0     0 <df[,…
- 9 2020-05-11T… FALSE          12     0     0      0     0 <df[,…
-10 2020-05-10T… FALSE          12     0     0      0     0 <df[,…
-# … with 19 more rows, and 6 more variables: check_details$version <chr>,
-#   $check <chr>, $result <chr>, $output <chr>, $flavors <list>,
-#   $additional_issues <list>
+   date_updated summary$any   $ok $note $warn $error $fail checks check_details$v… $check
+   <chr>        <lgl>       <int> <int> <int>  <int> <int> <list> <chr>            <chr> 
+ 1 2020-05-19T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+ 2 2020-05-18T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+ 3 2020-05-17T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+ 4 2020-05-16T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+ 5 2020-05-15T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+ 6 2020-05-14T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+ 7 2020-05-13T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+ 8 2020-05-12T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+ 9 2020-05-11T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+10 2020-05-10T… FALSE          12     0     0      0     0 <df[,… <NA>             <NA>  
+# … with 19 more rows, and 4 more variables: $result <chr>, $output <chr>,
+#   $flavors <list>, $additional_issues <list>
 
 ```
 

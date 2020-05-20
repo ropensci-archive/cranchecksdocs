@@ -47,7 +47,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 43071
-date: Wed, 20 May 2020 13:12:14 GMT
+date: Wed, 20 May 2020 13:25:08 GMT
 
 ```
 ```json
@@ -1407,21 +1407,20 @@ $returned
 
 $data
 # A tibble: 30 x 5
-   package date_updated summary$any   $ok $note $warn $error $fail checks
-   <chr>   <chr>        <lgl>       <int> <int> <int>  <int> <int> <list>
- 1 tidyft  2020-04-20T… TRUE            9     0     2      0     0 <df[,…
- 2 tidyft  2020-04-21T… TRUE           10     0     2      0     0 <df[,…
- 3 tidyft  2020-04-22T… TRUE           10     0     2      0     0 <df[,…
- 4 tidyft  2020-04-23T… TRUE           10     0     2      0     0 <df[,…
- 5 tidyft  2020-04-24T… TRUE           10     0     2      0     0 <df[,…
- 6 tidyft  2020-04-25T… TRUE           10     0     2      0     0 <df[,…
- 7 tidyft  2020-04-26T… TRUE           10     0     2      0     0 <df[,…
- 8 tidyft  2020-04-27T… TRUE           10     0     2      0     0 <df[,…
- 9 tidyft  2020-04-28T… TRUE           10     0     2      0     0 <df[,…
-10 tidyft  2020-04-29T… TRUE           10     0     2      0     0 <df[,…
-# … with 20 more rows, and 6 more variables: check_details$version <chr>,
-#   $check <chr>, $result <chr>, $output <chr>, $flavors <list>,
-#   $additional_issues <list>
+   package date_updated summary$any   $ok $note $warn $error $fail checks check_details$v…
+   <chr>   <chr>        <lgl>       <int> <int> <int>  <int> <int> <list> <chr>           
+ 1 tidyft  2020-04-20T… TRUE            9     0     2      0     0 <df[,… 0.4.5           
+ 2 tidyft  2020-04-21T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
+ 3 tidyft  2020-04-22T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
+ 4 tidyft  2020-04-23T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
+ 5 tidyft  2020-04-24T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
+ 6 tidyft  2020-04-25T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
+ 7 tidyft  2020-04-26T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
+ 8 tidyft  2020-04-27T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
+ 9 tidyft  2020-04-28T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
+10 tidyft  2020-04-29T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
+# … with 20 more rows, and 5 more variables: $check <chr>, $result <chr>, $output <chr>,
+#   $flavors <list>, $additional_issues <list>
 
 ```
 
@@ -1437,7 +1436,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 8083
-date: Wed, 20 May 2020 13:12:21 GMT
+date: Wed, 20 May 2020 13:25:09 GMT
 
 ```
 ```json
@@ -1752,12 +1751,12 @@ $returned
 
 $data
 # A tibble: 2 x 5
-  package date_updated summary$any   $ok $note $warn $error $fail checks
-  <chr>   <chr>        <lgl>       <int> <int> <int>  <int> <int> <list>
-1 apsimr  2020-04-20T… TRUE           12     0     1      0     0 <df[,…
-2 aws     2020-04-20T… TRUE           12     0     0      1     0 <df[,…
-# … with 6 more variables: check_details$version <chr>, $check <chr>,
-#   $result <chr>, $output <chr>, $flavors <list>, $additional_issues <list>
+  package date_updated summary$any   $ok $note $warn $error $fail checks check_details$v…
+  <chr>   <chr>        <lgl>       <int> <int> <int>  <int> <int> <list> <chr>           
+1 apsimr  2020-04-20T… TRUE           12     0     1      0     0 <df[,… 1.2             
+2 aws     2020-04-20T… TRUE           12     0     0      1     0 <df[,… 2.4-2           
+# … with 5 more variables: $check <chr>, $result <chr>, $output <chr>, $flavors <list>,
+#   $additional_issues <list>
 
 ```
 
@@ -1773,7 +1772,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 1197
-date: Wed, 20 May 2020 13:12:22 GMT
+date: Wed, 20 May 2020 13:25:11 GMT
 
 ```
 ```json
