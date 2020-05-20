@@ -39,15 +39,15 @@ limit/offset
 curl https://cranchecks.info/search?q=memory | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 43071
-date: Wed, 20 May 2020 13:25:08 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 43071
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 20 May 2020 13:30:52 GMT
 
 ```
 ```json
@@ -1395,48 +1395,24 @@ date: Wed, 20 May 2020 13:25:08 GMT
 ```r
 cchecks::cch_pkgs_search(q = "memory")
 ```
-```r
-$error
-NULL
 
-$count
-[1] 493
-
-$returned
-[1] 30
-
-$data
-# A tibble: 30 x 5
-   package date_updated summary$any   $ok $note $warn $error $fail checks check_details$v…
-   <chr>   <chr>        <lgl>       <int> <int> <int>  <int> <int> <list> <chr>           
- 1 tidyft  2020-04-20T… TRUE            9     0     2      0     0 <df[,… 0.4.5           
- 2 tidyft  2020-04-21T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
- 3 tidyft  2020-04-22T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
- 4 tidyft  2020-04-23T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
- 5 tidyft  2020-04-24T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
- 6 tidyft  2020-04-25T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
- 7 tidyft  2020-04-26T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
- 8 tidyft  2020-04-27T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
- 9 tidyft  2020-04-28T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
-10 tidyft  2020-04-29T… TRUE           10     0     2      0     0 <df[,… 0.4.5           
-# … with 20 more rows, and 5 more variables: $check <chr>, $result <chr>, $output <chr>,
-#   $flavors <list>, $additional_issues <list>
-
+```
+Error: 'cch_pkgs_search' is not an exported object from 'namespace:cchecks'
 ```
 
 ```shell
 curl https://cranchecks.info/search?q=memory&one_each=true&limit=2 | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 8083
-date: Wed, 20 May 2020 13:25:09 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 8083
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 20 May 2020 13:30:53 GMT
 
 ```
 ```json
@@ -1739,40 +1715,24 @@ date: Wed, 20 May 2020 13:25:09 GMT
 ```r
 cchecks::cch_pkgs_search(q = "memory", one_each = TRUE, limit = 2)
 ```
-```r
-$error
-NULL
 
-$count
-[1] 30
-
-$returned
-[1] 2
-
-$data
-# A tibble: 2 x 5
-  package date_updated summary$any   $ok $note $warn $error $fail checks check_details$v…
-  <chr>   <chr>        <lgl>       <int> <int> <int>  <int> <int> <list> <chr>           
-1 apsimr  2020-04-20T… TRUE           12     0     1      0     0 <df[,… 1.2             
-2 aws     2020-04-20T… TRUE           12     0     0      1     0 <df[,… 2.4-2           
-# … with 5 more variables: $check <chr>, $result <chr>, $output <chr>, $flavors <list>,
-#   $additional_issues <list>
-
+```
+Error: 'cch_pkgs_search' is not an exported object from 'namespace:cchecks'
 ```
 
 ```shell
 curl https://cranchecks.info/search?q=memory&one_each=true&fields=package | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 1197
-date: Wed, 20 May 2020 13:25:11 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 1197
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 20 May 2020 13:30:53 GMT
 
 ```
 ```json
@@ -1859,30 +1819,7 @@ date: Wed, 20 May 2020 13:25:11 GMT
 ```r
 cchecks::cch_pkgs_search(q = "memory", one_each = TRUE, fields = "package")
 ```
-```r
-$error
-NULL
 
-$count
-[1] 30
-
-$returned
-[1] 30
-
-$data
-# A tibble: 30 x 5
-   package       date_updated             summary checks check_details
-   <chr>         <chr>                    <lgl>   <lgl>  <lgl>        
- 1 apsimr        2020-04-20T15:03:30.000Z NA      NA     NA           
- 2 aws           2020-04-20T15:03:31.000Z NA      NA     NA           
- 3 bayesCT       2020-04-20T15:03:31.000Z NA      NA     NA           
- 4 blockmodeling 2020-04-20T15:03:31.000Z NA      NA     NA           
- 5 bullwhipgame  2020-04-20T15:03:30.000Z NA      NA     NA           
- 6 collapse      2020-05-05T15:03:14.000Z NA      NA     NA           
- 7 cooccurNet    2020-04-20T15:03:30.000Z NA      NA     NA           
- 8 corr2D        2020-05-16T15:03:16.000Z NA      NA     NA           
- 9 cusum         2020-04-20T15:03:31.000Z NA      NA     NA           
-10 dexterMST     2020-05-11T15:03:13.000Z NA      NA     NA           
-# … with 20 more rows
-
+```
+Error: 'cch_pkgs_search' is not an exported object from 'namespace:cchecks'
 ```

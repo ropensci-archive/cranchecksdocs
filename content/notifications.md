@@ -117,15 +117,15 @@ curl -XPOST -H "Authorization: Bearer ***" \
  https://cranchecks.info/notifications/rules | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: POST
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 31
-date: Wed, 20 May 2020 13:24:49 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 31
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 20 May 2020 13:30:49 GMT
 
 ```
 ```json
@@ -148,9 +148,9 @@ cchecks::cchn_rule_add(
   )
 ```
 ```r
-rule added for package ropenaq
-rule: {"package":"ropenaq","regex":"install failure"}
-use cchn_pkg_rule_list()/cchn_rule_list() to get your rules
+rule added for package [90mropenaq[39m
+rule: [35m{"package":"ropenaq","regex":"install failure"}[39m
+use [4mcchn_pkg_rule_list()/cchn_rule_list()[24m to get your rules
 
 ```
 ```r
@@ -166,9 +166,9 @@ use cchn_pkg_rule_list()/cchn_rule_list() to get your rules
 cchecks::cchn_pkg_rule_add(regex = "install failure")
 ```
 ```r
-rule added for package ropenaq
-rule: {"package":"ropenaq","regex":"install failure"}
-use cchn_pkg_rule_list()/cchn_rule_list() to get your rules
+rule added for package [90mropenaq[39m
+rule: [35m{"package":"ropenaq","regex":"install failure"}[39m
+use [4mcchn_pkg_rule_list()/cchn_rule_list()[24m to get your rules
 
 ```
 ```r
@@ -188,36 +188,20 @@ List your notifications rules
 curl https://cranchecks.info/notifications/rules -H "Authorization: Bearer ***" | jq .
 ```
 ```yaml
-HTTP/2 200 
-content-type: text/html;charset=utf-8
-server: Caddy
-x-content-type-options: nosniff
-x-frame-options: SAMEORIGIN
-x-xss-protection: 1; mode=block
-content-length: 1026
-date: Wed, 20 May 2020 13:24:51 GMT
+HTTP/1.1 200 OK
+Content-Length: 1818
+Content-Type: text/html;charset=utf-8
+Server: Caddy
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Date: Wed, 20 May 2020 13:30:49 GMT
 
 ```
 ```json
 {
     "error": null,
     "data": [
-        {
-            "id": 248,
-            "package": "riem",
-            "rule_status": "note",
-            "rule_time": null,
-            "rule_platforms": "3",
-            "rule_regex": null
-        },
-        {
-            "id": 249,
-            "package": "riem",
-            "rule_status": "error",
-            "rule_time": null,
-            "rule_platforms": "3",
-            "rule_regex": null
-        },
         {
             "id": 250,
             "package": "codemetar",
@@ -273,6 +257,78 @@ date: Wed, 20 May 2020 13:24:51 GMT
             "rule_time": null,
             "rule_platforms": null,
             "rule_regex": "install failure"
+        },
+        {
+            "id": 257,
+            "package": "riem",
+            "rule_status": "note",
+            "rule_time": null,
+            "rule_platforms": "3",
+            "rule_regex": null
+        },
+        {
+            "id": 258,
+            "package": "riem",
+            "rule_status": "error",
+            "rule_time": null,
+            "rule_platforms": "3",
+            "rule_regex": null
+        },
+        {
+            "id": 259,
+            "package": "codemetar",
+            "rule_status": "note",
+            "rule_time": null,
+            "rule_platforms": "3",
+            "rule_regex": null
+        },
+        {
+            "id": 260,
+            "package": "codemetar",
+            "rule_status": "error",
+            "rule_time": null,
+            "rule_platforms": "3",
+            "rule_regex": null
+        },
+        {
+            "id": 261,
+            "package": "rhub",
+            "rule_status": "note",
+            "rule_time": null,
+            "rule_platforms": "3",
+            "rule_regex": null
+        },
+        {
+            "id": 262,
+            "package": "rhub",
+            "rule_status": "error",
+            "rule_time": null,
+            "rule_platforms": "3",
+            "rule_regex": null
+        },
+        {
+            "id": 263,
+            "package": "ropenaq",
+            "rule_status": null,
+            "rule_time": null,
+            "rule_platforms": null,
+            "rule_regex": "install failure"
+        },
+        {
+            "id": 264,
+            "package": "ropenaq",
+            "rule_status": null,
+            "rule_time": null,
+            "rule_platforms": null,
+            "rule_regex": "install failure"
+        },
+        {
+            "id": 265,
+            "package": "ropenaq",
+            "rule_status": null,
+            "rule_time": null,
+            "rule_platforms": null,
+            "rule_regex": "install failure"
         }
     ]
 }
@@ -291,16 +347,23 @@ $error
 NULL
 
 $data
-   id   package rule_status rule_time rule_platforms      rule_regex
-1 248      riem        note        NA              3            <NA>
-2 249      riem       error        NA              3            <NA>
-3 250 codemetar        note        NA              3            <NA>
-4 251 codemetar       error        NA              3            <NA>
-5 252      rhub        note        NA              3            <NA>
-6 253      rhub       error        NA              3            <NA>
-7 254   ropenaq        <NA>        NA           <NA> install failure
-8 255   ropenaq        <NA>        NA           <NA> install failure
-9 256   ropenaq        <NA>        NA           <NA> install failure
+    id   package rule_status rule_time rule_platforms      rule_regex
+1  250 codemetar        note        NA              3            <NA>
+2  251 codemetar       error        NA              3            <NA>
+3  252      rhub        note        NA              3            <NA>
+4  253      rhub       error        NA              3            <NA>
+5  254   ropenaq        <NA>        NA           <NA> install failure
+6  255   ropenaq        <NA>        NA           <NA> install failure
+7  256   ropenaq        <NA>        NA           <NA> install failure
+8  257      riem        note        NA              3            <NA>
+9  258      riem       error        NA              3            <NA>
+10 259 codemetar        note        NA              3            <NA>
+11 260 codemetar       error        NA              3            <NA>
+12 261      rhub        note        NA              3            <NA>
+13 262      rhub       error        NA              3            <NA>
+14 263   ropenaq        <NA>        NA           <NA> install failure
+15 264   ropenaq        <NA>        NA           <NA> install failure
+16 265   ropenaq        <NA>        NA           <NA> install failure
 
 ```
 
@@ -316,11 +379,23 @@ $error
 NULL
 
 $data
-   id package rule_status rule_time rule_platforms      rule_regex
-1 118 ropenaq       error         2            osx            <NA>
-2 254 ropenaq        <NA>        NA           <NA> install failure
-3 255 ropenaq        <NA>        NA           <NA> install failure
-4 256 ropenaq        <NA>        NA           <NA> install failure
+    id   package rule_status rule_time rule_platforms      rule_regex
+1  250 codemetar        note        NA              3            <NA>
+2  251 codemetar       error        NA              3            <NA>
+3  252      rhub        note        NA              3            <NA>
+4  253      rhub       error        NA              3            <NA>
+5  254   ropenaq        <NA>        NA           <NA> install failure
+6  255   ropenaq        <NA>        NA           <NA> install failure
+7  256   ropenaq        <NA>        NA           <NA> install failure
+8  257      riem        note        NA              3            <NA>
+9  258      riem       error        NA              3            <NA>
+10 259 codemetar        note        NA              3            <NA>
+11 260 codemetar       error        NA              3            <NA>
+12 261      rhub        note        NA              3            <NA>
+13 262      rhub       error        NA              3            <NA>
+14 263   ropenaq        <NA>        NA           <NA> install failure
+15 264   ropenaq        <NA>        NA           <NA> install failure
+16 265   ropenaq        <NA>        NA           <NA> install failure
 
 ```
 
@@ -339,25 +414,25 @@ Sys.setenv("rule_id" = cchecks::cchn_rule_list()$data$id[1])
 
 ```shell
 curl -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/248 | jq .
+ https://cranchecks.info/notifications/rules/250 | jq .
 ```
 ```yaml
-HTTP/2 200 
-content-type: text/html;charset=utf-8
-server: Caddy
-x-content-type-options: nosniff
-x-frame-options: SAMEORIGIN
-x-xss-protection: 1; mode=block
-content-length: 126
-date: Wed, 20 May 2020 13:24:53 GMT
+HTTP/1.1 200 OK
+Content-Length: 131
+Content-Type: text/html;charset=utf-8
+Server: Caddy
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Date: Wed, 20 May 2020 13:30:50 GMT
 
 ```
 ```json
 {
     "error": null,
     "data": {
-        "id": 248,
-        "package": "riem",
+        "id": 250,
+        "package": "codemetar",
         "rule_status": "note",
         "rule_time": null,
         "rule_platforms": "3",
@@ -379,7 +454,7 @@ rule_id <- cchecks::cchn_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 248
+[1] 250
 
 ```
 
@@ -392,10 +467,10 @@ NULL
 
 $data
 $data$id
-[1] 248
+[1] 250
 
 $data$package
-[1] "riem"
+[1] "codemetar"
 
 $data$rule_status
 [1] "note"
@@ -423,16 +498,36 @@ rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 118
+[1] 250
 
 ```
 
 ```r
 cchecks::cchn_pkg_rule_get(rule_id)
 ```
+```r
+$error
+NULL
 
-```
-Error: (400) rule 118 not found
+$data
+$data$id
+[1] 250
+
+$data$package
+[1] "codemetar"
+
+$data$rule_status
+[1] "note"
+
+$data$rule_time
+NULL
+
+$data$rule_platforms
+[1] "3"
+
+$data$rule_regex
+NULL
+
 ```
 
 ## Notifications delete
@@ -450,14 +545,14 @@ Sys.setenv("rule_id" = cchecks::cchn_rule_list()$data$id[1])
 
 ```shell
 curl -XDELETE -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/248 | jq .
+ https://cranchecks.info/notifications/rules/250 | jq .
 ```
 ```yaml
-HTTP/2 204 
-access-control-allow-methods: DELETE
-server: Caddy
-x-content-type-options: nosniff
-date: Wed, 20 May 2020 13:24:56 GMT
+HTTP/1.1 204 No Content
+Access-Control-Allow-Methods: DELETE
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Wed, 20 May 2020 13:30:50 GMT
 
 ```
 
@@ -474,7 +569,7 @@ rule_id <- cchecks::cchn_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 249
+[1] 251
 
 ```
 
@@ -497,14 +592,13 @@ rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 118
+[1] 252
 
 ```
 
 ```r
 cchecks::cchn_pkg_rule_delete(rule_id)
 ```
-
-```
-Error: (400) rule 118 not found
+```r
+# ok
 ```
