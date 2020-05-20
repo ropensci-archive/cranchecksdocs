@@ -5,7 +5,7 @@ Authors@R:
     person(given = "Maëlle",
            family = "Salmon",
            role = c("cre", "aut"),
-           email = "maelle.salmon@yahoo.se",
+           email = "msmaellesalmon@gmail.com",
            comment = c(ORCID = "0000-0002-2815-0399"))
 Description: Docs the CRAN checks API with Hugo and R Markdown
 License: MIT + file LICENSE
