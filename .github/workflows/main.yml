@@ -29,7 +29,13 @@ jobs:
           path: ${{ env.R_LIBS_USER }}
           key: macOS-r-4.0-1-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: macOS-r-4.0-1-
-          
+      
+      - name: Install cchecks
+        run: |
+          install.packages("remotes")
+          remotes::install_github("ropenscilabs/cchecks", upgrade = "never")
+        shell: Rscript {0}
+        
       - name: Render Rmd
         run: Rscript -e 'source("make.R")'
         env: # Set the secret as an input
