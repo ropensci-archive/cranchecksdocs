@@ -42,6 +42,8 @@ cchecks::cch_pkgs(
 
 Get checks summary by package name.
 
+[Function of the `cchecks` package: `cch_pkgs_history()`](https://docs.ropensci.org/cchecks/reference/cch_pkgs_history.html)
+
 `GET [/pkgs/{package}]`
 
 ```{r results="asis"}
@@ -65,6 +67,10 @@ Default [limit](#pagination) of 10, max of 50.
 ```{r results="asis"}
 args <- c("https://cranchecks.info/pkgs/rhub/history")
 get_and_show(args)
+```
+
+```{r}
+cchecks::cch_pkgs_history(x = "rhub")
 ```
 
 For historical data _across packages_ see the [history endpoint](#history).

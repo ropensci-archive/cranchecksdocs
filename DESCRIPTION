@@ -20,4 +20,4 @@ Imports:
     jqr,
     cchecks
 Remotes:
-    maelle/cchecks@tokenfixes
+    ropenscilabs/cchecks
