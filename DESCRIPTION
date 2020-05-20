@@ -20,4 +20,4 @@ Imports:
     jqr,
     cchecks
 Remotes:
-    ropenscilabs/cchecks
+    ropenscilabs/cchecks@master
