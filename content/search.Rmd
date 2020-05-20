@@ -15,9 +15,9 @@ source("hooks.R")
 Search package history data.
 This is a full text search ONLY of the output in `check_details` field.
 
+[Function of the `cchecks` package: `cch_pkgs_search()`](https://docs.ropensci.org/cchecks/reference/cch_pkgs_search.html)
+
 `GET [/search]`
-
-
 
 Parameters:
 
@@ -42,12 +42,24 @@ args <- c("https://cranchecks.info/search?q=memory")
 get_and_show(args)
 ```
 
+```{r}
+cchecks::cch_pkgs_search(q = "memory")
+```
+
 ```{r results="asis"}
 args <- c("https://cranchecks.info/search?q=memory&one_each=true&limit=2")
 get_and_show(args)
 ```
 
+```{r}
+cchecks::cch_pkgs_search(q = "memory", one_each = TRUE, limit = 2)
+```
+
 ```{r results="asis"}
 args <- c("https://cranchecks.info/search?q=memory&one_each=true&fields=package")
 get_and_show(args)
+```
+
+```{r}
+cchecks::cch_pkgs_search(q = "memory", one_each = TRUE, fields = "package")
 ```
