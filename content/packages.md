@@ -36,7 +36,7 @@ Content-Length: 6511
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 20 May 2020 13:30:51 GMT
+Date: Wed, 20 May 2020 13:50:24 GMT
 
 ```
 ```json
@@ -393,7 +393,7 @@ Content-Length: 2840
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 20 May 2020 13:30:51 GMT
+Date: Wed, 20 May 2020 13:50:25 GMT
 
 ```
 ```json
@@ -618,7 +618,7 @@ Content-Length: 27343
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 20 May 2020 13:30:51 GMT
+Date: Wed, 20 May 2020 13:50:26 GMT
 
 ```
 ```json
@@ -1856,9 +1856,32 @@ Date: Wed, 20 May 2020 13:30:51 GMT
 ```r
 cchecks::cch_pkgs_history(x = "rhub")
 ```
+```r
+$error
+NULL
 
-```
-Error: 'cch_pkgs_history' is not an exported object from 'namespace:cchecks'
+$data
+$data$package
+[1] "rhub"
+
+$data$history
+[90m# A tibble: 29 x 4[39m
+   date_updated summary$any   $ok $note $warn $error $fail checks
+   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
+[90m 1[39m 2020-05-19T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 2[39m 2020-05-18T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 3[39m 2020-05-17T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 4[39m 2020-05-16T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 5[39m 2020-05-15T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 6[39m 2020-05-14T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 7[39m 2020-05-13T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 8[39m 2020-05-12T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 9[39m 2020-05-11T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m10[39m 2020-05-10T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m# … with 19 more rows, and 6 more variables: check_details$version [3m[90m<chr>[90m[23m,[39m
+[90m#   $check [3m[90m<chr>[90m[23m, $result [3m[90m<chr>[90m[23m, $output [3m[90m<chr>[90m[23m, $flavors [3m[90m<list>[90m[23m,[39m
+[90m#   $additional_issues [3m[90m<list>[90m[23m[39m
+
 ```
 
 For historical data _across packages_ see the [history endpoint](#history).
