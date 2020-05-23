@@ -26,9 +26,13 @@ library("cchecks")
 
 ## Authentication
 
-We don't use any. :beers:
+### Endpoints without authentication
 
-Except for notifications.  :postbox:
+[docs/](#docs), [heartbeat/](#heartbeat), [maintainers/](#maintainers), [packages/](#packages), [history/](#history), [badges/](#badges), [search/](#search)
+
+### Endpoints with authentication
+
+[notifications/](#notifications)
 
 ## HTTP methods
 
