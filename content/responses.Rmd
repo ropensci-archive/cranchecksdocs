@@ -34,7 +34,8 @@ cchecks::cchn_register(email = email, token = token)
 cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "ropenaq",
-  regex = "install failure"
+  regex = "install failure",
+  quiet = TRUE
   )
 ```
 

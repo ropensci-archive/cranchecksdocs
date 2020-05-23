@@ -202,7 +202,8 @@ Delete a notifications rule by ID
 cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "ropenaq",
-  regex = "install failure"
+  regex = "install failure",
+  quiet = TRUE
   )
 ```
 
@@ -220,14 +221,16 @@ get_and_show(args)
 cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "ropenaq",
-  regex = "install failure"
+  regex = "install failure",
+  quiet = TRUE
   )
 
 
 cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "riem",
-  regex = "install failure"
+  regex = "install failure",
+  quiet = TRUE
   )
 ```
 
