@@ -34,14 +34,14 @@ Get badge for CRAN checks summary by package name.
 curl https://cranchecks.info/badges/summary/rhub
 ```
 ```yaml
-HTTP/2 200 
-cache-control: max-age=300, public
-content-type: image/svg+xml; charset=utf-8
-expires: Sat, 23 May 2020 14:36:00 GMT
-server: Caddy
-x-content-type-options: nosniff
-content-length: 855
-date: Sat, 23 May 2020 14:31:00 GMT
+HTTP/1.1 200 OK
+Cache-Control: max-age=300, public
+Content-Length: 855
+Content-Type: image/svg+xml; charset=utf-8
+Expires: Sat, 23 May 2020 14:51:13 GMT
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 23 May 2020 14:46:13 GMT
 
 ```
 ```xml
@@ -90,14 +90,14 @@ Get badge for CRAN checks worst result by package name. :cold_sweat:
 curl https://cranchecks.info/badges/worst/rhub
 ```
 ```yaml
-HTTP/2 200 
-cache-control: max-age=300, public
-content-type: image/svg+xml; charset=utf-8
-expires: Sat, 23 May 2020 14:36:01 GMT
-server: Caddy
-x-content-type-options: nosniff
-content-length: 855
-date: Sat, 23 May 2020 14:31:01 GMT
+HTTP/1.1 200 OK
+Cache-Control: max-age=300, public
+Content-Length: 855
+Content-Type: image/svg+xml; charset=utf-8
+Expires: Sat, 23 May 2020 14:51:14 GMT
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 23 May 2020 14:46:14 GMT
 
 ```
 ```xml
@@ -146,14 +146,14 @@ Get badge for summary of CRAN checks by flavor and package name.
 curl https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub
 ```
 ```yaml
-HTTP/2 200 
-cache-control: max-age=300, public
-content-type: image/svg+xml; charset=utf-8
-expires: Sat, 23 May 2020 14:36:02 GMT
-server: Caddy
-x-content-type-options: nosniff
-content-length: 855
-date: Sat, 23 May 2020 14:31:02 GMT
+HTTP/1.1 200 OK
+Cache-Control: max-age=300, public
+Content-Length: 855
+Content-Type: image/svg+xml; charset=utf-8
+Expires: Sat, 23 May 2020 14:51:14 GMT
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 23 May 2020 14:46:14 GMT
 
 ```
 ```xml
