@@ -44,57 +44,17 @@ cchecks::cchn_register(email = "jane.doe@cranchecksapidocs.com")
 email <- Sys.getenv("CCHECKS_EMAIL")
 token <- Sys.getenv("CCHECKS_TOKEN")
 cchecks::cchn_register(email = email, token = token)
-# Just to have enough for examples
-ok <- cchecks::cchn_rule_add(
+rules <- cchecks::cchn_rule_list(
   email = "msmaellesalmon@gmail.com",
-  package = "riem",
-  status = "note", 
-  platform = 3,
-  times = 5,
-  quiet = TRUE
+)$data
+
+for (rule in rules$id) {
+  cchecks::cchn_rule_delete(
+    id = rule,
+    email = "msmaellesalmon@gmail.com"
   )
-  
-ok <- cchecks::cchn_rule_add(
-  email = "msmaellesalmon@gmail.com",
-  package = "riem",
-  status = "error", 
-  platform = 3,
-  quiet = TRUE
-  )
-  
-ok <- cchecks::cchn_rule_add(
-  email = "msmaellesalmon@gmail.com",
-  package = "codemetar",
-  status = "note", 
-  platform = 3,
-  times = 5,
-  quiet = TRUE
-  )
-  
-ok <- cchecks::cchn_rule_add(
-  email = "msmaellesalmon@gmail.com",
-  package = "codemetar",
-  status = "error", 
-  platform = 3,
-  quiet = TRUE
-  )  
-  
-ok <- cchecks::cchn_rule_add(
-  email = "msmaellesalmon@gmail.com",
-  package = "rhub",
-  status = "note", 
-  platform = 3,
-  times = 5,
-  quiet = TRUE
-  )
-  
-ok <- cchecks::cchn_rule_add(
-  email = "msmaellesalmon@gmail.com",
-  package = "rhub",
-  status = "error", 
-  platform = 3,
-  quiet = TRUE
-  )
+}
+
 ```
 
 ## Notifications rules
@@ -160,6 +120,11 @@ args <- c("-XPOST", "-H", paste0('"Authorization: Bearer ', Sys.getenv("CCHECKS_
 get_and_show(args)
 ```
 
+```{r, results="asis"}
+args <- c("-XPOST", "-H", paste0('"Authorization: Bearer ', Sys.getenv("CCHECKS_TOKEN"), '"'), "\\\n", "--data", paste0("'", '[{"package": "ropenaq", "regex": "install failure"}]', "'"), "\\\n", "https://cranchecks.info/notifications/rules")
+get_and_show(args)
+```
+
 ```{r}
 # From anywhere
 cchecks::cchn_rule_add(
@@ -169,6 +134,8 @@ cchecks::cchn_rule_add(
   )
 
 # Inside the ropenaq folder
+cchecks::cchn_pkg_rule_add(regex = "install failure")
+# A second time
 cchecks::cchn_pkg_rule_add(regex = "install failure")
 ```
 
@@ -230,8 +197,16 @@ Delete a notifications rule by ID
 
 `DELETE [/notifications/rules/{id}]`
 
+```{r, include=FALSE}
+cchecks::cchn_rule_add(
+  email = "msmaellesalmon@gmail.com",
+  package = "ropenaq",
+  regex = "install failure"
+  )
+```
+
 ```{r}
-Sys.setenv("rule_id" = cchecks::cchn_rule_list()$data$id[1])
+Sys.setenv("rule_id" = tail(cchecks::cchn_rule_list()$data, n = 1))
 ```
 
 ```{r, results="asis"}
@@ -239,14 +214,30 @@ args <- c("-XDELETE", "-H", paste0('"Authorization: Bearer ', Sys.getenv("CCHECK
 get_and_show(args)
 ```
 
+
+```{r, include=FALSE}
+cchecks::cchn_rule_add(
+  email = "msmaellesalmon@gmail.com",
+  package = "ropenaq",
+  regex = "install failure"
+  )
+
+
+cchecks::cchn_rule_add(
+  email = "msmaellesalmon@gmail.com",
+  package = "riem",
+  regex = "install failure"
+  )
+```
+
 ```{r}
 # From anywhere
-rule_id <- cchecks::cchn_rule_list()$data$id[1]
+rule_id <- tail(cchecks::cchn_rule_list()$data$id, n = 1)
 rule_id
 cchecks::cchn_rule_delete(rule_id)
 
 # Inside the ropenaq folder
-rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
+rule_id <- tail(cchecks::cchn_rule_list()$data$id, n = 1)
 rule_id
 cchecks::cchn_pkg_rule_delete(rule_id)
 ```

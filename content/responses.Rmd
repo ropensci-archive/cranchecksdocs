@@ -28,7 +28,9 @@ get_and_show(args)
 Given on a delete request, indicating success, response body should be empty.
 
 ```{r, include=FALSE}
-# From anywhere
+email <- Sys.getenv("CCHECKS_EMAIL")
+token <- Sys.getenv("CCHECKS_TOKEN")
+cchecks::cchn_register(email = email, token = token)
 cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "ropenaq",
