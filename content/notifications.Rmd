@@ -130,13 +130,14 @@ get_and_show(args)
 cchecks::cchn_rule_add(
   email = "msmaellesalmon@gmail.com",
   package = "ropenaq",
-  regex = "install failure"
+  regex = "install failure",
+  quiet = TRUE
   )
 
 # Inside the ropenaq folder
-cchecks::cchn_pkg_rule_add(regex = "install failure")
+cchecks::cchn_pkg_rule_add(regex = "install failure", quiet = TRUE)
 # A second time
-cchecks::cchn_pkg_rule_add(regex = "install failure")
+cchecks::cchn_pkg_rule_add(regex = "install failure", quiet = TRUE)
 ```
 
 ## Notifications list
