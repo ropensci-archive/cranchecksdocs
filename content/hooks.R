@@ -17,6 +17,7 @@ knitr::knit_hooks$set(message = function(x, options) {
 # vs R code
 knitr::knit_hooks$set(
   source = function(x, options) {
+
     if(options$results == "asis") {
       eval(parse(text = x[1]))
       args <- gsub(Sys.getenv("CCHECKS_TOKEN"), "***", args)
@@ -28,7 +29,12 @@ knitr::knit_hooks$set(
         " | jq .\n```\n"
       )
     } else {
-      paste0("\n```r\n",
+      if(grepl("engine", options$params.src)) {
+        engine <- "shell"
+      } else{
+        engine <- "r"
+      }
+      paste0("\n```", engine,"\n",
              x,
              "\n```\n")
     }
@@ -43,8 +49,13 @@ knitr::knit_hooks$set(
     if(options$results == "asis") {
       x
     } else {
+      if(grepl("engine", options$params.src)) {
+        engine <- "shell"
+      } else{
+        engine <- "r"
+      }
       paste0(
-        "```r\n",
+        "```", engine, "\n",
         x,
         "\n```\n"
       ) 
