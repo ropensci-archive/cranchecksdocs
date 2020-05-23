@@ -31,17 +31,17 @@ Get badge for CRAN checks summary by package name.
 `[![Summary of CRAN checks results for the rhub package](https://cranchecks.info/badges/summary/rhub)](https://cranchecks.info/pkgs/rhub)` gives [![Summary of CRAN checks results for the rhub package](https://cranchecks.info/badges/summary/rhub)](https://cranchecks.info/pkgs/rhub).
 
 ```shell
-curl https://cranchecks.info/badges/summary/rhub | jq .
+curl https://cranchecks.info/badges/summary/rhub
 ```
 ```yaml
-HTTP/1.1 200 OK
-Cache-Control: max-age=300, public
-Content-Length: 855
-Content-Type: image/svg+xml; charset=utf-8
-Expires: Wed, 20 May 2020 13:55:10 GMT
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Wed, 20 May 2020 13:50:10 GMT
+HTTP/2 200 
+cache-control: max-age=300, public
+content-type: image/svg+xml; charset=utf-8
+expires: Sat, 23 May 2020 14:17:07 GMT
+server: Caddy
+x-content-type-options: nosniff
+content-length: 855
+date: Sat, 23 May 2020 14:12:07 GMT
 
 ```
 ```xml
@@ -87,17 +87,17 @@ Get badge for CRAN checks worst result by package name. :cold_sweat:
 
 
 ```shell
-curl https://cranchecks.info/badges/worst/rhub | jq .
+curl https://cranchecks.info/badges/worst/rhub
 ```
 ```yaml
-HTTP/1.1 200 OK
-Cache-Control: max-age=300, public
-Content-Length: 855
-Content-Type: image/svg+xml; charset=utf-8
-Expires: Wed, 20 May 2020 13:55:11 GMT
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Wed, 20 May 2020 13:50:11 GMT
+HTTP/2 200 
+cache-control: max-age=300, public
+content-type: image/svg+xml; charset=utf-8
+expires: Sat, 23 May 2020 14:17:08 GMT
+server: Caddy
+x-content-type-options: nosniff
+content-length: 855
+date: Sat, 23 May 2020 14:12:08 GMT
 
 ```
 ```xml
@@ -143,17 +143,17 @@ Get badge for summary of CRAN checks by flavor and package name.
 `[![CRAN checks result on r-devel-linux-x86_64-debian-clang for the rhub package](https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub)](https://cranchecks.info/pkgs/rhub)` gives [![CRAN checks result on r-devel-linux-x86_64-debian-clang for the rhub package](https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub)](https://cranchecks.info/pkgs/rhub).
 
 ```shell
-curl https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub | jq .
+curl https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub
 ```
 ```yaml
-HTTP/1.1 200 OK
-Cache-Control: max-age=300, public
-Content-Length: 855
-Content-Type: image/svg+xml; charset=utf-8
-Expires: Wed, 20 May 2020 13:55:11 GMT
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Wed, 20 May 2020 13:50:11 GMT
+HTTP/2 200 
+cache-control: max-age=300, public
+content-type: image/svg+xml; charset=utf-8
+expires: Sat, 23 May 2020 14:17:09 GMT
+server: Caddy
+x-content-type-options: nosniff
+content-length: 855
+date: Sat, 23 May 2020 14:12:09 GMT
 
 ```
 ```xml
