@@ -57,4 +57,4 @@ offset (integer, optional)
 
 Above parameters can be used only on `/pkgs`, `/maintainers`, and `/pkgs/{package_name}/history`.
 
-The response body from the server will include data on records found in found and number returned in count.
+The response body from the server will include data on _records found_ in `found` and _number returned_ in `count`.
