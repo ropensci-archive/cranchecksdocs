@@ -82,8 +82,8 @@ get_and_show <- function(args) {
    args <- gsub("'$", "", args)
    args <- args[args != "\\\n"]
     curl_output <- processx::run(
-      "curl", 
-      c("-i", args) # -i to get headers
+      "curl",
+      c("-i", "--http2", args) # -i to get headers
     )$stdout
     
     # String manipulation to separate headers from JSON/XML output
