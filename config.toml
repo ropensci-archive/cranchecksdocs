@@ -22,7 +22,7 @@ title = "CRAN checks API"
 toc_footers = [ 
 "Documentation Powered by [DocuAPI](https://github.com/bep/docuapi),",
 " Hugo, and R",
-"[Website source](https://maelle/cranchecksdocs)"
+"[Website source](https://github.com/maelle/cranchecksdocs)"
 ]
 
 [params]

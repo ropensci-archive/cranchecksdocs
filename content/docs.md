@@ -18,15 +18,15 @@ This path redirects to the docs (hopefully here! :smile_cat:). See Headers tab.
 curl https://cranchecks.info/docs
 ```
 ```yaml
-HTTP/2 301 
-access-control-allow-methods: HEAD, GET
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-location: https://github.com/ropensci/cchecksapi/blob/master/docs/api_docs.md
-server: Caddy
-x-content-type-options: nosniff
-content-length: 0
-date: Sat, 23 May 2020 14:12:02 GMT
+HTTP/1.1 301 Moved Permanently
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 0
+Content-Type: application/json; charset=utf8
+Location: https://github.com/ropensci/cchecksapi/blob/master/docs/api_docs.md
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Sat, 23 May 2020 14:18:28 GMT
 
 ```
