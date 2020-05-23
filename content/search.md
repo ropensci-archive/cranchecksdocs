@@ -47,7 +47,7 @@ Content-Length: 43071
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 20 May 2020 13:30:52 GMT
+Date: Wed, 20 May 2020 13:50:29 GMT
 
 ```
 ```json
@@ -1395,9 +1395,34 @@ Date: Wed, 20 May 2020 13:30:52 GMT
 ```r
 cchecks::cch_pkgs_search(q = "memory")
 ```
+```r
+$error
+NULL
 
-```
-Error: 'cch_pkgs_search' is not an exported object from 'namespace:cchecks'
+$count
+[1] 493
+
+$returned
+[1] 30
+
+$data
+[90m# A tibble: 30 x 5[39m
+   package date_updated summary$any   $ok $note $warn $error $fail checks
+   [3m[90m<chr>[39m[23m   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
+[90m 1[39m tidyft  2020-04-20T… TRUE            9     0     2      0     0 [90m<df[,[0m…
+[90m 2[39m tidyft  2020-04-21T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 3[39m tidyft  2020-04-22T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 4[39m tidyft  2020-04-23T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 5[39m tidyft  2020-04-24T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 6[39m tidyft  2020-04-25T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 7[39m tidyft  2020-04-26T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 8[39m tidyft  2020-04-27T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 9[39m tidyft  2020-04-28T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m10[39m tidyft  2020-04-29T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m# … with 20 more rows, and 6 more variables: check_details$version [3m[90m<chr>[90m[23m,[39m
+[90m#   $check [3m[90m<chr>[90m[23m, $result [3m[90m<chr>[90m[23m, $output [3m[90m<chr>[90m[23m, $flavors [3m[90m<list>[90m[23m,[39m
+[90m#   $additional_issues [3m[90m<list>[90m[23m[39m
+
 ```
 
 ```shell
@@ -1412,7 +1437,7 @@ Content-Length: 8083
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 20 May 2020 13:30:53 GMT
+Date: Wed, 20 May 2020 13:50:30 GMT
 
 ```
 ```json
@@ -1715,9 +1740,25 @@ Date: Wed, 20 May 2020 13:30:53 GMT
 ```r
 cchecks::cch_pkgs_search(q = "memory", one_each = TRUE, limit = 2)
 ```
+```r
+$error
+NULL
 
-```
-Error: 'cch_pkgs_search' is not an exported object from 'namespace:cchecks'
+$count
+[1] 30
+
+$returned
+[1] 2
+
+$data
+[90m# A tibble: 2 x 5[39m
+  package date_updated summary$any   $ok $note $warn $error $fail checks
+  [3m[90m<chr>[39m[23m   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
+[90m1[39m apsimr  2020-04-20T… TRUE           12     0     1      0     0 [90m<df[,[0m…
+[90m2[39m aws     2020-04-20T… TRUE           12     0     0      1     0 [90m<df[,[0m…
+[90m# … with 6 more variables: check_details$version [3m[90m<chr>[90m[23m, $check [3m[90m<chr>[90m[23m,[39m
+[90m#   $result [3m[90m<chr>[90m[23m, $output [3m[90m<chr>[90m[23m, $flavors [3m[90m<list>[90m[23m, $additional_issues [3m[90m<list>[90m[23m[39m
+
 ```
 
 ```shell
@@ -1732,7 +1773,7 @@ Content-Length: 1197
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 20 May 2020 13:30:53 GMT
+Date: Wed, 20 May 2020 13:50:30 GMT
 
 ```
 ```json
@@ -1819,7 +1860,30 @@ Date: Wed, 20 May 2020 13:30:53 GMT
 ```r
 cchecks::cch_pkgs_search(q = "memory", one_each = TRUE, fields = "package")
 ```
+```r
+$error
+NULL
 
-```
-Error: 'cch_pkgs_search' is not an exported object from 'namespace:cchecks'
+$count
+[1] 30
+
+$returned
+[1] 30
+
+$data
+[90m# A tibble: 30 x 5[39m
+   package       date_updated             summary checks check_details
+   [3m[90m<chr>[39m[23m         [3m[90m<chr>[39m[23m                    [3m[90m<lgl>[39m[23m   [3m[90m<lgl>[39m[23m  [3m[90m<lgl>[39m[23m        
+[90m 1[39m apsimr        2020-04-20T15:03:30.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 2[39m aws           2020-04-20T15:03:31.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 3[39m bayesCT       2020-04-20T15:03:31.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 4[39m blockmodeling 2020-04-20T15:03:31.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 5[39m bullwhipgame  2020-04-20T15:03:30.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 6[39m collapse      2020-05-05T15:03:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 7[39m cooccurNet    2020-04-20T15:03:30.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 8[39m corr2D        2020-05-16T15:03:16.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 9[39m cusum         2020-04-20T15:03:31.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m10[39m dexterMST     2020-05-11T15:03:13.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m# … with 20 more rows[39m
+
 ```

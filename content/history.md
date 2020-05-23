@@ -34,7 +34,7 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 52.34.4.0...
 * TCP_NODELAY set
-* Connected to cranchecks.info (52.34.4.0) port 443 (#0)
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to cranchecks.info (52.34.4.0) port 443 (#0)
 * ALPN, offering h2
 * ALPN, offering http/1.1
 * successfully set certificate verify locations:
@@ -86,7 +86,7 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 } [1 bytes data]
 * TLSv1.3 (OUT), TLS Unknown, Unknown (23):
 } [1 bytes data]
-* Using Stream ID: 1 (easy handle 0x55d69a4ea4b0)
+* Using Stream ID: 1 (easy handle 0x5594dc65d4b0)
 } [5 bytes data]
 * TLSv1.3 (OUT), TLS Unknown, Unknown (23):
 } [1 bytes data]
@@ -117,24 +117,24 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 < access-control-allow-origin: *
 < cache-control: public, must-revalidate, max-age=60
 < content-type: application/json; charset=utf8
-< location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200523%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200523T133111Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=85e988377ed7c5164dc9c87d33e96cf4c9f5c2fcf15c867c680a78c54dd3405e
+< location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200523%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200523T133748Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=f67d5186e81536585e727d67a4ba7f113cdc234a792ffba2bf6681d76952e87e
 < server: Caddy
 < x-content-type-options: nosniff
 < content-length: 101
-< date: Sat, 23 May 2020 13:31:11 GMT
+< date: Sat, 23 May 2020 13:37:48 GMT
 < 
 { [5 bytes data]
 * TLSv1.3 (IN), TLS Unknown, Unknown (23):
 { [1 bytes data]
 * Ignoring the response-body
 { [101 bytes data]
-100   101  100   101    0     0    139      0 --:--:-- --:--:-- --:--:--   139
+100   101  100   101    0     0    136      0 --:--:-- --:--:-- --:--:--   136
 * Connection #0 to host cranchecks.info left intact
-* Issue another request to this URL: 'https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200523%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200523T133111Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=85e988377ed7c5164dc9c87d33e96cf4c9f5c2fcf15c867c680a78c54dd3405e'
-*   Trying 52.218.220.145...
+* Issue another request to this URL: 'https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200523%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200523T133748Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=f67d5186e81536585e727d67a4ba7f113cdc234a792ffba2bf6681d76952e87e'
+*   Trying 52.218.184.169...
 * TCP_NODELAY set
-* Connected to cchecks-history.s3.us-west-2.amazonaws.com (52.218.220.145) port 443 (#1)
-  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0* ALPN, offering h2
+* Connected to cchecks-history.s3.us-west-2.amazonaws.com (52.218.184.169) port 443 (#1)
+* ALPN, offering h2
 * ALPN, offering http/1.1
 * successfully set certificate verify locations:
 *   CAfile: /etc/ssl/certs/ca-certificates.crt
@@ -142,7 +142,7 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 } [5 bytes data]
 * TLSv1.3 (OUT), TLS handshake, Client hello (1):
 } [512 bytes data]
-* TLSv1.3 (IN), TLS handshake, Server hello (2):
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0* TLSv1.3 (IN), TLS handshake, Server hello (2):
 { [91 bytes data]
 * TLSv1.2 (IN), TLS handshake, Certificate (11):
 { [3232 bytes data]
@@ -168,16 +168,16 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 *  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert Baltimore CA-2 G2
 *  SSL certificate verify ok.
 } [5 bytes data]
-> GET /2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200523%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200523T133111Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=85e988377ed7c5164dc9c87d33e96cf4c9f5c2fcf15c867c680a78c54dd3405e HTTP/1.1
+> GET /2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200523%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200523T133748Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=f67d5186e81536585e727d67a4ba7f113cdc234a792ffba2bf6681d76952e87e HTTP/1.1
 > Host: cchecks-history.s3.us-west-2.amazonaws.com
 > User-Agent: curl/7.58.0
 > Accept: */*
 > 
 { [5 bytes data]
 < HTTP/1.1 200 OK
-< x-amz-id-2: HlB5+0La1/7dBdl5l7QWnlmXtHYJyxfxA/JyJ0pZIGgvjMWbppVxbGnFv8bl7m9yEeAbPRPskSA=
-< x-amz-request-id: 5B0D13E9FD2A2DDD
-< Date: Sat, 23 May 2020 13:31:13 GMT
+< x-amz-id-2: fwAgHJOztfobt5E+nViMGsIfm5DJbL8iC3KtUtk3awXhgMFT36fOv/YCZJNCLVf0CX2z4SgfguU=
+< x-amz-request-id: F0597DECA031BD6D
+< Date: Sat, 23 May 2020 13:37:49 GMT
 < Last-Modified: Wed, 01 Apr 2020 16:36:04 GMT
 < ETag: "a7d74593672aa52dace5cd9e62db9351"
 < Content-Encoding: gzip
@@ -186,11 +186,12 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 < Content-Length: 5180606
 < Server: AmazonS3
 < 
-  0 5059k    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0{ [5 bytes data]
-  5 5059k    5  271k    0     0  97352      0  0:00:53  0:00:02  0:00:51  149k 18 5059k   18  917k    0     0   232k      0  0:00:21  0:00:03  0:00:18  315k 36 5059k   36 1869k    0     0   384k      0  0:00:13  0:00:04  0:00:09  489k 55 5059k   55 2820k    0     0   466k      0  0:00:10  0:00:06  0:00:04  563k 71 5059k   71 3636k    0     0   530k      0  0:00:09  0:00:06  0:00:03  754k 87 5059k   87 4436k    0     0   564k      0  0:00:08  0:00:07  0:00:01  833k100 5059k  100 5059k    0     0   590k      0  0:00:08  0:00:08 --:--:--  895k
+{ [5 bytes data]
+  0 5059k    0 50785    0     0  22990      0  0:03:45  0:00:02  0:03:43 45303  9 5059k    9  492k    0     0   159k      0  0:00:31  0:00:03  0:00:28  245k 19 5059k   19  967k    0     0   237k      0  0:00:21  0:00:04  0:00:17  324k 32 5059k   32 1631k    0     0   322k      0  0:00:15  0:00:05  0:00:10  409k 46 5059k   46 2327k    0     0   382k      0  0:00:13  0:00:06  0:00:07  465k 59 5059k   59 2991k    0     0   423k      0  0:00:11  0:00:07  0:00:04  604k 69 5059k   69 3535k    0     0   438k      0  0:00:11  0:00:08  0:00:03  611k 82 5059k   82 4164k    0     0   459k      0  0:00:11  0:00:09  0:00:02  639k 96 5059k   96 4861k    0     0   482k      0  0:00:10  0:00:10 --:--:--  643k100 5059k  100 5059k    0     0   488k      0  0:00:10  0:00:10 --:--:--  639k
 * Connection #1 to host cchecks-history.s3.us-west-2.amazonaws.com left intact
 {
   "package": "localIV",
+Error: writing output failed: Broken pipe
 
 ```
 
@@ -212,18 +213,18 @@ cchecks::cch_history("2020-04-01")
 ```
 ```r
 # A tibble: 16,327 x 5
-   package  summary          checks          check_details         date_updated 
-   <chr>    <chr>            <chr>           <chr>                 <chr>        
- 1 localIV  "{\"any\":false… "[{\"flavor\":… "null"                2020-04-01 1…
- 2 di       "{\"any\":false… "[{\"flavor\":… "null"                2020-04-01 1…
- 3 GAR      "{\"any\":true,… "[{\"flavor\":… "{\"version\":\"1.1\… 2020-04-01 1…
- 4 MetABEL  "{\"any\":true,… "[{\"flavor\":… "{\"version\":\"0.2-… 2020-04-01 1…
- 5 quantab… "{\"any\":false… "[{\"flavor\":… "null"                2020-04-01 1…
- 6 ChIPtest "{\"any\":true,… "[{\"flavor\":… "{\"version\":\"1.0\… 2020-04-01 1…
- 7 TSF      "{\"any\":false… "[{\"flavor\":… "null"                2020-04-01 1…
- 8 apercu   "{\"any\":true,… "[{\"flavor\":… "{\"version\":\"0.2.… 2020-04-01 1…
- 9 SPRT     "{\"any\":true,… "[{\"flavor\":… "{\"version\":\"1.0\… 2020-04-01 1…
-10 W2CWM2C  "{\"any\":false… "[{\"flavor\":… "null"                2020-04-01 1…
+   package  summary            checks              check_details             date_updated 
+   <chr>    <chr>              <chr>               <chr>                     <chr>        
+ 1 localIV  "{\"any\":false,\… "[{\"flavor\":\"r-… "null"                    2020-04-01 1…
+ 2 di       "{\"any\":false,\… "[{\"flavor\":\"r-… "null"                    2020-04-01 1…
+ 3 GAR      "{\"any\":true,\"… "[{\"flavor\":\"r-… "{\"version\":\"1.1\",\"… 2020-04-01 1…
+ 4 MetABEL  "{\"any\":true,\"… "[{\"flavor\":\"r-… "{\"version\":\"0.2-0\",… 2020-04-01 1…
+ 5 quantab… "{\"any\":false,\… "[{\"flavor\":\"r-… "null"                    2020-04-01 1…
+ 6 ChIPtest "{\"any\":true,\"… "[{\"flavor\":\"r-… "{\"version\":\"1.0\",\"… 2020-04-01 1…
+ 7 TSF      "{\"any\":false,\… "[{\"flavor\":\"r-… "null"                    2020-04-01 1…
+ 8 apercu   "{\"any\":true,\"… "[{\"flavor\":\"r-… "{\"version\":\"0.2.4\",… 2020-04-01 1…
+ 9 SPRT     "{\"any\":true,\"… "[{\"flavor\":\"r-… "{\"version\":\"1.0\",\"… 2020-04-01 1…
+10 W2CWM2C  "{\"any\":false,\… "[{\"flavor\":\"r-… "null"                    2020-04-01 1…
 # … with 16,317 more rows
 
 ```
