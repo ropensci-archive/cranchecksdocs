@@ -21,7 +21,7 @@ knitr::knit_hooks$set(
     if(options$results == "asis") {
       eval(parse(text = x[1]))
       args <- gsub(Sys.getenv("CCHECKS_TOKEN"), "***", args)
-      if(any(grepl("DELETE", args))) {
+      if(any(args %in% c("https://cranchecks.info/docs", "-XDELETE"))) {
         paste0(
           "```shell\n",
           paste("curl",
