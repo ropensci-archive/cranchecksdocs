@@ -27,6 +27,24 @@ get_and_show(args)
 
 Given on a delete request, indicating success, response body should be empty.
 
+```{r, include=FALSE}
+# From anywhere
+cchecks::cchn_rule_add(
+  email = "msmaellesalmon@gmail.com",
+  package = "ropenaq",
+  regex = "install failure"
+  )
+```
+
+```{r, include=FALSE}
+Sys.setenv("rule_id" = tail(cchecks::cchn_rule_list()$data$id, n=1))
+```
+
+```{r, results="asis"}
+args <- c("-XDELETE", "-H", paste0('"Authorization: Bearer ', Sys.getenv("CCHECKS_TOKEN"), '"'), "\\\n", paste0("https://cranchecks.info/notifications/rules/", Sys.getenv("rule_id")))
+get_and_show(args)
+```
+
 ## 302 (Found) 
 
 The root `/`, redirects to `/heartbeat`, and `/docs` redirects to what you're reading right now.
@@ -68,4 +86,11 @@ get_and_show(args)
 
 ## 500 (Internal server error) 
 
-Server got itself in trouble; [get in touch with us](https://github.com/ropenscilabs/cchecksapi/issues).
+Server got itself in trouble :scream: :sob:; [get in touch with us](https://github.com/ropenscilabs/cchecksapi/issues).
+
+```yaml
+HTTP/2 500
+date: Thu, 21 May 2020 16:53:33 GMT
+content-type: text/html; charset=utf-8
+content-length: 0
+```

@@ -21,13 +21,23 @@ knitr::knit_hooks$set(
     if(options$results == "asis") {
       eval(parse(text = x[1]))
       args <- gsub(Sys.getenv("CCHECKS_TOKEN"), "***", args)
-      paste0(
-        "```shell\n",
-        paste("curl",
-              paste0(args, collapse = " ")
-        ),
-        " | jq .\n```\n"
-      )
+      if(any(grepl("DELETE", args))) {
+        paste0(
+          "```shell\n",
+          paste("curl",
+                paste0(args, collapse = " ")
+          ),
+          "\n```\n"
+        )
+      } else {
+        paste0(
+          "```shell\n",
+          paste("curl",
+                paste0(args, collapse = " ")
+          ),
+          " | jq .\n```\n"
+        )
+      }
     } else {
       if(grepl("engine", options$params.src)) {
         engine <- "shell"
