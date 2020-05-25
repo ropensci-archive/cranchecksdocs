@@ -36,12 +36,12 @@ Content-Length: 1064
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 23 May 2020 15:04:54 GMT
+Date: Mon, 25 May 2020 12:38:06 GMT
 
 ```
 ```json
 {
-    "found": 9460,
+    "found": 9462,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ Date: Sat, 23 May 2020 15:04:54 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-05-23T12:02:22.666Z",
+            "date_updated": "2020-05-25T12:02:20.233Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ Date: Sat, 23 May 2020 15:04:54 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-05-23T12:02:22.666Z",
+            "date_updated": "2020-05-25T12:02:20.233Z",
             "table": [
                 {
                     "package": "sirus",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 9460
+[1] 9462
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-05-23T12:02:22.666Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-05-23T12:02:22.666Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-05-25T12:02:20.233Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-05-25T12:02:20.233Z    sirus, TRUE, 9, 3, 0, 0
                                                                                           packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
@@ -165,11 +165,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 12904
+Content-Length: 12866
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 23 May 2020 15:04:54 GMT
+Date: Mon, 25 May 2020 12:38:06 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ Date: Sat, 23 May 2020 15:04:54 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-05-23T12:02:23.151Z",
+        "date_updated": "2020-05-25T12:02:20.663Z",
         "table": [
             {
                 "package": "asciicast",
@@ -313,7 +313,7 @@ Date: Sat, 23 May 2020 15:04:54 GMT
                 "package": "igraph",
                 "any": true,
                 "ok": 5,
-                "note": 6,
+                "note": 7,
                 "warn": 0,
                 "error": 0
             },
@@ -391,11 +391,11 @@ Date: Sat, 23 May 2020 15:04:54 GMT
             },
             {
                 "package": "pkgcache",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "pkgconfig",
@@ -785,7 +785,7 @@ Date: Sat, 23 May 2020 15:04:54 GMT
                 "check_result": [
                     {
                         "category": "NOTE",
-                        "number_checks": 6
+                        "number_checks": 7
                     },
                     {
                         "category": "OK",
@@ -910,12 +910,8 @@ Date: Sat, 23 May 2020 15:04:54 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_pkgcache.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1243,7 +1239,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-05-23T12:02:23.151Z"
+[1] "2020-05-25T12:02:20.663Z"
 
 $data$table
         package   any ok note warn error
@@ -1263,7 +1259,7 @@ $data$table
 14     filelock FALSE 12    0    0     0
 15        franc FALSE 12    0    0     0
 16           gh FALSE 12    0    0     0
-17       igraph  TRUE  5    6    0     0
+17       igraph  TRUE  5    7    0     0
 18   igraphdata FALSE 12    0    0     0
 19         isa2 FALSE 12    0    0     0
 20     keypress FALSE 12    0    0     0
@@ -1273,7 +1269,7 @@ $data$table
 24          pak  TRUE 11    1    0     0
 25    parsedate FALSE 12    0    0     0
 26        pingr  TRUE  9    0    0     3
-27     pkgcache  TRUE 11    0    0     1
+27     pkgcache FALSE 12    0    0     0
 28    pkgconfig FALSE 12    0    0     0
 29    pkgsearch FALSE 12    0    0     0
 30       praise FALSE 12    0    0     0
@@ -1424,7 +1420,7 @@ $data$packages
 14           OK, 12      NA
 15           OK, 12      NA
 16           OK, 12      NA
-17   NOTE, OK, 6, 5      NA
+17   NOTE, OK, 7, 5      NA
 18           OK, 12      NA
 19           OK, 12      NA
 20           OK, 12      NA
@@ -1434,7 +1430,7 @@ $data$packages
 24  NOTE, OK, 1, 11      NA
 25           OK, 12      NA
 26  ERROR, OK, 3, 9      NA
-27 ERROR, OK, 1, 11      NA
+27           OK, 12      NA
 28           OK, 12      NA
 29           OK, 12      NA
 30           OK, 12      NA

@@ -32,16 +32,16 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 6513
+Content-Length: 6511
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 23 May 2020 15:05:02 GMT
+Date: Mon, 25 May 2020 12:38:14 GMT
 
 ```
 ```json
 {
-    "found": 16622,
+    "found": 16623,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -49,7 +49,7 @@ Date: Sat, 23 May 2020 15:05:02 GMT
         {
             "package": "ibb",
             "url": "https://cloud.r-project.org/web/checks/check_results_ibb.html",
-            "date_updated": "2020-05-23T15:03:15.189Z",
+            "date_updated": "2020-05-25T12:04:00.736Z",
             "summary": {
                 "any": true,
                 "ok": 7,
@@ -62,18 +62,18 @@ Date: Sat, 23 May 2020 15:05:02 GMT
                 {
                     "flavor": "r-devel-linux-x86_64-debian-clang",
                     "version": "0.0.1",
-                    "tinstall": 4.31,
-                    "tcheck": 37.87,
-                    "ttotal": 42.18,
+                    "tinstall": 4.51,
+                    "tcheck": 37.24,
+                    "ttotal": 41.75,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/ibb-00check.html"
                 },
                 {
                     "flavor": "r-devel-linux-x86_64-debian-gcc",
                     "version": "0.0.1",
-                    "tinstall": 3.39,
-                    "tcheck": 28.96,
-                    "ttotal": 32.35,
+                    "tinstall": 3.35,
+                    "tcheck": 28.93,
+                    "ttotal": 32.28,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/ibb-00check.html"
                 },
@@ -91,16 +91,16 @@ Date: Sat, 23 May 2020 15:05:02 GMT
                     "version": "0.0.1",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 49.05,
+                    "ttotal": 48.65,
                     "status": "NOTE",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/ibb-00check.html"
                 },
                 {
                     "flavor": "r-devel-windows-ix86+x86_64",
                     "version": "0.0.1",
-                    "tinstall": 24,
-                    "tcheck": 44,
-                    "ttotal": 68,
+                    "tinstall": 16,
+                    "tcheck": 50,
+                    "ttotal": 66,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/ibb-00check.html"
                 },
@@ -143,9 +143,9 @@ Date: Sat, 23 May 2020 15:05:02 GMT
                 {
                     "flavor": "r-release-windows-ix86+x86_64",
                     "version": "0.0.1",
-                    "tinstall": 17,
-                    "tcheck": 70,
-                    "ttotal": 87,
+                    "tinstall": 24,
+                    "tcheck": 71,
+                    "ttotal": 95,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/ibb-00check.html"
                 },
@@ -188,7 +188,7 @@ Date: Sat, 23 May 2020 15:05:02 GMT
         {
             "package": "ChIPtest",
             "url": "https://cloud.r-project.org/web/checks/check_results_ChIPtest.html",
-            "date_updated": "2020-05-23T15:03:15.189Z",
+            "date_updated": "2020-05-25T12:04:00.736Z",
             "summary": {
                 "any": true,
                 "ok": 10,
@@ -201,18 +201,18 @@ Date: Sat, 23 May 2020 15:05:02 GMT
                 {
                     "flavor": "r-devel-linux-x86_64-debian-clang",
                     "version": "1.0",
-                    "tinstall": 3.45,
-                    "tcheck": 23.37,
-                    "ttotal": 26.82,
+                    "tinstall": 3.01,
+                    "tcheck": 23.36,
+                    "ttotal": 26.37,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/ChIPtest-00check.html"
                 },
                 {
                     "flavor": "r-devel-linux-x86_64-debian-gcc",
                     "version": "1.0",
-                    "tinstall": 2.18,
-                    "tcheck": 18.43,
-                    "ttotal": 20.61,
+                    "tinstall": 2.39,
+                    "tcheck": 18.27,
+                    "ttotal": 20.66,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/ChIPtest-00check.html"
                 },
@@ -230,16 +230,16 @@ Date: Sat, 23 May 2020 15:05:02 GMT
                     "version": "1.0",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 32.15,
+                    "ttotal": 31.8,
                     "status": "NOTE",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/ChIPtest-00check.html"
                 },
                 {
                     "flavor": "r-devel-windows-ix86+x86_64",
                     "version": "1.0",
-                    "tinstall": 12,
-                    "tcheck": 57,
-                    "ttotal": 69,
+                    "tinstall": 9,
+                    "tcheck": 56,
+                    "ttotal": 65,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/ChIPtest-00check.html"
                 },
@@ -334,7 +334,7 @@ cchecks::cch_pkgs(
 ```
 ```r
 $found
-[1] 16622
+[1] 16623
 
 $count
 [1] 2
@@ -350,14 +350,14 @@ $data
 1      ibb      https://cloud.r-project.org/web/checks/check_results_ibb.html
 2 ChIPtest https://cloud.r-project.org/web/checks/check_results_ChIPtest.html
               date_updated summary.any summary.ok summary.note summary.warn
-1 2020-05-23T15:03:15.189Z        TRUE          7            5            0
-2 2020-05-23T15:03:15.189Z        TRUE         10            2            0
+1 2020-05-25T12:04:00.736Z        TRUE          7            5            0
+2 2020-05-25T12:04:00.736Z        TRUE         10            2            0
   summary.error summary.fail
 1             0            0
 2             0            0
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  checks
-1                           r-devel-linux-x86_64-debian-clang, r-devel-linux-x86_64-debian-gcc, r-devel-linux-x86_64-fedora-clang, r-devel-linux-x86_64-fedora-gcc, r-devel-windows-ix86+x86_64, r-patched-linux-x86_64, r-patched-solaris-x86, r-release-linux-x86_64, r-release-osx-x86_64, r-release-windows-ix86+x86_64, r-oldrel-osx-x86_64, r-oldrel-windows-ix86+x86_64, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 4.31, 3.39, 0, 0, 24, 4.39, 0, 3.94, 0, 17, 0, 10, 37.87, 28.96, 0, 0, 44, 36.44, 0, 36.57, 0, 70, 0, 67, 42.18, 32.35, 49.52, 49.05, 68, 40.83, 75.2, 40.51, 0, 87, 0, 77, OK, OK, NOTE, NOTE, OK, OK, NOTE, OK, NOTE, OK, NOTE, OK, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/ibb-00check.html
-2 r-devel-linux-x86_64-debian-clang, r-devel-linux-x86_64-debian-gcc, r-devel-linux-x86_64-fedora-clang, r-devel-linux-x86_64-fedora-gcc, r-devel-windows-ix86+x86_64, r-patched-linux-x86_64, r-patched-solaris-x86, r-release-linux-x86_64, r-release-osx-x86_64, r-release-windows-ix86+x86_64, r-oldrel-osx-x86_64, r-oldrel-windows-ix86+x86_64, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.45, 2.18, 0, 0, 12, 2.84, 0, 2.73, 0, 9, 0, 16, 23.37, 18.43, 0, 0, 57, 23.37, 0, 23.05, 0, 43, 0, 63, 26.82, 20.61, 33.9, 32.15, 69, 26.21, 50, 25.78, 0, 52, 0, 79, OK, OK, NOTE, NOTE, OK, OK, OK, OK, OK, OK, OK, OK, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/ChIPtest-00check.html
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                checks
+1                         r-devel-linux-x86_64-debian-clang, r-devel-linux-x86_64-debian-gcc, r-devel-linux-x86_64-fedora-clang, r-devel-linux-x86_64-fedora-gcc, r-devel-windows-ix86+x86_64, r-patched-linux-x86_64, r-patched-solaris-x86, r-release-linux-x86_64, r-release-osx-x86_64, r-release-windows-ix86+x86_64, r-oldrel-osx-x86_64, r-oldrel-windows-ix86+x86_64, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 0.0.1, 4.51, 3.35, 0, 0, 16, 4.39, 0, 3.94, 0, 24, 0, 10, 37.24, 28.93, 0, 0, 50, 36.44, 0, 36.57, 0, 71, 0, 67, 41.75, 32.28, 49.52, 48.65, 66, 40.83, 75.2, 40.51, 0, 95, 0, 77, OK, OK, NOTE, NOTE, OK, OK, NOTE, OK, NOTE, OK, NOTE, OK, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/ibb-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/ibb-00check.html
+2 r-devel-linux-x86_64-debian-clang, r-devel-linux-x86_64-debian-gcc, r-devel-linux-x86_64-fedora-clang, r-devel-linux-x86_64-fedora-gcc, r-devel-windows-ix86+x86_64, r-patched-linux-x86_64, r-patched-solaris-x86, r-release-linux-x86_64, r-release-osx-x86_64, r-release-windows-ix86+x86_64, r-oldrel-osx-x86_64, r-oldrel-windows-ix86+x86_64, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.01, 2.39, 0, 0, 9, 2.84, 0, 2.73, 0, 9, 0, 16, 23.36, 18.27, 0, 0, 56, 23.37, 0, 23.05, 0, 43, 0, 63, 26.37, 20.66, 33.9, 31.8, 65, 26.21, 50, 25.78, 0, 52, 0, 79, OK, OK, NOTE, NOTE, OK, OK, OK, OK, OK, OK, OK, OK, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/ChIPtest-00check.html, https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/ChIPtest-00check.html
   check_details.version    check_details.check check_details.result
 1                 0.0.1 dependencies in R code                 NOTE
 2                   1.0          compiled code                 NOTE
@@ -389,11 +389,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 2842
+Content-Length: 2843
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 23 May 2020 15:05:03 GMT
+Date: Mon, 25 May 2020 12:38:14 GMT
 
 ```
 ```json
@@ -402,7 +402,7 @@ Date: Sat, 23 May 2020 15:05:03 GMT
     "data": {
         "package": "rhub",
         "url": "https://cloud.r-project.org/web/checks/check_results_rhub.html",
-        "date_updated": "2020-05-23T15:03:15.423Z",
+        "date_updated": "2020-05-25T12:04:00.962Z",
         "summary": {
             "any": false,
             "ok": 12,
@@ -415,18 +415,18 @@ Date: Sat, 23 May 2020 15:05:03 GMT
             {
                 "flavor": "r-devel-linux-x86_64-debian-clang",
                 "version": "1.1.1",
-                "tinstall": 7.01,
-                "tcheck": 47.76,
-                "ttotal": 54.77,
+                "tinstall": 6.75,
+                "tcheck": 47.49,
+                "ttotal": 54.24,
                 "status": "OK",
                 "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/rhub-00check.html"
             },
             {
                 "flavor": "r-devel-linux-x86_64-debian-gcc",
                 "version": "1.1.1",
-                "tinstall": 5.84,
-                "tcheck": 37.55,
-                "ttotal": 43.39,
+                "tinstall": 5.47,
+                "tcheck": 37.14,
+                "ttotal": 42.61,
                 "status": "OK",
                 "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/rhub-00check.html"
             },
@@ -444,16 +444,16 @@ Date: Sat, 23 May 2020 15:05:03 GMT
                 "version": "1.1.1",
                 "tinstall": 0,
                 "tcheck": 0,
-                "ttotal": 79.73,
+                "ttotal": 79.58,
                 "status": "OK",
                 "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/rhub-00check.html"
             },
             {
                 "flavor": "r-devel-windows-ix86+x86_64",
                 "version": "1.1.1",
-                "tinstall": 21,
-                "tcheck": 94,
-                "ttotal": 115,
+                "tinstall": 23,
+                "tcheck": 78,
+                "ttotal": 101,
                 "status": "OK",
                 "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/rhub-00check.html"
             },
@@ -496,9 +496,9 @@ Date: Sat, 23 May 2020 15:05:03 GMT
             {
                 "flavor": "r-release-windows-ix86+x86_64",
                 "version": "1.1.1",
-                "tinstall": 17,
-                "tcheck": 88,
-                "ttotal": 105,
+                "tinstall": 15,
+                "tcheck": 113,
+                "ttotal": 128,
                 "status": "OK",
                 "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/rhub-00check.html"
             },
@@ -542,7 +542,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_rhub.html"
 
 $data$date_updated
-[1] "2020-05-23T15:03:15.423Z"
+[1] "2020-05-25T12:04:00.962Z"
 
 $data$summary
 $data$summary$any
@@ -566,16 +566,16 @@ $data$summary$fail
 
 $data$checks
                               flavor version tinstall tcheck ttotal status
-1  r-devel-linux-x86_64-debian-clang   1.1.1     7.01  47.76  54.77     OK
-2    r-devel-linux-x86_64-debian-gcc   1.1.1     5.84  37.55  43.39     OK
+1  r-devel-linux-x86_64-debian-clang   1.1.1     6.75  47.49  54.24     OK
+2    r-devel-linux-x86_64-debian-gcc   1.1.1     5.47  37.14  42.61     OK
 3  r-devel-linux-x86_64-fedora-clang   1.1.1     0.00   0.00  67.20     OK
-4    r-devel-linux-x86_64-fedora-gcc   1.1.1     0.00   0.00  79.73     OK
-5        r-devel-windows-ix86+x86_64   1.1.1    21.00  94.00 115.00     OK
+4    r-devel-linux-x86_64-fedora-gcc   1.1.1     0.00   0.00  79.58     OK
+5        r-devel-windows-ix86+x86_64   1.1.1    23.00  78.00 101.00     OK
 6             r-patched-linux-x86_64   1.1.1     7.82  47.71  55.53     OK
 7              r-patched-solaris-x86   1.1.1     0.00   0.00  93.70     OK
 8             r-release-linux-x86_64   1.1.1     6.27  47.09  53.36     OK
 9               r-release-osx-x86_64   1.1.1     0.00   0.00   0.00     OK
-10     r-release-windows-ix86+x86_64   1.1.1    17.00  88.00 105.00     OK
+10     r-release-windows-ix86+x86_64   1.1.1    15.00 113.00 128.00     OK
 11               r-oldrel-osx-x86_64   1.1.1     0.00   0.00   0.00     OK
 12      r-oldrel-windows-ix86+x86_64   1.1.1    16.00  88.00 104.00     OK
                                                                                      check_url
@@ -614,11 +614,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 27343
+Content-Length: 27345
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Sat, 23 May 2020 15:05:03 GMT
+Date: Mon, 25 May 2020 12:38:15 GMT
 
 ```
 ```json
@@ -627,6 +627,250 @@ Date: Sat, 23 May 2020 15:05:03 GMT
     "data": {
         "package": "rhub",
         "history": [
+            {
+                "date_updated": "2020-05-24T15:03:10.000Z",
+                "summary": {
+                    "any": false,
+                    "ok": 12,
+                    "note": 0,
+                    "warn": 0,
+                    "error": 0,
+                    "fail": 0
+                },
+                "checks": [
+                    {
+                        "flavor": "r-devel-linux-x86_64-debian-clang",
+                        "version": "1.1.1",
+                        "tinstall": 7.01,
+                        "tcheck": 47.76,
+                        "ttotal": 54.77,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-devel-linux-x86_64-debian-gcc",
+                        "version": "1.1.1",
+                        "tinstall": 4.83,
+                        "tcheck": 37,
+                        "ttotal": 41.83,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-devel-linux-x86_64-fedora-clang",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 67.2,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 79.73,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-devel-windows-ix86+x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 21,
+                        "tcheck": 94,
+                        "ttotal": 115,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-patched-linux-x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 7.82,
+                        "tcheck": 47.71,
+                        "ttotal": 55.53,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-patched-solaris-x86",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 93.7,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-release-linux-x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 6.27,
+                        "tcheck": 47.09,
+                        "ttotal": 53.36,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-release-osx-x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 0,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-release-windows-ix86+x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 17,
+                        "tcheck": 88,
+                        "ttotal": 105,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-oldrel-osx-x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 0,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-oldrel-windows-ix86+x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 16,
+                        "tcheck": 88,
+                        "ttotal": 104,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/rhub-00check.html"
+                    }
+                ],
+                "check_details": null
+            },
+            {
+                "date_updated": "2020-05-23T15:03:15.000Z",
+                "summary": {
+                    "any": false,
+                    "ok": 12,
+                    "note": 0,
+                    "warn": 0,
+                    "error": 0,
+                    "fail": 0
+                },
+                "checks": [
+                    {
+                        "flavor": "r-devel-linux-x86_64-debian-clang",
+                        "version": "1.1.1",
+                        "tinstall": 7.01,
+                        "tcheck": 47.76,
+                        "ttotal": 54.77,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-devel-linux-x86_64-debian-gcc",
+                        "version": "1.1.1",
+                        "tinstall": 5.84,
+                        "tcheck": 37.55,
+                        "ttotal": 43.39,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-devel-linux-x86_64-fedora-clang",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 67.2,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 79.73,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-devel-windows-ix86+x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 21,
+                        "tcheck": 94,
+                        "ttotal": 115,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-patched-linux-x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 7.82,
+                        "tcheck": 47.71,
+                        "ttotal": 55.53,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-patched-solaris-x86",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 93.7,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-release-linux-x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 6.27,
+                        "tcheck": 47.09,
+                        "ttotal": 53.36,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-release-osx-x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 0,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-release-windows-ix86+x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 17,
+                        "tcheck": 88,
+                        "ttotal": 105,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-oldrel-osx-x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 0,
+                        "tcheck": 0,
+                        "ttotal": 0,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/rhub-00check.html"
+                    },
+                    {
+                        "flavor": "r-oldrel-windows-ix86+x86_64",
+                        "version": "1.1.1",
+                        "tinstall": 16,
+                        "tcheck": 88,
+                        "ttotal": 104,
+                        "status": "OK",
+                        "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/rhub-00check.html"
+                    }
+                ],
+                "check_details": null
+            },
             {
                 "date_updated": "2020-05-22T15:03:10.000Z",
                 "summary": {
@@ -1602,250 +1846,6 @@ Date: Sat, 23 May 2020 15:05:03 GMT
                     }
                 ],
                 "check_details": null
-            },
-            {
-                "date_updated": "2020-05-14T15:03:12.000Z",
-                "summary": {
-                    "any": false,
-                    "ok": 12,
-                    "note": 0,
-                    "warn": 0,
-                    "error": 0,
-                    "fail": 0
-                },
-                "checks": [
-                    {
-                        "flavor": "r-devel-linux-x86_64-debian-clang",
-                        "version": "1.1.1",
-                        "tinstall": 6.75,
-                        "tcheck": 47.45,
-                        "ttotal": 54.2,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-devel-linux-x86_64-debian-gcc",
-                        "version": "1.1.1",
-                        "tinstall": 5.55,
-                        "tcheck": 37.08,
-                        "ttotal": 42.63,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-devel-linux-x86_64-fedora-clang",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 66.86,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 80.77,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-devel-windows-ix86+x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 25,
-                        "tcheck": 94,
-                        "ttotal": 119,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-patched-linux-x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 6.71,
-                        "tcheck": 47.51,
-                        "ttotal": 54.22,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-patched-solaris-x86",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 95.6,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-release-linux-x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 6.91,
-                        "tcheck": 47.84,
-                        "ttotal": 54.75,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-release-osx-x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 0,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-release-windows-ix86+x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 12,
-                        "tcheck": 88,
-                        "ttotal": 100,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-oldrel-osx-x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 0,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-oldrel-windows-ix86+x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 12,
-                        "tcheck": 64,
-                        "ttotal": 76,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/rhub-00check.html"
-                    }
-                ],
-                "check_details": null
-            },
-            {
-                "date_updated": "2020-05-13T15:03:14.000Z",
-                "summary": {
-                    "any": false,
-                    "ok": 12,
-                    "note": 0,
-                    "warn": 0,
-                    "error": 0,
-                    "fail": 0
-                },
-                "checks": [
-                    {
-                        "flavor": "r-devel-linux-x86_64-debian-clang",
-                        "version": "1.1.1",
-                        "tinstall": 6.75,
-                        "tcheck": 47.45,
-                        "ttotal": 54.2,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-devel-linux-x86_64-debian-gcc",
-                        "version": "1.1.1",
-                        "tinstall": 5.34,
-                        "tcheck": 37.64,
-                        "ttotal": 42.98,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-devel-linux-x86_64-fedora-clang",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 66.86,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 80.77,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-devel-windows-ix86+x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 26,
-                        "tcheck": 63,
-                        "ttotal": 89,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-patched-linux-x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 6.57,
-                        "tcheck": 47.24,
-                        "ttotal": 53.81,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-patched-solaris-x86",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 95.6,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-release-linux-x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 7.04,
-                        "tcheck": 47.29,
-                        "ttotal": 54.33,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-release-osx-x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 0,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-release-windows-ix86+x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 12,
-                        "tcheck": 88,
-                        "ttotal": 100,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-oldrel-osx-x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 0,
-                        "tcheck": 0,
-                        "ttotal": 0,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/rhub-00check.html"
-                    },
-                    {
-                        "flavor": "r-oldrel-windows-ix86+x86_64",
-                        "version": "1.1.1",
-                        "tinstall": 12,
-                        "tcheck": 64,
-                        "ttotal": 76,
-                        "status": "OK",
-                        "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/rhub-00check.html"
-                    }
-                ],
-                "check_details": null
             }
         ]
     }
@@ -1868,16 +1868,16 @@ $data$history
 [90m# A tibble: 29 x 4[39m
    date_updated summary$any   $ok $note $warn $error $fail checks
    [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
-[90m 1[39m 2020-05-22T… FALSE          12     0     0      0     0 [90m<df[,[0m…
-[90m 2[39m 2020-05-21T… FALSE          12     0     0      0     0 [90m<df[,[0m…
-[90m 3[39m 2020-05-20T… FALSE          12     0     0      0     0 [90m<df[,[0m…
-[90m 4[39m 2020-05-19T… FALSE          12     0     0      0     0 [90m<df[,[0m…
-[90m 5[39m 2020-05-18T… FALSE          12     0     0      0     0 [90m<df[,[0m…
-[90m 6[39m 2020-05-17T… FALSE          12     0     0      0     0 [90m<df[,[0m…
-[90m 7[39m 2020-05-16T… FALSE          12     0     0      0     0 [90m<df[,[0m…
-[90m 8[39m 2020-05-15T… FALSE          12     0     0      0     0 [90m<df[,[0m…
-[90m 9[39m 2020-05-14T… FALSE          12     0     0      0     0 [90m<df[,[0m…
-[90m10[39m 2020-05-13T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 1[39m 2020-05-24T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 2[39m 2020-05-23T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 3[39m 2020-05-22T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 4[39m 2020-05-21T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 5[39m 2020-05-20T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 6[39m 2020-05-19T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 7[39m 2020-05-18T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 8[39m 2020-05-17T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m 9[39m 2020-05-16T… FALSE          12     0     0      0     0 [90m<df[,[0m…
+[90m10[39m 2020-05-15T… FALSE          12     0     0      0     0 [90m<df[,[0m…
 [90m# … with 19 more rows, and 6 more variables: check_details$version [3m[90m<chr>[90m[23m,[39m
 [90m#   $check [3m[90m<chr>[90m[23m, $result [3m[90m<chr>[90m[23m, $output [3m[90m<chr>[90m[23m, $flavors [3m[90m<list>[90m[23m,[39m
 [90m#   $additional_issues [3m[90m<list>[90m[23m[39m
