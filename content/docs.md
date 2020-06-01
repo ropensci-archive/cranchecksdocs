@@ -27,6 +27,6 @@ Content-Type: application/json; charset=utf8
 Location: https://github.com/ropensci/cchecksapi/blob/master/docs/api_docs.md
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 25 May 2020 12:38:02 GMT
+Date: Mon, 01 Jun 2020 12:36:49 GMT
 
 ```
