@@ -47,283 +47,15 @@ Content-Length: 81809
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 01 Jun 2020 12:37:08 GMT
+Date: Wed, 03 Jun 2020 08:15:24 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 509,
+    "count": 505,
     "returned": 10,
     "data": [
-        {
-            "package": "tidyft",
-            "date_updated": "2020-05-02T15:03:15.000Z",
-            "summary": {
-                "any": true,
-                "ok": 10,
-                "note": 0,
-                "warn": 2,
-                "error": 0,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "0.4.5",
-                    "tinstall": 4.98,
-                    "tcheck": 55.72,
-                    "ttotal": 60.7,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "0.4.5",
-                    "tinstall": 3.75,
-                    "tcheck": 49.89,
-                    "ttotal": 53.64,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 67.47,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 66.82,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 19,
-                    "tcheck": 64,
-                    "ttotal": 83,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 4.48,
-                    "tcheck": 49.93,
-                    "ttotal": 54.41,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 85.2,
-                    "status": "WARN",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 4.22,
-                    "tcheck": 53.02,
-                    "ttotal": 57.24,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-release-osx-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 12,
-                    "tcheck": 88,
-                    "ttotal": 100,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-osx-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "WARN",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 11,
-                    "tcheck": 83,
-                    "ttotal": 94,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/tidyft-00check.html"
-                }
-            ],
-            "check_details": {
-                "version": "0.4.5",
-                "check": "re-building of vignette outputs",
-                "result": "WARN",
-                "output": "Error(s) in re-building vignettes:\n  ...\n--- re-building ‘Introduction.Rmd’ using rmarkdown\nWarning in engine$weave(file, quiet = quiet, encoding = enc) :\n  Pandoc (>= 1.12.3) and/or pandoc-citeproc not available. Falling back to R Markdown v1.\n\n *** caught segfault ***\naddress 0, cause 'memory not mapped'\n\n *** caught segfault ***\naddress 179c1c30, cause 'memory not mapped'\n\nTraceback:\n 1: fstretrieve(file_name, columns, from, to)\n 2: read_fst(meta_info$path, j)\n 3: `[.fst_table`(ft, logical_vec)\n 4: ft[logical_vec]\n 5: setDT(ft[logical_vec])\n 6: select_fst(., Species, Sepal.Length, Sepal.Width)\n 7: function_list[[i]](value)\n 8: freduce(value, `_function_list`)\n 9: `_fseq`(`_lhs`)\n10: eval(quote(`_fseq`(`_lhs`)), env, env)\n11: eval(quote(`_fseq`(`_lhs`)), env, env)\n12: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))\n13: ft %>% select_fst(Species, Sepal.Length, Sepal.Width) %>% rename(group = Species,     sl = Sepal.Length, sw = Sepal.Width) %>% arrange(group, sl) %>%     filter(sl > 5) %>% distinct(sl, .keep_all = TRUE) %>% summarise(sw = max(sw),     by = group)\n14: eval(substitute(expr), envir = parent.frame())\n15: eval(substitute(expr), envir = parent.frame())\n16: sys_time_print({    res = ft %>% select_fst(Species, Sepal.Length, Sepal.Width) %>%         rename(group = Species, sl = Sepal.Length, sw = Sepal.Width) %>%         arrange(group, sl) %>% filter(sl > 5) %>% distinct(sl,         .keep_all = TRUE) %>% summarise(sw = max(sw), by = group)})\n17: eval(expr, envir, enclos)\n18: eval(expr, envir, enclos)\n19: withVisible(eval(expr, envir, enclos))\n20: withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler,     error = eHandler, message = mHandler)\n21: handle(ev <- withCallingHandlers(withVisible(eval(expr, envir,     enclos)), warning = wHandler, error = eHandler, message = mHandler))\n22: timing_fn(handle(ev <- withCallingHandlers(withVisible(eval(expr,     envir, enclos)), warning = wHandler, error = eHandler, message = mHandler)))\n23: evaluate_call(expr, parsed$src[[i]], envir = envir, enclos = enclos,     debug = debug, last = i == length(out), use_try = stop_on_error !=         2L, keep_warning = keep_warning, keep_message = keep_message,     output_handler = output_handler, include_timing = include_timing)\n24: evaluate::evaluate(...)\n25: evaluate(code, envir = env, new_device = FALSE, keep_warning = !isFALSE(options$warning),     keep_message = !isFALSE(options$message), stop_on_error = if (options$error &&         options$include) 0L else 2L, output_handler = knit_handlers(options$render,         options))\n26: in_dir(input_dir(), evaluate(code, envir = env, new_device = FALSE,     keep_warning = !isFALSE(options$warning), keep_message = !isFALSE(options$message),     stop_on_error = if (options$error && options$include) 0L else 2L,     output_handler = knit_handlers(options$render, options)))\n27: block_exec(params)\n28: call_block(x)\n29: process_group.block(group)\n30: process_group(group)\n31: withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),     error = function(e) {        setwd(wd)        cat(res, sep = \"\\n\", file = output %n% \"\")        message(\"Quitting from lines \", paste(current_lines(i),             collapse = \"-\"), \" (\", knit_concord$get(\"infile\"),             \") \")    })\n32: process_file(text, output)\n33: knit(input, text = text, envir = envir, quiet = quiet)\n34: knit2html(..., force_v1 = TRUE)\n35: (if (grepl(\"\\\\.[Rr]md$\", file)) knit2html_v1 else if (grepl(\"\\\\.[Rr]rst$\",     file)) knit2pandoc else knit)(file, encoding = encoding,     quiet = quiet, envir = globalenv(), ...)\n36: vweave(...)\n37: engine$weave(file, quiet = quiet, encoding = enc)\n38: doTryCatch(return(expr), name, parentenv, handler)\n39: tryCatchOne(expr, names, parentenv, handlers[[1L]])\n40: tryCatchList(expr, classes, parentenv, handlers)\n41: tryCatch({    engine$weave(file, quiet = quiet, encoding = enc)    setwd(startdir)    output <- find_vignette_product(name, by = \"weave\", engine = engine)    if (!have.makefile && vignette_is_tex(output)) {        texi2pdf(file = output, clean = FALSE, quiet = quiet)        output <- find_vignette_product(name, by = \"texi2pdf\",             engine = engine)    }    outputs <- c(outputs, output)}, error = function(e) {    thisOK <<- FALSE    fails <<- c(fails, file)    message(gettextf(\"Error: processing vignette '%s' failed with diagnostics:\\n%s\",         file, conditionMessage(e)))})\n42: tools:::buildVignettes(dir = \"/home/ripley/R/packages/tests32/tidyft.Rcheck/vign_test/tidyft\",     ser_elibs = \"/tmp/RtmpeXa4xL/file4abf2eef264a.rds\")\nAn irrecoverable exception occurred. R is aborting now ...\n\nTraceback:\n 1: fstretrieve(file_name, columns, from, to)\n 2: read_fst(meta_info$path, j)\n 3: `[.fst_table`(ft, logical_vec)\n 4: ft[logical_vec]\n 5: setDT(ft[logical_vec])\n 6: select_fst(., Species, Sepal.Length, Sepal.Width)\n 7: function_list[[i]](value)\n 8: freduce(value, `_function_list`)\n 9: `_fseq`(`_lhs`)\n10: eval(quote(`_fseq`(`_l",
-                "flavors": [
-                    "r-patched-solaris-x86"
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
-        {
-            "package": "tidyft",
-            "date_updated": "2020-05-03T15:03:11.000Z",
-            "summary": {
-                "any": true,
-                "ok": 10,
-                "note": 0,
-                "warn": 2,
-                "error": 0,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "0.4.5",
-                    "tinstall": 4.98,
-                    "tcheck": 55.72,
-                    "ttotal": 60.7,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "0.4.5",
-                    "tinstall": 3.61,
-                    "tcheck": 50.48,
-                    "ttotal": 54.09,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 67.42,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 66.82,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 19,
-                    "tcheck": 64,
-                    "ttotal": 83,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 4.48,
-                    "tcheck": 49.93,
-                    "ttotal": 54.41,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 85.2,
-                    "status": "WARN",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 4.22,
-                    "tcheck": 53.02,
-                    "ttotal": 57.24,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-release-osx-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 12,
-                    "tcheck": 88,
-                    "ttotal": 100,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-osx-x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "WARN",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/tidyft-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "0.4.5",
-                    "tinstall": 11,
-                    "tcheck": 83,
-                    "ttotal": 94,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/tidyft-00check.html"
-                }
-            ],
-            "check_details": {
-                "version": "0.4.5",
-                "check": "re-building of vignette outputs",
-                "result": "WARN",
-                "output": "Error(s) in re-building vignettes:\n  ...\n--- re-building ‘Introduction.Rmd’ using rmarkdown\nWarning in engine$weave(file, quiet = quiet, encoding = enc) :\n  Pandoc (>= 1.12.3) and/or pandoc-citeproc not available. Falling back to R Markdown v1.\n\n *** caught segfault ***\naddress 0, cause 'memory not mapped'\n\n *** caught segfault ***\naddress 179c1c30, cause 'memory not mapped'\n\nTraceback:\n 1: fstretrieve(file_name, columns, from, to)\n 2: read_fst(meta_info$path, j)\n 3: `[.fst_table`(ft, logical_vec)\n 4: ft[logical_vec]\n 5: setDT(ft[logical_vec])\n 6: select_fst(., Species, Sepal.Length, Sepal.Width)\n 7: function_list[[i]](value)\n 8: freduce(value, `_function_list`)\n 9: `_fseq`(`_lhs`)\n10: eval(quote(`_fseq`(`_lhs`)), env, env)\n11: eval(quote(`_fseq`(`_lhs`)), env, env)\n12: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))\n13: ft %>% select_fst(Species, Sepal.Length, Sepal.Width) %>% rename(group = Species,     sl = Sepal.Length, sw = Sepal.Width) %>% arrange(group, sl) %>%     filter(sl > 5) %>% distinct(sl, .keep_all = TRUE) %>% summarise(sw = max(sw),     by = group)\n14: eval(substitute(expr), envir = parent.frame())\n15: eval(substitute(expr), envir = parent.frame())\n16: sys_time_print({    res = ft %>% select_fst(Species, Sepal.Length, Sepal.Width) %>%         rename(group = Species, sl = Sepal.Length, sw = Sepal.Width) %>%         arrange(group, sl) %>% filter(sl > 5) %>% distinct(sl,         .keep_all = TRUE) %>% summarise(sw = max(sw), by = group)})\n17: eval(expr, envir, enclos)\n18: eval(expr, envir, enclos)\n19: withVisible(eval(expr, envir, enclos))\n20: withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler,     error = eHandler, message = mHandler)\n21: handle(ev <- withCallingHandlers(withVisible(eval(expr, envir,     enclos)), warning = wHandler, error = eHandler, message = mHandler))\n22: timing_fn(handle(ev <- withCallingHandlers(withVisible(eval(expr,     envir, enclos)), warning = wHandler, error = eHandler, message = mHandler)))\n23: evaluate_call(expr, parsed$src[[i]], envir = envir, enclos = enclos,     debug = debug, last = i == length(out), use_try = stop_on_error !=         2L, keep_warning = keep_warning, keep_message = keep_message,     output_handler = output_handler, include_timing = include_timing)\n24: evaluate::evaluate(...)\n25: evaluate(code, envir = env, new_device = FALSE, keep_warning = !isFALSE(options$warning),     keep_message = !isFALSE(options$message), stop_on_error = if (options$error &&         options$include) 0L else 2L, output_handler = knit_handlers(options$render,         options))\n26: in_dir(input_dir(), evaluate(code, envir = env, new_device = FALSE,     keep_warning = !isFALSE(options$warning), keep_message = !isFALSE(options$message),     stop_on_error = if (options$error && options$include) 0L else 2L,     output_handler = knit_handlers(options$render, options)))\n27: block_exec(params)\n28: call_block(x)\n29: process_group.block(group)\n30: process_group(group)\n31: withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),     error = function(e) {        setwd(wd)        cat(res, sep = \"\\n\", file = output %n% \"\")        message(\"Quitting from lines \", paste(current_lines(i),             collapse = \"-\"), \" (\", knit_concord$get(\"infile\"),             \") \")    })\n32: process_file(text, output)\n33: knit(input, text = text, envir = envir, quiet = quiet)\n34: knit2html(..., force_v1 = TRUE)\n35: (if (grepl(\"\\\\.[Rr]md$\", file)) knit2html_v1 else if (grepl(\"\\\\.[Rr]rst$\",     file)) knit2pandoc else knit)(file, encoding = encoding,     quiet = quiet, envir = globalenv(), ...)\n36: vweave(...)\n37: engine$weave(file, quiet = quiet, encoding = enc)\n38: doTryCatch(return(expr), name, parentenv, handler)\n39: tryCatchOne(expr, names, parentenv, handlers[[1L]])\n40: tryCatchList(expr, classes, parentenv, handlers)\n41: tryCatch({    engine$weave(file, quiet = quiet, encoding = enc)    setwd(startdir)    output <- find_vignette_product(name, by = \"weave\", engine = engine)    if (!have.makefile && vignette_is_tex(output)) {        texi2pdf(file = output, clean = FALSE, quiet = quiet)        output <- find_vignette_product(name, by = \"texi2pdf\",             engine = engine)    }    outputs <- c(outputs, output)}, error = function(e) {    thisOK <<- FALSE    fails <<- c(fails, file)    message(gettextf(\"Error: processing vignette '%s' failed with diagnostics:\\n%s\",         file, conditionMessage(e)))})\n42: tools:::buildVignettes(dir = \"/home/ripley/R/packages/tests32/tidyft.Rcheck/vign_test/tidyft\",     ser_elibs = \"/tmp/RtmpeXa4xL/file4abf2eef264a.rds\")\nAn irrecoverable exception occurred. R is aborting now ...\n\nTraceback:\n 1: fstretrieve(file_name, columns, from, to)\n 2: read_fst(meta_info$path, j)\n 3: `[.fst_table`(ft, logical_vec)\n 4: ft[logical_vec]\n 5: setDT(ft[logical_vec])\n 6: select_fst(., Species, Sepal.Length, Sepal.Width)\n 7: function_list[[i]](value)\n 8: freduce(value, `_function_list`)\n 9: `_fseq`(`_lhs`)\n10: eval(quote(`_fseq`(`_l",
-                "flavors": [
-                    "r-patched-solaris-x86"
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
         {
             "package": "tidyft",
             "date_updated": "2020-05-04T15:03:17.000Z",
@@ -1395,6 +1127,274 @@ Date: Mon, 01 Jun 2020 12:37:08 GMT
 
                 ]
             }
+        },
+        {
+            "package": "tidyft",
+            "date_updated": "2020-05-12T15:03:16.000Z",
+            "summary": {
+                "any": true,
+                "ok": 10,
+                "note": 0,
+                "warn": 2,
+                "error": 0,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "0.4.5",
+                    "tinstall": 4.27,
+                    "tcheck": 53.84,
+                    "ttotal": 58.11,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "0.4.5",
+                    "tinstall": 3.75,
+                    "tcheck": 46,
+                    "ttotal": 49.75,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 68.47,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 62.68,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 15,
+                    "tcheck": 63,
+                    "ttotal": 78,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 4.65,
+                    "tcheck": 52.37,
+                    "ttotal": 57.02,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 85.2,
+                    "status": "WARN",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 4.35,
+                    "tcheck": 51.87,
+                    "ttotal": 56.22,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-release-osx-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 12,
+                    "tcheck": 90,
+                    "ttotal": 102,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-osx-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "WARN",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 13,
+                    "tcheck": 66,
+                    "ttotal": 79,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/tidyft-00check.html"
+                }
+            ],
+            "check_details": {
+                "version": "0.4.5",
+                "check": "re-building of vignette outputs",
+                "result": "WARN",
+                "output": "Error(s) in re-building vignettes:\n  ...\n--- re-building ‘Introduction.Rmd’ using rmarkdown\nWarning in engine$weave(file, quiet = quiet, encoding = enc) :\n  Pandoc (>= 1.12.3) and/or pandoc-citeproc not available. Falling back to R Markdown v1.\n\n *** caught segfault ***\naddress 0, cause 'memory not mapped'\n\n *** caught segfault ***\naddress 179c1c30, cause 'memory not mapped'\n\nTraceback:\n 1: fstretrieve(file_name, columns, from, to)\n 2: read_fst(meta_info$path, j)\n 3: `[.fst_table`(ft, logical_vec)\n 4: ft[logical_vec]\n 5: setDT(ft[logical_vec])\n 6: select_fst(., Species, Sepal.Length, Sepal.Width)\n 7: function_list[[i]](value)\n 8: freduce(value, `_function_list`)\n 9: `_fseq`(`_lhs`)\n10: eval(quote(`_fseq`(`_lhs`)), env, env)\n11: eval(quote(`_fseq`(`_lhs`)), env, env)\n12: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))\n13: ft %>% select_fst(Species, Sepal.Length, Sepal.Width) %>% rename(group = Species,     sl = Sepal.Length, sw = Sepal.Width) %>% arrange(group, sl) %>%     filter(sl > 5) %>% distinct(sl, .keep_all = TRUE) %>% summarise(sw = max(sw),     by = group)\n14: eval(substitute(expr), envir = parent.frame())\n15: eval(substitute(expr), envir = parent.frame())\n16: sys_time_print({    res = ft %>% select_fst(Species, Sepal.Length, Sepal.Width) %>%         rename(group = Species, sl = Sepal.Length, sw = Sepal.Width) %>%         arrange(group, sl) %>% filter(sl > 5) %>% distinct(sl,         .keep_all = TRUE) %>% summarise(sw = max(sw), by = group)})\n17: eval(expr, envir, enclos)\n18: eval(expr, envir, enclos)\n19: withVisible(eval(expr, envir, enclos))\n20: withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler,     error = eHandler, message = mHandler)\n21: handle(ev <- withCallingHandlers(withVisible(eval(expr, envir,     enclos)), warning = wHandler, error = eHandler, message = mHandler))\n22: timing_fn(handle(ev <- withCallingHandlers(withVisible(eval(expr,     envir, enclos)), warning = wHandler, error = eHandler, message = mHandler)))\n23: evaluate_call(expr, parsed$src[[i]], envir = envir, enclos = enclos,     debug = debug, last = i == length(out), use_try = stop_on_error !=         2L, keep_warning = keep_warning, keep_message = keep_message,     output_handler = output_handler, include_timing = include_timing)\n24: evaluate::evaluate(...)\n25: evaluate(code, envir = env, new_device = FALSE, keep_warning = !isFALSE(options$warning),     keep_message = !isFALSE(options$message), stop_on_error = if (options$error &&         options$include) 0L else 2L, output_handler = knit_handlers(options$render,         options))\n26: in_dir(input_dir(), evaluate(code, envir = env, new_device = FALSE,     keep_warning = !isFALSE(options$warning), keep_message = !isFALSE(options$message),     stop_on_error = if (options$error && options$include) 0L else 2L,     output_handler = knit_handlers(options$render, options)))\n27: block_exec(params)\n28: call_block(x)\n29: process_group.block(group)\n30: process_group(group)\n31: withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),     error = function(e) {        setwd(wd)        cat(res, sep = \"\\n\", file = output %n% \"\")        message(\"Quitting from lines \", paste(current_lines(i),             collapse = \"-\"), \" (\", knit_concord$get(\"infile\"),             \") \")    })\n32: process_file(text, output)\n33: knit(input, text = text, envir = envir, quiet = quiet)\n34: knit2html(..., force_v1 = TRUE)\n35: (if (grepl(\"\\\\.[Rr]md$\", file)) knit2html_v1 else if (grepl(\"\\\\.[Rr]rst$\",     file)) knit2pandoc else knit)(file, encoding = encoding,     quiet = quiet, envir = globalenv(), ...)\n36: vweave(...)\n37: engine$weave(file, quiet = quiet, encoding = enc)\n38: doTryCatch(return(expr), name, parentenv, handler)\n39: tryCatchOne(expr, names, parentenv, handlers[[1L]])\n40: tryCatchList(expr, classes, parentenv, handlers)\n41: tryCatch({    engine$weave(file, quiet = quiet, encoding = enc)    setwd(startdir)    output <- find_vignette_product(name, by = \"weave\", engine = engine)    if (!have.makefile && vignette_is_tex(output)) {        texi2pdf(file = output, clean = FALSE, quiet = quiet)        output <- find_vignette_product(name, by = \"texi2pdf\",             engine = engine)    }    outputs <- c(outputs, output)}, error = function(e) {    thisOK <<- FALSE    fails <<- c(fails, file)    message(gettextf(\"Error: processing vignette '%s' failed with diagnostics:\\n%s\",         file, conditionMessage(e)))})\n42: tools:::buildVignettes(dir = \"/home/ripley/R/packages/tests32/tidyft.Rcheck/vign_test/tidyft\",     ser_elibs = \"/tmp/RtmpeXa4xL/file4abf2eef264a.rds\")\nAn irrecoverable exception occurred. R is aborting now ...\n\nTraceback:\n 1: fstretrieve(file_name, columns, from, to)\n 2: read_fst(meta_info$path, j)\n 3: `[.fst_table`(ft, logical_vec)\n 4: ft[logical_vec]\n 5: setDT(ft[logical_vec])\n 6: select_fst(., Species, Sepal.Length, Sepal.Width)\n 7: function_list[[i]](value)\n 8: freduce(value, `_function_list`)\n 9: `_fseq`(`_lhs`)\n10: eval(quote(`_fseq`(`_l",
+                "flavors": [
+                    "r-patched-solaris-x86"
+                ],
+                "additional_issues": [
+
+                ]
+            }
+        },
+        {
+            "package": "tidyft",
+            "date_updated": "2020-05-13T15:03:14.000Z",
+            "summary": {
+                "any": true,
+                "ok": 10,
+                "note": 0,
+                "warn": 2,
+                "error": 0,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "0.4.5",
+                    "tinstall": 4.65,
+                    "tcheck": 56.68,
+                    "ttotal": 61.33,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "0.4.5",
+                    "tinstall": 3.6,
+                    "tcheck": 48.72,
+                    "ttotal": 52.32,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 68.47,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 62.68,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 15,
+                    "tcheck": 63,
+                    "ttotal": 78,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 4.65,
+                    "tcheck": 52.37,
+                    "ttotal": 57.02,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 85.2,
+                    "status": "WARN",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 4.35,
+                    "tcheck": 51.87,
+                    "ttotal": 56.22,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-release-osx-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 12,
+                    "tcheck": 90,
+                    "ttotal": 102,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-osx-x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "WARN",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/tidyft-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "0.4.5",
+                    "tinstall": 12,
+                    "tcheck": 70,
+                    "ttotal": 82,
+                    "status": "OK",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/tidyft-00check.html"
+                }
+            ],
+            "check_details": {
+                "version": "0.4.5",
+                "check": "re-building of vignette outputs",
+                "result": "WARN",
+                "output": "Error(s) in re-building vignettes:\n  ...\n--- re-building ‘Introduction.Rmd’ using rmarkdown\nWarning in engine$weave(file, quiet = quiet, encoding = enc) :\n  Pandoc (>= 1.12.3) and/or pandoc-citeproc not available. Falling back to R Markdown v1.\n\n *** caught segfault ***\naddress 0, cause 'memory not mapped'\n\n *** caught segfault ***\naddress 179c1c30, cause 'memory not mapped'\n\nTraceback:\n 1: fstretrieve(file_name, columns, from, to)\n 2: read_fst(meta_info$path, j)\n 3: `[.fst_table`(ft, logical_vec)\n 4: ft[logical_vec]\n 5: setDT(ft[logical_vec])\n 6: select_fst(., Species, Sepal.Length, Sepal.Width)\n 7: function_list[[i]](value)\n 8: freduce(value, `_function_list`)\n 9: `_fseq`(`_lhs`)\n10: eval(quote(`_fseq`(`_lhs`)), env, env)\n11: eval(quote(`_fseq`(`_lhs`)), env, env)\n12: withVisible(eval(quote(`_fseq`(`_lhs`)), env, env))\n13: ft %>% select_fst(Species, Sepal.Length, Sepal.Width) %>% rename(group = Species,     sl = Sepal.Length, sw = Sepal.Width) %>% arrange(group, sl) %>%     filter(sl > 5) %>% distinct(sl, .keep_all = TRUE) %>% summarise(sw = max(sw),     by = group)\n14: eval(substitute(expr), envir = parent.frame())\n15: eval(substitute(expr), envir = parent.frame())\n16: sys_time_print({    res = ft %>% select_fst(Species, Sepal.Length, Sepal.Width) %>%         rename(group = Species, sl = Sepal.Length, sw = Sepal.Width) %>%         arrange(group, sl) %>% filter(sl > 5) %>% distinct(sl,         .keep_all = TRUE) %>% summarise(sw = max(sw), by = group)})\n17: eval(expr, envir, enclos)\n18: eval(expr, envir, enclos)\n19: withVisible(eval(expr, envir, enclos))\n20: withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler,     error = eHandler, message = mHandler)\n21: handle(ev <- withCallingHandlers(withVisible(eval(expr, envir,     enclos)), warning = wHandler, error = eHandler, message = mHandler))\n22: timing_fn(handle(ev <- withCallingHandlers(withVisible(eval(expr,     envir, enclos)), warning = wHandler, error = eHandler, message = mHandler)))\n23: evaluate_call(expr, parsed$src[[i]], envir = envir, enclos = enclos,     debug = debug, last = i == length(out), use_try = stop_on_error !=         2L, keep_warning = keep_warning, keep_message = keep_message,     output_handler = output_handler, include_timing = include_timing)\n24: evaluate::evaluate(...)\n25: evaluate(code, envir = env, new_device = FALSE, keep_warning = !isFALSE(options$warning),     keep_message = !isFALSE(options$message), stop_on_error = if (options$error &&         options$include) 0L else 2L, output_handler = knit_handlers(options$render,         options))\n26: in_dir(input_dir(), evaluate(code, envir = env, new_device = FALSE,     keep_warning = !isFALSE(options$warning), keep_message = !isFALSE(options$message),     stop_on_error = if (options$error && options$include) 0L else 2L,     output_handler = knit_handlers(options$render, options)))\n27: block_exec(params)\n28: call_block(x)\n29: process_group.block(group)\n30: process_group(group)\n31: withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),     error = function(e) {        setwd(wd)        cat(res, sep = \"\\n\", file = output %n% \"\")        message(\"Quitting from lines \", paste(current_lines(i),             collapse = \"-\"), \" (\", knit_concord$get(\"infile\"),             \") \")    })\n32: process_file(text, output)\n33: knit(input, text = text, envir = envir, quiet = quiet)\n34: knit2html(..., force_v1 = TRUE)\n35: (if (grepl(\"\\\\.[Rr]md$\", file)) knit2html_v1 else if (grepl(\"\\\\.[Rr]rst$\",     file)) knit2pandoc else knit)(file, encoding = encoding,     quiet = quiet, envir = globalenv(), ...)\n36: vweave(...)\n37: engine$weave(file, quiet = quiet, encoding = enc)\n38: doTryCatch(return(expr), name, parentenv, handler)\n39: tryCatchOne(expr, names, parentenv, handlers[[1L]])\n40: tryCatchList(expr, classes, parentenv, handlers)\n41: tryCatch({    engine$weave(file, quiet = quiet, encoding = enc)    setwd(startdir)    output <- find_vignette_product(name, by = \"weave\", engine = engine)    if (!have.makefile && vignette_is_tex(output)) {        texi2pdf(file = output, clean = FALSE, quiet = quiet)        output <- find_vignette_product(name, by = \"texi2pdf\",             engine = engine)    }    outputs <- c(outputs, output)}, error = function(e) {    thisOK <<- FALSE    fails <<- c(fails, file)    message(gettextf(\"Error: processing vignette '%s' failed with diagnostics:\\n%s\",         file, conditionMessage(e)))})\n42: tools:::buildVignettes(dir = \"/home/ripley/R/packages/tests32/tidyft.Rcheck/vign_test/tidyft\",     ser_elibs = \"/tmp/RtmpeXa4xL/file4abf2eef264a.rds\")\nAn irrecoverable exception occurred. R is aborting now ...\n\nTraceback:\n 1: fstretrieve(file_name, columns, from, to)\n 2: read_fst(meta_info$path, j)\n 3: `[.fst_table`(ft, logical_vec)\n 4: ft[logical_vec]\n 5: setDT(ft[logical_vec])\n 6: select_fst(., Species, Sepal.Length, Sepal.Width)\n 7: function_list[[i]](value)\n 8: freduce(value, `_function_list`)\n 9: `_fseq`(`_lhs`)\n10: eval(quote(`_fseq`(`_l",
+                "flavors": [
+                    "r-patched-solaris-x86"
+                ],
+                "additional_issues": [
+
+                ]
+            }
         }
     ]
 }
@@ -1409,7 +1409,7 @@ $error
 NULL
 
 $count
-[1] 509
+[1] 505
 
 $returned
 [1] 30
@@ -1418,16 +1418,16 @@ $data
 [90m# A tibble: 30 x 5[39m
    package date_updated summary$any   $ok $note $warn $error $fail checks
    [3m[90m<chr>[39m[23m   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
-[90m 1[39m tidyft  2020-05-02T… TRUE           10     0     2      0     0 [90m<df[,[0m…
-[90m 2[39m tidyft  2020-05-03T… TRUE           10     0     2      0     0 [90m<df[,[0m…
-[90m 3[39m tidyft  2020-05-04T… TRUE           10     0     2      0     0 [90m<df[,[0m…
-[90m 4[39m tidyft  2020-05-05T… TRUE           10     0     2      0     0 [90m<df[,[0m…
-[90m 5[39m tidyft  2020-05-06T… TRUE           10     0     2      0     0 [90m<df[,[0m…
-[90m 6[39m tidyft  2020-05-07T… TRUE           10     0     2      0     0 [90m<df[,[0m…
-[90m 7[39m tidyft  2020-05-08T… TRUE           10     0     2      0     0 [90m<df[,[0m…
-[90m 8[39m tidyft  2020-05-09T… TRUE           10     0     2      0     0 [90m<df[,[0m…
-[90m 9[39m tidyft  2020-05-10T… TRUE           10     0     2      0     0 [90m<df[,[0m…
-[90m10[39m tidyft  2020-05-11T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 1[39m tidyft  2020-05-04T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 2[39m tidyft  2020-05-05T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 3[39m tidyft  2020-05-06T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 4[39m tidyft  2020-05-07T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 5[39m tidyft  2020-05-08T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 6[39m tidyft  2020-05-09T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 7[39m tidyft  2020-05-10T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 8[39m tidyft  2020-05-11T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m 9[39m tidyft  2020-05-12T… TRUE           10     0     2      0     0 [90m<df[,[0m…
+[90m10[39m tidyft  2020-05-13T… TRUE           10     0     2      0     0 [90m<df[,[0m…
 [90m# … with 20 more rows, and 6 more variables: check_details$version [3m[90m<chr>[90m[23m,[39m
 [90m#   $check [3m[90m<chr>[90m[23m, $result [3m[90m<chr>[90m[23m, $output [3m[90m<chr>[90m[23m, $flavors [3m[90m<list>[90m[23m,[39m
 [90m#   $additional_issues [3m[90m<list>[90m[23m[39m
@@ -1442,22 +1442,22 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 12363
+Content-Length: 12362
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 01 Jun 2020 12:37:10 GMT
+Date: Wed, 03 Jun 2020 08:15:26 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 29,
+    "count": 28,
     "returned": 2,
     "data": [
         {
             "package": "aws",
-            "date_updated": "2020-05-02T15:03:15.000Z",
+            "date_updated": "2020-05-04T15:03:17.000Z",
             "summary": {
                 "any": true,
                 "ok": 11,
@@ -1470,18 +1470,18 @@ Date: Mon, 01 Jun 2020 12:37:10 GMT
                 {
                     "flavor": "r-devel-linux-x86_64-debian-clang",
                     "version": "2.4-2",
-                    "tinstall": 22.22,
-                    "tcheck": 109.48,
-                    "ttotal": 131.7,
+                    "tinstall": 20.72,
+                    "tcheck": 109.08,
+                    "ttotal": 129.8,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/aws-00check.html"
                 },
                 {
                     "flavor": "r-devel-linux-x86_64-debian-gcc",
                     "version": "2.4-2",
-                    "tinstall": 19.41,
-                    "tcheck": 81.91,
-                    "ttotal": 101.32,
+                    "tinstall": 19.13,
+                    "tcheck": 81.35,
+                    "ttotal": 100.48,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/aws-00check.html"
                 },
@@ -1490,7 +1490,7 @@ Date: Mon, 01 Jun 2020 12:37:10 GMT
                     "version": "2.4-2",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 163.93,
+                    "ttotal": 162.76,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/aws-00check.html"
                 },
@@ -1499,7 +1499,7 @@ Date: Mon, 01 Jun 2020 12:37:10 GMT
                     "version": "2.4-2",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 157.93,
+                    "ttotal": 155.6,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/aws-00check.html"
                 },
@@ -1736,7 +1736,7 @@ $error
 NULL
 
 $count
-[1] 29
+[1] 28
 
 $returned
 [1] 2
@@ -1745,7 +1745,7 @@ $data
 [90m# A tibble: 2 x 5[39m
   package date_updated summary$any   $ok $note $warn $error $fail checks
   [3m[90m<chr>[39m[23m   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
-[90m1[39m aws     2020-05-02T… TRUE           11     0     0      1     0 [90m<df[,[0m…
+[90m1[39m aws     2020-05-04T… TRUE           11     0     0      1     0 [90m<df[,[0m…
 [90m2[39m bayesCT 2020-05-04T… TRUE            5     4     1      2     0 [90m<df[,[0m…
 [90m# … with 6 more variables: check_details$version [3m[90m<chr>[90m[23m, $check [3m[90m<chr>[90m[23m,[39m
 [90m#   $result [3m[90m<chr>[90m[23m, $output [3m[90m<chr>[90m[23m, $flavors [3m[90m<list>[90m[23m, $additional_issues [3m[90m<list>[90m[23m[39m
@@ -1764,18 +1764,18 @@ Content-Length: 1197
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 01 Jun 2020 12:37:11 GMT
+Date: Wed, 03 Jun 2020 08:15:27 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 29,
+    "count": 28,
     "returned": 10,
     "data": [
         {
             "package": "aws",
-            "date_updated": "2020-05-02T15:03:15.000Z",
+            "date_updated": "2020-05-04T15:03:17.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -1796,7 +1796,7 @@ Date: Mon, 01 Jun 2020 12:37:11 GMT
         },
         {
             "package": "blockmodeling",
-            "date_updated": "2020-05-02T15:03:15.000Z",
+            "date_updated": "2020-05-04T15:03:17.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -1817,7 +1817,7 @@ Date: Mon, 01 Jun 2020 12:37:11 GMT
         },
         {
             "package": "cooccurNet",
-            "date_updated": "2020-05-02T15:03:15.000Z",
+            "date_updated": "2020-05-04T15:03:17.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -1831,7 +1831,7 @@ Date: Mon, 01 Jun 2020 12:37:11 GMT
         },
         {
             "package": "cusum",
-            "date_updated": "2020-05-02T15:03:15.000Z",
+            "date_updated": "2020-05-04T15:03:17.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -1856,25 +1856,25 @@ $error
 NULL
 
 $count
-[1] 29
+[1] 28
 
 $returned
-[1] 29
+[1] 28
 
 $data
-[90m# A tibble: 29 x 5[39m
+[90m# A tibble: 28 x 5[39m
    package       date_updated             summary checks check_details
    [3m[90m<chr>[39m[23m         [3m[90m<chr>[39m[23m                    [3m[90m<lgl>[39m[23m   [3m[90m<lgl>[39m[23m  [3m[90m<lgl>[39m[23m        
-[90m 1[39m aws           2020-05-02T15:03:15.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 1[39m aws           2020-05-04T15:03:17.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 2[39m bayesCT       2020-05-04T15:03:17.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 3[39m bigsparser    2020-05-28T15:03:12.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 4[39m blockmodeling 2020-05-02T15:03:15.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 4[39m blockmodeling 2020-05-04T15:03:17.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 5[39m bvpSolve      2020-05-28T15:03:12.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 6[39m collapse      2020-05-05T15:03:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 7[39m cooccurNet    2020-05-02T15:03:15.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 7[39m cooccurNet    2020-05-04T15:03:17.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 8[39m corr2D        2020-05-16T15:03:16.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 9[39m cusum         2020-05-02T15:03:15.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 9[39m cusum         2020-05-04T15:03:17.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m10[39m dexterMST     2020-05-11T15:03:13.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m# … with 19 more rows[39m
+[90m# … with 18 more rows[39m
 
 ```

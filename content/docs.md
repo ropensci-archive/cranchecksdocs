@@ -24,9 +24,9 @@ Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
 Content-Length: 0
 Content-Type: application/json; charset=utf8
-Location: https://github.com/ropensci/cchecksapi/blob/master/docs/api_docs.md
+Location: https://docs.cranchecks.info/
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 01 Jun 2020 12:36:49 GMT
+Date: Wed, 03 Jun 2020 08:15:05 GMT
 
 ```
