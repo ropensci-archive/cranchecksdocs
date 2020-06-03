@@ -8,7 +8,7 @@ Generated with Hugo using the [docuapi theme](https://github.com/bep/docuapi).
 
 The theme uses Hugo modules so instead of having a themes folder I refer to the theme as module in `config.toml`.
 
-Here is what I did to be able to serve the site **locally**
+Here is what I did to be able to serve the site **locally**:
 
 * I installed Go.
 
