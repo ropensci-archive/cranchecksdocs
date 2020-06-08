@@ -28,7 +28,7 @@ Content-Length: 256
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 03 Jun 2020 08:15:19 GMT
+Date: Mon, 08 Jun 2020 12:37:20 GMT
 
 ```
 ```json
@@ -62,14 +62,14 @@ Given on a delete request, indicating success, response body should be empty.
 
 ```shell
 curl -XDELETE -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/322
+ https://cranchecks.info/notifications/rules/326
 ```
 ```yaml
 HTTP/1.1 204 No Content
 Access-Control-Allow-Methods: DELETE
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 03 Jun 2020 08:15:20 GMT
+Date: Mon, 08 Jun 2020 12:37:21 GMT
 
 ```
 
@@ -90,7 +90,7 @@ Content-Type: application/json; charset=utf8
 Location: https://cranchecks.info/heartbeat
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 03 Jun 2020 08:15:21 GMT
+Date: Mon, 08 Jun 2020 12:37:22 GMT
 
 ```
 
@@ -110,7 +110,7 @@ Content-Length: 52
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 03 Jun 2020 08:15:21 GMT
+Date: Mon, 08 Jun 2020 12:37:22 GMT
 
 ```
 ```json
@@ -137,7 +137,7 @@ Content-Type: application/json
 Server: Caddy
 X-Cascade: pass
 X-Content-Type-Options: nosniff
-Date: Wed, 03 Jun 2020 08:15:22 GMT
+Date: Mon, 08 Jun 2020 12:37:22 GMT
 
 ```
 ```json
@@ -160,7 +160,7 @@ Content-Length: 30
 Content-Type: application/json
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Wed, 03 Jun 2020 08:15:22 GMT
+Date: Mon, 08 Jun 2020 12:37:23 GMT
 
 ```
 ```json
