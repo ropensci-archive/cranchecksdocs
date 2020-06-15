@@ -25,6 +25,6 @@ Content-Type: application/json; charset=utf8
 Location: https://cranchecks.info/heartbeat
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 08 Jun 2020 12:37:23 GMT
+Date: Mon, 15 Jun 2020 12:37:40 GMT
 
 ```

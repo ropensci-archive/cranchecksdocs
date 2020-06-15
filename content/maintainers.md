@@ -36,12 +36,12 @@ Content-Length: 1064
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 08 Jun 2020 12:37:10 GMT
+Date: Mon, 15 Jun 2020 12:37:30 GMT
 
 ```
 ```json
 {
-    "found": 9527,
+    "found": 9573,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ Date: Mon, 08 Jun 2020 12:37:10 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-06-08T12:02:30.566Z",
+            "date_updated": "2020-06-15T12:02:37.667Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ Date: Mon, 08 Jun 2020 12:37:10 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-06-08T12:02:30.566Z",
+            "date_updated": "2020-06-15T12:02:37.667Z",
             "table": [
                 {
                     "package": "sirus",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 9527
+[1] 9573
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-06-08T12:02:30.566Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-06-08T12:02:30.566Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-06-15T12:02:37.667Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-06-15T12:02:37.667Z    sirus, TRUE, 9, 3, 0, 0
                                                                                           packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
@@ -165,11 +165,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 12905
+Content-Length: 12978
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 08 Jun 2020 12:37:11 GMT
+Date: Mon, 15 Jun 2020 12:37:31 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-06-08T12:02:31.015Z",
+        "date_updated": "2020-06-15T12:02:38.138Z",
         "table": [
             {
                 "package": "asciicast",
@@ -313,9 +313,9 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
                 "package": "igraph",
                 "any": true,
                 "ok": 5,
-                "note": 7,
+                "note": 6,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "igraphdata",
@@ -391,11 +391,11 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
             },
             {
                 "package": "pkgcache",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "pkgconfig",
@@ -448,10 +448,10 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
             {
                 "package": "processx",
                 "any": true,
-                "ok": 10,
+                "ok": 9,
                 "note": 0,
                 "warn": 1,
-                "error": 1
+                "error": 2
             },
             {
                 "package": "progress",
@@ -471,9 +471,9 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
             },
             {
                 "package": "rcmdcheck",
-                "any": false,
-                "ok": 12,
-                "note": 0,
+                "any": true,
+                "ok": 11,
+                "note": 1,
                 "warn": 0,
                 "error": 0
             },
@@ -487,9 +487,9 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
             },
             {
                 "package": "rematch2",
-                "any": false,
-                "ok": 12,
-                "note": 0,
+                "any": true,
+                "ok": 11,
+                "note": 1,
                 "warn": 0,
                 "error": 0
             },
@@ -784,8 +784,12 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_igraph.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "NOTE",
-                        "number_checks": 7
+                        "number_checks": 6
                     },
                     {
                         "category": "OK",
@@ -910,12 +914,8 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_pkgcache.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -996,7 +996,7 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
                 "check_result": [
                     {
                         "category": "ERROR",
-                        "number_checks": 1
+                        "number_checks": 2
                     },
                     {
                         "category": "WARN",
@@ -1004,7 +1004,7 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
                     },
                     {
                         "category": "OK",
-                        "number_checks": 10
+                        "number_checks": 9
                     }
                 ],
                 "version": null
@@ -1040,8 +1040,12 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_rcmdcheck.html",
                 "check_result": [
                     {
+                        "category": "NOTE",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1066,8 +1070,12 @@ Date: Mon, 08 Jun 2020 12:37:11 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_rematch2.html",
                 "check_result": [
                     {
+                        "category": "NOTE",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1243,7 +1251,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-06-08T12:02:31.015Z"
+[1] "2020-06-15T12:02:38.138Z"
 
 $data$table
         package   any ok note warn error
@@ -1263,7 +1271,7 @@ $data$table
 14     filelock FALSE 12    0    0     0
 15        franc FALSE 12    0    0     0
 16           gh FALSE 12    0    0     0
-17       igraph  TRUE  5    7    0     0
+17       igraph  TRUE  5    6    0     1
 18   igraphdata FALSE 12    0    0     0
 19         isa2 FALSE 12    0    0     0
 20     keypress FALSE 12    0    0     0
@@ -1273,19 +1281,19 @@ $data$table
 24          pak  TRUE 11    1    0     0
 25    parsedate FALSE 12    0    0     0
 26        pingr  TRUE  9    0    0     3
-27     pkgcache  TRUE 11    0    0     1
+27     pkgcache FALSE 12    0    0     0
 28    pkgconfig FALSE 12    0    0     0
 29    pkgsearch FALSE 12    0    0     0
 30       praise FALSE 12    0    0     0
 31      presser  TRUE 11    0    0     1
 32   prettycode FALSE 12    0    0     0
 33  prettyunits FALSE 12    0    0     0
-34     processx  TRUE 10    0    1     1
+34     processx  TRUE  9    0    1     2
 35     progress FALSE 12    0    0     0
 36           ps  TRUE 10    0    0     2
-37    rcmdcheck FALSE 12    0    0     0
+37    rcmdcheck  TRUE 11    1    0     0
 38     rcorpora  TRUE  5    7    0     0
-39     rematch2 FALSE 12    0    0     0
+39     rematch2  TRUE 11    1    0     0
 40         rhub FALSE 12    0    0     0
 41    rversions FALSE 12    0    0     0
 42         sand  TRUE  1   11    0     0
@@ -1407,58 +1415,58 @@ $data$packages
 50 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
 51        https://cloud.r-project.org/web/checks/check_results_xopen.html
 52          https://cloud.r-project.org/web/checks/check_results_zip.html
-                check_result version
-1                     OK, 12      NA
-2                     OK, 12      NA
-3                     OK, 12      NA
-4            WARN, OK, 1, 11      NA
-5                     OK, 12      NA
-6                     OK, 12      NA
-7                     OK, 12      NA
-8                     OK, 12      NA
-9                     OK, 12      NA
-10                    OK, 12      NA
-11                    OK, 12      NA
-12                    OK, 12      NA
-13                    OK, 12      NA
-14                    OK, 12      NA
-15                    OK, 12      NA
-16                    OK, 12      NA
-17            NOTE, OK, 7, 5      NA
-18                    OK, 12      NA
-19                    OK, 12      NA
-20                    OK, 12      NA
-21           NOTE, OK, 2, 10      NA
-22                    OK, 12      NA
-23                    OK, 12      NA
-24           NOTE, OK, 1, 11      NA
-25                    OK, 12      NA
-26           ERROR, OK, 3, 9      NA
-27          ERROR, OK, 1, 11      NA
-28                    OK, 12      NA
-29                    OK, 12      NA
-30                    OK, 12      NA
-31          ERROR, OK, 1, 11      NA
-32                    OK, 12      NA
-33                    OK, 12      NA
-34 ERROR, WARN, OK, 1, 1, 10      NA
-35                    OK, 12      NA
-36          ERROR, OK, 2, 10      NA
-37                    OK, 12      NA
-38            NOTE, OK, 7, 5      NA
-39                    OK, 12      NA
-40                    OK, 12      NA
-41                    OK, 12      NA
-42           NOTE, OK, 11, 1      NA
-43                    OK, 12      NA
-44                    OK, 12      NA
-45                    OK, 12      NA
-46                    OK, 12      NA
-47                    OK, 12      NA
-48                    OK, 12      NA
-49                    OK, 12      NA
-50                    OK, 12      NA
-51                    OK, 12      NA
-52                    OK, 12      NA
+               check_result version
+1                    OK, 12      NA
+2                    OK, 12      NA
+3                    OK, 12      NA
+4           WARN, OK, 1, 11      NA
+5                    OK, 12      NA
+6                    OK, 12      NA
+7                    OK, 12      NA
+8                    OK, 12      NA
+9                    OK, 12      NA
+10                   OK, 12      NA
+11                   OK, 12      NA
+12                   OK, 12      NA
+13                   OK, 12      NA
+14                   OK, 12      NA
+15                   OK, 12      NA
+16                   OK, 12      NA
+17 ERROR, NOTE, OK, 1, 6, 5      NA
+18                   OK, 12      NA
+19                   OK, 12      NA
+20                   OK, 12      NA
+21          NOTE, OK, 2, 10      NA
+22                   OK, 12      NA
+23                   OK, 12      NA
+24          NOTE, OK, 1, 11      NA
+25                   OK, 12      NA
+26          ERROR, OK, 3, 9      NA
+27                   OK, 12      NA
+28                   OK, 12      NA
+29                   OK, 12      NA
+30                   OK, 12      NA
+31         ERROR, OK, 1, 11      NA
+32                   OK, 12      NA
+33                   OK, 12      NA
+34 ERROR, WARN, OK, 2, 1, 9      NA
+35                   OK, 12      NA
+36         ERROR, OK, 2, 10      NA
+37          NOTE, OK, 1, 11      NA
+38           NOTE, OK, 7, 5      NA
+39          NOTE, OK, 1, 11      NA
+40                   OK, 12      NA
+41                   OK, 12      NA
+42          NOTE, OK, 11, 1      NA
+43                   OK, 12      NA
+44                   OK, 12      NA
+45                   OK, 12      NA
+46                   OK, 12      NA
+47                   OK, 12      NA
+48                   OK, 12      NA
+49                   OK, 12      NA
+50                   OK, 12      NA
+51                   OK, 12      NA
+52                   OK, 12      NA
 
 ```
