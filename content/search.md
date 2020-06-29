@@ -43,17 +43,17 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 175080
+Content-Length: 175081
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 22 Jun 2020 12:36:47 GMT
+Date: Mon, 29 Jun 2020 12:36:06 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 950,
+    "count": 1144,
     "returned": 10,
     "data": [
         {
@@ -2197,7 +2197,7 @@ $error
 NULL
 
 $count
-[1] 950
+[1] 1144
 
 $returned
 [1] 30
@@ -2233,13 +2233,13 @@ Content-Length: 23915
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 22 Jun 2020 12:36:50 GMT
+Date: Mon, 29 Jun 2020 12:36:09 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 81,
+    "count": 86,
     "returned": 2,
     "data": [
         {
@@ -2467,7 +2467,7 @@ Date: Mon, 22 Jun 2020 12:36:50 GMT
         },
         {
             "package": "aws",
-            "date_updated": "2020-05-23T15:03:15.000Z",
+            "date_updated": "2020-05-30T15:03:18.000Z",
             "summary": {
                 "any": true,
                 "ok": 11,
@@ -2480,18 +2480,18 @@ Date: Mon, 22 Jun 2020 12:36:50 GMT
                 {
                     "flavor": "r-devel-linux-x86_64-debian-clang",
                     "version": "2.4-2",
-                    "tinstall": 22.78,
-                    "tcheck": 109.22,
-                    "ttotal": 132,
+                    "tinstall": 21.78,
+                    "tcheck": 110.55,
+                    "ttotal": 132.33,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/aws-00check.html"
                 },
                 {
                     "flavor": "r-devel-linux-x86_64-debian-gcc",
                     "version": "2.4-2",
-                    "tinstall": 20.03,
-                    "tcheck": 81.29,
-                    "ttotal": 101.32,
+                    "tinstall": 20.66,
+                    "tcheck": 81.34,
+                    "ttotal": 102,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/aws-00check.html"
                 },
@@ -2509,25 +2509,25 @@ Date: Mon, 22 Jun 2020 12:36:50 GMT
                     "version": "2.4-2",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 155.58,
+                    "ttotal": 155.34,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/aws-00check.html"
                 },
                 {
                     "flavor": "r-devel-windows-ix86+x86_64",
                     "version": "2.4-2",
-                    "tinstall": 62,
-                    "tcheck": 133,
-                    "ttotal": 195,
+                    "tinstall": 65,
+                    "tcheck": 132,
+                    "ttotal": 197,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/aws-00check.html"
                 },
                 {
                     "flavor": "r-patched-linux-x86_64",
                     "version": "2.4-2",
-                    "tinstall": 22.86,
-                    "tcheck": 104.65,
-                    "ttotal": 127.51,
+                    "tinstall": 21.58,
+                    "tcheck": 104.71,
+                    "ttotal": 126.29,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/aws-00check.html"
                 },
@@ -2543,9 +2543,9 @@ Date: Mon, 22 Jun 2020 12:36:50 GMT
                 {
                     "flavor": "r-release-linux-x86_64",
                     "version": "2.4-2",
-                    "tinstall": 23.6,
-                    "tcheck": 103.69,
-                    "ttotal": 127.29,
+                    "tinstall": 23.2,
+                    "tcheck": 104.44,
+                    "ttotal": 127.64,
                     "status": "OK",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/aws-00check.html"
                 },
@@ -2612,7 +2612,7 @@ $error
 NULL
 
 $count
-[1] 81
+[1] 86
 
 $returned
 [1] 2
@@ -2622,7 +2622,7 @@ $data
   package date_updated summary$any   $ok $note $warn $error $fail checks
   [3m[90m<chr>[39m[23m   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
 [90m1[39m allan   2020-06-06T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m2[39m aws     2020-05-23T… TRUE           11     0     0      1     0 [90m<df[,[0m…
+[90m2[39m aws     2020-05-30T… TRUE           11     0     0      1     0 [90m<df[,[0m…
 [90m# … with 7 more variables: check_details$details [3m[90m<list>[90m[23m,[39m
 [90m#   $additional_issues [3m[90m<list>[90m[23m, $version [3m[90m<chr>[90m[23m, $check [3m[90m<chr>[90m[23m, $result [3m[90m<chr>[90m[23m,[39m
 [90m#   $output [3m[90m<chr>[90m[23m, $flavors [3m[90m<list>[90m[23m[39m
@@ -2641,13 +2641,13 @@ Content-Length: 1194
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 22 Jun 2020 12:36:52 GMT
+Date: Mon, 29 Jun 2020 12:36:11 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 81,
+    "count": 86,
     "returned": 10,
     "data": [
         {
@@ -2659,21 +2659,21 @@ Date: Mon, 22 Jun 2020 12:36:52 GMT
         },
         {
             "package": "aws",
-            "date_updated": "2020-05-23T15:03:15.000Z",
+            "date_updated": "2020-05-30T15:03:18.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
         },
         {
             "package": "bayesCT",
-            "date_updated": "2020-05-23T15:03:15.000Z",
+            "date_updated": "2020-05-30T15:03:19.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
         },
         {
             "package": "bigsparser",
-            "date_updated": "2020-05-28T15:03:12.000Z",
+            "date_updated": "2020-06-26T15:03:14.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -2687,7 +2687,7 @@ Date: Mon, 22 Jun 2020 12:36:52 GMT
         },
         {
             "package": "blockmodeling",
-            "date_updated": "2020-05-23T15:03:15.000Z",
+            "date_updated": "2020-05-30T15:03:18.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -2733,7 +2733,7 @@ $error
 NULL
 
 $count
-[1] 81
+[1] 86
 
 $returned
 [1] 30
@@ -2743,11 +2743,11 @@ $data
    package       date_updated             summary checks check_details
    [3m[90m<chr>[39m[23m         [3m[90m<chr>[39m[23m                    [3m[90m<lgl>[39m[23m   [3m[90m<lgl>[39m[23m  [3m[90m<lgl>[39m[23m        
 [90m 1[39m allan         2020-06-06T16:04:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 2[39m aws           2020-05-23T15:03:15.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 3[39m bayesCT       2020-05-23T15:03:15.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 4[39m bigsparser    2020-05-28T15:03:12.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 2[39m aws           2020-05-30T15:03:18.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 3[39m bayesCT       2020-05-30T15:03:19.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 4[39m bigsparser    2020-06-26T15:03:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 5[39m BIS           2020-06-20T15:03:18.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 6[39m blockmodeling 2020-05-23T15:03:15.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 6[39m blockmodeling 2020-05-30T15:03:18.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 7[39m bvpSolve      2020-06-06T16:04:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 8[39m cairoDevice   2020-06-09T15:03:21.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 9[39m CatDyn        2020-06-17T15:03:24.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
