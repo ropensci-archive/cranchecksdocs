@@ -41,7 +41,7 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 * Server certificate: DST Root CA X3
 > GET /history/2020-04-01 HTTP/1.1
 > Host: cranchecks.info
-> User-Agent: curl/7.70.0
+> User-Agent: curl/7.71.0
 > Accept: */*
 > 
 * Mark bundle as not supporting multiuse
@@ -51,34 +51,34 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 < Cache-Control: public, must-revalidate, max-age=60
 < Content-Length: 101
 < Content-Type: application/json; charset=utf8
-< Location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200629%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200629T123550Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=decc972b2ef80c8c241167269343169ab4e9ffb50acf01666d5efb724ff7b977
+< Location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200706%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200706T123732Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=2351ac9e44dd2cd4aefc4bee65460ec153d8803accbefa28f5bfe86583c71994
 < Server: Caddy
 < X-Content-Type-Options: nosniff
-< Date: Mon, 29 Jun 2020 12:35:50 GMT
+< Date: Mon, 06 Jul 2020 12:37:32 GMT
 < 
 * Ignoring the response-body
 { [101 bytes data]
-100   101  100   101    0     0    178      0 --:--:-- --:--:-- --:--:--   177100   101  100   101    0     0    178      0 --:--:-- --:--:-- --:--:--   177
+100   101  100   101    0     0    182      0 --:--:-- --:--:-- --:--:--   182
 * Connection #0 to host cranchecks.info left intact
-* Issue another request to this URL: 'https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200629%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200629T123550Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=decc972b2ef80c8c241167269343169ab4e9ffb50acf01666d5efb724ff7b977'
-*   Trying 52.218.253.137:443...
-* Connected to cchecks-history.s3.us-west-2.amazonaws.com (52.218.253.137) port 443 (#1)
+* Issue another request to this URL: 'https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200706%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200706T123732Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=2351ac9e44dd2cd4aefc4bee65460ec153d8803accbefa28f5bfe86583c71994'
+*   Trying 52.218.244.41:443...
+* Connected to cchecks-history.s3.us-west-2.amazonaws.com (52.218.244.41) port 443 (#1)
 * ALPN, offering http/1.1
 * TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 * ALPN, server did not agree to a protocol
 * Server certificate: *.s3-us-west-2.amazonaws.com
 * Server certificate: DigiCert Baltimore CA-2 G2
 * Server certificate: Baltimore CyberTrust Root
-> GET /2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200629%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200629T123550Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=decc972b2ef80c8c241167269343169ab4e9ffb50acf01666d5efb724ff7b977 HTTP/1.1
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0> GET /2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200706%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200706T123732Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=2351ac9e44dd2cd4aefc4bee65460ec153d8803accbefa28f5bfe86583c71994 HTTP/1.1
 > Host: cchecks-history.s3.us-west-2.amazonaws.com
-> User-Agent: curl/7.70.0
+> User-Agent: curl/7.71.0
 > Accept: */*
 > 
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 200 OK
-< x-amz-id-2: SrHYa+QMXhcQfT1SrYxzdo3obF+H4wiYfgow0Y9jBTHeh7sSQEdrcreE8nItu2DuACywBJvvq4o=
-< x-amz-request-id: B101EF6F357E2843
-< Date: Mon, 29 Jun 2020 12:35:52 GMT
+< x-amz-id-2: VqUbv+VdM77ddiMA1e/8YV722I6zNvGmYiDJLt8FHpfPORkJlZ/DhoIJQibsNQ9T9punY4h6K2Y=
+< x-amz-request-id: 1QAMENAZ3V4SATER
+< Date: Mon, 06 Jul 2020 12:37:33 GMT
 < Last-Modified: Wed, 01 Apr 2020 16:36:04 GMT
 < ETag: "a7d74593672aa52dace5cd9e62db9351"
 < Content-Encoding: gzip
@@ -88,7 +88,7 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 < Server: AmazonS3
 < 
 { [16360 bytes data]
- 41 5059k   41 2085k    0     0  1316k      0  0:00:03  0:00:01  0:00:02 1316k100 5059k  100 5059k    0     0  3015k      0  0:00:01  0:00:01 --:--:-- 30.8M
+100 5059k  100 5059k    0     0  2917k      0  0:00:01  0:00:01 --:--:-- 5716k
 * Connection #1 to host cchecks-history.s3.us-west-2.amazonaws.com left intact
 {
   "package": "localIV",

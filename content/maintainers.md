@@ -36,12 +36,12 @@ Content-Length: 1064
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 29 Jun 2020 12:35:52 GMT
+Date: Mon, 06 Jul 2020 12:37:34 GMT
 
 ```
 ```json
 {
-    "found": 9638,
+    "found": 9679,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ Date: Mon, 29 Jun 2020 12:35:52 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-06-29T12:02:21.455Z",
+            "date_updated": "2020-07-06T12:03:38.828Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ Date: Mon, 29 Jun 2020 12:35:52 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-06-29T12:02:21.455Z",
+            "date_updated": "2020-07-06T12:03:38.828Z",
             "table": [
                 {
                     "package": "sirus",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 9638
+[1] 9679
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-06-29T12:02:21.455Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-06-29T12:02:21.455Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-07-06T12:03:38.828Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-07-06T12:03:38.828Z    sirus, TRUE, 9, 3, 0, 0
                                                                                           packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
@@ -165,11 +165,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 12866
+Content-Length: 12641
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 29 Jun 2020 12:35:53 GMT
+Date: Mon, 06 Jul 2020 12:37:34 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ Date: Mon, 29 Jun 2020 12:35:53 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-06-29T12:02:21.916Z",
+        "date_updated": "2020-07-06T12:03:40.475Z",
         "table": [
             {
                 "package": "asciicast",
@@ -288,7 +288,7 @@ Date: Mon, 29 Jun 2020 12:35:53 GMT
             {
                 "package": "filelock",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -510,14 +510,6 @@ Date: Mon, 29 Jun 2020 12:35:53 GMT
                 "error": 0
             },
             {
-                "package": "sand",
-                "any": true,
-                "ok": 1,
-                "note": 11,
-                "warn": 0,
-                "error": 0
-            },
-            {
                 "package": "sankey",
                 "any": false,
                 "ok": 12,
@@ -591,11 +583,11 @@ Date: Mon, 29 Jun 2020 12:35:53 GMT
             },
             {
                 "package": "zip",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             }
         ],
         "packages": [
@@ -752,7 +744,7 @@ Date: Mon, 29 Jun 2020 12:35:53 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1091,21 +1083,6 @@ Date: Mon, 29 Jun 2020 12:35:53 GMT
                 "version": null
             },
             {
-                "package": "sand",
-                "url": "https://cloud.r-project.org/web/checks/check_results_sand.html",
-                "check_result": [
-                    {
-                        "category": "NOTE",
-                        "number_checks": 11
-                    },
-                    {
-                        "category": "OK",
-                        "number_checks": 1
-                    }
-                ],
-                "version": null
-            },
-            {
                 "package": "sankey",
                 "url": "https://cloud.r-project.org/web/checks/check_results_sankey.html",
                 "check_result": [
@@ -1209,8 +1186,12 @@ Date: Mon, 29 Jun 2020 12:35:53 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_zip.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1239,7 +1220,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-06-29T12:02:21.916Z"
+[1] "2020-07-06T12:03:40.475Z"
 
 $data$table
         package   any ok note warn error
@@ -1256,7 +1237,7 @@ $data$table
 11         desc FALSE 12    0    0     0
 12  disposables FALSE 12    0    0     0
 13       dotenv FALSE 12    0    0     0
-14     filelock FALSE 11    0    0     0
+14     filelock FALSE 12    0    0     0
 15        franc FALSE 12    0    0     0
 16           gh FALSE 12    0    0     0
 17       igraph  TRUE  5    7    0     0
@@ -1284,17 +1265,16 @@ $data$table
 39     rematch2  TRUE 11    1    0     0
 40         rhub FALSE 12    0    0     0
 41    rversions FALSE 12    0    0     0
-42         sand  TRUE  1   11    0     0
-43       sankey FALSE 12    0    0     0
-44       secret FALSE 12    0    0     0
-45  sessioninfo FALSE 12    0    0     0
-46    showimage FALSE 12    0    0     0
-47       tracer FALSE 12    0    0     0
-48    webdriver FALSE 12    0    0     0
-49       whoami FALSE 12    0    0     0
-50 xmlparsedata FALSE 12    0    0     0
-51        xopen FALSE 12    0    0     0
-52          zip FALSE 12    0    0     0
+42       sankey FALSE 12    0    0     0
+43       secret FALSE 12    0    0     0
+44  sessioninfo FALSE 12    0    0     0
+45    showimage FALSE 12    0    0     0
+46       tracer FALSE 12    0    0     0
+47    webdriver FALSE 12    0    0     0
+48       whoami FALSE 12    0    0     0
+49 xmlparsedata FALSE 12    0    0     0
+50        xopen FALSE 12    0    0     0
+51          zip  TRUE 11    0    0     1
 
 $data$packages
         package
@@ -1339,17 +1319,16 @@ $data$packages
 39     rematch2
 40         rhub
 41    rversions
-42         sand
-43       sankey
-44       secret
-45  sessioninfo
-46    showimage
-47       tracer
-48    webdriver
-49       whoami
-50 xmlparsedata
-51        xopen
-52          zip
+42       sankey
+43       secret
+44  sessioninfo
+45    showimage
+46       tracer
+47    webdriver
+48       whoami
+49 xmlparsedata
+50        xopen
+51          zip
                                                                       url
 1     https://cloud.r-project.org/web/checks/check_results_asciicast.html
 2         https://cloud.r-project.org/web/checks/check_results_callr.html
@@ -1392,17 +1371,16 @@ $data$packages
 39     https://cloud.r-project.org/web/checks/check_results_rematch2.html
 40         https://cloud.r-project.org/web/checks/check_results_rhub.html
 41    https://cloud.r-project.org/web/checks/check_results_rversions.html
-42         https://cloud.r-project.org/web/checks/check_results_sand.html
-43       https://cloud.r-project.org/web/checks/check_results_sankey.html
-44       https://cloud.r-project.org/web/checks/check_results_secret.html
-45  https://cloud.r-project.org/web/checks/check_results_sessioninfo.html
-46    https://cloud.r-project.org/web/checks/check_results_showimage.html
-47       https://cloud.r-project.org/web/checks/check_results_tracer.html
-48    https://cloud.r-project.org/web/checks/check_results_webdriver.html
-49       https://cloud.r-project.org/web/checks/check_results_whoami.html
-50 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
-51        https://cloud.r-project.org/web/checks/check_results_xopen.html
-52          https://cloud.r-project.org/web/checks/check_results_zip.html
+42       https://cloud.r-project.org/web/checks/check_results_sankey.html
+43       https://cloud.r-project.org/web/checks/check_results_secret.html
+44  https://cloud.r-project.org/web/checks/check_results_sessioninfo.html
+45    https://cloud.r-project.org/web/checks/check_results_showimage.html
+46       https://cloud.r-project.org/web/checks/check_results_tracer.html
+47    https://cloud.r-project.org/web/checks/check_results_webdriver.html
+48       https://cloud.r-project.org/web/checks/check_results_whoami.html
+49 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
+50        https://cloud.r-project.org/web/checks/check_results_xopen.html
+51          https://cloud.r-project.org/web/checks/check_results_zip.html
        check_result version
 1            OK, 12      NA
 2            OK, 12      NA
@@ -1417,7 +1395,7 @@ $data$packages
 11           OK, 12      NA
 12           OK, 12      NA
 13           OK, 12      NA
-14           OK, 11      NA
+14           OK, 12      NA
 15           OK, 12      NA
 16           OK, 12      NA
 17   NOTE, OK, 7, 5      NA
@@ -1445,7 +1423,7 @@ $data$packages
 39  NOTE, OK, 1, 11      NA
 40           OK, 12      NA
 41           OK, 12      NA
-42  NOTE, OK, 11, 1      NA
+42           OK, 12      NA
 43           OK, 12      NA
 44           OK, 12      NA
 45           OK, 12      NA
@@ -1454,7 +1432,6 @@ $data$packages
 48           OK, 12      NA
 49           OK, 12      NA
 50           OK, 12      NA
-51           OK, 12      NA
-52           OK, 12      NA
+51 ERROR, OK, 1, 11      NA
 
 ```

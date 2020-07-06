@@ -47,13 +47,13 @@ Content-Length: 175081
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 29 Jun 2020 12:36:06 GMT
+Date: Mon, 06 Jul 2020 12:37:49 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 1144,
+    "count": 1336,
     "returned": 10,
     "data": [
         {
@@ -2197,7 +2197,7 @@ $error
 NULL
 
 $count
-[1] 1144
+[1] 1336
 
 $returned
 [1] 30
@@ -2229,17 +2229,17 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 23915
+Content-Length: 24402
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 29 Jun 2020 12:36:09 GMT
+Date: Mon, 06 Jul 2020 12:37:52 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 86,
+    "count": 91,
     "returned": 2,
     "data": [
         {
@@ -2466,12 +2466,12 @@ Date: Mon, 29 Jun 2020 12:36:09 GMT
             }
         },
         {
-            "package": "aws",
-            "date_updated": "2020-05-30T15:03:18.000Z",
+            "package": "AmostraBrasil",
+            "date_updated": "2020-07-05T15:03:15.000Z",
             "summary": {
                 "any": true,
-                "ok": 11,
-                "note": 0,
+                "ok": 3,
+                "note": 8,
                 "warn": 0,
                 "error": 1,
                 "fail": 0
@@ -2479,120 +2479,148 @@ Date: Mon, 29 Jun 2020 12:36:09 GMT
             "checks": [
                 {
                     "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "2.4-2",
-                    "tinstall": 21.78,
-                    "tcheck": 110.55,
-                    "ttotal": 132.33,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/aws-00check.html"
+                    "version": "1.2",
+                    "tinstall": 4.45,
+                    "tcheck": 39.16,
+                    "ttotal": 43.61,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "2.4-2",
-                    "tinstall": 20.66,
-                    "tcheck": 81.34,
-                    "ttotal": 102,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/aws-00check.html"
+                    "version": "1.2",
+                    "tinstall": 3.9,
+                    "tcheck": 31.42,
+                    "ttotal": 35.32,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "2.4-2",
+                    "version": "1.2",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 163.21,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/aws-00check.html"
+                    "ttotal": 67.38,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "2.4-2",
+                    "version": "1.2",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 155.34,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/aws-00check.html"
+                    "ttotal": 56.09,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "2.4-2",
-                    "tinstall": 65,
-                    "tcheck": 132,
-                    "ttotal": 197,
+                    "version": "1.2",
+                    "tinstall": 12,
+                    "tcheck": 80,
+                    "ttotal": 92,
                     "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/aws-00check.html"
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-patched-linux-x86_64",
-                    "version": "2.4-2",
-                    "tinstall": 21.58,
-                    "tcheck": 104.71,
-                    "ttotal": 126.29,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/aws-00check.html"
+                    "version": "1.2",
+                    "tinstall": 4.75,
+                    "tcheck": 38.89,
+                    "ttotal": 43.64,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-patched-solaris-x86",
-                    "version": "2.4-2",
+                    "version": "1.2",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 198.3,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/aws-00check.html"
+                    "ttotal": 122.1,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-release-linux-x86_64",
-                    "version": "2.4-2",
-                    "tinstall": 23.2,
-                    "tcheck": 104.44,
-                    "ttotal": 127.64,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/aws-00check.html"
+                    "version": "1.2",
+                    "tinstall": 5.01,
+                    "tcheck": 38.71,
+                    "ttotal": 43.72,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-release-osx-x86_64",
-                    "version": "2.4-2",
+                    "version": "1.2",
                     "tinstall": 0,
                     "tcheck": 0,
                     "ttotal": 0,
-                    "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/aws-00check.html"
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-osx-x86_64/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "2.4-2",
-                    "tinstall": 50,
-                    "tcheck": 101,
-                    "ttotal": 151,
+                    "version": "1.2",
+                    "tinstall": 19,
+                    "tcheck": 57,
+                    "ttotal": 76,
                     "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/aws-00check.html"
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-oldrel-osx-x86_64",
-                    "version": "2.4-2",
+                    "version": "1.2",
                     "tinstall": 0,
                     "tcheck": 0,
                     "ttotal": 0,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/aws-00check.html"
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-osx-x86_64/AmostraBrasil-00check.html"
                 },
                 {
                     "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "2.4-2",
-                    "tinstall": 62,
-                    "tcheck": 123,
-                    "ttotal": 185,
+                    "version": "1.2",
+                    "tinstall": 10,
+                    "tcheck": 87,
+                    "ttotal": 97,
                     "status": "OK",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/aws-00check.html"
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/AmostraBrasil-00check.html"
                 }
             ],
             "check_details": {
-                "version": "2.4-2",
-                "check": "running R code from vignettes",
-                "result": "ERROR",
-                "output": "Errors in running code in vignettes:\nwhen running code in ‘aws-Example.Rnw’\n  ...\n> yhat0 <- kernsm(y1, h = 10)\n\n> yhat1 <- aws(y1, hmax = 100)\nRunning PS with lambda= 14.6  hmax= 100 number of iterations: 22  memory step OFF \nEstimated variance:  0.0845 \nProgress:step 1 hakt 1.03 \nOMP: Error #15: Initializing libomp.dylib, but found libomp.dylib already initialized.\nOMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the process, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://openmp.llvm.org/\n\n... incomplete output.  Crash?\n\n  ‘aws-Example.Rnw’... failed to complete the test",
-                "flavors": [
-                    "r-oldrel-osx-x86_64"
+                "details": [
+                    {
+                        "version": "1.2",
+                        "output": "Found the following files/directories:\n  'Pindoba_domicilios.dbf' 'Pindoba_geo.dbf'",
+                        "check": "for non-standard things in the check directory",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.2",
+                        "output": "Running examples in ‘AmostraBrasil-Ex.R’ failed\nThe error most likely occurred in:\n\n> base::assign(\".ptime\", proc.time(), pos = \"CheckExEnv\")\n> ### Name: amostraBrasil\n> ### Title: Generates Brazil's IBGE Householding Sample\n> ### Aliases: amostraBrasil\n> \n> ### ** Examples\n> \n> amostraBrasil(municipio=\"Pindoba\", N=5, geocod=TRUE, shape=TRUE)\nWarning in Sys.setlocale(\"LC_CTYPE\", \"Portuguese_Brazil.1252\") :\n  OS reports request to set locale to \"Portuguese_Brazil.1252\" cannot be honored\nWarning: 'memory.limit()' is Windows-specific\nAguarde! Conectando IBGE... Buscando dados de Pindoba/AL (2707008)\n\nError in function (type, msg, asError = TRUE)  : \n  Could not resolve host: ftp.ibge.gov.br\nCalls: amostraBrasil ... dirFTP -> getURL -> curlPerform -> <Anonymous> -> fun\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-gcc"
+                        ]
+                    },
+                    {
+                        "version": "1.2",
+                        "output": "  Note: found 2380 marked UTF-8 strings",
+                        "check": "data for non-ASCII characters",
+                        "flavors": [
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-patched-solaris-x86",
+                            "r-release-osx-x86_64",
+                            "r-oldrel-osx-x86_64"
+                        ]
+                    }
                 ],
                 "additional_issues": [
 
@@ -2612,7 +2640,7 @@ $error
 NULL
 
 $count
-[1] 86
+[1] 91
 
 $returned
 [1] 2
@@ -2622,10 +2650,9 @@ $data
   package date_updated summary$any   $ok $note $warn $error $fail checks
   [3m[90m<chr>[39m[23m   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
 [90m1[39m allan   2020-06-06T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m2[39m aws     2020-05-30T… TRUE           11     0     0      1     0 [90m<df[,[0m…
-[90m# … with 7 more variables: check_details$details [3m[90m<list>[90m[23m,[39m
-[90m#   $additional_issues [3m[90m<list>[90m[23m, $version [3m[90m<chr>[90m[23m, $check [3m[90m<chr>[90m[23m, $result [3m[90m<chr>[90m[23m,[39m
-[90m#   $output [3m[90m<chr>[90m[23m, $flavors [3m[90m<list>[90m[23m[39m
+[90m2[39m Amostr… 2020-07-05T… TRUE            3     8     0      1     0 [90m<df[,[0m…
+[90m# … with 2 more variables: check_details$details [3m[90m<list>[90m[23m,[39m
+[90m#   $additional_issues [3m[90m<list>[90m[23m[39m
 
 ```
 
@@ -2637,17 +2664,17 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 1194
+Content-Length: 1197
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 29 Jun 2020 12:36:11 GMT
+Date: Mon, 06 Jul 2020 12:37:55 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 86,
+    "count": 91,
     "returned": 10,
     "data": [
         {
@@ -2658,15 +2685,22 @@ Date: Mon, 29 Jun 2020 12:36:11 GMT
             "check_details": null
         },
         {
+            "package": "AmostraBrasil",
+            "date_updated": "2020-07-05T15:03:15.000Z",
+            "summary": null,
+            "checks": null,
+            "check_details": null
+        },
+        {
             "package": "aws",
-            "date_updated": "2020-05-30T15:03:18.000Z",
+            "date_updated": "2020-06-06T16:04:14.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
         },
         {
             "package": "bayesCT",
-            "date_updated": "2020-05-30T15:03:19.000Z",
+            "date_updated": "2020-06-06T16:04:14.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -2687,7 +2721,7 @@ Date: Mon, 29 Jun 2020 12:36:11 GMT
         },
         {
             "package": "blockmodeling",
-            "date_updated": "2020-05-30T15:03:18.000Z",
+            "date_updated": "2020-06-06T16:04:14.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -2712,13 +2746,6 @@ Date: Mon, 29 Jun 2020 12:36:11 GMT
             "summary": null,
             "checks": null,
             "check_details": null
-        },
-        {
-            "package": "clusternor",
-            "date_updated": "2020-06-06T16:04:14.000Z",
-            "summary": null,
-            "checks": null,
-            "check_details": null
         }
     ]
 }
@@ -2733,7 +2760,7 @@ $error
 NULL
 
 $count
-[1] 86
+[1] 91
 
 $returned
 [1] 30
@@ -2743,15 +2770,15 @@ $data
    package       date_updated             summary checks check_details
    [3m[90m<chr>[39m[23m         [3m[90m<chr>[39m[23m                    [3m[90m<lgl>[39m[23m   [3m[90m<lgl>[39m[23m  [3m[90m<lgl>[39m[23m        
 [90m 1[39m allan         2020-06-06T16:04:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 2[39m aws           2020-05-30T15:03:18.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 3[39m bayesCT       2020-05-30T15:03:19.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 4[39m bigsparser    2020-06-26T15:03:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 5[39m BIS           2020-06-20T15:03:18.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 6[39m blockmodeling 2020-05-30T15:03:18.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 7[39m bvpSolve      2020-06-06T16:04:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 8[39m cairoDevice   2020-06-09T15:03:21.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 9[39m CatDyn        2020-06-17T15:03:24.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m10[39m clusternor    2020-06-06T16:04:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 2[39m AmostraBrasil 2020-07-05T15:03:15.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 3[39m aws           2020-06-06T16:04:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 4[39m bayesCT       2020-06-06T16:04:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 5[39m bigsparser    2020-06-26T15:03:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 6[39m BIS           2020-06-20T15:03:18.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 7[39m blockmodeling 2020-06-06T16:04:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 8[39m bvpSolve      2020-06-06T16:04:14.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 9[39m cairoDevice   2020-06-09T15:03:21.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m10[39m CatDyn        2020-06-17T15:03:24.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m# … with 20 more rows[39m
 
 ```
