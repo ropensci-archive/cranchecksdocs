@@ -36,28 +36,28 @@ curl https://cranchecks.info/badges/summary/rhub
 ```yaml
 HTTP/1.1 200 OK
 Cache-Control: max-age=300, public
-Content-Length: 855
+Content-Length: 866
 Content-Type: image/svg+xml; charset=utf-8
-Expires: Mon, 06 Jul 2020 12:42:28 GMT
+Expires: Mon, 13 Jul 2020 10:14:28 GMT
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 06 Jul 2020 12:37:28 GMT
+Date: Mon, 13 Jul 2020 10:09:28 GMT
 
 ```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="70" height="20">
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="20">
   <linearGradient id="b" x2="0" y2="100%">
     <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
   <mask id="a">
-    <rect width="70" height="20" rx="3" fill="#fff"/>
+    <rect width="94" height="20" rx="3" fill="#fff"/>
   </mask>
   <g mask="url(#a)">
     <path fill="#555" d="M0 0h43v20H0z"/>
-    <path fill="#4c1" d="M43 0h46.5v20H43z"/>
-    <path fill="url(#b)" d="M0 0h70v20H0z"/>
+    <path fill="#e05d44" d="M43 0h70.5v20H43z"/>
+    <path fill="url(#b)" d="M0 0h94v20H0z"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
     <text x="21.5" y="15" fill="#010101" fill-opacity=".3">
@@ -66,11 +66,11 @@ Date: Mon, 06 Jul 2020 12:37:28 GMT
     <text x="21.5" y="14">
       CRAN
     </text>
-    <text x="55.5" y="15" fill="#010101" fill-opacity=".3">
-      OK
+    <text x="67.5" y="15" fill="#010101" fill-opacity=".3">
+      Not OK
     </text>
-    <text x="55.5" y="14">
-      OK
+    <text x="67.5" y="14">
+      Not OK
     </text>
   </g>
 </svg>
@@ -92,28 +92,28 @@ curl https://cranchecks.info/badges/worst/rhub
 ```yaml
 HTTP/1.1 200 OK
 Cache-Control: max-age=300, public
-Content-Length: 855
+Content-Length: 864
 Content-Type: image/svg+xml; charset=utf-8
-Expires: Mon, 06 Jul 2020 12:42:28 GMT
+Expires: Mon, 13 Jul 2020 10:14:29 GMT
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 06 Jul 2020 12:37:28 GMT
+Date: Mon, 13 Jul 2020 10:09:29 GMT
 
 ```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="70" height="20">
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="20">
   <linearGradient id="b" x2="0" y2="100%">
     <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
   <mask id="a">
-    <rect width="70" height="20" rx="3" fill="#fff"/>
+    <rect width="88" height="20" rx="3" fill="#fff"/>
   </mask>
   <g mask="url(#a)">
     <path fill="#555" d="M0 0h43v20H0z"/>
-    <path fill="#4c1" d="M43 0h46.5v20H43z"/>
-    <path fill="url(#b)" d="M0 0h70v20H0z"/>
+    <path fill="#e05d44" d="M43 0h64.5v20H43z"/>
+    <path fill="url(#b)" d="M0 0h88v20H0z"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
     <text x="21.5" y="15" fill="#010101" fill-opacity=".3">
@@ -122,11 +122,11 @@ Date: Mon, 06 Jul 2020 12:37:28 GMT
     <text x="21.5" y="14">
       CRAN
     </text>
-    <text x="55.5" y="15" fill="#010101" fill-opacity=".3">
-      OK
+    <text x="64.5" y="15" fill="#010101" fill-opacity=".3">
+      ERROR
     </text>
-    <text x="55.5" y="14">
-      OK
+    <text x="64.5" y="14">
+      ERROR
     </text>
   </g>
 </svg>
@@ -150,10 +150,10 @@ HTTP/1.1 200 OK
 Cache-Control: max-age=300, public
 Content-Length: 855
 Content-Type: image/svg+xml; charset=utf-8
-Expires: Mon, 06 Jul 2020 12:42:29 GMT
+Expires: Mon, 13 Jul 2020 10:14:29 GMT
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 06 Jul 2020 12:37:29 GMT
+Date: Mon, 13 Jul 2020 10:09:29 GMT
 
 ```
 ```xml
