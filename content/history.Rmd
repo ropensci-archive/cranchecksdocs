@@ -17,7 +17,7 @@ The `/history/:date` route allows GET requests only. The route is intended for f
 Parameter:
 
 `:date`
-: should be of the form `YYYY-MM-DD`
+: should be of the form `YYYY-MM-DD`, the minimal value is 2018-12-18.
 
 A request to `/history/:date` leads to a redirect (http status 302) and a returned JSON body with a message telling the user to follow the link in the `Location` response header in case they aren't familiar with redirects. The link to follow is a temporary Amazon S3 link to the JSON file for the given date. 
 
