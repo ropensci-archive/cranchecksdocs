@@ -36,12 +36,12 @@ Content-Length: 1141
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 13 Jul 2020 10:09:34 GMT
+Date: Mon, 13 Jul 2020 12:37:44 GMT
 
 ```
 ```json
 {
-    "found": 9712,
+    "found": 9713,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ Date: Mon, 13 Jul 2020 10:09:34 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-07-13T08:01:03.352Z",
+            "date_updated": "2020-07-13T12:02:55.046Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -87,7 +87,7 @@ Date: Mon, 13 Jul 2020 10:09:34 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-07-13T08:01:03.352Z",
+            "date_updated": "2020-07-13T12:02:55.046Z",
             "table": [
                 {
                     "package": "sirus",
@@ -130,7 +130,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 9712
+[1] 9713
 
 $count
 [1] 2
@@ -149,8 +149,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-07-13T08:01:03.352Z hypergea, TRUE, 5, 6, 0, 0
-2 2020-07-13T08:01:03.352Z    sirus, TRUE, 9, 2, 0, 1
+1 2020-07-13T12:02:55.046Z hypergea, TRUE, 5, 6, 0, 0
+2 2020-07-13T12:02:55.046Z    sirus, TRUE, 9, 2, 0, 1
                                                                                                    packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, FAIL, NOTE, OK, 1, 6, 5, NA
 2      sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, ERROR, NOTE, OK, 1, 2, 9, NA
@@ -177,7 +177,7 @@ Content-Length: 14471
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 13 Jul 2020 10:09:34 GMT
+Date: Mon, 13 Jul 2020 12:37:45 GMT
 
 ```
 ```json
@@ -187,7 +187,7 @@ Date: Mon, 13 Jul 2020 10:09:34 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-07-13T08:01:03.519Z",
+        "date_updated": "2020-07-13T12:02:55.568Z",
         "table": [
             {
                 "package": "asciicast",
@@ -1420,7 +1420,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-07-13T08:01:03.519Z"
+[1] "2020-07-13T12:02:55.568Z"
 
 $data$table
         package   any ok note warn error

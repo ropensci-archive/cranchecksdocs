@@ -36,12 +36,12 @@ Content-Length: 7008
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 13 Jul 2020 10:09:40 GMT
+Date: Mon, 13 Jul 2020 12:37:50 GMT
 
 ```
 ```json
 {
-    "found": 17050,
+    "found": 17052,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -49,7 +49,7 @@ Date: Mon, 13 Jul 2020 10:09:40 GMT
         {
             "package": "ibb",
             "url": "https://cloud.r-project.org/web/checks/check_results_ibb.html",
-            "date_updated": "2020-07-13T09:03:30.201Z",
+            "date_updated": "2020-07-13T12:04:31.008Z",
             "summary": {
                 "any": true,
                 "ok": 7,
@@ -209,7 +209,7 @@ Date: Mon, 13 Jul 2020 10:09:40 GMT
         {
             "package": "ChIPtest",
             "url": "https://cloud.r-project.org/web/checks/check_results_ChIPtest.html",
-            "date_updated": "2020-07-13T09:03:30.201Z",
+            "date_updated": "2020-07-13T12:04:31.008Z",
             "summary": {
                 "any": true,
                 "ok": 9,
@@ -366,7 +366,7 @@ cchecks::cch_pkgs(
 ```
 ```r
 $found
-[1] 17050
+[1] 17052
 
 $count
 [1] 2
@@ -382,8 +382,8 @@ $data
 1      ibb      https://cloud.r-project.org/web/checks/check_results_ibb.html
 2 ChIPtest https://cloud.r-project.org/web/checks/check_results_ChIPtest.html
               date_updated summary.any summary.ok summary.note summary.warn
-1 2020-07-13T09:03:30.201Z        TRUE          7            4            0
-2 2020-07-13T09:03:30.201Z        TRUE          9            2            0
+1 2020-07-13T12:04:31.008Z        TRUE          7            4            0
+2 2020-07-13T12:04:31.008Z        TRUE          9            2            0
   summary.error summary.fail
 1             1            0
 2             1            0
@@ -419,7 +419,7 @@ Content-Length: 3013
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 13 Jul 2020 10:09:40 GMT
+Date: Mon, 13 Jul 2020 12:37:51 GMT
 
 ```
 ```json
@@ -428,7 +428,7 @@ Date: Mon, 13 Jul 2020 10:09:40 GMT
     "data": {
         "package": "rhub",
         "url": "https://cloud.r-project.org/web/checks/check_results_rhub.html",
-        "date_updated": "2020-07-13T09:03:30.412Z",
+        "date_updated": "2020-07-13T12:04:31.231Z",
         "summary": {
             "any": true,
             "ok": 11,
@@ -582,7 +582,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_rhub.html"
 
 $data$date_updated
-[1] "2020-07-13T09:03:30.412Z"
+[1] "2020-07-13T12:04:31.231Z"
 
 $data$summary
 $data$summary$any
@@ -665,7 +665,7 @@ Content-Length: 27137
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 13 Jul 2020 10:09:41 GMT
+Date: Mon, 13 Jul 2020 12:37:52 GMT
 
 ```
 ```json
