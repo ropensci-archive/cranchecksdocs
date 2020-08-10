@@ -32,16 +32,16 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 1141
+Content-Length: 1064
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 13 Jul 2020 12:37:44 GMT
+Date: Mon, 10 Aug 2020 12:39:18 GMT
 
 ```
 ```json
 {
-    "found": 9713,
+    "found": 9772,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,12 +50,12 @@ Date: Mon, 13 Jul 2020 12:37:44 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-07-13T12:02:55.046Z",
+            "date_updated": "2020-08-10T12:02:33.230Z",
             "table": [
                 {
                     "package": "hypergea",
                     "any": true,
-                    "ok": 5,
+                    "ok": 6,
                     "note": 6,
                     "warn": 0,
                     "error": 0
@@ -67,16 +67,12 @@ Date: Mon, 13 Jul 2020 12:37:44 GMT
                     "url": "https://cloud.r-project.org/web/checks/check_results_hypergea.html",
                     "check_result": [
                         {
-                            "category": "FAIL",
-                            "number_checks": 1
-                        },
-                        {
                             "category": "NOTE",
                             "number_checks": 6
                         },
                         {
                             "category": "OK",
-                            "number_checks": 5
+                            "number_checks": 6
                         }
                     ],
                     "version": null
@@ -87,15 +83,15 @@ Date: Mon, 13 Jul 2020 12:37:44 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-07-13T12:02:55.046Z",
+            "date_updated": "2020-08-10T12:02:33.230Z",
             "table": [
                 {
                     "package": "sirus",
                     "any": true,
                     "ok": 9,
-                    "note": 2,
+                    "note": 3,
                     "warn": 0,
-                    "error": 1
+                    "error": 0
                 }
             ],
             "packages": [
@@ -104,12 +100,8 @@ Date: Mon, 13 Jul 2020 12:37:44 GMT
                     "url": "https://cloud.r-project.org/web/checks/check_results_sirus.html",
                     "check_result": [
                         {
-                            "category": "ERROR",
-                            "number_checks": 1
-                        },
-                        {
                             "category": "NOTE",
-                            "number_checks": 2
+                            "number_checks": 3
                         },
                         {
                             "category": "OK",
@@ -130,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 9713
+[1] 9772
 
 $count
 [1] 2
@@ -149,11 +141,11 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-07-13T12:02:55.046Z hypergea, TRUE, 5, 6, 0, 0
-2 2020-07-13T12:02:55.046Z    sirus, TRUE, 9, 2, 0, 1
-                                                                                                   packages
-1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, FAIL, NOTE, OK, 1, 6, 5, NA
-2      sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, ERROR, NOTE, OK, 1, 2, 9, NA
+1 2020-08-10T12:02:33.230Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-08-10T12:02:33.230Z    sirus, TRUE, 9, 3, 0, 0
+                                                                                          packages
+1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
+2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
 
 ```
 
@@ -173,11 +165,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 14471
+Content-Length: 12791
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 13 Jul 2020 12:37:45 GMT
+Date: Mon, 10 Aug 2020 12:39:18 GMT
 
 ```
 ```json
@@ -187,12 +179,12 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-07-13T12:02:55.568Z",
+        "date_updated": "2020-08-10T12:02:33.743Z",
         "table": [
             {
                 "package": "asciicast",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -200,55 +192,55 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
             {
                 "package": "callr",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
             },
             {
                 "package": "cleancall",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "cli",
                 "any": true,
-                "ok": 10,
+                "ok": 11,
                 "note": 0,
                 "warn": 1,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "cliapp",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "clisymbols",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "cranlike",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "cranlogs",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -258,13 +250,13 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "any": true,
                 "ok": 11,
                 "note": 0,
-                "warn": 0,
-                "error": 1
+                "warn": 1,
+                "error": 0
             },
             {
                 "package": "debugme",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -272,31 +264,31 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
             {
                 "package": "desc",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
             },
             {
                 "package": "disposables",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "dotenv",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "filelock",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -304,7 +296,7 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
             {
                 "package": "franc",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -312,7 +304,7 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
             {
                 "package": "gh",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -320,138 +312,138 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
             {
                 "package": "igraph",
                 "any": true,
-                "ok": 5,
+                "ok": 4,
                 "note": 6,
-                "warn": 0,
-                "error": 1
+                "warn": 2,
+                "error": 0
             },
             {
                 "package": "igraphdata",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "isa2",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "keypress",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "keyring",
                 "any": true,
-                "ok": 9,
+                "ok": 10,
                 "note": 2,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "liteq",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "lpSolve",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "pak",
                 "any": true,
-                "ok": 10,
+                "ok": 11,
                 "note": 1,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "parsedate",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
             },
             {
                 "package": "pingr",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "pkgcache",
                 "any": true,
                 "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 1
-            },
-            {
-                "package": "pkgcache",
-                "any": true,
-                "ok": 10,
-                "note": 0,
-                "warn": 0,
-                "error": 2
             },
             {
                 "package": "pkgconfig",
                 "any": true,
                 "ok": 11,
                 "note": 0,
-                "warn": 0,
-                "error": 1
+                "warn": 1,
+                "error": 0
             },
             {
                 "package": "pkgsearch",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "praise",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "presser",
                 "any": true,
-                "ok": 10,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 2
+                "error": 1
             },
             {
                 "package": "prettycode",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "prettyunits",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "processx",
@@ -463,139 +455,139 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
             },
             {
                 "package": "progress",
+                "any": true,
+                "ok": 10,
+                "note": 0,
+                "warn": 2,
+                "error": 0
+            },
+            {
+                "package": "ps",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
             },
             {
-                "package": "ps",
-                "any": true,
-                "ok": 11,
-                "note": 0,
-                "warn": 0,
-                "error": 1
-            },
-            {
                 "package": "rcmdcheck",
                 "any": true,
-                "ok": 10,
+                "ok": 11,
                 "note": 1,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "rcorpora",
                 "any": true,
                 "ok": 5,
-                "note": 6,
+                "note": 7,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "rematch2",
                 "any": true,
-                "ok": 10,
+                "ok": 11,
                 "note": 1,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "rhub",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "rversions",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "sankey",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "secret",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "sessioninfo",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "showimage",
                 "any": false,
-                "ok": 11,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
                 "error": 0
             },
             {
                 "package": "tracer",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "webdriver",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "whoami",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "xmlparsedata",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "xopen",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "zip",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             }
         ],
         "packages": [
@@ -604,12 +596,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_asciicast.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -619,12 +607,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_callr.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -634,12 +618,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_cleancall.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -649,16 +629,12 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_cli.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "WARN",
                         "number_checks": 1
                     },
                     {
                         "category": "OK",
-                        "number_checks": 10
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -668,12 +644,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_cliapp.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -683,12 +655,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_clisymbols.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -698,12 +666,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_cranlike.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -713,12 +677,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_cranlogs.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -728,7 +688,7 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_crayon.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
+                        "category": "WARN",
                         "number_checks": 1
                     },
                     {
@@ -743,12 +703,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_debugme.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -758,12 +714,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_desc.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -773,12 +725,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_disposables.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -788,12 +736,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_dotenv.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -803,12 +747,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_filelock.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -818,12 +758,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_franc.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -833,12 +769,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_gh.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -848,8 +780,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_igraph.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
+                        "category": "WARN",
+                        "number_checks": 2
                     },
                     {
                         "category": "NOTE",
@@ -857,7 +789,7 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                     },
                     {
                         "category": "OK",
-                        "number_checks": 5
+                        "number_checks": 4
                     }
                 ],
                 "version": null
@@ -867,12 +799,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_igraphdata.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -882,12 +810,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_isa2.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -897,12 +821,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_keypress.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -912,61 +832,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_keyring.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "NOTE",
                         "number_checks": 2
-                    },
-                    {
-                        "category": "OK",
-                        "number_checks": 9
-                    }
-                ],
-                "version": null
-            },
-            {
-                "package": "liteq",
-                "url": "https://cloud.r-project.org/web/checks/check_results_liteq.html",
-                "check_result": [
-                    {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
-                        "category": "OK",
-                        "number_checks": 11
-                    }
-                ],
-                "version": null
-            },
-            {
-                "package": "lpSolve",
-                "url": "https://cloud.r-project.org/web/checks/check_results_lpSolve.html",
-                "check_result": [
-                    {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
-                        "category": "OK",
-                        "number_checks": 11
-                    }
-                ],
-                "version": null
-            },
-            {
-                "package": "pak",
-                "url": "https://cloud.r-project.org/web/checks/check_results_pak.html",
-                "check_result": [
-                    {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
-                        "category": "NOTE",
-                        "number_checks": 1
                     },
                     {
                         "category": "OK",
@@ -976,11 +843,33 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "version": null
             },
             {
-                "package": "parsedate",
-                "url": "https://cloud.r-project.org/web/checks/check_results_parsedate.html",
+                "package": "liteq",
+                "url": "https://cloud.r-project.org/web/checks/check_results_liteq.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "lpSolve",
+                "url": "https://cloud.r-project.org/web/checks/check_results_lpSolve.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "pak",
+                "url": "https://cloud.r-project.org/web/checks/check_results_pak.html",
+                "check_result": [
+                    {
+                        "category": "NOTE",
                         "number_checks": 1
                     },
                     {
@@ -991,16 +880,23 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "version": null
             },
             {
+                "package": "parsedate",
+                "url": "https://cloud.r-project.org/web/checks/check_results_parsedate.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
                 "package": "pingr",
                 "url": "https://cloud.r-project.org/web/checks/check_results_pingr.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1011,11 +907,11 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "check_result": [
                     {
                         "category": "ERROR",
-                        "number_checks": 2
+                        "number_checks": 1
                     },
                     {
                         "category": "OK",
-                        "number_checks": 10
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1025,7 +921,7 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_pkgconfig.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
+                        "category": "WARN",
                         "number_checks": 1
                     },
                     {
@@ -1040,12 +936,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_pkgsearch.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1055,12 +947,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_praise.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1071,11 +959,11 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "check_result": [
                     {
                         "category": "ERROR",
-                        "number_checks": 2
+                        "number_checks": 1
                     },
                     {
                         "category": "OK",
-                        "number_checks": 10
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1085,12 +973,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_prettycode.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1100,12 +984,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_prettyunits.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1134,42 +1014,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_progress.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
-                        "category": "OK",
-                        "number_checks": 11
-                    }
-                ],
-                "version": null
-            },
-            {
-                "package": "ps",
-                "url": "https://cloud.r-project.org/web/checks/check_results_ps.html",
-                "check_result": [
-                    {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
-                        "category": "OK",
-                        "number_checks": 11
-                    }
-                ],
-                "version": null
-            },
-            {
-                "package": "rcmdcheck",
-                "url": "https://cloud.r-project.org/web/checks/check_results_rcmdcheck.html",
-                "check_result": [
-                    {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
-                        "category": "NOTE",
-                        "number_checks": 1
+                        "category": "WARN",
+                        "number_checks": 2
                     },
                     {
                         "category": "OK",
@@ -1179,16 +1025,38 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "version": null
             },
             {
+                "package": "ps",
+                "url": "https://cloud.r-project.org/web/checks/check_results_ps.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "rcmdcheck",
+                "url": "https://cloud.r-project.org/web/checks/check_results_rcmdcheck.html",
+                "check_result": [
+                    {
+                        "category": "NOTE",
+                        "number_checks": 1
+                    },
+                    {
+                        "category": "OK",
+                        "number_checks": 11
+                    }
+                ],
+                "version": null
+            },
+            {
                 "package": "rcorpora",
                 "url": "https://cloud.r-project.org/web/checks/check_results_rcorpora.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "NOTE",
-                        "number_checks": 6
+                        "number_checks": 7
                     },
                     {
                         "category": "OK",
@@ -1202,16 +1070,12 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_rematch2.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "NOTE",
                         "number_checks": 1
                     },
                     {
                         "category": "OK",
-                        "number_checks": 10
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1221,12 +1085,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_rhub.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1236,12 +1096,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_rversions.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1251,12 +1107,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_sankey.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1266,12 +1118,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_secret.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1281,12 +1129,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_sessioninfo.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1296,12 +1140,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_showimage.html",
                 "check_result": [
                     {
-                        "category": "FAIL",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1311,12 +1151,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_tracer.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1326,12 +1162,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_webdriver.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1341,12 +1173,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_whoami.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1356,12 +1184,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1371,12 +1195,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_xopen.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1386,12 +1206,8 @@ Date: Mon, 13 Jul 2020 12:37:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_zip.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1420,61 +1236,61 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-07-13T12:02:55.568Z"
+[1] "2020-08-10T12:02:33.743Z"
 
 $data$table
         package   any ok note warn error
-1     asciicast FALSE 11    0    0     0
-2         callr FALSE 11    0    0     0
-3     cleancall  TRUE 11    0    0     1
-4           cli  TRUE 10    0    1     1
-5        cliapp  TRUE 11    0    0     1
-6    clisymbols  TRUE 11    0    0     1
-7      cranlike  TRUE 11    0    0     1
-8      cranlogs FALSE 11    0    0     0
-9        crayon  TRUE 11    0    0     1
-10      debugme FALSE 11    0    0     0
-11         desc FALSE 11    0    0     0
-12  disposables  TRUE 11    0    0     1
-13       dotenv  TRUE 11    0    0     1
-14     filelock FALSE 11    0    0     0
-15        franc FALSE 11    0    0     0
-16           gh FALSE 11    0    0     0
-17       igraph  TRUE  5    6    0     1
-18   igraphdata  TRUE 11    0    0     1
-19         isa2  TRUE 11    0    0     1
-20     keypress  TRUE 11    0    0     1
-21      keyring  TRUE  9    2    0     1
-22        liteq  TRUE 11    0    0     1
-23      lpSolve  TRUE 11    0    0     1
-24          pak  TRUE 10    1    0     1
-25    parsedate FALSE 11    0    0     0
-26        pingr  TRUE 11    0    0     1
-27     pkgcache  TRUE 10    0    0     2
-28    pkgconfig  TRUE 11    0    0     1
-29    pkgsearch  TRUE 11    0    0     1
-30       praise  TRUE 11    0    0     1
-31      presser  TRUE 10    0    0     2
-32   prettycode  TRUE 11    0    0     1
-33  prettyunits  TRUE 11    0    0     1
+1     asciicast FALSE 12    0    0     0
+2         callr FALSE 12    0    0     0
+3     cleancall FALSE 12    0    0     0
+4           cli  TRUE 11    0    1     0
+5        cliapp FALSE 12    0    0     0
+6    clisymbols FALSE 12    0    0     0
+7      cranlike FALSE 12    0    0     0
+8      cranlogs FALSE 12    0    0     0
+9        crayon  TRUE 11    0    1     0
+10      debugme FALSE 12    0    0     0
+11         desc FALSE 12    0    0     0
+12  disposables FALSE 12    0    0     0
+13       dotenv FALSE 12    0    0     0
+14     filelock FALSE 12    0    0     0
+15        franc FALSE 12    0    0     0
+16           gh FALSE 12    0    0     0
+17       igraph  TRUE  4    6    2     0
+18   igraphdata FALSE 12    0    0     0
+19         isa2 FALSE 12    0    0     0
+20     keypress FALSE 12    0    0     0
+21      keyring  TRUE 10    2    0     0
+22        liteq FALSE 12    0    0     0
+23      lpSolve FALSE 12    0    0     0
+24          pak  TRUE 11    1    0     0
+25    parsedate FALSE 12    0    0     0
+26        pingr FALSE 12    0    0     0
+27     pkgcache  TRUE 11    0    0     1
+28    pkgconfig  TRUE 11    0    1     0
+29    pkgsearch FALSE 12    0    0     0
+30       praise FALSE 12    0    0     0
+31      presser  TRUE 11    0    0     1
+32   prettycode FALSE 12    0    0     0
+33  prettyunits FALSE 12    0    0     0
 34     processx  TRUE 10    0    1     1
-35     progress FALSE 11    0    0     0
-36           ps  TRUE 11    0    0     1
-37    rcmdcheck  TRUE 10    1    0     1
-38     rcorpora  TRUE  5    6    0     1
-39     rematch2  TRUE 10    1    0     1
-40         rhub  TRUE 11    0    0     1
-41    rversions  TRUE 11    0    0     1
-42       sankey  TRUE 11    0    0     1
-43       secret  TRUE 11    0    0     1
-44  sessioninfo  TRUE 11    0    0     1
-45    showimage FALSE 11    0    0     0
-46       tracer  TRUE 11    0    0     1
-47    webdriver  TRUE 11    0    0     1
-48       whoami  TRUE 11    0    0     1
-49 xmlparsedata  TRUE 11    0    0     1
-50        xopen  TRUE 11    0    0     1
-51          zip  TRUE 11    0    0     1
+35     progress  TRUE 10    0    2     0
+36           ps FALSE 12    0    0     0
+37    rcmdcheck  TRUE 11    1    0     0
+38     rcorpora  TRUE  5    7    0     0
+39     rematch2  TRUE 11    1    0     0
+40         rhub FALSE 12    0    0     0
+41    rversions FALSE 12    0    0     0
+42       sankey FALSE 12    0    0     0
+43       secret FALSE 12    0    0     0
+44  sessioninfo FALSE 12    0    0     0
+45    showimage FALSE 12    0    0     0
+46       tracer FALSE 12    0    0     0
+47    webdriver FALSE 12    0    0     0
+48       whoami FALSE 12    0    0     0
+49 xmlparsedata FALSE 12    0    0     0
+50        xopen FALSE 12    0    0     0
+51          zip FALSE 12    0    0     0
 
 $data$packages
         package
@@ -1582,56 +1398,56 @@ $data$packages
 50        https://cloud.r-project.org/web/checks/check_results_xopen.html
 51          https://cloud.r-project.org/web/checks/check_results_zip.html
                 check_result version
-1            FAIL, OK, 1, 11      NA
-2            FAIL, OK, 1, 11      NA
-3           ERROR, OK, 1, 11      NA
-4  ERROR, WARN, OK, 1, 1, 10      NA
-5           ERROR, OK, 1, 11      NA
-6           ERROR, OK, 1, 11      NA
-7           ERROR, OK, 1, 11      NA
-8            FAIL, OK, 1, 11      NA
-9           ERROR, OK, 1, 11      NA
-10           FAIL, OK, 1, 11      NA
-11           FAIL, OK, 1, 11      NA
-12          ERROR, OK, 1, 11      NA
-13          ERROR, OK, 1, 11      NA
-14           FAIL, OK, 1, 11      NA
-15           FAIL, OK, 1, 11      NA
-16           FAIL, OK, 1, 11      NA
-17  ERROR, NOTE, OK, 1, 6, 5      NA
-18          ERROR, OK, 1, 11      NA
-19          ERROR, OK, 1, 11      NA
-20          ERROR, OK, 1, 11      NA
-21  ERROR, NOTE, OK, 1, 2, 9      NA
-22          ERROR, OK, 1, 11      NA
-23          ERROR, OK, 1, 11      NA
-24 ERROR, NOTE, OK, 1, 1, 10      NA
-25           FAIL, OK, 1, 11      NA
-26          ERROR, OK, 1, 11      NA
-27          ERROR, OK, 2, 10      NA
-28          ERROR, OK, 1, 11      NA
-29          ERROR, OK, 1, 11      NA
-30          ERROR, OK, 1, 11      NA
-31          ERROR, OK, 2, 10      NA
-32          ERROR, OK, 1, 11      NA
-33          ERROR, OK, 1, 11      NA
+1                     OK, 12      NA
+2                     OK, 12      NA
+3                     OK, 12      NA
+4            WARN, OK, 1, 11      NA
+5                     OK, 12      NA
+6                     OK, 12      NA
+7                     OK, 12      NA
+8                     OK, 12      NA
+9            WARN, OK, 1, 11      NA
+10                    OK, 12      NA
+11                    OK, 12      NA
+12                    OK, 12      NA
+13                    OK, 12      NA
+14                    OK, 12      NA
+15                    OK, 12      NA
+16                    OK, 12      NA
+17   WARN, NOTE, OK, 2, 6, 4      NA
+18                    OK, 12      NA
+19                    OK, 12      NA
+20                    OK, 12      NA
+21           NOTE, OK, 2, 10      NA
+22                    OK, 12      NA
+23                    OK, 12      NA
+24           NOTE, OK, 1, 11      NA
+25                    OK, 12      NA
+26                    OK, 12      NA
+27          ERROR, OK, 1, 11      NA
+28           WARN, OK, 1, 11      NA
+29                    OK, 12      NA
+30                    OK, 12      NA
+31          ERROR, OK, 1, 11      NA
+32                    OK, 12      NA
+33                    OK, 12      NA
 34 ERROR, WARN, OK, 1, 1, 10      NA
-35           FAIL, OK, 1, 11      NA
-36          ERROR, OK, 1, 11      NA
-37 ERROR, NOTE, OK, 1, 1, 10      NA
-38  ERROR, NOTE, OK, 1, 6, 5      NA
-39 ERROR, NOTE, OK, 1, 1, 10      NA
-40          ERROR, OK, 1, 11      NA
-41          ERROR, OK, 1, 11      NA
-42          ERROR, OK, 1, 11      NA
-43          ERROR, OK, 1, 11      NA
-44          ERROR, OK, 1, 11      NA
-45           FAIL, OK, 1, 11      NA
-46          ERROR, OK, 1, 11      NA
-47          ERROR, OK, 1, 11      NA
-48          ERROR, OK, 1, 11      NA
-49          ERROR, OK, 1, 11      NA
-50          ERROR, OK, 1, 11      NA
-51          ERROR, OK, 1, 11      NA
+35           WARN, OK, 2, 10      NA
+36                    OK, 12      NA
+37           NOTE, OK, 1, 11      NA
+38            NOTE, OK, 7, 5      NA
+39           NOTE, OK, 1, 11      NA
+40                    OK, 12      NA
+41                    OK, 12      NA
+42                    OK, 12      NA
+43                    OK, 12      NA
+44                    OK, 12      NA
+45                    OK, 12      NA
+46                    OK, 12      NA
+47                    OK, 12      NA
+48                    OK, 12      NA
+49                    OK, 12      NA
+50                    OK, 12      NA
+51                    OK, 12      NA
 
 ```
