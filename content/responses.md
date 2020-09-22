@@ -20,15 +20,15 @@ Request good!
 curl https://cranchecks.info/heartbeat | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 256
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 17 Aug 2020 12:36:03 GMT
+HTTP/2 200 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 256
+date: Tue, 22 Sep 2020 06:43:11 GMT
 
 ```
 ```json
@@ -62,14 +62,14 @@ Given on a delete request, indicating success, response body should be empty.
 
 ```shell
 curl -XDELETE -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/378
+ https://cranchecks.info/notifications/rules/383
 ```
 ```yaml
-HTTP/1.1 204 No Content
-Access-Control-Allow-Methods: DELETE
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 17 Aug 2020 12:36:04 GMT
+HTTP/2 204 
+access-control-allow-methods: DELETE
+server: Caddy
+x-content-type-options: nosniff
+date: Tue, 22 Sep 2020 06:43:12 GMT
 
 ```
 
@@ -81,16 +81,16 @@ The root `/`, redirects to `/heartbeat`, and `/docs` redirects to what you're re
 curl https://cranchecks.info/ | jq .
 ```
 ```yaml
-HTTP/1.1 302 Found
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 0
-Content-Type: application/json; charset=utf8
-Location: https://cranchecks.info/heartbeat
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 17 Aug 2020 12:36:04 GMT
+HTTP/2 302 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+location: https://cranchecks.info/heartbeat
+server: Caddy
+x-content-type-options: nosniff
+content-length: 0
+date: Tue, 22 Sep 2020 06:43:12 GMT
 
 ```
 
@@ -102,15 +102,15 @@ When you have a malformed request, fix it and try again
 curl https://cranchecks.info/maintainers/blablabla | jq .
 ```
 ```yaml
-HTTP/1.1 400 Bad Request
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 52
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 17 Aug 2020 12:36:05 GMT
+HTTP/2 400 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 52
+date: Tue, 22 Sep 2020 06:43:13 GMT
 
 ```
 ```json
@@ -131,13 +131,13 @@ E.g. in the example here we misspell "maintainers" to "maintainer". :see_no_evil
 curl https://cranchecks.info/maintainer | jq .
 ```
 ```yaml
-HTTP/1.1 404 Not Found
-Content-Length: 27
-Content-Type: application/json
-Server: Caddy
-X-Cascade: pass
-X-Content-Type-Options: nosniff
-Date: Mon, 17 Aug 2020 12:36:05 GMT
+HTTP/2 404 
+content-type: application/json
+server: Caddy
+x-cascade: pass
+x-content-type-options: nosniff
+content-length: 27
+date: Tue, 22 Sep 2020 06:43:14 GMT
 
 ```
 ```json
@@ -155,12 +155,12 @@ Don't do that. :wink:
 curl -XDELETE https://cranchecks.info/pkgs/ropenaq/
 ```
 ```yaml
-HTTP/1.1 405 Method Not Allowed
-Content-Length: 30
-Content-Type: application/json
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 17 Aug 2020 12:36:06 GMT
+HTTP/2 405 
+content-type: application/json
+server: Caddy
+x-content-type-options: nosniff
+content-length: 30
+date: Tue, 22 Sep 2020 06:43:15 GMT
 
 ```
 ```json

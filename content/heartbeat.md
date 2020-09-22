@@ -20,15 +20,15 @@ Get heartbeat for the API :heartbeat: (i.e. the list of endpoints).
 curl https://cranchecks.info/heartbeat | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 256
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 17 Aug 2020 12:35:52 GMT
+HTTP/2 200 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 256
+date: Tue, 22 Sep 2020 06:42:33 GMT
 
 ```
 ```json
@@ -58,12 +58,9 @@ cchecks::cch_heartbeat()
 ```
 ```r
 $routes
- [1] "/"                               "/docs"                          
- [3] "/heartbeat/?"                    "/pkgs"                          
- [5] "/pkgs/:name"                     "/maintainers"                   
- [7] "/maintainers/:email"             "/badges/:type/:package"         
- [9] "/badges/flavor/:flavor/:package" "/pkgs/:name/history"            
-[11] "/history/:date"                  "/search"                        
+ [1] "/"                               "/docs"                           "/heartbeat/?"                    "/pkgs"                          
+ [5] "/pkgs/:name"                     "/maintainers"                    "/maintainers/:email"             "/badges/:type/:package"         
+ [9] "/badges/flavor/:flavor/:package" "/pkgs/:name/history"             "/history/:date"                  "/search"                        
 [13] "/notifications/rules"            "/notifications/rules/:id"       
 
 ```
