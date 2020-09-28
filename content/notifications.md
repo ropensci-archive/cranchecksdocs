@@ -117,15 +117,15 @@ curl -XPOST -H "Authorization: Bearer ***" \
  https://cranchecks.info/notifications/rules | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: POST
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 131
-date: Tue, 22 Sep 2020 06:42:54 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 131
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Mon, 28 Sep 2020 12:41:10 GMT
 
 ```
 ```json
@@ -133,7 +133,7 @@ date: Tue, 22 Sep 2020 06:42:54 GMT
     "error": null,
     "data": [
         {
-            "id": 380,
+            "id": 402,
             "already_existed": false,
             "rule": "package:ropenaq, status:, flavor:, time:, regex:install failure"
         }
@@ -147,15 +147,15 @@ curl -XPOST -H "Authorization: Bearer ***" \
  https://cranchecks.info/notifications/rules | jq .
 ```
 ```yaml
-HTTP/2 200 
-access-control-allow-methods: POST
-access-control-allow-origin: *
-cache-control: public, must-revalidate, max-age=60
-content-type: application/json; charset=utf8
-server: Caddy
-x-content-type-options: nosniff
-content-length: 130
-date: Tue, 22 Sep 2020 06:42:55 GMT
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: POST
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 130
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Mon, 28 Sep 2020 12:41:11 GMT
 
 ```
 ```json
@@ -163,7 +163,7 @@ date: Tue, 22 Sep 2020 06:42:55 GMT
     "error": null,
     "data": [
         {
-            "id": 380,
+            "id": 402,
             "already_existed": true,
             "rule": "package:ropenaq, status:, flavor:, time:, regex:install failure"
         }
@@ -189,8 +189,10 @@ $error
 NULL
 
 $data
-   id already_existed                                                            rule
-1 380            TRUE package:ropenaq, status:, flavor:, time:, regex:install failure
+   id already_existed
+1 402            TRUE
+                                                             rule
+1 package:ropenaq, status:, flavor:, time:, regex:install failure
 
 ```
 
@@ -206,8 +208,10 @@ $error
 NULL
 
 $data
-   id already_existed                                                            rule
-1 380            TRUE package:ropenaq, status:, flavor:, time:, regex:install failure
+   id already_existed
+1 402            TRUE
+                                                             rule
+1 package:ropenaq, status:, flavor:, time:, regex:install failure
 
 ```
 
@@ -223,8 +227,10 @@ $error
 NULL
 
 $data
-   id already_existed                                                            rule
-1 380            TRUE package:ropenaq, status:, flavor:, time:, regex:install failure
+   id already_existed
+1 402            TRUE
+                                                             rule
+1 package:ropenaq, status:, flavor:, time:, regex:install failure
 
 ```
 
@@ -240,14 +246,14 @@ List your notifications rules
 curl https://cranchecks.info/notifications/rules -H "Authorization: Bearer ***" | jq .
 ```
 ```yaml
-HTTP/2 200 
-content-type: text/html;charset=utf-8
-server: Caddy
-x-content-type-options: nosniff
-x-frame-options: SAMEORIGIN
-x-xss-protection: 1; mode=block
-content-length: 143
-date: Tue, 22 Sep 2020 06:42:57 GMT
+HTTP/1.1 200 OK
+Content-Length: 143
+Content-Type: text/html;charset=utf-8
+Server: Caddy
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Date: Mon, 28 Sep 2020 12:41:12 GMT
 
 ```
 ```json
@@ -255,7 +261,7 @@ date: Tue, 22 Sep 2020 06:42:57 GMT
     "error": null,
     "data": [
         {
-            "id": 380,
+            "id": 402,
             "package": "ropenaq",
             "rule_status": null,
             "rule_time": null,
@@ -280,7 +286,7 @@ NULL
 
 $data
    id package rule_status rule_time rule_platforms      rule_regex
-1 380 ropenaq          NA        NA             NA install failure
+1 402 ropenaq          NA        NA             NA install failure
 
 ```
 
@@ -297,7 +303,7 @@ NULL
 
 $data
    id package rule_status rule_time rule_platforms      rule_regex
-1 380 ropenaq          NA        NA             NA install failure
+1 402 ropenaq          NA        NA             NA install failure
 
 ```
 
@@ -316,24 +322,24 @@ Sys.setenv("rule_id" = cchecks::cchn_rule_list()$data$id[1])
 
 ```shell
 curl -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/380 | jq .
+ https://cranchecks.info/notifications/rules/402 | jq .
 ```
 ```yaml
-HTTP/2 200 
-content-type: text/html;charset=utf-8
-server: Caddy
-x-content-type-options: nosniff
-x-frame-options: SAMEORIGIN
-x-xss-protection: 1; mode=block
-content-length: 141
-date: Tue, 22 Sep 2020 06:42:59 GMT
+HTTP/1.1 200 OK
+Content-Length: 141
+Content-Type: text/html;charset=utf-8
+Server: Caddy
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Date: Mon, 28 Sep 2020 12:41:12 GMT
 
 ```
 ```json
 {
     "error": null,
     "data": {
-        "id": 380,
+        "id": 402,
         "package": "ropenaq",
         "rule_status": null,
         "rule_time": null,
@@ -356,7 +362,7 @@ rule_id <- cchecks::cchn_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 380
+[1] 402
 
 ```
 
@@ -369,7 +375,7 @@ NULL
 
 $data
 $data$id
-[1] 380
+[1] 402
 
 $data$package
 [1] "ropenaq"
@@ -400,7 +406,7 @@ rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 380
+[1] 402
 
 ```
 
@@ -413,7 +419,7 @@ NULL
 
 $data
 $data$id
-[1] 380
+[1] 402
 
 $data$package
 [1] "ropenaq"
@@ -448,19 +454,19 @@ Sys.setenv("rule_id" = tail(cchecks::cchn_rule_list()$data, n = 1))
 ```
 
 ```
-Error in Sys.setenv(rule_id = tail(cchecks::cchn_rule_list()$data, n = 1)): mauvaise longueur pour l'argument
+Error in Sys.setenv(rule_id = tail(cchecks::cchn_rule_list()$data, n = 1)): wrong length for argument
 ```
 
 ```shell
 curl -XDELETE -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/380
+ https://cranchecks.info/notifications/rules/402
 ```
 ```yaml
-HTTP/2 204 
-access-control-allow-methods: DELETE
-server: Caddy
-x-content-type-options: nosniff
-date: Tue, 22 Sep 2020 06:43:01 GMT
+HTTP/1.1 204 No Content
+Access-Control-Allow-Methods: DELETE
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Mon, 28 Sep 2020 12:41:14 GMT
 
 ```
 
@@ -480,7 +486,7 @@ rule_id <- tail(cchecks::cchn_rule_list()$data$id, n = 1)
 rule_id
 ```
 ```r
-[1] 382
+[1] 404
 
 ```
 
@@ -503,7 +509,7 @@ rule_id <- tail(cchecks::cchn_rule_list()$data$id, n = 1)
 rule_id
 ```
 ```r
-[1] 381
+[1] 403
 
 ```
 

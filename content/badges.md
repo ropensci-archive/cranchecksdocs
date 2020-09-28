@@ -34,30 +34,30 @@ Get badge for CRAN checks summary by package name.
 curl https://cranchecks.info/badges/summary/rhub
 ```
 ```yaml
-HTTP/2 200 
-cache-control: max-age=300, public
-content-type: image/svg+xml; charset=utf-8
-expires: Tue, 22 Sep 2020 06:47:30 GMT
-server: Caddy
-x-content-type-options: nosniff
-content-length: 866
-date: Tue, 22 Sep 2020 06:42:30 GMT
+HTTP/1.1 200 OK
+Cache-Control: max-age=300, public
+Content-Length: 855
+Content-Type: image/svg+xml; charset=utf-8
+Expires: Mon, 28 Sep 2020 12:46:02 GMT
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Mon, 28 Sep 2020 12:41:02 GMT
 
 ```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="94" height="20">
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="20">
   <linearGradient id="b" x2="0" y2="100%">
     <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
   <mask id="a">
-    <rect width="94" height="20" rx="3" fill="#fff"/>
+    <rect width="70" height="20" rx="3" fill="#fff"/>
   </mask>
   <g mask="url(#a)">
     <path fill="#555" d="M0 0h43v20H0z"/>
-    <path fill="#e05d44" d="M43 0h70.5v20H43z"/>
-    <path fill="url(#b)" d="M0 0h94v20H0z"/>
+    <path fill="#4c1" d="M43 0h46.5v20H43z"/>
+    <path fill="url(#b)" d="M0 0h70v20H0z"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
     <text x="21.5" y="15" fill="#010101" fill-opacity=".3">
@@ -66,11 +66,11 @@ date: Tue, 22 Sep 2020 06:42:30 GMT
     <text x="21.5" y="14">
       CRAN
     </text>
-    <text x="67.5" y="15" fill="#010101" fill-opacity=".3">
-      Not OK
+    <text x="55.5" y="15" fill="#010101" fill-opacity=".3">
+      OK
     </text>
-    <text x="67.5" y="14">
-      Not OK
+    <text x="55.5" y="14">
+      OK
     </text>
   </g>
 </svg>
@@ -90,30 +90,30 @@ Get badge for CRAN checks worst result by package name. :cold_sweat:
 curl https://cranchecks.info/badges/worst/rhub
 ```
 ```yaml
-HTTP/2 200 
-cache-control: max-age=300, public
-content-type: image/svg+xml; charset=utf-8
-expires: Tue, 22 Sep 2020 06:47:31 GMT
-server: Caddy
-x-content-type-options: nosniff
-content-length: 864
-date: Tue, 22 Sep 2020 06:42:31 GMT
+HTTP/1.1 200 OK
+Cache-Control: max-age=300, public
+Content-Length: 855
+Content-Type: image/svg+xml; charset=utf-8
+Expires: Mon, 28 Sep 2020 12:46:03 GMT
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Mon, 28 Sep 2020 12:41:03 GMT
 
 ```
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="88" height="20">
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="20">
   <linearGradient id="b" x2="0" y2="100%">
     <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
   <mask id="a">
-    <rect width="88" height="20" rx="3" fill="#fff"/>
+    <rect width="70" height="20" rx="3" fill="#fff"/>
   </mask>
   <g mask="url(#a)">
     <path fill="#555" d="M0 0h43v20H0z"/>
-    <path fill="#e05d44" d="M43 0h64.5v20H43z"/>
-    <path fill="url(#b)" d="M0 0h88v20H0z"/>
+    <path fill="#4c1" d="M43 0h46.5v20H43z"/>
+    <path fill="url(#b)" d="M0 0h70v20H0z"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
     <text x="21.5" y="15" fill="#010101" fill-opacity=".3">
@@ -122,11 +122,11 @@ date: Tue, 22 Sep 2020 06:42:31 GMT
     <text x="21.5" y="14">
       CRAN
     </text>
-    <text x="64.5" y="15" fill="#010101" fill-opacity=".3">
-      ERROR
+    <text x="55.5" y="15" fill="#010101" fill-opacity=".3">
+      OK
     </text>
-    <text x="64.5" y="14">
-      ERROR
+    <text x="55.5" y="14">
+      OK
     </text>
   </g>
 </svg>
@@ -146,14 +146,14 @@ Get badge for summary of CRAN checks by flavor and package name.
 curl https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhub
 ```
 ```yaml
-HTTP/2 200 
-cache-control: max-age=300, public
-content-type: image/svg+xml; charset=utf-8
-expires: Tue, 22 Sep 2020 06:47:32 GMT
-server: Caddy
-x-content-type-options: nosniff
-content-length: 855
-date: Tue, 22 Sep 2020 06:42:32 GMT
+HTTP/1.1 200 OK
+Cache-Control: max-age=300, public
+Content-Length: 855
+Content-Type: image/svg+xml; charset=utf-8
+Expires: Mon, 28 Sep 2020 12:46:03 GMT
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Mon, 28 Sep 2020 12:41:03 GMT
 
 ```
 ```xml
