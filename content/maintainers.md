@@ -36,12 +36,12 @@ Content-Length: 1064
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 28 Sep 2020 12:41:08 GMT
+Date: Mon, 05 Oct 2020 12:44:56 GMT
 
 ```
 ```json
 {
-    "found": 9971,
+    "found": 9996,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,12 +50,12 @@ Date: Mon, 28 Sep 2020 12:41:08 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-09-28T12:02:24.379Z",
+            "date_updated": "2020-10-05T12:02:24.453Z",
             "table": [
                 {
                     "package": "hypergea",
                     "any": true,
-                    "ok": 6,
+                    "ok": 5,
                     "note": 6,
                     "warn": 0,
                     "error": 0
@@ -72,7 +72,7 @@ Date: Mon, 28 Sep 2020 12:41:08 GMT
                         },
                         {
                             "category": "OK",
-                            "number_checks": 6
+                            "number_checks": 5
                         }
                     ],
                     "version": null
@@ -83,12 +83,12 @@ Date: Mon, 28 Sep 2020 12:41:08 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-09-28T12:02:24.379Z",
+            "date_updated": "2020-10-05T12:02:24.453Z",
             "table": [
                 {
                     "package": "sirus",
                     "any": true,
-                    "ok": 9,
+                    "ok": 8,
                     "note": 3,
                     "warn": 0,
                     "error": 0
@@ -105,7 +105,7 @@ Date: Mon, 28 Sep 2020 12:41:08 GMT
                         },
                         {
                             "category": "OK",
-                            "number_checks": 9
+                            "number_checks": 8
                         }
                     ],
                     "version": null
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 9971
+[1] 9996
 
 $count
 [1] 2
@@ -141,11 +141,11 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-09-28T12:02:24.379Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-09-28T12:02:24.379Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-10-05T12:02:24.453Z hypergea, TRUE, 5, 6, 0, 0
+2 2020-10-05T12:02:24.453Z    sirus, TRUE, 8, 3, 0, 0
                                                                                           packages
-1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
-2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
+1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 5, NA
+2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 8, NA
 
 ```
 
@@ -165,11 +165,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 12754
+Content-Length: 12675
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 28 Sep 2020 12:41:09 GMT
+Date: Mon, 05 Oct 2020 12:44:56 GMT
 
 ```
 ```json
@@ -179,12 +179,12 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-09-28T12:02:24.901Z",
+        "date_updated": "2020-10-05T12:02:24.962Z",
         "table": [
             {
                 "package": "asciicast",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -195,22 +195,22 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "ok": 3,
                 "note": 0,
                 "warn": 0,
-                "error": 9
+                "error": 8
             },
             {
                 "package": "cleancall",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
             },
             {
                 "package": "cli",
-                "any": true,
+                "any": false,
                 "ok": 11,
                 "note": 0,
-                "warn": 1,
+                "warn": 0,
                 "error": 0
             },
             {
@@ -219,12 +219,12 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "ok": 2,
                 "note": 0,
                 "warn": 0,
-                "error": 10
+                "error": 9
             },
             {
                 "package": "clisymbols",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -232,7 +232,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "cranlike",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -240,7 +240,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "cranlogs",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -248,7 +248,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "crayon",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -256,7 +256,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "debugme",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -264,7 +264,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "desc",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -272,7 +272,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "disposables",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -280,7 +280,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "dotenv",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -288,7 +288,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "filelock",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -296,7 +296,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "franc",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -304,7 +304,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "gh",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -313,14 +313,14 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "package": "igraph",
                 "any": true,
                 "ok": 4,
-                "note": 6,
+                "note": 5,
                 "warn": 2,
                 "error": 0
             },
             {
                 "package": "igraphdata",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -328,7 +328,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "isa2",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -336,7 +336,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "keypress",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -344,7 +344,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "keyring",
                 "any": true,
-                "ok": 10,
+                "ok": 9,
                 "note": 2,
                 "warn": 0,
                 "error": 0
@@ -352,7 +352,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "liteq",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -360,7 +360,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "lpSolve",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -368,7 +368,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "pak",
                 "any": true,
-                "ok": 11,
+                "ok": 10,
                 "note": 1,
                 "warn": 0,
                 "error": 0
@@ -376,7 +376,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "parsedate",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -384,7 +384,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "pingr",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -392,7 +392,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "pkgcache",
                 "any": true,
-                "ok": 11,
+                "ok": 10,
                 "note": 0,
                 "warn": 0,
                 "error": 1
@@ -400,7 +400,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "pkgconfig",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -408,7 +408,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "pkgsearch",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -416,7 +416,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "praise",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -424,7 +424,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "presser",
                 "any": true,
-                "ok": 11,
+                "ok": 10,
                 "note": 0,
                 "warn": 0,
                 "error": 1
@@ -432,7 +432,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "prettycode",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -440,7 +440,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "prettyunits",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -450,13 +450,13 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "any": true,
                 "ok": 10,
                 "note": 0,
-                "warn": 1,
+                "warn": 0,
                 "error": 1
             },
             {
                 "package": "progress",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -464,7 +464,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "ps",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -472,7 +472,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "rcmdcheck",
                 "any": true,
-                "ok": 11,
+                "ok": 10,
                 "note": 1,
                 "warn": 0,
                 "error": 0
@@ -481,14 +481,14 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "package": "rcorpora",
                 "any": true,
                 "ok": 5,
-                "note": 7,
+                "note": 6,
                 "warn": 0,
                 "error": 0
             },
             {
                 "package": "rematch2",
                 "any": true,
-                "ok": 11,
+                "ok": 10,
                 "note": 1,
                 "warn": 0,
                 "error": 0
@@ -496,7 +496,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "rhub",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -504,7 +504,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "rversions",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -512,7 +512,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "sankey",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -520,7 +520,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "secret",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -528,7 +528,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "sessioninfo",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -536,7 +536,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "showimage",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -544,7 +544,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "tracer",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -552,7 +552,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "webdriver",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -560,7 +560,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "whoami",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -568,7 +568,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "xmlparsedata",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -576,7 +576,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "xopen",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -584,7 +584,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
             {
                 "package": "zip",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
@@ -597,7 +597,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -608,7 +608,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "ERROR",
-                        "number_checks": 9
+                        "number_checks": 8
                     },
                     {
                         "category": "OK",
@@ -623,7 +623,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -632,10 +632,6 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "package": "cli",
                 "url": "https://cloud.r-project.org/web/checks/check_results_cli.html",
                 "check_result": [
-                    {
-                        "category": "WARN",
-                        "number_checks": 1
-                    },
                     {
                         "category": "OK",
                         "number_checks": 11
@@ -649,7 +645,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "ERROR",
-                        "number_checks": 10
+                        "number_checks": 9
                     },
                     {
                         "category": "OK",
@@ -664,7 +660,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -675,7 +671,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -686,7 +682,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -697,7 +693,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -708,7 +704,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -719,7 +715,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -730,7 +726,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -741,7 +737,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -752,7 +748,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -763,7 +759,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -774,7 +770,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -789,7 +785,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                     },
                     {
                         "category": "NOTE",
-                        "number_checks": 6
+                        "number_checks": 5
                     },
                     {
                         "category": "OK",
@@ -804,7 +800,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -815,7 +811,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -826,7 +822,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -841,7 +837,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                     },
                     {
                         "category": "OK",
-                        "number_checks": 10
+                        "number_checks": 9
                     }
                 ],
                 "version": null
@@ -852,7 +848,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -863,7 +859,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -878,7 +874,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                     },
                     {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 10
                     }
                 ],
                 "version": null
@@ -889,7 +885,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -900,7 +896,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -915,7 +911,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                     },
                     {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 10
                     }
                 ],
                 "version": null
@@ -926,7 +922,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -937,7 +933,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -948,7 +944,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -963,7 +959,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                     },
                     {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 10
                     }
                 ],
                 "version": null
@@ -974,7 +970,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -985,7 +981,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -996,10 +992,6 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
-                        "category": "WARN",
                         "number_checks": 1
                     },
                     {
@@ -1015,7 +1007,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1026,7 +1018,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1041,7 +1033,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                     },
                     {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 10
                     }
                 ],
                 "version": null
@@ -1052,7 +1044,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "NOTE",
-                        "number_checks": 7
+                        "number_checks": 6
                     },
                     {
                         "category": "OK",
@@ -1071,7 +1063,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                     },
                     {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 10
                     }
                 ],
                 "version": null
@@ -1082,7 +1074,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1093,7 +1085,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1104,7 +1096,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1115,7 +1107,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1126,7 +1118,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1137,7 +1129,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1148,7 +1140,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1159,7 +1151,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1170,7 +1162,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1181,7 +1173,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1192,7 +1184,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1203,7 +1195,7 @@ Date: Mon, 28 Sep 2020 12:41:09 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1232,61 +1224,61 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-09-28T12:02:24.901Z"
+[1] "2020-10-05T12:02:24.962Z"
 
 $data$table
         package   any ok note warn error
-1     asciicast FALSE 12    0    0     0
-2         callr  TRUE  3    0    0     9
-3     cleancall FALSE 12    0    0     0
-4           cli  TRUE 11    0    1     0
-5        cliapp  TRUE  2    0    0    10
-6    clisymbols FALSE 12    0    0     0
-7      cranlike FALSE 12    0    0     0
-8      cranlogs FALSE 12    0    0     0
-9        crayon FALSE 12    0    0     0
-10      debugme FALSE 12    0    0     0
-11         desc FALSE 12    0    0     0
-12  disposables FALSE 12    0    0     0
-13       dotenv FALSE 12    0    0     0
-14     filelock FALSE 12    0    0     0
-15        franc FALSE 12    0    0     0
-16           gh FALSE 12    0    0     0
-17       igraph  TRUE  4    6    2     0
-18   igraphdata FALSE 12    0    0     0
-19         isa2 FALSE 12    0    0     0
-20     keypress FALSE 12    0    0     0
-21      keyring  TRUE 10    2    0     0
-22        liteq FALSE 12    0    0     0
-23      lpSolve FALSE 12    0    0     0
-24          pak  TRUE 11    1    0     0
-25    parsedate FALSE 12    0    0     0
-26        pingr FALSE 12    0    0     0
-27     pkgcache  TRUE 11    0    0     1
-28    pkgconfig FALSE 12    0    0     0
-29    pkgsearch FALSE 12    0    0     0
-30       praise FALSE 12    0    0     0
-31      presser  TRUE 11    0    0     1
-32   prettycode FALSE 12    0    0     0
-33  prettyunits FALSE 12    0    0     0
-34     processx  TRUE 10    0    1     1
-35     progress FALSE 12    0    0     0
-36           ps FALSE 12    0    0     0
-37    rcmdcheck  TRUE 11    1    0     0
-38     rcorpora  TRUE  5    7    0     0
-39     rematch2  TRUE 11    1    0     0
-40         rhub FALSE 12    0    0     0
-41    rversions FALSE 12    0    0     0
-42       sankey FALSE 12    0    0     0
-43       secret FALSE 12    0    0     0
-44  sessioninfo FALSE 12    0    0     0
-45    showimage FALSE 12    0    0     0
-46       tracer FALSE 12    0    0     0
-47    webdriver FALSE 12    0    0     0
-48       whoami FALSE 12    0    0     0
-49 xmlparsedata FALSE 12    0    0     0
-50        xopen FALSE 12    0    0     0
-51          zip FALSE 12    0    0     0
+1     asciicast FALSE 11    0    0     0
+2         callr  TRUE  3    0    0     8
+3     cleancall FALSE 11    0    0     0
+4           cli FALSE 11    0    0     0
+5        cliapp  TRUE  2    0    0     9
+6    clisymbols FALSE 11    0    0     0
+7      cranlike FALSE 11    0    0     0
+8      cranlogs FALSE 11    0    0     0
+9        crayon FALSE 11    0    0     0
+10      debugme FALSE 11    0    0     0
+11         desc FALSE 11    0    0     0
+12  disposables FALSE 11    0    0     0
+13       dotenv FALSE 11    0    0     0
+14     filelock FALSE 11    0    0     0
+15        franc FALSE 11    0    0     0
+16           gh FALSE 11    0    0     0
+17       igraph  TRUE  4    5    2     0
+18   igraphdata FALSE 11    0    0     0
+19         isa2 FALSE 11    0    0     0
+20     keypress FALSE 11    0    0     0
+21      keyring  TRUE  9    2    0     0
+22        liteq FALSE 11    0    0     0
+23      lpSolve FALSE 11    0    0     0
+24          pak  TRUE 10    1    0     0
+25    parsedate FALSE 11    0    0     0
+26        pingr FALSE 11    0    0     0
+27     pkgcache  TRUE 10    0    0     1
+28    pkgconfig FALSE 11    0    0     0
+29    pkgsearch FALSE 11    0    0     0
+30       praise FALSE 11    0    0     0
+31      presser  TRUE 10    0    0     1
+32   prettycode FALSE 11    0    0     0
+33  prettyunits FALSE 11    0    0     0
+34     processx  TRUE 10    0    0     1
+35     progress FALSE 11    0    0     0
+36           ps FALSE 11    0    0     0
+37    rcmdcheck  TRUE 10    1    0     0
+38     rcorpora  TRUE  5    6    0     0
+39     rematch2  TRUE 10    1    0     0
+40         rhub FALSE 11    0    0     0
+41    rversions FALSE 11    0    0     0
+42       sankey FALSE 11    0    0     0
+43       secret FALSE 11    0    0     0
+44  sessioninfo FALSE 11    0    0     0
+45    showimage FALSE 11    0    0     0
+46       tracer FALSE 11    0    0     0
+47    webdriver FALSE 11    0    0     0
+48       whoami FALSE 11    0    0     0
+49 xmlparsedata FALSE 11    0    0     0
+50        xopen FALSE 11    0    0     0
+51          zip FALSE 11    0    0     0
 
 $data$packages
         package
@@ -1393,57 +1385,57 @@ $data$packages
 49 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
 50        https://cloud.r-project.org/web/checks/check_results_xopen.html
 51          https://cloud.r-project.org/web/checks/check_results_zip.html
-                check_result version
-1                     OK, 12      NA
-2            ERROR, OK, 9, 3      NA
-3                     OK, 12      NA
-4            WARN, OK, 1, 11      NA
-5           ERROR, OK, 10, 2      NA
-6                     OK, 12      NA
-7                     OK, 12      NA
-8                     OK, 12      NA
-9                     OK, 12      NA
-10                    OK, 12      NA
-11                    OK, 12      NA
-12                    OK, 12      NA
-13                    OK, 12      NA
-14                    OK, 12      NA
-15                    OK, 12      NA
-16                    OK, 12      NA
-17   WARN, NOTE, OK, 2, 6, 4      NA
-18                    OK, 12      NA
-19                    OK, 12      NA
-20                    OK, 12      NA
-21           NOTE, OK, 2, 10      NA
-22                    OK, 12      NA
-23                    OK, 12      NA
-24           NOTE, OK, 1, 11      NA
-25                    OK, 12      NA
-26                    OK, 12      NA
-27          ERROR, OK, 1, 11      NA
-28                    OK, 12      NA
-29                    OK, 12      NA
-30                    OK, 12      NA
-31          ERROR, OK, 1, 11      NA
-32                    OK, 12      NA
-33                    OK, 12      NA
-34 ERROR, WARN, OK, 1, 1, 10      NA
-35                    OK, 12      NA
-36                    OK, 12      NA
-37           NOTE, OK, 1, 11      NA
-38            NOTE, OK, 7, 5      NA
-39           NOTE, OK, 1, 11      NA
-40                    OK, 12      NA
-41                    OK, 12      NA
-42                    OK, 12      NA
-43                    OK, 12      NA
-44                    OK, 12      NA
-45                    OK, 12      NA
-46                    OK, 12      NA
-47                    OK, 12      NA
-48                    OK, 12      NA
-49                    OK, 12      NA
-50                    OK, 12      NA
-51                    OK, 12      NA
+              check_result version
+1                   OK, 11      NA
+2          ERROR, OK, 8, 3      NA
+3                   OK, 11      NA
+4                   OK, 11      NA
+5          ERROR, OK, 9, 2      NA
+6                   OK, 11      NA
+7                   OK, 11      NA
+8                   OK, 11      NA
+9                   OK, 11      NA
+10                  OK, 11      NA
+11                  OK, 11      NA
+12                  OK, 11      NA
+13                  OK, 11      NA
+14                  OK, 11      NA
+15                  OK, 11      NA
+16                  OK, 11      NA
+17 WARN, NOTE, OK, 2, 5, 4      NA
+18                  OK, 11      NA
+19                  OK, 11      NA
+20                  OK, 11      NA
+21          NOTE, OK, 2, 9      NA
+22                  OK, 11      NA
+23                  OK, 11      NA
+24         NOTE, OK, 1, 10      NA
+25                  OK, 11      NA
+26                  OK, 11      NA
+27        ERROR, OK, 1, 10      NA
+28                  OK, 11      NA
+29                  OK, 11      NA
+30                  OK, 11      NA
+31        ERROR, OK, 1, 10      NA
+32                  OK, 11      NA
+33                  OK, 11      NA
+34        ERROR, OK, 1, 10      NA
+35                  OK, 11      NA
+36                  OK, 11      NA
+37         NOTE, OK, 1, 10      NA
+38          NOTE, OK, 6, 5      NA
+39         NOTE, OK, 1, 10      NA
+40                  OK, 11      NA
+41                  OK, 11      NA
+42                  OK, 11      NA
+43                  OK, 11      NA
+44                  OK, 11      NA
+45                  OK, 11      NA
+46                  OK, 11      NA
+47                  OK, 11      NA
+48                  OK, 11      NA
+49                  OK, 11      NA
+50                  OK, 11      NA
+51                  OK, 11      NA
 
 ```

@@ -51,34 +51,34 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 < Cache-Control: public, must-revalidate, max-age=60
 < Content-Length: 101
 < Content-Type: application/json; charset=utf8
-< Location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200928T124106Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=ca84de3a1df17d658442bfd8c21dce67d15fd1a1431cfd74b8553181610e3778
+< Location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20201005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201005T124454Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=300a3257d5cef80ce8306e842193479a852db49422dc3fd9193f8e67d351d104
 < Server: Caddy
 < X-Content-Type-Options: nosniff
-< Date: Mon, 28 Sep 2020 12:41:06 GMT
+< Date: Mon, 05 Oct 2020 12:44:54 GMT
 < 
 * Ignoring the response-body
 { [101 bytes data]
 100   101  100   101    0     0    216      0 --:--:-- --:--:-- --:--:--   216
 * Connection #0 to host cranchecks.info left intact
-* Issue another request to this URL: 'https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200928T124106Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=ca84de3a1df17d658442bfd8c21dce67d15fd1a1431cfd74b8553181610e3778'
-*   Trying 52.218.196.57:443...
-* Connected to cchecks-history.s3.us-west-2.amazonaws.com (52.218.196.57) port 443 (#1)
+* Issue another request to this URL: 'https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20201005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201005T124454Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=300a3257d5cef80ce8306e842193479a852db49422dc3fd9193f8e67d351d104'
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 52.218.246.41:443...
+* Connected to cchecks-history.s3.us-west-2.amazonaws.com (52.218.246.41) port 443 (#1)
 * ALPN, offering http/1.1
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 * ALPN, server did not agree to a protocol
 * Server certificate: *.s3-us-west-2.amazonaws.com
 * Server certificate: DigiCert Baltimore CA-2 G2
 * Server certificate: Baltimore CyberTrust Root
-> GET /2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20200928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200928T124106Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=ca84de3a1df17d658442bfd8c21dce67d15fd1a1431cfd74b8553181610e3778 HTTP/1.1
+> GET /2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20201005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201005T124454Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=300a3257d5cef80ce8306e842193479a852db49422dc3fd9193f8e67d351d104 HTTP/1.1
 > Host: cchecks-history.s3.us-west-2.amazonaws.com
 > User-Agent: curl/7.72.0
 > Accept: */*
 > 
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 200 OK
-< x-amz-id-2: 8SpzID13oyqc+2TW7g0dAxGSk3WiSN3P/UAZBzIJGpN5SZWk2Vz2KPlc7+wCp3npE8SFY3CqyXg=
-< x-amz-request-id: 6D24CD338D285FE8
-< Date: Mon, 28 Sep 2020 12:41:08 GMT
+< x-amz-id-2: A62Pep3ZV40dRLWpC4ieDpDGER1diqd75r75jHv9ONFmHdiWz1SGqKj0GuU6ffR+Fz5ZHLLhWZ0=
+< x-amz-request-id: 00C6D66EB36AE68F
+< Date: Mon, 05 Oct 2020 12:44:55 GMT
 < Last-Modified: Wed, 01 Apr 2020 16:36:04 GMT
 < ETag: "a7d74593672aa52dace5cd9e62db9351"
 < Content-Encoding: gzip
@@ -88,7 +88,7 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 < Server: AmazonS3
 < 
 { [16360 bytes data]
-100 5059k  100 5059k    0     0  2905k      0  0:00:01  0:00:01 --:--:-- 6621k
+  5 5059k    5  270k    0     0   173k      0  0:00:29  0:00:01  0:00:28  254k100 5059k  100 5059k    0     0  2727k      0  0:00:01  0:00:01 --:--:-- 3714k
 * Connection #1 to host cchecks-history.s3.us-west-2.amazonaws.com left intact
 {
   "package": "localIV",
