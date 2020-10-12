@@ -27,6 +27,6 @@ Content-Type: application/json; charset=utf8
 Location: https://docs.cranchecks.info/
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 05 Oct 2020 12:44:51 GMT
+Date: Mon, 12 Oct 2020 12:46:56 GMT
 
 ```
