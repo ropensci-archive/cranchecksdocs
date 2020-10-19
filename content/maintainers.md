@@ -36,12 +36,12 @@ Content-Length: 1065
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 12 Oct 2020 12:46:59 GMT
+Date: Mon, 19 Oct 2020 12:48:41 GMT
 
 ```
 ```json
 {
-    "found": 10022,
+    "found": 10055,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ Date: Mon, 12 Oct 2020 12:46:59 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-10-12T12:02:24.609Z",
+            "date_updated": "2020-10-19T12:02:21.368Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ Date: Mon, 12 Oct 2020 12:46:59 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-10-12T12:02:24.609Z",
+            "date_updated": "2020-10-19T12:02:21.368Z",
             "table": [
                 {
                     "package": "sirus",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10022
+[1] 10055
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-10-12T12:02:24.609Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-10-12T12:02:24.609Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-10-19T12:02:21.368Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-10-19T12:02:21.368Z    sirus, TRUE, 9, 3, 0, 0
                                                                                           packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
@@ -165,11 +165,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 12643
+Content-Length: 12567
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 12 Oct 2020 12:47:00 GMT
+Date: Mon, 19 Oct 2020 12:48:41 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ Date: Mon, 12 Oct 2020 12:47:00 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-10-12T12:02:25.186Z",
+        "date_updated": "2020-10-19T12:02:21.850Z",
         "table": [
             {
                 "package": "asciicast",
@@ -191,11 +191,11 @@ Date: Mon, 12 Oct 2020 12:47:00 GMT
             },
             {
                 "package": "callr",
-                "any": true,
-                "ok": 10,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 2
+                "error": 0
             },
             {
                 "package": "cleancall",
@@ -215,11 +215,11 @@ Date: Mon, 12 Oct 2020 12:47:00 GMT
             },
             {
                 "package": "cliapp",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "clisymbols",
@@ -607,12 +607,8 @@ Date: Mon, 12 Oct 2020 12:47:00 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_callr.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 2
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 10
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -644,12 +640,8 @@ Date: Mon, 12 Oct 2020 12:47:00 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_cliapp.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1220,15 +1212,15 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-10-12T12:02:25.186Z"
+[1] "2020-10-19T12:02:21.850Z"
 
 $data$table
         package   any ok note warn error
 1     asciicast FALSE 12    0    0     0
-2         callr  TRUE 10    0    0     2
+2         callr FALSE 12    0    0     0
 3     cleancall FALSE 12    0    0     0
 4           cli FALSE 12    0    0     0
-5        cliapp  TRUE 11    0    0     1
+5        cliapp FALSE 12    0    0     0
 6    clisymbols FALSE 12    0    0     0
 7      cranlike FALSE 12    0    0     0
 8      cranlogs FALSE 12    0    0     0
@@ -1383,10 +1375,10 @@ $data$packages
 51          https://cloud.r-project.org/web/checks/check_results_zip.html
        check_result version
 1            OK, 12      NA
-2  ERROR, OK, 2, 10      NA
+2            OK, 12      NA
 3            OK, 12      NA
 4            OK, 12      NA
-5  ERROR, OK, 1, 11      NA
+5            OK, 12      NA
 6            OK, 12      NA
 7            OK, 12      NA
 8            OK, 12      NA

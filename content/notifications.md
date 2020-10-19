@@ -125,7 +125,7 @@ Content-Length: 131
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 12 Oct 2020 12:47:01 GMT
+Date: Mon, 19 Oct 2020 12:48:42 GMT
 
 ```
 ```json
@@ -133,7 +133,7 @@ Date: Mon, 12 Oct 2020 12:47:01 GMT
     "error": null,
     "data": [
         {
-            "id": 410,
+            "id": 414,
             "already_existed": false,
             "rule": "package:ropenaq, status:, flavor:, time:, regex:install failure"
         }
@@ -155,7 +155,7 @@ Content-Length: 130
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 12 Oct 2020 12:47:01 GMT
+Date: Mon, 19 Oct 2020 12:48:42 GMT
 
 ```
 ```json
@@ -163,7 +163,7 @@ Date: Mon, 12 Oct 2020 12:47:01 GMT
     "error": null,
     "data": [
         {
-            "id": 410,
+            "id": 414,
             "already_existed": true,
             "rule": "package:ropenaq, status:, flavor:, time:, regex:install failure"
         }
@@ -190,7 +190,7 @@ NULL
 
 $data
    id already_existed
-1 410            TRUE
+1 414            TRUE
                                                              rule
 1 package:ropenaq, status:, flavor:, time:, regex:install failure
 
@@ -209,7 +209,7 @@ NULL
 
 $data
    id already_existed
-1 410            TRUE
+1 414            TRUE
                                                              rule
 1 package:ropenaq, status:, flavor:, time:, regex:install failure
 
@@ -228,7 +228,7 @@ NULL
 
 $data
    id already_existed
-1 410            TRUE
+1 414            TRUE
                                                              rule
 1 package:ropenaq, status:, flavor:, time:, regex:install failure
 
@@ -253,7 +253,7 @@ Server: Caddy
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Xss-Protection: 1; mode=block
-Date: Mon, 12 Oct 2020 12:47:02 GMT
+Date: Mon, 19 Oct 2020 12:48:43 GMT
 
 ```
 ```json
@@ -261,7 +261,7 @@ Date: Mon, 12 Oct 2020 12:47:02 GMT
     "error": null,
     "data": [
         {
-            "id": 410,
+            "id": 414,
             "package": "ropenaq",
             "rule_status": null,
             "rule_time": null,
@@ -286,7 +286,7 @@ NULL
 
 $data
    id package rule_status rule_time rule_platforms      rule_regex
-1 410 ropenaq          NA        NA             NA install failure
+1 414 ropenaq          NA        NA             NA install failure
 
 ```
 
@@ -303,7 +303,7 @@ NULL
 
 $data
    id package rule_status rule_time rule_platforms      rule_regex
-1 410 ropenaq          NA        NA             NA install failure
+1 414 ropenaq          NA        NA             NA install failure
 
 ```
 
@@ -322,7 +322,7 @@ Sys.setenv("rule_id" = cchecks::cchn_rule_list()$data$id[1])
 
 ```shell
 curl -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/410 | jq .
+ https://cranchecks.info/notifications/rules/414 | jq .
 ```
 ```yaml
 HTTP/1.1 200 OK
@@ -332,14 +332,14 @@ Server: Caddy
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Xss-Protection: 1; mode=block
-Date: Mon, 12 Oct 2020 12:47:02 GMT
+Date: Mon, 19 Oct 2020 12:48:44 GMT
 
 ```
 ```json
 {
     "error": null,
     "data": {
-        "id": 410,
+        "id": 414,
         "package": "ropenaq",
         "rule_status": null,
         "rule_time": null,
@@ -362,7 +362,7 @@ rule_id <- cchecks::cchn_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 410
+[1] 414
 
 ```
 
@@ -375,7 +375,7 @@ NULL
 
 $data
 $data$id
-[1] 410
+[1] 414
 
 $data$package
 [1] "ropenaq"
@@ -406,7 +406,7 @@ rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 410
+[1] 414
 
 ```
 
@@ -419,7 +419,7 @@ NULL
 
 $data
 $data$id
-[1] 410
+[1] 414
 
 $data$package
 [1] "ropenaq"
@@ -459,14 +459,14 @@ Error in Sys.setenv(rule_id = tail(cchecks::cchn_rule_list()$data, n = 1)): wron
 
 ```shell
 curl -XDELETE -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/410
+ https://cranchecks.info/notifications/rules/414
 ```
 ```yaml
 HTTP/1.1 204 No Content
 Access-Control-Allow-Methods: DELETE
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 12 Oct 2020 12:47:03 GMT
+Date: Mon, 19 Oct 2020 12:48:45 GMT
 
 ```
 
@@ -486,7 +486,7 @@ rule_id <- tail(cchecks::cchn_rule_list()$data$id, n = 1)
 rule_id
 ```
 ```r
-[1] 412
+[1] 416
 
 ```
 
@@ -509,7 +509,7 @@ rule_id <- tail(cchecks::cchn_rule_list()$data$id, n = 1)
 rule_id
 ```
 ```r
-[1] 411
+[1] 415
 
 ```
 
