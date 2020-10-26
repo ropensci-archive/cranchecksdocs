@@ -36,12 +36,12 @@ Content-Length: 1065
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 19 Oct 2020 12:48:41 GMT
+Date: Mon, 26 Oct 2020 12:51:33 GMT
 
 ```
 ```json
 {
-    "found": 10055,
+    "found": 10082,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ Date: Mon, 19 Oct 2020 12:48:41 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-10-19T12:02:21.368Z",
+            "date_updated": "2020-10-26T12:02:27.419Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ Date: Mon, 19 Oct 2020 12:48:41 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-10-19T12:02:21.368Z",
+            "date_updated": "2020-10-26T12:02:27.419Z",
             "table": [
                 {
                     "package": "sirus",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10055
+[1] 10082
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-10-19T12:02:21.368Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-10-19T12:02:21.368Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-10-26T12:02:27.419Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-10-26T12:02:27.419Z    sirus, TRUE, 9, 3, 0, 0
                                                                                           packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
@@ -165,11 +165,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 12567
+Content-Length: 12605
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 19 Oct 2020 12:48:41 GMT
+Date: Mon, 26 Oct 2020 12:51:34 GMT
 
 ```
 ```json
@@ -179,15 +179,15 @@ Date: Mon, 19 Oct 2020 12:48:41 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-10-19T12:02:21.850Z",
+        "date_updated": "2020-10-26T12:02:27.907Z",
         "table": [
             {
                 "package": "asciicast",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 10,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 2
             },
             {
                 "package": "callr",
@@ -596,8 +596,12 @@ Date: Mon, 19 Oct 2020 12:48:41 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_asciicast.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 2
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 10
                     }
                 ],
                 "version": null
@@ -1212,11 +1216,11 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-10-19T12:02:21.850Z"
+[1] "2020-10-26T12:02:27.907Z"
 
 $data$table
         package   any ok note warn error
-1     asciicast FALSE 12    0    0     0
+1     asciicast  TRUE 10    0    0     2
 2         callr FALSE 12    0    0     0
 3     cleancall FALSE 12    0    0     0
 4           cli FALSE 12    0    0     0
@@ -1374,7 +1378,7 @@ $data$packages
 50        https://cloud.r-project.org/web/checks/check_results_xopen.html
 51          https://cloud.r-project.org/web/checks/check_results_zip.html
        check_result version
-1            OK, 12      NA
+1  ERROR, OK, 2, 10      NA
 2            OK, 12      NA
 3            OK, 12      NA
 4            OK, 12      NA
