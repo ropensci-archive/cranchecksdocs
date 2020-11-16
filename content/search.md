@@ -43,1580 +43,19 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 198763
+Content-Length: 198764
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 09 Nov 2020 12:44:17 GMT
+Date: Mon, 16 Nov 2020 12:40:55 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 1332,
+    "count": 1336,
     "returned": 10,
     "data": [
-        {
-            "package": "allan",
-            "date_updated": "2020-10-10T15:03:27.000Z",
-            "summary": {
-                "any": true,
-                "ok": 0,
-                "note": 9,
-                "warn": 0,
-                "error": 3,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "1.01",
-                    "tinstall": 2.84,
-                    "tcheck": 33.24,
-                    "ttotal": 36.08,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "1.01",
-                    "tinstall": 2.4,
-                    "tcheck": 26.45,
-                    "ttotal": 28.85,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 53.46,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 42.53,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 44,
-                    "ttotal": 49,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 3.07,
-                    "tcheck": 32.18,
-                    "ttotal": 35.25,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 68.2,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 2.51,
-                    "tcheck": 32.72,
-                    "ttotal": 35.23,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 58,
-                    "ttotal": 63,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 48,
-                    "ttotal": 53,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
-                }
-            ],
-            "check_details": {
-                "details": [
-                    {
-                        "version": "1.01",
-                        "output": "Malformed Description field: should contain one or more complete sentences.",
-                        "check": "DESCRIPTION meta-information",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
-                        "check": "R code for possible problems",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
-                        "check": "Rd files",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
-                        "check": "Rd line widths",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-patched-linux-x86_64",
-                            "r-release-linux-x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmpg9NDBX/RLIBS_2f6d05cb21b63/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmpg9NDBX/RLIBS_2f6d05cb21b63/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-devel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-release-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    }
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
-        {
-            "package": "allan",
-            "date_updated": "2020-10-11T15:03:22.000Z",
-            "summary": {
-                "any": true,
-                "ok": 0,
-                "note": 9,
-                "warn": 0,
-                "error": 3,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "1.01",
-                    "tinstall": 2.84,
-                    "tcheck": 33.24,
-                    "ttotal": 36.08,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "1.01",
-                    "tinstall": 2.26,
-                    "tcheck": 26.51,
-                    "ttotal": 28.77,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 52.74,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 42.53,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 6,
-                    "tcheck": 46,
-                    "ttotal": 52,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 3.07,
-                    "tcheck": 32.18,
-                    "ttotal": 35.25,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 68.2,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 2.51,
-                    "tcheck": 32.72,
-                    "ttotal": 35.23,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 58,
-                    "ttotal": 63,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 48,
-                    "ttotal": 53,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
-                }
-            ],
-            "check_details": {
-                "details": [
-                    {
-                        "version": "1.01",
-                        "output": "Malformed Description field: should contain one or more complete sentences.",
-                        "check": "DESCRIPTION meta-information",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
-                        "check": "R code for possible problems",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
-                        "check": "Rd files",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
-                        "check": "Rd line widths",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-patched-linux-x86_64",
-                            "r-release-linux-x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpakpVbB/RLIBS_316a07e9208b/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpakpVbB/RLIBS_316a07e9208b/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-devel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-release-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    }
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
-        {
-            "package": "allan",
-            "date_updated": "2020-10-12T15:03:25.000Z",
-            "summary": {
-                "any": true,
-                "ok": 0,
-                "note": 9,
-                "warn": 0,
-                "error": 3,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "1.01",
-                    "tinstall": 2.84,
-                    "tcheck": 33.24,
-                    "ttotal": 36.08,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "1.01",
-                    "tinstall": 2.12,
-                    "tcheck": 26.31,
-                    "ttotal": 28.43,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 52.74,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 42.95,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 6,
-                    "tcheck": 46,
-                    "ttotal": 52,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 3.07,
-                    "tcheck": 32.18,
-                    "ttotal": 35.25,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 68.2,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 2.44,
-                    "tcheck": 32.15,
-                    "ttotal": 34.59,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 58,
-                    "ttotal": 63,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 48,
-                    "ttotal": 53,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
-                }
-            ],
-            "check_details": {
-                "details": [
-                    {
-                        "version": "1.01",
-                        "output": "Malformed Description field: should contain one or more complete sentences.",
-                        "check": "DESCRIPTION meta-information",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
-                        "check": "R code for possible problems",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
-                        "check": "Rd files",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
-                        "check": "Rd line widths",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-patched-linux-x86_64",
-                            "r-release-linux-x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpakpVbB/RLIBS_316a07e9208b/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpakpVbB/RLIBS_316a07e9208b/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-devel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-release-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    }
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
-        {
-            "package": "allan",
-            "date_updated": "2020-10-13T15:03:21.000Z",
-            "summary": {
-                "any": true,
-                "ok": 0,
-                "note": 9,
-                "warn": 0,
-                "error": 3,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "1.01",
-                    "tinstall": 3.23,
-                    "tcheck": 33.58,
-                    "ttotal": 36.81,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "1.01",
-                    "tinstall": 2.13,
-                    "tcheck": 26.55,
-                    "ttotal": 28.68,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 52.74,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 42.95,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 6,
-                    "tcheck": 45,
-                    "ttotal": 51,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 3.04,
-                    "tcheck": 32.13,
-                    "ttotal": 35.17,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 68.2,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 2.44,
-                    "tcheck": 32.15,
-                    "ttotal": 34.59,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 58,
-                    "ttotal": 63,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 48,
-                    "ttotal": 53,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
-                }
-            ],
-            "check_details": {
-                "details": [
-                    {
-                        "version": "1.01",
-                        "output": "Malformed Description field: should contain one or more complete sentences.",
-                        "check": "DESCRIPTION meta-information",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
-                        "check": "R code for possible problems",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
-                        "check": "Rd files",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
-                        "check": "Rd line widths",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-patched-linux-x86_64",
-                            "r-release-linux-x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-devel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-release-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    }
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
-        {
-            "package": "allan",
-            "date_updated": "2020-10-14T15:03:21.000Z",
-            "summary": {
-                "any": true,
-                "ok": 0,
-                "note": 9,
-                "warn": 0,
-                "error": 3,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "1.01",
-                    "tinstall": 3.23,
-                    "tcheck": 33.58,
-                    "ttotal": 36.81,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "1.01",
-                    "tinstall": 2.31,
-                    "tcheck": 26.83,
-                    "ttotal": 29.14,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 52.74,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 42.95,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 6,
-                    "tcheck": 45,
-                    "ttotal": 51,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 3.04,
-                    "tcheck": 32.13,
-                    "ttotal": 35.17,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 68.2,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 2.69,
-                    "tcheck": 32.07,
-                    "ttotal": 34.76,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 58,
-                    "ttotal": 63,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 48,
-                    "ttotal": 53,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
-                }
-            ],
-            "check_details": {
-                "details": [
-                    {
-                        "version": "1.01",
-                        "output": "Malformed Description field: should contain one or more complete sentences.",
-                        "check": "DESCRIPTION meta-information",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
-                        "check": "R code for possible problems",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
-                        "check": "Rd files",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
-                        "check": "Rd line widths",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-patched-linux-x86_64",
-                            "r-release-linux-x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-devel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-release-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    }
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
-        {
-            "package": "allan",
-            "date_updated": "2020-10-15T15:03:20.000Z",
-            "summary": {
-                "any": true,
-                "ok": 0,
-                "note": 9,
-                "warn": 0,
-                "error": 3,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "1.01",
-                    "tinstall": 3.11,
-                    "tcheck": 33.54,
-                    "ttotal": 36.65,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "1.01",
-                    "tinstall": 2.37,
-                    "tcheck": 26.73,
-                    "ttotal": 29.1,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 52.74,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 42.95,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 6,
-                    "tcheck": 45,
-                    "ttotal": 51,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 2.67,
-                    "tcheck": 32.24,
-                    "ttotal": 34.91,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 68.2,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 2.69,
-                    "tcheck": 32.07,
-                    "ttotal": 34.76,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 58,
-                    "ttotal": 63,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 53,
-                    "ttotal": 58,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
-                }
-            ],
-            "check_details": {
-                "details": [
-                    {
-                        "version": "1.01",
-                        "output": "Malformed Description field: should contain one or more complete sentences.",
-                        "check": "DESCRIPTION meta-information",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
-                        "check": "R code for possible problems",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
-                        "check": "Rd files",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
-                        "check": "Rd line widths",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-patched-linux-x86_64",
-                            "r-release-linux-x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-devel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-release-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6PCdVK/RLIBS_1af3065e96565/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6PCdVK/RLIBS_1af3065e96565/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    }
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
-        {
-            "package": "allan",
-            "date_updated": "2020-10-16T15:03:23.000Z",
-            "summary": {
-                "any": true,
-                "ok": 0,
-                "note": 9,
-                "warn": 0,
-                "error": 3,
-                "fail": 0
-            },
-            "checks": [
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-clang",
-                    "version": "1.01",
-                    "tinstall": 3.11,
-                    "tcheck": 33.54,
-                    "ttotal": 36.65,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-debian-gcc",
-                    "version": "1.01",
-                    "tinstall": 2.25,
-                    "tcheck": 26.74,
-                    "ttotal": 28.99,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-clang",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 52.74,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 42.95,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
-                },
-                {
-                    "flavor": "r-devel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 6,
-                    "tcheck": 45,
-                    "ttotal": 51,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 2.67,
-                    "tcheck": 32.24,
-                    "ttotal": 34.91,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-patched-solaris-x86",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 66,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-linux-x86_64",
-                    "version": "1.01",
-                    "tinstall": 2.92,
-                    "tcheck": 32.23,
-                    "ttotal": 35.15,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-release-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 58,
-                    "ttotal": 63,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-macos-x86_64",
-                    "version": "1.01",
-                    "tinstall": 0,
-                    "tcheck": 0,
-                    "ttotal": 0,
-                    "status": "NOTE",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
-                },
-                {
-                    "flavor": "r-oldrel-windows-ix86+x86_64",
-                    "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 53,
-                    "ttotal": 58,
-                    "status": "ERROR",
-                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
-                }
-            ],
-            "check_details": {
-                "details": [
-                    {
-                        "version": "1.01",
-                        "output": "Malformed Description field: should contain one or more complete sentences.",
-                        "check": "DESCRIPTION meta-information",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
-                        "check": "R code for possible problems",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
-                        "check": "Rd files",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-devel-windows-ix86+x86_64",
-                            "r-patched-linux-x86_64",
-                            "r-patched-solaris-x86",
-                            "r-release-linux-x86_64",
-                            "r-release-macos-x86_64",
-                            "r-release-windows-ix86+x86_64",
-                            "r-oldrel-macos-x86_64",
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
-                        "check": "Rd line widths",
-                        "flavors": [
-                            "r-devel-linux-x86_64-debian-clang",
-                            "r-devel-linux-x86_64-debian-gcc",
-                            "r-devel-linux-x86_64-fedora-clang",
-                            "r-devel-linux-x86_64-fedora-gcc",
-                            "r-patched-linux-x86_64",
-                            "r-release-linux-x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-devel-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-release-windows-ix86+x86_64"
-                        ]
-                    },
-                    {
-                        "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6PCdVK/RLIBS_1af3065e96565/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6PCdVK/RLIBS_1af3065e96565/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
-                        "check": "examples",
-                        "flavors": [
-                            "r-oldrel-windows-ix86+x86_64"
-                        ]
-                    }
-                ],
-                "additional_issues": [
-
-                ]
-            }
-        },
         {
             "package": "allan",
             "date_updated": "2020-10-17T15:03:22.000Z",
@@ -2285,68 +724,10 @@ Date: Mon, 09 Nov 2020 12:44:17 GMT
 
                 ]
             }
-        }
-    ]
-}
-```
-
-
-```r
-cchecks::cch_pkgs_search(q = "memory")
-```
-```r
-$error
-NULL
-
-$count
-[1] 1332
-
-$returned
-[1] 30
-
-$data
-[90m# A tibble: 30 x 5[39m
-   package date_updated summary$any   $ok $note $warn $error $fail checks
-   [3m[90m<chr>[39m[23m   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
-[90m 1[39m allan   2020-10-10T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m 2[39m allan   2020-10-11T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m 3[39m allan   2020-10-12T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m 4[39m allan   2020-10-13T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m 5[39m allan   2020-10-14T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m 6[39m allan   2020-10-15T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m 7[39m allan   2020-10-16T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m 8[39m allan   2020-10-17T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m 9[39m allan   2020-10-18T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m10[39m allan   2020-10-19T… TRUE            0     9     0      3     0 [90m<df[,[0m…
-[90m# … with 20 more rows, and 2 more variables: check_details$details [3m[90m<list>[90m[23m,[39m
-[90m#   $additional_issues [3m[90m<list>[90m[23m[39m
-
-```
-
-```shell
-curl https://cranchecks.info/search?q=memory&one_each=true&limit=2 | jq .
-```
-```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 49961
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 09 Nov 2020 12:44:28 GMT
-
-```
-```json
-{
-    "error": null,
-    "count": 68,
-    "returned": 2,
-    "data": [
+        },
         {
             "package": "allan",
-            "date_updated": "2020-10-10T15:03:27.000Z",
+            "date_updated": "2020-10-20T15:03:21.000Z",
             "summary": {
                 "any": true,
                 "ok": 0,
@@ -2359,18 +740,18 @@ Date: Mon, 09 Nov 2020 12:44:28 GMT
                 {
                     "flavor": "r-devel-linux-x86_64-debian-clang",
                     "version": "1.01",
-                    "tinstall": 2.84,
-                    "tcheck": 33.24,
-                    "ttotal": 36.08,
+                    "tinstall": 3.05,
+                    "tcheck": 33.45,
+                    "ttotal": 36.5,
                     "status": "NOTE",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
                 },
                 {
                     "flavor": "r-devel-linux-x86_64-debian-gcc",
                     "version": "1.01",
-                    "tinstall": 2.4,
-                    "tcheck": 26.45,
-                    "ttotal": 28.85,
+                    "tinstall": 2.11,
+                    "tcheck": 26.76,
+                    "ttotal": 28.87,
                     "status": "NOTE",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
                 },
@@ -2379,7 +760,7 @@ Date: Mon, 09 Nov 2020 12:44:28 GMT
                     "version": "1.01",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 53.46,
+                    "ttotal": 52.04,
                     "status": "NOTE",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
                 },
@@ -2388,25 +769,25 @@ Date: Mon, 09 Nov 2020 12:44:28 GMT
                     "version": "1.01",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 42.53,
+                    "ttotal": 42.51,
                     "status": "NOTE",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
                 },
                 {
                     "flavor": "r-devel-windows-ix86+x86_64",
                     "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 44,
-                    "ttotal": 49,
+                    "tinstall": 6,
+                    "tcheck": 45,
+                    "ttotal": 51,
                     "status": "ERROR",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
                 },
                 {
                     "flavor": "r-patched-linux-x86_64",
                     "version": "1.01",
-                    "tinstall": 3.07,
-                    "tcheck": 32.18,
-                    "ttotal": 35.25,
+                    "tinstall": 2.81,
+                    "tcheck": 31.63,
+                    "ttotal": 34.44,
                     "status": "NOTE",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
                 },
@@ -2415,16 +796,16 @@ Date: Mon, 09 Nov 2020 12:44:28 GMT
                     "version": "1.01",
                     "tinstall": 0,
                     "tcheck": 0,
-                    "ttotal": 68.2,
+                    "ttotal": 66,
                     "status": "NOTE",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
                 },
                 {
                     "flavor": "r-release-linux-x86_64",
                     "version": "1.01",
-                    "tinstall": 2.51,
-                    "tcheck": 32.72,
-                    "ttotal": 35.23,
+                    "tinstall": 2.71,
+                    "tcheck": 32.33,
+                    "ttotal": 35.04,
                     "status": "NOTE",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
                 },
@@ -2440,9 +821,9 @@ Date: Mon, 09 Nov 2020 12:44:28 GMT
                 {
                     "flavor": "r-release-windows-ix86+x86_64",
                     "version": "1.01",
-                    "tinstall": 5,
-                    "tcheck": 58,
-                    "ttotal": 63,
+                    "tinstall": 4,
+                    "tcheck": 55,
+                    "ttotal": 59,
                     "status": "ERROR",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
                 },
@@ -2459,8 +840,8 @@ Date: Mon, 09 Nov 2020 12:44:28 GMT
                     "flavor": "r-oldrel-windows-ix86+x86_64",
                     "version": "1.01",
                     "tinstall": 5,
-                    "tcheck": 48,
-                    "ttotal": 53,
+                    "tcheck": 53,
+                    "ttotal": 58,
                     "status": "ERROR",
                     "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
                 }
@@ -2539,7 +920,7 @@ Date: Mon, 09 Nov 2020 12:44:28 GMT
                     },
                     {
                         "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmpg9NDBX/RLIBS_2f6d05cb21b63/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmpg9NDBX/RLIBS_2f6d05cb21b63/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
                         "check": "examples",
                         "flavors": [
                             "r-devel-windows-ix86+x86_64"
@@ -2547,7 +928,7 @@ Date: Mon, 09 Nov 2020 12:44:28 GMT
                     },
                     {
                         "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpasCwV0/RLIBS_29c8c44bea21/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
                         "check": "examples",
                         "flavors": [
                             "r-release-windows-ix86+x86_64"
@@ -2555,7 +936,1626 @@ Date: Mon, 09 Nov 2020 12:44:28 GMT
                     },
                     {
                         "version": "1.01",
-                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6tNaLE/RLIBS_ea40dbf11d9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6PCdVK/RLIBS_1af3065e96565/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6PCdVK/RLIBS_1af3065e96565/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    }
+                ],
+                "additional_issues": [
+
+                ]
+            }
+        },
+        {
+            "package": "allan",
+            "date_updated": "2020-10-21T15:03:25.000Z",
+            "summary": {
+                "any": true,
+                "ok": 0,
+                "note": 9,
+                "warn": 0,
+                "error": 3,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "1.01",
+                    "tinstall": 3.05,
+                    "tcheck": 33.45,
+                    "ttotal": 36.5,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "1.01",
+                    "tinstall": 2.19,
+                    "tcheck": 26.84,
+                    "ttotal": 29.03,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 52.04,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 42.51,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 58,
+                    "ttotal": 63,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.81,
+                    "tcheck": 31.63,
+                    "ttotal": 34.44,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 66,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.98,
+                    "tcheck": 32.42,
+                    "ttotal": 35.4,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 4,
+                    "tcheck": 55,
+                    "ttotal": 59,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 43,
+                    "ttotal": 48,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
+                }
+            ],
+            "check_details": {
+                "details": [
+                    {
+                        "version": "1.01",
+                        "output": "Malformed Description field: should contain one or more complete sentences.",
+                        "check": "DESCRIPTION meta-information",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
+                        "check": "R code for possible problems",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
+                        "check": "Rd files",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
+                        "check": "Rd line widths",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-patched-linux-x86_64",
+                            "r-release-linux-x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-devel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-release-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    }
+                ],
+                "additional_issues": [
+
+                ]
+            }
+        },
+        {
+            "package": "allan",
+            "date_updated": "2020-10-22T15:03:23.000Z",
+            "summary": {
+                "any": true,
+                "ok": 0,
+                "note": 9,
+                "warn": 0,
+                "error": 3,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "1.01",
+                    "tinstall": 2.54,
+                    "tcheck": 34.01,
+                    "ttotal": 36.55,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "1.01",
+                    "tinstall": 2.41,
+                    "tcheck": 26.54,
+                    "ttotal": 28.95,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 52.04,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 42.51,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 58,
+                    "ttotal": 63,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.62,
+                    "tcheck": 32,
+                    "ttotal": 34.62,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 66,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.98,
+                    "tcheck": 32.42,
+                    "ttotal": 35.4,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 4,
+                    "tcheck": 55,
+                    "ttotal": 59,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 43,
+                    "ttotal": 48,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
+                }
+            ],
+            "check_details": {
+                "details": [
+                    {
+                        "version": "1.01",
+                        "output": "Malformed Description field: should contain one or more complete sentences.",
+                        "check": "DESCRIPTION meta-information",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
+                        "check": "R code for possible problems",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
+                        "check": "Rd files",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
+                        "check": "Rd line widths",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-patched-linux-x86_64",
+                            "r-release-linux-x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-devel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-release-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    }
+                ],
+                "additional_issues": [
+
+                ]
+            }
+        },
+        {
+            "package": "allan",
+            "date_updated": "2020-10-23T15:03:26.000Z",
+            "summary": {
+                "any": true,
+                "ok": 0,
+                "note": 9,
+                "warn": 0,
+                "error": 3,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "1.01",
+                    "tinstall": 2.54,
+                    "tcheck": 34.01,
+                    "ttotal": 36.55,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "1.01",
+                    "tinstall": 2.21,
+                    "tcheck": 26.58,
+                    "ttotal": 28.79,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 52.04,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 42.51,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 58,
+                    "ttotal": 63,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.62,
+                    "tcheck": 32,
+                    "ttotal": 34.62,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 66.4,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 3.06,
+                    "tcheck": 32.24,
+                    "ttotal": 35.3,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 4,
+                    "tcheck": 55,
+                    "ttotal": 59,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 43,
+                    "ttotal": 48,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
+                }
+            ],
+            "check_details": {
+                "details": [
+                    {
+                        "version": "1.01",
+                        "output": "Malformed Description field: should contain one or more complete sentences.",
+                        "check": "DESCRIPTION meta-information",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
+                        "check": "R code for possible problems",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
+                        "check": "Rd files",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
+                        "check": "Rd line widths",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-patched-linux-x86_64",
+                            "r-release-linux-x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-devel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-release-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    }
+                ],
+                "additional_issues": [
+
+                ]
+            }
+        },
+        {
+            "package": "allan",
+            "date_updated": "2020-10-24T15:03:24.000Z",
+            "summary": {
+                "any": true,
+                "ok": 0,
+                "note": 9,
+                "warn": 0,
+                "error": 3,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "1.01",
+                    "tinstall": 3.11,
+                    "tcheck": 33.42,
+                    "ttotal": 36.53,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "1.01",
+                    "tinstall": 2.29,
+                    "tcheck": 26.47,
+                    "ttotal": 28.76,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 52.04,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 42.51,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 58,
+                    "ttotal": 63,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.8,
+                    "tcheck": 31.97,
+                    "ttotal": 34.77,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 66.4,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 3.06,
+                    "tcheck": 32.24,
+                    "ttotal": 35.3,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 43,
+                    "ttotal": 48,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 43,
+                    "ttotal": 48,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
+                }
+            ],
+            "check_details": {
+                "details": [
+                    {
+                        "version": "1.01",
+                        "output": "Malformed Description field: should contain one or more complete sentences.",
+                        "check": "DESCRIPTION meta-information",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
+                        "check": "R code for possible problems",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
+                        "check": "Rd files",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
+                        "check": "Rd line widths",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-patched-linux-x86_64",
+                            "r-release-linux-x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-devel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmpm4et49/RLIBS_49b4128a6e6e/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmpm4et49/RLIBS_49b4128a6e6e/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-release-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    }
+                ],
+                "additional_issues": [
+
+                ]
+            }
+        },
+        {
+            "package": "allan",
+            "date_updated": "2020-10-25T15:03:26.000Z",
+            "summary": {
+                "any": true,
+                "ok": 0,
+                "note": 9,
+                "warn": 0,
+                "error": 3,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "1.01",
+                    "tinstall": 3.11,
+                    "tcheck": 33.42,
+                    "ttotal": 36.53,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "1.01",
+                    "tinstall": 2.36,
+                    "tcheck": 26.4,
+                    "ttotal": 28.76,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 52.97,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 42.51,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 58,
+                    "ttotal": 63,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.8,
+                    "tcheck": 31.97,
+                    "ttotal": 34.77,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 66.4,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 3.06,
+                    "tcheck": 32.24,
+                    "ttotal": 35.3,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 43,
+                    "ttotal": 48,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 43,
+                    "ttotal": 48,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
+                }
+            ],
+            "check_details": {
+                "details": [
+                    {
+                        "version": "1.01",
+                        "output": "Malformed Description field: should contain one or more complete sentences.",
+                        "check": "DESCRIPTION meta-information",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
+                        "check": "R code for possible problems",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
+                        "check": "Rd files",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
+                        "check": "Rd line widths",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-patched-linux-x86_64",
+                            "r-release-linux-x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-devel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmpm4et49/RLIBS_49b4128a6e6e/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmpm4et49/RLIBS_49b4128a6e6e/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-release-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    }
+                ],
+                "additional_issues": [
+
+                ]
+            }
+        },
+        {
+            "package": "allan",
+            "date_updated": "2020-10-26T15:03:26.000Z",
+            "summary": {
+                "any": true,
+                "ok": 0,
+                "note": 9,
+                "warn": 0,
+                "error": 3,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "1.01",
+                    "tinstall": 3.11,
+                    "tcheck": 33.42,
+                    "ttotal": 36.53,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "1.01",
+                    "tinstall": 2.22,
+                    "tcheck": 26.61,
+                    "ttotal": 28.83,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 52.97,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 42.79,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 58,
+                    "ttotal": 63,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.8,
+                    "tcheck": 31.97,
+                    "ttotal": 34.77,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 66.4,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.87,
+                    "tcheck": 31.54,
+                    "ttotal": 34.41,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 43,
+                    "ttotal": 48,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 43,
+                    "ttotal": 48,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
+                }
+            ],
+            "check_details": {
+                "details": [
+                    {
+                        "version": "1.01",
+                        "output": "Malformed Description field: should contain one or more complete sentences.",
+                        "check": "DESCRIPTION meta-information",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
+                        "check": "R code for possible problems",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
+                        "check": "Rd files",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
+                        "check": "Rd line widths",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-patched-linux-x86_64",
+                            "r-release-linux-x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmps9ncsz/RLIBS_2b7c177422f5/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-devel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmpm4et49/RLIBS_49b4128a6e6e/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmpm4et49/RLIBS_49b4128a6e6e/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-release-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp2XyjIY/RLIBS_1768c4dc012c9/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    }
+                ],
+                "additional_issues": [
+
+                ]
+            }
+        }
+    ]
+}
+```
+
+
+```r
+cchecks::cch_pkgs_search(q = "memory")
+```
+```r
+$error
+NULL
+
+$count
+[1] 1336
+
+$returned
+[1] 30
+
+$data
+[90m# A tibble: 30 x 5[39m
+   package date_updated summary$any   $ok $note $warn $error $fail checks
+   [3m[90m<chr>[39m[23m   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
+[90m 1[39m allan   2020-10-17T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m 2[39m allan   2020-10-18T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m 3[39m allan   2020-10-19T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m 4[39m allan   2020-10-20T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m 5[39m allan   2020-10-21T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m 6[39m allan   2020-10-22T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m 7[39m allan   2020-10-23T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m 8[39m allan   2020-10-24T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m 9[39m allan   2020-10-25T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m10[39m allan   2020-10-26T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m# … with 20 more rows, and 2 more variables: check_details$details [3m[90m<list>[90m[23m,[39m
+[90m#   $additional_issues [3m[90m<list>[90m[23m[39m
+
+```
+
+```shell
+curl https://cranchecks.info/search?q=memory&one_each=true&limit=2 | jq .
+```
+```yaml
+HTTP/1.1 200 OK
+Access-Control-Allow-Methods: HEAD, GET
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, max-age=60
+Content-Length: 49966
+Content-Type: application/json; charset=utf8
+Server: Caddy
+X-Content-Type-Options: nosniff
+Date: Mon, 16 Nov 2020 12:41:05 GMT
+
+```
+```json
+{
+    "error": null,
+    "count": 59,
+    "returned": 2,
+    "data": [
+        {
+            "package": "allan",
+            "date_updated": "2020-10-17T15:03:22.000Z",
+            "summary": {
+                "any": true,
+                "ok": 0,
+                "note": 9,
+                "warn": 0,
+                "error": 3,
+                "fail": 0
+            },
+            "checks": [
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-clang",
+                    "version": "1.01",
+                    "tinstall": 3.07,
+                    "tcheck": 33.35,
+                    "ttotal": 36.42,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-debian-gcc",
+                    "version": "1.01",
+                    "tinstall": 2.24,
+                    "tcheck": 26.55,
+                    "ttotal": 28.79,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-debian-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-clang",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 52.74,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-clang/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-linux-x86_64-fedora-gcc",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 42.95,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-linux-x86_64-fedora-gcc/allan-00check.html"
+                },
+                {
+                    "flavor": "r-devel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 6,
+                    "tcheck": 45,
+                    "ttotal": 51,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-devel-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 3.07,
+                    "tcheck": 32.25,
+                    "ttotal": 35.32,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-patched-solaris-x86",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 66,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-patched-solaris-x86/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-linux-x86_64",
+                    "version": "1.01",
+                    "tinstall": 2.92,
+                    "tcheck": 32.23,
+                    "ttotal": 35.15,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-linux-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-release-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 4,
+                    "tcheck": 55,
+                    "ttotal": 59,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-release-windows-ix86+x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-macos-x86_64",
+                    "version": "1.01",
+                    "tinstall": 0,
+                    "tcheck": 0,
+                    "ttotal": 0,
+                    "status": "NOTE",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-macos-x86_64/allan-00check.html"
+                },
+                {
+                    "flavor": "r-oldrel-windows-ix86+x86_64",
+                    "version": "1.01",
+                    "tinstall": 5,
+                    "tcheck": 53,
+                    "ttotal": 58,
+                    "status": "ERROR",
+                    "check_url": "https://www.R-project.org/nosvn/R.check/r-oldrel-windows-ix86+x86_64/allan-00check.html"
+                }
+            ],
+            "check_details": {
+                "details": [
+                    {
+                        "version": "1.01",
+                        "output": "Malformed Description field: should contain one or more complete sentences.",
+                        "check": "DESCRIPTION meta-information",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "allanVarSelect: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'read.csv'\nfitvbiglm: no visible global function definition for 'update'\ngetbestchunksize: no visible global function definition for 'read.csv'\ngetbestchunksize: no visible global function definition for\n  'object.size'\npredictvbiglm: no visible global function definition for 'read.csv'\npredictvbiglm: no visible global function definition for 'predict'\npredictvbiglm: no visible global function definition for\n  'weighted.mean'\nreadinbigdata : <anonymous>: no visible global function definition for\n  'read.csv'\nUndefined global functions or variables:\n  object.size predict read.csv update weighted.mean\nConsider adding\n  importFrom(\"stats\", \"predict\", \"update\", \"weighted.mean\")\n  importFrom(\"utils\", \"object.size\", \"read.csv\")\nto your NAMESPACE file.",
+                        "check": "R code for possible problems",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "prepare_Rd: allan-package.Rd:49-51: Dropping empty section \\seealso\nprepare_Rd: allanVarSelect.Rd:59-60: Dropping empty section \\details\nprepare_Rd: allanVarSelect.Rd:66-67: Dropping empty section \\references\nprepare_Rd: allanVarSelect.Rd:78-79: Dropping empty section \\seealso\nprepare_Rd: fitvbiglm.Rd:38-39: Dropping empty section \\details\nprepare_Rd: fitvbiglm.Rd:49-50: Dropping empty section \\note\nprepare_Rd: fitvbiglm.Rd:43-44: Dropping empty section \\references\nprepare_Rd: fitvbiglm.Rd:53-54: Dropping empty section \\seealso\nprepare_Rd: getbestchunksize.Rd:35-36: Dropping empty section \\details\nprepare_Rd: getbestchunksize.Rd:46-47: Dropping empty section \\note\nprepare_Rd: getbestchunksize.Rd:40-41: Dropping empty section \\references\nprepare_Rd: getbestchunksize.Rd:50-51: Dropping empty section \\seealso\nprepare_Rd: predictvbiglm.Rd:44-45: Dropping empty section \\details\nprepare_Rd: predictvbiglm.Rd:56-57: Dropping empty section \\note\nprepare_Rd: predictvbiglm.Rd:50-51: Dropping empty section \\references\nprepare_Rd: predictvbiglm.Rd:60-61: Dropping empty section \\seealso\nprepare_Rd: readinbigdata.Rd:42-43: Dropping empty section \\note\nprepare_Rd: readinbigdata.Rd:45-46: Dropping empty section \\seealso",
+                        "check": "Rd files",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-devel-windows-ix86+x86_64",
+                            "r-patched-linux-x86_64",
+                            "r-patched-solaris-x86",
+                            "r-release-linux-x86_64",
+                            "r-release-macos-x86_64",
+                            "r-release-windows-ix86+x86_64",
+                            "r-oldrel-macos-x86_64",
+                            "r-oldrel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Rd file 'allan-package.Rd':\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=smallchunk,weights=~cont0)\n\nRd file 'allanVarSelect.Rd':\n  \\usage lines wider than 90 characters:\n     allanVarSelect(BaseModel, TrnDataSetFile, ValDataSetFile, ResponseCol = 1, NumOfSteps = 10, criteria = \"AIC\", currentchunksize = -1, si ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'fitvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     fitvbiglm(BaseModel, filename, currentchunksize = -1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095)\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n\nRd file 'getbestchunksize.Rd':\n  \\usage lines wider than 90 characters:\n     getbestchunksize(filename, MemoryAllowed = 0.5, TestedRows = 1000, AdjFactor = 0.095, silent = TRUE)\n  \\examples lines wider than 100 characters:\n             #This is done by reading in a number of rows(1000 by default)and then measuring the size of the memory\n             #used.  Memory allwed is specified in Gb.  The adjfactor is a factor used to adjust memory for overhead\n\nRd file 'predictvbiglm.Rd':\n  \\usage lines wider than 90 characters:\n     predictvbiglm(BaseModel, ValFileName, currentchunksize = -1, ResponseCol = 1, silent = TRUE, MemoryAllowed = 0.5, TestedRows = 1000, Ad ... [TRUNCATED]\n  \\examples lines wider than 100 characters:\n     bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n     predictvbiglm<-function(BaseModel,ValFileName,currentchunksize=-1,ResponseCol=1,silent=TRUE,MemoryAllowed=0.5,TestedRows=1000,AdjFactor ... [TRUNCATED]\n                     currentchunksize<-getbestchunksize(ValFileName,MemoryAllowed=MemoryAllowed,TestedRows=TestedRows,AdjFactor=AdjFactor,si ... [TRUNCATED]\n                             weightvector<-as.vector(eval(parse(text=paste(\"CurrentDataSet\",\"$\",weightname,sep=\"\"))))\n                     CurrentVariance=sum(((CurrentDataSet[,ResponseCol]-CurrentMean)^2)*weightvector)/sum(weightvector)\n\nRd file 'readinbigdata.Rd':\n  \\examples lines wider than 100 characters:\n             #The return value is either the next chunk of data or NULL if there is no additional data left.\n             #Additionally if a reset=TRUE flag is passed, then the data stream goes back to the beginning.\n\nThese lines will be truncated in the PDF manual.",
+                        "check": "Rd line widths",
+                        "flavors": [
+                            "r-devel-linux-x86_64-debian-clang",
+                            "r-devel-linux-x86_64-debian-gcc",
+                            "r-devel-linux-x86_64-fedora-clang",
+                            "r-devel-linux-x86_64-fedora-gcc",
+                            "r-patched-linux-x86_64",
+                            "r-release-linux-x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpETQwbz/RLIBS_30f6c4b386769/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-devel-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/RtmpSYYOHf/RLIBS_18804602697b/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
+                        "check": "examples",
+                        "flavors": [
+                            "r-release-windows-ix86+x86_64"
+                        ]
+                    },
+                    {
+                        "version": "1.01",
+                        "output": "Running examples in 'allan-Ex.R' failed\nThe error most likely occurred in:\n\n> ### Name: allanVarSelect\n> ### Title: Memory Unlimited Forward Stepwise Variable Selection for Linear\n> ###   Models\n> ### Aliases: allanVarSelect\n> ### Keywords: stepwise linear regression memory\n> \n> ### ** Examples\n> \n> #Get external data.  For your own data skip this next line and replace all\n> #instance of SampleData with \"YourFile.csv\".\n> SampleData=system.file(\"extdata\",\"SampleDataFile.csv\", package = \"allan\")\n> \n> #fit smaller data to biglm object\n> columnnames<-names(read.csv(SampleData, nrows=2,header=TRUE))\n> datafeed<-readinbigdata(SampleData,chunksize=1000,col.names=columnnames)\n> datafeed(TRUE)\n> firstchunk<-datafeed(FALSE)\n> \n> #create a biglm model from the small chunk with all variables that will be consdered\n> #for variable selection.\n> bigmodel <- biglm(PurePremium ~ cont1 + cont2 + cont3 + cont4 + cont5,data=firstchunk,weights=~cont0)\n> \n> #now run variable selection\n> FinalModel<-allanVarSelect(bigmodel,SampleData,SampleData,NumOfSteps=2,criteria=\"MSE\",silent=FALSE)\n[1] \"Total memory usage for 1000 lines:\"\n110560 bytes\n[1] \"Chunksize for dataframe after adjustment factor:\"\n[1] 429630\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529253.65122942\"      \"1529265.34987705\" \"1.29997019294336e+129\" \n                                                \n                \"cont3\"                     \"1\" \n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Iterating Through Dataset and Updating Coefficients\"\n[1] \"Criteria:MSE\"\n[1] \"Iteration Result\"\n               AICValue                BICValue                MSEValue \n     \"1529255.65122942\"      \"1529273.19920087\" \"1.29902541076004e+129\" \n                                                \n                \"cont1\"                     \"2\" \n[1] \"Final Results of Variable Selection:\"\n                 AICValue           BICValue           MSEValue               \nIterationSummary \"1529253.65122942\" \"1529265.34987705\" \"1.29997019294336e+129\"\nIterationSummary \"1529255.65122942\" \"1529273.19920087\" \"1.29902541076004e+129\"\n                            \nIterationSummary \"cont3\" \"1\"\nIterationSummary \"cont1\" \"2\"\n[1] \"Results Stored in $SelectionSummary\"\n> \n> \n> \n> \n> \n> \n> \n> cleanEx()\nWarning in .Internal(gc(verbose, reset, full)) :\n  closing unused connection 3 (D:/temp/Rtmp6PCdVK/RLIBS_1af3065e96565/allan/extdata/SampleDataFile.csv)\nError: connections left open:\n\tD:/temp/Rtmp6PCdVK/RLIBS_1af3065e96565/allan/extdata/SampleDataFile.csv (file)\nExecution halted",
                         "check": "examples",
                         "flavors": [
                             "r-oldrel-windows-ix86+x86_64"
@@ -2765,7 +2765,7 @@ $error
 NULL
 
 $count
-[1] 68
+[1] 59
 
 $returned
 [1] 2
@@ -2774,7 +2774,7 @@ $data
 [90m# A tibble: 2 x 5[39m
   package date_updated summary$any   $ok $note $warn $error $fail checks
   [3m[90m<chr>[39m[23m   [3m[90m<chr>[39m[23m        [3m[90m<lgl>[39m[23m       [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m  [3m[90m<int>[39m[23m [3m[90m<int>[39m[23m [3m[90m<list>[39m[23m
-[90m1[39m allan   2020-10-10T… TRUE            0     9     0      3     0 [90m<df[,[0m…
+[90m1[39m allan   2020-10-17T… TRUE            0     9     0      3     0 [90m<df[,[0m…
 [90m2[39m antare… 2020-11-03T… TRUE            5     0     0      7     0 [90m<df[,[0m…
 [90m# … with 2 more variables: check_details$details [3m[90m<list>[90m[23m,[39m
 [90m#   $additional_issues [3m[90m<list>[90m[23m[39m
@@ -2793,18 +2793,18 @@ Content-Length: 1193
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 09 Nov 2020 12:44:35 GMT
+Date: Mon, 16 Nov 2020 12:41:12 GMT
 
 ```
 ```json
 {
     "error": null,
-    "count": 68,
+    "count": 59,
     "returned": 10,
     "data": [
         {
             "package": "allan",
-            "date_updated": "2020-10-10T15:03:27.000Z",
+            "date_updated": "2020-10-17T15:03:22.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -2818,21 +2818,21 @@ Date: Mon, 09 Nov 2020 12:44:35 GMT
         },
         {
             "package": "aws",
-            "date_updated": "2020-10-10T15:03:27.000Z",
+            "date_updated": "2020-10-17T15:03:22.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
         },
         {
             "package": "BigQuic",
-            "date_updated": "2020-10-16T15:03:23.000Z",
+            "date_updated": "2020-10-17T15:03:21.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
         },
         {
             "package": "blockmodeling",
-            "date_updated": "2020-10-10T15:03:27.000Z",
+            "date_updated": "2020-10-17T15:03:22.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -2846,28 +2846,28 @@ Date: Mon, 09 Nov 2020 12:44:35 GMT
         },
         {
             "package": "clusternor",
-            "date_updated": "2020-10-10T15:03:27.000Z",
+            "date_updated": "2020-10-17T15:03:21.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
         },
         {
             "package": "cooccurNet",
-            "date_updated": "2020-10-10T15:03:27.000Z",
+            "date_updated": "2020-10-17T15:03:21.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
         },
         {
             "package": "ctsemOMX",
-            "date_updated": "2020-10-10T15:03:27.000Z",
+            "date_updated": "2020-10-23T15:03:25.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
         },
         {
             "package": "cusum",
-            "date_updated": "2020-10-10T15:03:27.000Z",
+            "date_updated": "2020-10-17T15:03:22.000Z",
             "summary": null,
             "checks": null,
             "check_details": null
@@ -2885,7 +2885,7 @@ $error
 NULL
 
 $count
-[1] 68
+[1] 59
 
 $returned
 [1] 30
@@ -2894,16 +2894,16 @@ $data
 [90m# A tibble: 30 x 5[39m
    package       date_updated             summary checks check_details
    [3m[90m<chr>[39m[23m         [3m[90m<chr>[39m[23m                    [3m[90m<lgl>[39m[23m   [3m[90m<lgl>[39m[23m  [3m[90m<lgl>[39m[23m        
-[90m 1[39m allan         2020-10-10T15:03:27.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 1[39m allan         2020-10-17T15:03:22.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 2[39m antaresViz    2020-11-03T15:04:11.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 3[39m aws           2020-10-10T15:03:27.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 4[39m BigQuic       2020-10-16T15:03:23.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 5[39m blockmodeling 2020-10-10T15:03:27.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 3[39m aws           2020-10-17T15:03:22.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 4[39m BigQuic       2020-10-17T15:03:21.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 5[39m blockmodeling 2020-10-17T15:03:22.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m 6[39m bssm          2020-10-23T15:03:25.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 7[39m clusternor    2020-10-10T15:03:27.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 8[39m cooccurNet    2020-10-10T15:03:27.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m 9[39m ctsemOMX      2020-10-10T15:03:27.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
-[90m10[39m cusum         2020-10-10T15:03:27.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 7[39m clusternor    2020-10-17T15:03:21.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 8[39m cooccurNet    2020-10-17T15:03:21.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m 9[39m ctsemOMX      2020-10-23T15:03:25.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
+[90m10[39m cusum         2020-10-17T15:03:22.000Z [31mNA[39m      [31mNA[39m     [31mNA[39m           
 [90m# … with 20 more rows[39m
 
 ```
