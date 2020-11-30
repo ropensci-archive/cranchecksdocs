@@ -36,12 +36,12 @@ Content-Length: 1065
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 23 Nov 2020 12:42:12 GMT
+Date: Mon, 30 Nov 2020 12:49:02 GMT
 
 ```
 ```json
 {
-    "found": 10235,
+    "found": 10271,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ Date: Mon, 23 Nov 2020 12:42:12 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-11-23T12:02:31.539Z",
+            "date_updated": "2020-11-30T12:02:34.532Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ Date: Mon, 23 Nov 2020 12:42:12 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-11-23T12:02:31.539Z",
+            "date_updated": "2020-11-30T12:02:34.532Z",
             "table": [
                 {
                     "package": "sirus",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10235
+[1] 10271
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-11-23T12:02:31.539Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-11-23T12:02:31.539Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-11-30T12:02:34.532Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-11-30T12:02:34.532Z    sirus, TRUE, 9, 3, 0, 0
                                                                                           packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
@@ -165,11 +165,11 @@ HTTP/1.1 200 OK
 Access-Control-Allow-Methods: HEAD, GET
 Access-Control-Allow-Origin: *
 Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 13046
+Content-Length: 13085
 Content-Type: application/json; charset=utf8
 Server: Caddy
 X-Content-Type-Options: nosniff
-Date: Mon, 23 Nov 2020 12:42:12 GMT
+Date: Mon, 30 Nov 2020 12:49:03 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ Date: Mon, 23 Nov 2020 12:42:12 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-11-23T12:02:32.143Z",
+        "date_updated": "2020-11-30T12:02:35.100Z",
         "table": [
             {
                 "package": "asciicast",
@@ -321,9 +321,9 @@ Date: Mon, 23 Nov 2020 12:42:12 GMT
                 "package": "igraph",
                 "any": true,
                 "ok": 5,
-                "note": 7,
+                "note": 6,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "igraphdata",
@@ -799,8 +799,12 @@ Date: Mon, 23 Nov 2020 12:42:12 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_igraph.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "NOTE",
-                        "number_checks": 7
+                        "number_checks": 6
                     },
                     {
                         "category": "OK",
@@ -1250,7 +1254,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-11-23T12:02:32.143Z"
+[1] "2020-11-30T12:02:35.100Z"
 
 $data$table
         package   any ok note warn error
@@ -1271,7 +1275,7 @@ $data$table
 15        franc FALSE 12    0    0     0
 16           gh FALSE 12    0    0     0
 17     gitcreds FALSE 12    0    0     0
-18       igraph  TRUE  5    7    0     0
+18       igraph  TRUE  5    6    0     1
 19   igraphdata FALSE 12    0    0     0
 20         isa2 FALSE 12    0    0     0
 21     keypress FALSE 12    0    0     0
@@ -1417,59 +1421,59 @@ $data$packages
 51 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
 52        https://cloud.r-project.org/web/checks/check_results_xopen.html
 53          https://cloud.r-project.org/web/checks/check_results_zip.html
-       check_result version
-1            OK, 12      NA
-2            OK, 12      NA
-3            OK, 12      NA
-4            OK, 12      NA
-5            OK, 12      NA
-6            OK, 12      NA
-7            OK, 12      NA
-8            OK, 12      NA
-9            OK, 12      NA
-10           OK, 12      NA
-11           OK, 12      NA
-12           OK, 12      NA
-13           OK, 12      NA
-14           OK, 12      NA
-15           OK, 12      NA
-16           OK, 12      NA
-17           OK, 12      NA
-18   NOTE, OK, 7, 5      NA
-19           OK, 12      NA
-20           OK, 12      NA
-21           OK, 12      NA
-22  NOTE, OK, 2, 10      NA
-23           OK, 12      NA
-24           OK, 12      NA
-25           OK, 12      NA
-26  NOTE, OK, 1, 11      NA
-27           OK, 12      NA
-28           OK, 12      NA
-29 ERROR, OK, 1, 11      NA
-30           OK, 12      NA
-31           OK, 12      NA
-32           OK, 12      NA
-33 ERROR, OK, 1, 11      NA
-34           OK, 12      NA
-35           OK, 12      NA
-36 ERROR, OK, 1, 11      NA
-37           OK, 12      NA
-38           OK, 12      NA
-39  NOTE, OK, 1, 11      NA
-40   NOTE, OK, 7, 5      NA
-41  NOTE, OK, 1, 11      NA
-42           OK, 12      NA
-43           OK, 12      NA
-44           OK, 12      NA
-45           OK, 12      NA
-46           OK, 12      NA
-47           OK, 12      NA
-48           OK, 12      NA
-49           OK, 12      NA
-50           OK, 12      NA
-51           OK, 12      NA
-52           OK, 12      NA
-53           OK, 12      NA
+               check_result version
+1                    OK, 12      NA
+2                    OK, 12      NA
+3                    OK, 12      NA
+4                    OK, 12      NA
+5                    OK, 12      NA
+6                    OK, 12      NA
+7                    OK, 12      NA
+8                    OK, 12      NA
+9                    OK, 12      NA
+10                   OK, 12      NA
+11                   OK, 12      NA
+12                   OK, 12      NA
+13                   OK, 12      NA
+14                   OK, 12      NA
+15                   OK, 12      NA
+16                   OK, 12      NA
+17                   OK, 12      NA
+18 ERROR, NOTE, OK, 1, 6, 5      NA
+19                   OK, 12      NA
+20                   OK, 12      NA
+21                   OK, 12      NA
+22          NOTE, OK, 2, 10      NA
+23                   OK, 12      NA
+24                   OK, 12      NA
+25                   OK, 12      NA
+26          NOTE, OK, 1, 11      NA
+27                   OK, 12      NA
+28                   OK, 12      NA
+29         ERROR, OK, 1, 11      NA
+30                   OK, 12      NA
+31                   OK, 12      NA
+32                   OK, 12      NA
+33         ERROR, OK, 1, 11      NA
+34                   OK, 12      NA
+35                   OK, 12      NA
+36         ERROR, OK, 1, 11      NA
+37                   OK, 12      NA
+38                   OK, 12      NA
+39          NOTE, OK, 1, 11      NA
+40           NOTE, OK, 7, 5      NA
+41          NOTE, OK, 1, 11      NA
+42                   OK, 12      NA
+43                   OK, 12      NA
+44                   OK, 12      NA
+45                   OK, 12      NA
+46                   OK, 12      NA
+47                   OK, 12      NA
+48                   OK, 12      NA
+49                   OK, 12      NA
+50                   OK, 12      NA
+51                   OK, 12      NA
+52                   OK, 12      NA
+53                   OK, 12      NA
 
 ```
