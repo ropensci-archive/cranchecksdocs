@@ -20,15 +20,15 @@ Get heartbeat for the API :heartbeat: (i.e. the list of endpoints).
 curl https://cranchecks.info/heartbeat | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 256
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 30 Nov 2020 12:48:59 GMT
+HTTP/2 200 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 256
+date: Mon, 07 Dec 2020 12:53:29 GMT
 
 ```
 ```json

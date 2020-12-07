@@ -28,20 +28,20 @@ Default [limit](#pagination) of 10, max of 1000.
 curl https://cranchecks.info/maintainers/?limit=2&offset=5 | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 1065
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 30 Nov 2020 12:49:02 GMT
+HTTP/2 200 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 1065
+date: Mon, 07 Dec 2020 12:53:32 GMT
 
 ```
 ```json
 {
-    "found": 10271,
+    "found": 10299,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ Date: Mon, 30 Nov 2020 12:49:02 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-11-30T12:02:34.532Z",
+            "date_updated": "2020-12-07T12:02:57.708Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ Date: Mon, 30 Nov 2020 12:49:02 GMT
             "email": "clement.benard_at_safrangroup.com",
             "name": "Clement Benard",
             "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-11-30T12:02:34.532Z",
+            "date_updated": "2020-12-07T12:02:57.708Z",
             "table": [
                 {
                     "package": "sirus",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10271
+[1] 10299
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
               date_updated                      table
-1 2020-11-30T12:02:34.532Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-11-30T12:02:34.532Z    sirus, TRUE, 9, 3, 0, 0
+1 2020-12-07T12:02:57.708Z hypergea, TRUE, 6, 6, 0, 0
+2 2020-12-07T12:02:57.708Z    sirus, TRUE, 9, 3, 0, 0
                                                                                           packages
 1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
@@ -161,15 +161,15 @@ Get checks data by email of the package maintainer.
 curl https://cranchecks.info/maintainers/csardi.gabor_at_gmail.com | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: HEAD, GET
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 13085
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 30 Nov 2020 12:49:03 GMT
+HTTP/2 200 
+access-control-allow-methods: HEAD, GET
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 13085
+date: Mon, 07 Dec 2020 12:53:32 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ Date: Mon, 30 Nov 2020 12:49:03 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-11-30T12:02:35.100Z",
+        "date_updated": "2020-12-07T12:02:58.278Z",
         "table": [
             {
                 "package": "asciicast",
@@ -463,11 +463,11 @@ Date: Mon, 30 Nov 2020 12:49:03 GMT
             },
             {
                 "package": "processx",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "progress",
@@ -479,11 +479,11 @@ Date: Mon, 30 Nov 2020 12:49:03 GMT
             },
             {
                 "package": "ps",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "rcmdcheck",
@@ -1021,12 +1021,8 @@ Date: Mon, 30 Nov 2020 12:49:03 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_processx.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1047,8 +1043,12 @@ Date: Mon, 30 Nov 2020 12:49:03 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_ps.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1254,7 +1254,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-11-30T12:02:35.100Z"
+[1] "2020-12-07T12:02:58.278Z"
 
 $data$table
         package   any ok note warn error
@@ -1293,9 +1293,9 @@ $data$table
 33      presser  TRUE 11    0    0     1
 34   prettycode FALSE 12    0    0     0
 35  prettyunits FALSE 12    0    0     0
-36     processx  TRUE 11    0    0     1
+36     processx FALSE 12    0    0     0
 37     progress FALSE 12    0    0     0
-38           ps FALSE 12    0    0     0
+38           ps  TRUE 11    0    0     1
 39    rcmdcheck  TRUE 11    1    0     0
 40     rcorpora  TRUE  5    7    0     0
 41     rematch2  TRUE 11    1    0     0
@@ -1457,9 +1457,9 @@ $data$packages
 33         ERROR, OK, 1, 11      NA
 34                   OK, 12      NA
 35                   OK, 12      NA
-36         ERROR, OK, 1, 11      NA
+36                   OK, 12      NA
 37                   OK, 12      NA
-38                   OK, 12      NA
+38         ERROR, OK, 1, 11      NA
 39          NOTE, OK, 1, 11      NA
 40           NOTE, OK, 7, 5      NA
 41          NOTE, OK, 1, 11      NA

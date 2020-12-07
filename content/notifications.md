@@ -117,15 +117,15 @@ curl -XPOST -H "Authorization: Bearer ***" \
  https://cranchecks.info/notifications/rules | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: POST
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 131
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 30 Nov 2020 12:49:04 GMT
+HTTP/2 200 
+access-control-allow-methods: POST
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 131
+date: Mon, 07 Dec 2020 12:53:33 GMT
 
 ```
 ```json
@@ -133,7 +133,7 @@ Date: Mon, 30 Nov 2020 12:49:04 GMT
     "error": null,
     "data": [
         {
-            "id": 442,
+            "id": 446,
             "already_existed": false,
             "rule": "package:ropenaq, status:, flavor:, time:, regex:install failure"
         }
@@ -147,15 +147,15 @@ curl -XPOST -H "Authorization: Bearer ***" \
  https://cranchecks.info/notifications/rules | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Access-Control-Allow-Methods: POST
-Access-Control-Allow-Origin: *
-Cache-Control: public, must-revalidate, max-age=60
-Content-Length: 130
-Content-Type: application/json; charset=utf8
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 30 Nov 2020 12:49:04 GMT
+HTTP/2 200 
+access-control-allow-methods: POST
+access-control-allow-origin: *
+cache-control: public, must-revalidate, max-age=60
+content-type: application/json; charset=utf8
+server: Caddy
+x-content-type-options: nosniff
+content-length: 130
+date: Mon, 07 Dec 2020 12:53:33 GMT
 
 ```
 ```json
@@ -163,7 +163,7 @@ Date: Mon, 30 Nov 2020 12:49:04 GMT
     "error": null,
     "data": [
         {
-            "id": 442,
+            "id": 446,
             "already_existed": true,
             "rule": "package:ropenaq, status:, flavor:, time:, regex:install failure"
         }
@@ -190,7 +190,7 @@ NULL
 
 $data
    id already_existed
-1 442            TRUE
+1 446            TRUE
                                                              rule
 1 package:ropenaq, status:, flavor:, time:, regex:install failure
 
@@ -209,7 +209,7 @@ NULL
 
 $data
    id already_existed
-1 442            TRUE
+1 446            TRUE
                                                              rule
 1 package:ropenaq, status:, flavor:, time:, regex:install failure
 
@@ -228,7 +228,7 @@ NULL
 
 $data
    id already_existed
-1 442            TRUE
+1 446            TRUE
                                                              rule
 1 package:ropenaq, status:, flavor:, time:, regex:install failure
 
@@ -246,14 +246,14 @@ List your notifications rules
 curl https://cranchecks.info/notifications/rules -H "Authorization: Bearer ***" | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Content-Length: 143
-Content-Type: text/html;charset=utf-8
-Server: Caddy
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-X-Xss-Protection: 1; mode=block
-Date: Mon, 30 Nov 2020 12:49:05 GMT
+HTTP/2 200 
+content-type: text/html;charset=utf-8
+server: Caddy
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+content-length: 143
+date: Mon, 07 Dec 2020 12:53:34 GMT
 
 ```
 ```json
@@ -261,7 +261,7 @@ Date: Mon, 30 Nov 2020 12:49:05 GMT
     "error": null,
     "data": [
         {
-            "id": 442,
+            "id": 446,
             "package": "ropenaq",
             "rule_status": null,
             "rule_time": null,
@@ -286,7 +286,7 @@ NULL
 
 $data
    id package rule_status rule_time rule_platforms      rule_regex
-1 442 ropenaq          NA        NA             NA install failure
+1 446 ropenaq          NA        NA             NA install failure
 
 ```
 
@@ -303,7 +303,7 @@ NULL
 
 $data
    id package rule_status rule_time rule_platforms      rule_regex
-1 442 ropenaq          NA        NA             NA install failure
+1 446 ropenaq          NA        NA             NA install failure
 
 ```
 
@@ -322,24 +322,24 @@ Sys.setenv("rule_id" = cchecks::cchn_rule_list()$data$id[1])
 
 ```shell
 curl -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/442 | jq .
+ https://cranchecks.info/notifications/rules/446 | jq .
 ```
 ```yaml
-HTTP/1.1 200 OK
-Content-Length: 141
-Content-Type: text/html;charset=utf-8
-Server: Caddy
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-X-Xss-Protection: 1; mode=block
-Date: Mon, 30 Nov 2020 12:49:05 GMT
+HTTP/2 200 
+content-type: text/html;charset=utf-8
+server: Caddy
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+content-length: 141
+date: Mon, 07 Dec 2020 12:53:35 GMT
 
 ```
 ```json
 {
     "error": null,
     "data": {
-        "id": 442,
+        "id": 446,
         "package": "ropenaq",
         "rule_status": null,
         "rule_time": null,
@@ -362,7 +362,7 @@ rule_id <- cchecks::cchn_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 442
+[1] 446
 
 ```
 
@@ -375,7 +375,7 @@ NULL
 
 $data
 $data$id
-[1] 442
+[1] 446
 
 $data$package
 [1] "ropenaq"
@@ -406,7 +406,7 @@ rule_id <- cchecks::cchn_pkg_rule_list()$data$id[1]
 rule_id
 ```
 ```r
-[1] 442
+[1] 446
 
 ```
 
@@ -419,7 +419,7 @@ NULL
 
 $data
 $data$id
-[1] 442
+[1] 446
 
 $data$package
 [1] "ropenaq"
@@ -459,14 +459,14 @@ Error in Sys.setenv(rule_id = tail(cchecks::cchn_rule_list()$data, n = 1)): wron
 
 ```shell
 curl -XDELETE -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/442
+ https://cranchecks.info/notifications/rules/446
 ```
 ```yaml
-HTTP/1.1 204 No Content
-Access-Control-Allow-Methods: DELETE
-Server: Caddy
-X-Content-Type-Options: nosniff
-Date: Mon, 30 Nov 2020 12:49:07 GMT
+HTTP/2 204 
+access-control-allow-methods: DELETE
+server: Caddy
+x-content-type-options: nosniff
+date: Mon, 07 Dec 2020 12:53:36 GMT
 
 ```
 
@@ -486,7 +486,7 @@ rule_id <- tail(cchecks::cchn_rule_list()$data$id, n = 1)
 rule_id
 ```
 ```r
-[1] 444
+[1] 448
 
 ```
 
@@ -509,7 +509,7 @@ rule_id <- tail(cchecks::cchn_rule_list()$data$id, n = 1)
 rule_id
 ```
 ```r
-[1] 443
+[1] 447
 
 ```
 
