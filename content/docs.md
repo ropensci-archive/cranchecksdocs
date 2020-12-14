@@ -27,6 +27,6 @@ location: https://docs.cranchecks.info/
 server: Caddy
 x-content-type-options: nosniff
 content-length: 0
-date: Mon, 07 Dec 2020 12:53:28 GMT
+date: Mon, 14 Dec 2020 12:54:27 GMT
 
 ```

@@ -35,13 +35,13 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 1065
-date: Mon, 07 Dec 2020 12:53:32 GMT
+content-length: 1060
+date: Mon, 14 Dec 2020 12:54:31 GMT
 
 ```
 ```json
 {
-    "found": 10299,
+    "found": 10332,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ date: Mon, 07 Dec 2020 12:53:32 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-12-07T12:02:57.708Z",
+            "date_updated": "2020-12-14T12:02:50.441Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -80,32 +80,32 @@ date: Mon, 07 Dec 2020 12:53:32 GMT
             ]
         },
         {
-            "email": "clement.benard_at_safrangroup.com",
-            "name": "Clement Benard",
-            "url": "https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html",
-            "date_updated": "2020-12-07T12:02:57.708Z",
+            "email": "s.greilich_at_dkfz.de",
+            "name": "Steffen Greilich",
+            "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
+            "date_updated": "2020-12-14T12:02:50.441Z",
             "table": [
                 {
-                    "package": "sirus",
+                    "package": "libamtrack",
                     "any": true,
-                    "ok": 9,
-                    "note": 3,
+                    "ok": 2,
+                    "note": 10,
                     "warn": 0,
                     "error": 0
                 }
             ],
             "packages": [
                 {
-                    "package": "sirus",
-                    "url": "https://cloud.r-project.org/web/checks/check_results_sirus.html",
+                    "package": "libamtrack",
+                    "url": "https://cloud.r-project.org/web/checks/check_results_libamtrack.html",
                     "check_result": [
                         {
                             "category": "NOTE",
-                            "number_checks": 3
+                            "number_checks": 10
                         },
                         {
                             "category": "OK",
-                            "number_checks": 9
+                            "number_checks": 2
                         }
                     ],
                     "version": null
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10299
+[1] 10332
 
 $count
 [1] 2
@@ -134,18 +134,18 @@ $error
 NULL
 
 $data
-                              email           name
-1 markus.boenn.sf_at_googlemail.com   Markus Boenn
-2 clement.benard_at_safrangroup.com Clement Benard
+                              email             name
+1 markus.boenn.sf_at_googlemail.com     Markus Boenn
+2             s.greilich_at_dkfz.de Steffen Greilich
                                                                                           url
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
-2 https://cloud.r-project.org/web/checks/check_results_clement.benard_at_safrangroup.com.html
-              date_updated                      table
-1 2020-12-07T12:02:57.708Z hypergea, TRUE, 6, 6, 0, 0
-2 2020-12-07T12:02:57.708Z    sirus, TRUE, 9, 3, 0, 0
-                                                                                          packages
-1 hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
-2       sirus, https://cloud.r-project.org/web/checks/check_results_sirus.html, NOTE, OK, 3, 9, NA
+2             https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html
+              date_updated                         table
+1 2020-12-14T12:02:50.441Z    hypergea, TRUE, 6, 6, 0, 0
+2 2020-12-14T12:02:50.441Z libamtrack, TRUE, 2, 10, 0, 0
+                                                                                               packages
+1      hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
+2 libamtrack, https://cloud.r-project.org/web/checks/check_results_libamtrack.html, NOTE, OK, 10, 2, NA
 
 ```
 
@@ -168,8 +168,8 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 13085
-date: Mon, 07 Dec 2020 12:53:32 GMT
+content-length: 13122
+date: Mon, 14 Dec 2020 12:54:32 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ date: Mon, 07 Dec 2020 12:53:32 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-12-07T12:02:58.278Z",
+        "date_updated": "2020-12-14T12:02:50.938Z",
         "table": [
             {
                 "package": "asciicast",
@@ -295,11 +295,11 @@ date: Mon, 07 Dec 2020 12:53:32 GMT
             },
             {
                 "package": "franc",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "gh",
@@ -321,9 +321,9 @@ date: Mon, 07 Dec 2020 12:53:32 GMT
                 "package": "igraph",
                 "any": true,
                 "ok": 5,
-                "note": 6,
+                "note": 7,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "igraphdata",
@@ -519,11 +519,11 @@ date: Mon, 07 Dec 2020 12:53:32 GMT
             },
             {
                 "package": "rversions",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "sankey",
@@ -766,8 +766,12 @@ date: Mon, 07 Dec 2020 12:53:32 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_franc.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -799,12 +803,8 @@ date: Mon, 07 Dec 2020 12:53:32 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_igraph.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "NOTE",
-                        "number_checks": 6
+                        "number_checks": 7
                     },
                     {
                         "category": "OK",
@@ -1114,8 +1114,12 @@ date: Mon, 07 Dec 2020 12:53:32 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_rversions.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1254,7 +1258,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-12-07T12:02:58.278Z"
+[1] "2020-12-14T12:02:50.938Z"
 
 $data$table
         package   any ok note warn error
@@ -1272,10 +1276,10 @@ $data$table
 12  disposables FALSE 12    0    0     0
 13       dotenv FALSE 12    0    0     0
 14     filelock FALSE 12    0    0     0
-15        franc FALSE 12    0    0     0
+15        franc  TRUE 11    0    0     1
 16           gh FALSE 12    0    0     0
 17     gitcreds FALSE 12    0    0     0
-18       igraph  TRUE  5    6    0     1
+18       igraph  TRUE  5    7    0     0
 19   igraphdata FALSE 12    0    0     0
 20         isa2 FALSE 12    0    0     0
 21     keypress FALSE 12    0    0     0
@@ -1300,7 +1304,7 @@ $data$table
 40     rcorpora  TRUE  5    7    0     0
 41     rematch2  TRUE 11    1    0     0
 42         rhub FALSE 12    0    0     0
-43    rversions FALSE 12    0    0     0
+43    rversions  TRUE 11    0    0     1
 44       sankey FALSE 12    0    0     0
 45       secret FALSE 12    0    0     0
 46  sessioninfo FALSE 12    0    0     0
@@ -1421,59 +1425,59 @@ $data$packages
 51 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
 52        https://cloud.r-project.org/web/checks/check_results_xopen.html
 53          https://cloud.r-project.org/web/checks/check_results_zip.html
-               check_result version
-1                    OK, 12      NA
-2                    OK, 12      NA
-3                    OK, 12      NA
-4                    OK, 12      NA
-5                    OK, 12      NA
-6                    OK, 12      NA
-7                    OK, 12      NA
-8                    OK, 12      NA
-9                    OK, 12      NA
-10                   OK, 12      NA
-11                   OK, 12      NA
-12                   OK, 12      NA
-13                   OK, 12      NA
-14                   OK, 12      NA
-15                   OK, 12      NA
-16                   OK, 12      NA
-17                   OK, 12      NA
-18 ERROR, NOTE, OK, 1, 6, 5      NA
-19                   OK, 12      NA
-20                   OK, 12      NA
-21                   OK, 12      NA
-22          NOTE, OK, 2, 10      NA
-23                   OK, 12      NA
-24                   OK, 12      NA
-25                   OK, 12      NA
-26          NOTE, OK, 1, 11      NA
-27                   OK, 12      NA
-28                   OK, 12      NA
-29         ERROR, OK, 1, 11      NA
-30                   OK, 12      NA
-31                   OK, 12      NA
-32                   OK, 12      NA
-33         ERROR, OK, 1, 11      NA
-34                   OK, 12      NA
-35                   OK, 12      NA
-36                   OK, 12      NA
-37                   OK, 12      NA
-38         ERROR, OK, 1, 11      NA
-39          NOTE, OK, 1, 11      NA
-40           NOTE, OK, 7, 5      NA
-41          NOTE, OK, 1, 11      NA
-42                   OK, 12      NA
-43                   OK, 12      NA
-44                   OK, 12      NA
-45                   OK, 12      NA
-46                   OK, 12      NA
-47                   OK, 12      NA
-48                   OK, 12      NA
-49                   OK, 12      NA
-50                   OK, 12      NA
-51                   OK, 12      NA
-52                   OK, 12      NA
-53                   OK, 12      NA
+       check_result version
+1            OK, 12      NA
+2            OK, 12      NA
+3            OK, 12      NA
+4            OK, 12      NA
+5            OK, 12      NA
+6            OK, 12      NA
+7            OK, 12      NA
+8            OK, 12      NA
+9            OK, 12      NA
+10           OK, 12      NA
+11           OK, 12      NA
+12           OK, 12      NA
+13           OK, 12      NA
+14           OK, 12      NA
+15 ERROR, OK, 1, 11      NA
+16           OK, 12      NA
+17           OK, 12      NA
+18   NOTE, OK, 7, 5      NA
+19           OK, 12      NA
+20           OK, 12      NA
+21           OK, 12      NA
+22  NOTE, OK, 2, 10      NA
+23           OK, 12      NA
+24           OK, 12      NA
+25           OK, 12      NA
+26  NOTE, OK, 1, 11      NA
+27           OK, 12      NA
+28           OK, 12      NA
+29 ERROR, OK, 1, 11      NA
+30           OK, 12      NA
+31           OK, 12      NA
+32           OK, 12      NA
+33 ERROR, OK, 1, 11      NA
+34           OK, 12      NA
+35           OK, 12      NA
+36           OK, 12      NA
+37           OK, 12      NA
+38 ERROR, OK, 1, 11      NA
+39  NOTE, OK, 1, 11      NA
+40   NOTE, OK, 7, 5      NA
+41  NOTE, OK, 1, 11      NA
+42           OK, 12      NA
+43 ERROR, OK, 1, 11      NA
+44           OK, 12      NA
+45           OK, 12      NA
+46           OK, 12      NA
+47           OK, 12      NA
+48           OK, 12      NA
+49           OK, 12      NA
+50           OK, 12      NA
+51           OK, 12      NA
+52           OK, 12      NA
+53           OK, 12      NA
 
 ```
