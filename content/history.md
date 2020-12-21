@@ -34,7 +34,7 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 52.34.4.0:443...
 * Connected to cranchecks.info (52.34.4.0) port 443 (#0)
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* ALPN, offering h2
+* ALPN, offering h2
 * ALPN, offering http/1.1
 * successfully set certificate verify locations:
 *  CAfile: /usr/local/etc/openssl@1.1/cert.pem
@@ -49,7 +49,7 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 * TLSv1.3 (IN), TLS handshake, Certificate (11):
 { [2360 bytes data]
 * TLSv1.3 (IN), TLS handshake, CERT verify (15):
-{ [78 bytes data]
+{ [79 bytes data]
 * TLSv1.3 (IN), TLS handshake, Finished (20):
 { [36 bytes data]
 * TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
@@ -69,11 +69,11 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 * Connection state changed (HTTP/2 confirmed)
 * Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
 } [5 bytes data]
-* Using Stream ID: 1 (easy handle 0x7fefbd813e00)
+* Using Stream ID: 1 (easy handle 0x7fdf3a014200)
 } [5 bytes data]
 > GET /history/2020-04-01 HTTP/2
 > Host: cranchecks.info
-> user-agent: curl/7.73.0
+> user-agent: curl/7.74.0
 > accept: */*
 > 
 { [5 bytes data]
@@ -86,20 +86,20 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 < access-control-allow-origin: *
 < cache-control: public, must-revalidate, max-age=60
 < content-type: application/json; charset=utf8
-< location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20201214%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201214T125429Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=2bb4e9ebc1c06a82c0df1367a461e06935aad261b0ace6f02666b035a57146ed
+< location: https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20201221%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201221T130135Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=fe1d9d7f384b7921af59c978b8b1302dc6f34b8cc92515479c74f7b8727ab749
 < server: Caddy
 < x-content-type-options: nosniff
 < content-length: 101
-< date: Mon, 14 Dec 2020 12:54:29 GMT
+< date: Mon, 21 Dec 2020 13:01:35 GMT
 < 
 { [5 bytes data]
 * Ignoring the response-body
 { [101 bytes data]
-100   101  100   101    0     0    348      0 --:--:-- --:--:-- --:--:--   347
+100   101  100   101    0     0    210      0 --:--:-- --:--:-- --:--:--   210100   101  100   101    0     0    210      0 --:--:-- --:--:-- --:--:--   210
 * Connection #0 to host cranchecks.info left intact
-* Issue another request to this URL: 'https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20201214%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201214T125429Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=2bb4e9ebc1c06a82c0df1367a461e06935aad261b0ace6f02666b035a57146ed'
-*   Trying 52.218.176.145:443...
-* Connected to cchecks-history.s3.us-west-2.amazonaws.com (52.218.176.145) port 443 (#1)
+* Issue another request to this URL: 'https://cchecks-history.s3.us-west-2.amazonaws.com/2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20201221%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201221T130135Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=fe1d9d7f384b7921af59c978b8b1302dc6f34b8cc92515479c74f7b8727ab749'
+*   Trying 52.218.233.113:443...
+* Connected to cchecks-history.s3.us-west-2.amazonaws.com (52.218.233.113) port 443 (#1)
 * ALPN, offering h2
 * ALPN, offering http/1.1
 * successfully set certificate verify locations:
@@ -134,17 +134,17 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 *  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert Baltimore CA-2 G2
 *  SSL certificate verify ok.
 } [5 bytes data]
-> GET /2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20201214%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201214T125429Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=2bb4e9ebc1c06a82c0df1367a461e06935aad261b0ace6f02666b035a57146ed HTTP/1.1
+> GET /2020-04-01.json.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIE65F6ZPF3JF7JTA%2F20201221%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201221T130135Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=fe1d9d7f384b7921af59c978b8b1302dc6f34b8cc92515479c74f7b8727ab749 HTTP/1.1
 > Host: cchecks-history.s3.us-west-2.amazonaws.com
-> User-Agent: curl/7.73.0
+> User-Agent: curl/7.74.0
 > Accept: */*
 > 
 { [5 bytes data]
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 200 OK
-< x-amz-id-2: MW5vRGGduNSR2DHIo/6QfhFdj7kRkjxPJ94zV+dmU53iQO92PxDFVoEiYHArnV4nIFlUC8HNzuY=
-< x-amz-request-id: 7E96413C88D69734
-< Date: Mon, 14 Dec 2020 12:54:30 GMT
+< x-amz-id-2: rdT5M976ifY3HeanttFEI2Xg3X9Wt++Xgois7baVhT9I3AYeSxFe+TRP0+12ilIfDjfxzOcnykE=
+< x-amz-request-id: E520199DDF4DB639
+< Date: Mon, 21 Dec 2020 13:01:37 GMT
 < Last-Modified: Wed, 01 Apr 2020 16:36:04 GMT
 < ETag: "a7d74593672aa52dace5cd9e62db9351"
 < Content-Encoding: gzip
@@ -154,7 +154,7 @@ gzip -dc 2020-04-01.json.gz | jq . | head -n 2
 < Server: AmazonS3
 < 
 { [5 bytes data]
- 10 5059k   10  525k    0     0   474k      0  0:00:10  0:00:01  0:00:09  474k100 5059k  100 5059k    0     0  3803k      0  0:00:01  0:00:01 --:--:-- 20.0M
+ 42 5059k   42 2140k    0     0  1464k      0  0:00:03  0:00:01  0:00:02 1464k100 5059k  100 5059k    0     0  3287k      0  0:00:01  0:00:01 --:--:-- 37.0M
 * Connection #1 to host cchecks-history.s3.us-west-2.amazonaws.com left intact
 {
   "package": "localIV",
