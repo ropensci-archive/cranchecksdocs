@@ -36,12 +36,12 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 1060
-date: Mon, 21 Dec 2020 13:01:37 GMT
+date: Mon, 28 Dec 2020 13:05:38 GMT
 
 ```
 ```json
 {
-    "found": 10361,
+    "found": 10366,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ date: Mon, 21 Dec 2020 13:01:37 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2020-12-21T12:02:48.212Z",
+            "date_updated": "2020-12-28T12:03:06.550Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ date: Mon, 21 Dec 2020 13:01:37 GMT
             "email": "s.greilich_at_dkfz.de",
             "name": "Steffen Greilich",
             "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
-            "date_updated": "2020-12-21T12:02:48.212Z",
+            "date_updated": "2020-12-28T12:03:06.550Z",
             "table": [
                 {
                     "package": "libamtrack",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10361
+[1] 10366
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2             https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html
               date_updated                         table
-1 2020-12-21T12:02:48.212Z    hypergea, TRUE, 6, 6, 0, 0
-2 2020-12-21T12:02:48.212Z libamtrack, TRUE, 2, 10, 0, 0
+1 2020-12-28T12:03:06.550Z    hypergea, TRUE, 6, 6, 0, 0
+2 2020-12-28T12:03:06.550Z libamtrack, TRUE, 2, 10, 0, 0
                                                                                                packages
 1      hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2 libamtrack, https://cloud.r-project.org/web/checks/check_results_libamtrack.html, NOTE, OK, 10, 2, NA
@@ -169,7 +169,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 13358
-date: Mon, 21 Dec 2020 13:01:37 GMT
+date: Mon, 28 Dec 2020 13:05:38 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ date: Mon, 21 Dec 2020 13:01:37 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2020-12-21T12:02:48.785Z",
+        "date_updated": "2020-12-28T12:03:07.086Z",
         "table": [
             {
                 "package": "asciicast",
@@ -296,9 +296,9 @@ date: Mon, 21 Dec 2020 13:01:37 GMT
             {
                 "package": "franc",
                 "any": true,
-                "ok": 8,
+                "ok": 7,
                 "note": 0,
-                "warn": 3,
+                "warn": 4,
                 "error": 1
             },
             {
@@ -779,11 +779,11 @@ date: Mon, 21 Dec 2020 13:01:37 GMT
                     },
                     {
                         "category": "WARN",
-                        "number_checks": 3
+                        "number_checks": 4
                     },
                     {
                         "category": "OK",
-                        "number_checks": 8
+                        "number_checks": 7
                     }
                 ],
                 "version": null
@@ -1277,7 +1277,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2020-12-21T12:02:48.785Z"
+[1] "2020-12-28T12:03:07.086Z"
 
 $data$table
         package   any ok note warn error
@@ -1295,7 +1295,7 @@ $data$table
 12  disposables FALSE 12    0    0     0
 13       dotenv FALSE 12    0    0     0
 14     filelock FALSE 12    0    0     0
-15        franc  TRUE  8    0    3     1
+15        franc  TRUE  7    0    4     1
 16           gh FALSE 12    0    0     0
 17     gitcreds FALSE 12    0    0     0
 18       igraph  TRUE  5    7    0     0
@@ -1462,7 +1462,7 @@ $data$packages
 12                   OK, 12      NA
 13                   OK, 12      NA
 14                   OK, 12      NA
-15 ERROR, WARN, OK, 1, 3, 8      NA
+15 ERROR, WARN, OK, 1, 4, 7      NA
 16                   OK, 12      NA
 17                   OK, 12      NA
 18           NOTE, OK, 7, 5      NA
