@@ -36,12 +36,12 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 1060
-date: Mon, 04 Jan 2021 13:12:04 GMT
+date: Mon, 11 Jan 2021 13:22:11 GMT
 
 ```
 ```json
 {
-    "found": 10366,
+    "found": 10407,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2021-01-04T12:03:08.013Z",
+            "date_updated": "2021-01-11T12:03:04.745Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
             "email": "s.greilich_at_dkfz.de",
             "name": "Steffen Greilich",
             "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
-            "date_updated": "2021-01-04T12:03:08.013Z",
+            "date_updated": "2021-01-11T12:03:04.745Z",
             "table": [
                 {
                     "package": "libamtrack",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10366
+[1] 10407
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2             https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html
               date_updated                         table
-1 2021-01-04T12:03:08.013Z    hypergea, TRUE, 6, 6, 0, 0
-2 2021-01-04T12:03:08.013Z libamtrack, TRUE, 2, 10, 0, 0
+1 2021-01-11T12:03:04.745Z    hypergea, TRUE, 6, 6, 0, 0
+2 2021-01-11T12:03:04.745Z libamtrack, TRUE, 2, 10, 0, 0
                                                                                                packages
 1      hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2 libamtrack, https://cloud.r-project.org/web/checks/check_results_libamtrack.html, NOTE, OK, 10, 2, NA
@@ -168,8 +168,8 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 13395
-date: Mon, 04 Jan 2021 13:12:04 GMT
+content-length: 13433
+date: Mon, 11 Jan 2021 13:22:11 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2021-01-04T12:03:08.644Z",
+        "date_updated": "2021-01-11T12:03:05.296Z",
         "table": [
             {
                 "package": "asciicast",
@@ -263,11 +263,11 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
             },
             {
                 "package": "desc",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "disposables",
@@ -391,11 +391,11 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
             },
             {
                 "package": "parsedate",
-                "any": true,
-                "ok": 10,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 2
+                "error": 0
             },
             {
                 "package": "pingr",
@@ -479,11 +479,11 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
             },
             {
                 "package": "ps",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "rcmdcheck",
@@ -527,11 +527,11 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
             },
             {
                 "package": "sankey",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "secret",
@@ -607,11 +607,11 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
             },
             {
                 "package": "zip",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             }
         ],
         "packages": [
@@ -730,8 +730,12 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_desc.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -922,12 +926,8 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_parsedate.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 2
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 10
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1055,12 +1055,8 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_ps.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1137,8 +1133,12 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_sankey.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1251,8 +1251,12 @@ date: Mon, 04 Jan 2021 13:12:04 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_zip.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1281,7 +1285,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2021-01-04T12:03:08.644Z"
+[1] "2021-01-11T12:03:05.296Z"
 
 $data$table
         package   any ok note warn error
@@ -1295,7 +1299,7 @@ $data$table
 8      cranlogs FALSE 12    0    0     0
 9        crayon FALSE 12    0    0     0
 10      debugme FALSE 12    0    0     0
-11         desc FALSE 12    0    0     0
+11         desc  TRUE 11    0    0     1
 12  disposables FALSE 12    0    0     0
 13       dotenv FALSE 12    0    0     0
 14     filelock FALSE 12    0    0     0
@@ -1311,7 +1315,7 @@ $data$table
 24      lpSolve FALSE 12    0    0     0
 25    oskeyring FALSE 12    0    0     0
 26          pak  TRUE 11    1    0     0
-27    parsedate  TRUE 10    0    0     2
+27    parsedate FALSE 12    0    0     0
 28        pingr FALSE 12    0    0     0
 29     pkgcache  TRUE 11    0    0     1
 30    pkgconfig FALSE 12    0    0     0
@@ -1322,13 +1326,13 @@ $data$table
 35  prettyunits FALSE 12    0    0     0
 36     processx FALSE 12    0    0     0
 37     progress FALSE 12    0    0     0
-38           ps  TRUE 11    0    0     1
+38           ps FALSE 12    0    0     0
 39    rcmdcheck  TRUE 11    1    0     0
 40     rcorpora  TRUE  5    7    0     0
 41     rematch2  TRUE 11    1    0     0
 42         rhub FALSE 12    0    0     0
 43    rversions FALSE 12    0    0     0
-44       sankey FALSE 12    0    0     0
+44       sankey  TRUE 11    0    0     1
 45       secret FALSE 12    0    0     0
 46  sessioninfo FALSE 12    0    0     0
 47    showimage FALSE 12    0    0     0
@@ -1338,7 +1342,7 @@ $data$table
 51       whoami FALSE 12    0    0     0
 52 xmlparsedata FALSE 12    0    0     0
 53        xopen FALSE 12    0    0     0
-54          zip FALSE 12    0    0     0
+54          zip  TRUE 11    0    0     1
 
 $data$packages
         package
@@ -1462,7 +1466,7 @@ $data$packages
 8            OK, 12      NA
 9            OK, 12      NA
 10           OK, 12      NA
-11           OK, 12      NA
+11 ERROR, OK, 1, 11      NA
 12           OK, 12      NA
 13           OK, 12      NA
 14           OK, 12      NA
@@ -1478,7 +1482,7 @@ $data$packages
 24           OK, 12      NA
 25           OK, 12      NA
 26  NOTE, OK, 1, 11      NA
-27 ERROR, OK, 2, 10      NA
+27           OK, 12      NA
 28           OK, 12      NA
 29 ERROR, OK, 1, 11      NA
 30           OK, 12      NA
@@ -1489,13 +1493,13 @@ $data$packages
 35           OK, 12      NA
 36           OK, 12      NA
 37           OK, 12      NA
-38 ERROR, OK, 1, 11      NA
+38           OK, 12      NA
 39  NOTE, OK, 1, 11      NA
 40   NOTE, OK, 7, 5      NA
 41  NOTE, OK, 1, 11      NA
 42           OK, 12      NA
 43           OK, 12      NA
-44           OK, 12      NA
+44 ERROR, OK, 1, 11      NA
 45           OK, 12      NA
 46           OK, 12      NA
 47           OK, 12      NA
@@ -1505,6 +1509,6 @@ $data$packages
 51           OK, 12      NA
 52           OK, 12      NA
 53           OK, 12      NA
-54           OK, 12      NA
+54 ERROR, OK, 1, 11      NA
 
 ```
