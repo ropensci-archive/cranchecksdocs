@@ -36,12 +36,12 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 1060
-date: Mon, 25 Jan 2021 13:35:19 GMT
+date: Mon, 08 Feb 2021 12:54:58 GMT
 
 ```
 ```json
 {
-    "found": 10489,
+    "found": 10551,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ date: Mon, 25 Jan 2021 13:35:19 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2021-01-25T12:02:37.142Z",
+            "date_updated": "2021-02-08T12:02:32.981Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ date: Mon, 25 Jan 2021 13:35:19 GMT
             "email": "s.greilich_at_dkfz.de",
             "name": "Steffen Greilich",
             "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
-            "date_updated": "2021-01-25T12:02:37.142Z",
+            "date_updated": "2021-02-08T12:02:32.981Z",
             "table": [
                 {
                     "package": "libamtrack",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10489
+[1] 10551
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2             https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html
               date_updated                         table
-1 2021-01-25T12:02:37.142Z    hypergea, TRUE, 6, 6, 0, 0
-2 2021-01-25T12:02:37.142Z libamtrack, TRUE, 2, 10, 0, 0
+1 2021-02-08T12:02:32.981Z    hypergea, TRUE, 6, 6, 0, 0
+2 2021-02-08T12:02:32.981Z libamtrack, TRUE, 2, 10, 0, 0
                                                                                                packages
 1      hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2 libamtrack, https://cloud.r-project.org/web/checks/check_results_libamtrack.html, NOTE, OK, 10, 2, NA
@@ -168,8 +168,8 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 13131
-date: Mon, 25 Jan 2021 13:35:19 GMT
+content-length: 13360
+date: Mon, 08 Feb 2021 12:54:59 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ date: Mon, 25 Jan 2021 13:35:19 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2021-01-25T12:02:37.660Z",
+        "date_updated": "2021-02-08T12:02:33.558Z",
         "table": [
             {
                 "package": "asciicast",
@@ -287,6 +287,14 @@ date: Mon, 25 Jan 2021 13:35:19 GMT
             },
             {
                 "package": "filelock",
+                "any": false,
+                "ok": 12,
+                "note": 0,
+                "warn": 0,
+                "error": 0
+            },
+            {
+                "package": "franc",
                 "any": false,
                 "ok": 12,
                 "note": 0,
@@ -757,6 +765,17 @@ date: Mon, 25 Jan 2021 13:35:19 GMT
             {
                 "package": "filelock",
                 "url": "https://cloud.r-project.org/web/checks/check_results_filelock.html",
+                "check_result": [
+                    {
+                        "category": "OK",
+                        "number_checks": 12
+                    }
+                ],
+                "version": null
+            },
+            {
+                "package": "franc",
+                "url": "https://cloud.r-project.org/web/checks/check_results_franc.html",
                 "check_result": [
                     {
                         "category": "OK",
@@ -1258,7 +1277,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2021-01-25T12:02:37.660Z"
+[1] "2021-02-08T12:02:33.558Z"
 
 $data$table
         package   any ok note warn error
@@ -1276,45 +1295,46 @@ $data$table
 12  disposables FALSE 12    0    0     0
 13       dotenv FALSE 12    0    0     0
 14     filelock FALSE 12    0    0     0
-15           gh FALSE 12    0    0     0
-16     gitcreds FALSE 12    0    0     0
-17       igraph  TRUE  5    7    0     0
-18   igraphdata FALSE 12    0    0     0
-19         isa2 FALSE 12    0    0     0
-20     keypress FALSE 12    0    0     0
-21      keyring  TRUE 10    2    0     0
-22        liteq FALSE 12    0    0     0
-23      lpSolve FALSE 12    0    0     0
-24    oskeyring FALSE 12    0    0     0
-25          pak  TRUE 11    1    0     0
-26    parsedate FALSE 12    0    0     0
-27        pingr FALSE 12    0    0     0
-28     pkgcache  TRUE 11    0    0     1
-29    pkgconfig FALSE 12    0    0     0
-30    pkgsearch FALSE 12    0    0     0
-31       praise FALSE 12    0    0     0
-32      presser  TRUE 11    0    0     1
-33   prettycode FALSE 12    0    0     0
-34  prettyunits FALSE 12    0    0     0
-35     processx FALSE 12    0    0     0
-36     progress FALSE 12    0    0     0
-37           ps FALSE 12    0    0     0
-38    rcmdcheck  TRUE 11    1    0     0
-39     rcorpora  TRUE  5    7    0     0
-40     rematch2  TRUE 11    1    0     0
-41         rhub FALSE 12    0    0     0
-42    rversions FALSE 12    0    0     0
-43       sankey FALSE 12    0    0     0
-44       secret FALSE 12    0    0     0
-45  sessioninfo FALSE 12    0    0     0
-46    showimage FALSE 12    0    0     0
-47       tracer FALSE 12    0    0     0
-48    webdriver FALSE 12    0    0     0
-49     webfakes  TRUE 11    0    0     1
-50       whoami FALSE 12    0    0     0
-51 xmlparsedata FALSE 12    0    0     0
-52        xopen FALSE 12    0    0     0
-53          zip  TRUE 11    0    0     1
+15        franc FALSE 12    0    0     0
+16           gh FALSE 12    0    0     0
+17     gitcreds FALSE 12    0    0     0
+18       igraph  TRUE  5    7    0     0
+19   igraphdata FALSE 12    0    0     0
+20         isa2 FALSE 12    0    0     0
+21     keypress FALSE 12    0    0     0
+22      keyring  TRUE 10    2    0     0
+23        liteq FALSE 12    0    0     0
+24      lpSolve FALSE 12    0    0     0
+25    oskeyring FALSE 12    0    0     0
+26          pak  TRUE 11    1    0     0
+27    parsedate FALSE 12    0    0     0
+28        pingr FALSE 12    0    0     0
+29     pkgcache  TRUE 11    0    0     1
+30    pkgconfig FALSE 12    0    0     0
+31    pkgsearch FALSE 12    0    0     0
+32       praise FALSE 12    0    0     0
+33      presser  TRUE 11    0    0     1
+34   prettycode FALSE 12    0    0     0
+35  prettyunits FALSE 12    0    0     0
+36     processx FALSE 12    0    0     0
+37     progress FALSE 12    0    0     0
+38           ps FALSE 12    0    0     0
+39    rcmdcheck  TRUE 11    1    0     0
+40     rcorpora  TRUE  5    7    0     0
+41     rematch2  TRUE 11    1    0     0
+42         rhub FALSE 12    0    0     0
+43    rversions FALSE 12    0    0     0
+44       sankey FALSE 12    0    0     0
+45       secret FALSE 12    0    0     0
+46  sessioninfo FALSE 12    0    0     0
+47    showimage FALSE 12    0    0     0
+48       tracer FALSE 12    0    0     0
+49    webdriver FALSE 12    0    0     0
+50     webfakes  TRUE 11    0    0     1
+51       whoami FALSE 12    0    0     0
+52 xmlparsedata FALSE 12    0    0     0
+53        xopen FALSE 12    0    0     0
+54          zip  TRUE 11    0    0     1
 
 $data$packages
         package
@@ -1332,45 +1352,46 @@ $data$packages
 12  disposables
 13       dotenv
 14     filelock
-15           gh
-16     gitcreds
-17       igraph
-18   igraphdata
-19         isa2
-20     keypress
-21      keyring
-22        liteq
-23      lpSolve
-24    oskeyring
-25          pak
-26    parsedate
-27        pingr
-28     pkgcache
-29    pkgconfig
-30    pkgsearch
-31       praise
-32      presser
-33   prettycode
-34  prettyunits
-35     processx
-36     progress
-37           ps
-38    rcmdcheck
-39     rcorpora
-40     rematch2
-41         rhub
-42    rversions
-43       sankey
-44       secret
-45  sessioninfo
-46    showimage
-47       tracer
-48    webdriver
-49     webfakes
-50       whoami
-51 xmlparsedata
-52        xopen
-53          zip
+15        franc
+16           gh
+17     gitcreds
+18       igraph
+19   igraphdata
+20         isa2
+21     keypress
+22      keyring
+23        liteq
+24      lpSolve
+25    oskeyring
+26          pak
+27    parsedate
+28        pingr
+29     pkgcache
+30    pkgconfig
+31    pkgsearch
+32       praise
+33      presser
+34   prettycode
+35  prettyunits
+36     processx
+37     progress
+38           ps
+39    rcmdcheck
+40     rcorpora
+41     rematch2
+42         rhub
+43    rversions
+44       sankey
+45       secret
+46  sessioninfo
+47    showimage
+48       tracer
+49    webdriver
+50     webfakes
+51       whoami
+52 xmlparsedata
+53        xopen
+54          zip
                                                                       url
 1     https://cloud.r-project.org/web/checks/check_results_asciicast.html
 2         https://cloud.r-project.org/web/checks/check_results_callr.html
@@ -1386,45 +1407,46 @@ $data$packages
 12  https://cloud.r-project.org/web/checks/check_results_disposables.html
 13       https://cloud.r-project.org/web/checks/check_results_dotenv.html
 14     https://cloud.r-project.org/web/checks/check_results_filelock.html
-15           https://cloud.r-project.org/web/checks/check_results_gh.html
-16     https://cloud.r-project.org/web/checks/check_results_gitcreds.html
-17       https://cloud.r-project.org/web/checks/check_results_igraph.html
-18   https://cloud.r-project.org/web/checks/check_results_igraphdata.html
-19         https://cloud.r-project.org/web/checks/check_results_isa2.html
-20     https://cloud.r-project.org/web/checks/check_results_keypress.html
-21      https://cloud.r-project.org/web/checks/check_results_keyring.html
-22        https://cloud.r-project.org/web/checks/check_results_liteq.html
-23      https://cloud.r-project.org/web/checks/check_results_lpSolve.html
-24    https://cloud.r-project.org/web/checks/check_results_oskeyring.html
-25          https://cloud.r-project.org/web/checks/check_results_pak.html
-26    https://cloud.r-project.org/web/checks/check_results_parsedate.html
-27        https://cloud.r-project.org/web/checks/check_results_pingr.html
-28     https://cloud.r-project.org/web/checks/check_results_pkgcache.html
-29    https://cloud.r-project.org/web/checks/check_results_pkgconfig.html
-30    https://cloud.r-project.org/web/checks/check_results_pkgsearch.html
-31       https://cloud.r-project.org/web/checks/check_results_praise.html
-32      https://cloud.r-project.org/web/checks/check_results_presser.html
-33   https://cloud.r-project.org/web/checks/check_results_prettycode.html
-34  https://cloud.r-project.org/web/checks/check_results_prettyunits.html
-35     https://cloud.r-project.org/web/checks/check_results_processx.html
-36     https://cloud.r-project.org/web/checks/check_results_progress.html
-37           https://cloud.r-project.org/web/checks/check_results_ps.html
-38    https://cloud.r-project.org/web/checks/check_results_rcmdcheck.html
-39     https://cloud.r-project.org/web/checks/check_results_rcorpora.html
-40     https://cloud.r-project.org/web/checks/check_results_rematch2.html
-41         https://cloud.r-project.org/web/checks/check_results_rhub.html
-42    https://cloud.r-project.org/web/checks/check_results_rversions.html
-43       https://cloud.r-project.org/web/checks/check_results_sankey.html
-44       https://cloud.r-project.org/web/checks/check_results_secret.html
-45  https://cloud.r-project.org/web/checks/check_results_sessioninfo.html
-46    https://cloud.r-project.org/web/checks/check_results_showimage.html
-47       https://cloud.r-project.org/web/checks/check_results_tracer.html
-48    https://cloud.r-project.org/web/checks/check_results_webdriver.html
-49     https://cloud.r-project.org/web/checks/check_results_webfakes.html
-50       https://cloud.r-project.org/web/checks/check_results_whoami.html
-51 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
-52        https://cloud.r-project.org/web/checks/check_results_xopen.html
-53          https://cloud.r-project.org/web/checks/check_results_zip.html
+15        https://cloud.r-project.org/web/checks/check_results_franc.html
+16           https://cloud.r-project.org/web/checks/check_results_gh.html
+17     https://cloud.r-project.org/web/checks/check_results_gitcreds.html
+18       https://cloud.r-project.org/web/checks/check_results_igraph.html
+19   https://cloud.r-project.org/web/checks/check_results_igraphdata.html
+20         https://cloud.r-project.org/web/checks/check_results_isa2.html
+21     https://cloud.r-project.org/web/checks/check_results_keypress.html
+22      https://cloud.r-project.org/web/checks/check_results_keyring.html
+23        https://cloud.r-project.org/web/checks/check_results_liteq.html
+24      https://cloud.r-project.org/web/checks/check_results_lpSolve.html
+25    https://cloud.r-project.org/web/checks/check_results_oskeyring.html
+26          https://cloud.r-project.org/web/checks/check_results_pak.html
+27    https://cloud.r-project.org/web/checks/check_results_parsedate.html
+28        https://cloud.r-project.org/web/checks/check_results_pingr.html
+29     https://cloud.r-project.org/web/checks/check_results_pkgcache.html
+30    https://cloud.r-project.org/web/checks/check_results_pkgconfig.html
+31    https://cloud.r-project.org/web/checks/check_results_pkgsearch.html
+32       https://cloud.r-project.org/web/checks/check_results_praise.html
+33      https://cloud.r-project.org/web/checks/check_results_presser.html
+34   https://cloud.r-project.org/web/checks/check_results_prettycode.html
+35  https://cloud.r-project.org/web/checks/check_results_prettyunits.html
+36     https://cloud.r-project.org/web/checks/check_results_processx.html
+37     https://cloud.r-project.org/web/checks/check_results_progress.html
+38           https://cloud.r-project.org/web/checks/check_results_ps.html
+39    https://cloud.r-project.org/web/checks/check_results_rcmdcheck.html
+40     https://cloud.r-project.org/web/checks/check_results_rcorpora.html
+41     https://cloud.r-project.org/web/checks/check_results_rematch2.html
+42         https://cloud.r-project.org/web/checks/check_results_rhub.html
+43    https://cloud.r-project.org/web/checks/check_results_rversions.html
+44       https://cloud.r-project.org/web/checks/check_results_sankey.html
+45       https://cloud.r-project.org/web/checks/check_results_secret.html
+46  https://cloud.r-project.org/web/checks/check_results_sessioninfo.html
+47    https://cloud.r-project.org/web/checks/check_results_showimage.html
+48       https://cloud.r-project.org/web/checks/check_results_tracer.html
+49    https://cloud.r-project.org/web/checks/check_results_webdriver.html
+50     https://cloud.r-project.org/web/checks/check_results_webfakes.html
+51       https://cloud.r-project.org/web/checks/check_results_whoami.html
+52 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
+53        https://cloud.r-project.org/web/checks/check_results_xopen.html
+54          https://cloud.r-project.org/web/checks/check_results_zip.html
        check_result version
 1            OK, 12      NA
 2            OK, 12      NA
@@ -1442,31 +1464,31 @@ $data$packages
 14           OK, 12      NA
 15           OK, 12      NA
 16           OK, 12      NA
-17   NOTE, OK, 7, 5      NA
-18           OK, 12      NA
+17           OK, 12      NA
+18   NOTE, OK, 7, 5      NA
 19           OK, 12      NA
 20           OK, 12      NA
-21  NOTE, OK, 2, 10      NA
-22           OK, 12      NA
+21           OK, 12      NA
+22  NOTE, OK, 2, 10      NA
 23           OK, 12      NA
 24           OK, 12      NA
-25  NOTE, OK, 1, 11      NA
-26           OK, 12      NA
+25           OK, 12      NA
+26  NOTE, OK, 1, 11      NA
 27           OK, 12      NA
-28 ERROR, OK, 1, 11      NA
-29           OK, 12      NA
+28           OK, 12      NA
+29 ERROR, OK, 1, 11      NA
 30           OK, 12      NA
 31           OK, 12      NA
-32 ERROR, OK, 1, 11      NA
-33           OK, 12      NA
+32           OK, 12      NA
+33 ERROR, OK, 1, 11      NA
 34           OK, 12      NA
 35           OK, 12      NA
 36           OK, 12      NA
 37           OK, 12      NA
-38  NOTE, OK, 1, 11      NA
-39   NOTE, OK, 7, 5      NA
-40  NOTE, OK, 1, 11      NA
-41           OK, 12      NA
+38           OK, 12      NA
+39  NOTE, OK, 1, 11      NA
+40   NOTE, OK, 7, 5      NA
+41  NOTE, OK, 1, 11      NA
 42           OK, 12      NA
 43           OK, 12      NA
 44           OK, 12      NA
@@ -1474,10 +1496,11 @@ $data$packages
 46           OK, 12      NA
 47           OK, 12      NA
 48           OK, 12      NA
-49 ERROR, OK, 1, 11      NA
-50           OK, 12      NA
+49           OK, 12      NA
+50 ERROR, OK, 1, 11      NA
 51           OK, 12      NA
 52           OK, 12      NA
-53 ERROR, OK, 1, 11      NA
+53           OK, 12      NA
+54 ERROR, OK, 1, 11      NA
 
 ```
