@@ -36,12 +36,12 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 1060
-date: Mon, 08 Feb 2021 12:54:58 GMT
+date: Mon, 15 Feb 2021 12:59:45 GMT
 
 ```
 ```json
 {
-    "found": 10551,
+    "found": 10596,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ date: Mon, 08 Feb 2021 12:54:58 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2021-02-08T12:02:32.981Z",
+            "date_updated": "2021-02-15T12:02:37.645Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ date: Mon, 08 Feb 2021 12:54:58 GMT
             "email": "s.greilich_at_dkfz.de",
             "name": "Steffen Greilich",
             "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
-            "date_updated": "2021-02-08T12:02:32.981Z",
+            "date_updated": "2021-02-15T12:02:37.645Z",
             "table": [
                 {
                     "package": "libamtrack",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10551
+[1] 10596
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2             https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html
               date_updated                         table
-1 2021-02-08T12:02:32.981Z    hypergea, TRUE, 6, 6, 0, 0
-2 2021-02-08T12:02:32.981Z libamtrack, TRUE, 2, 10, 0, 0
+1 2021-02-15T12:02:37.645Z    hypergea, TRUE, 6, 6, 0, 0
+2 2021-02-15T12:02:37.645Z libamtrack, TRUE, 2, 10, 0, 0
                                                                                                packages
 1      hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2 libamtrack, https://cloud.r-project.org/web/checks/check_results_libamtrack.html, NOTE, OK, 10, 2, NA
@@ -168,8 +168,8 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 13360
-date: Mon, 08 Feb 2021 12:54:59 GMT
+content-length: 13895
+date: Mon, 15 Feb 2021 12:59:45 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2021-02-08T12:02:33.558Z",
+        "date_updated": "2021-02-15T12:02:38.281Z",
         "table": [
             {
                 "package": "asciicast",
@@ -321,9 +321,9 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "package": "igraph",
                 "any": true,
                 "ok": 5,
-                "note": 7,
+                "note": 6,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "igraphdata",
@@ -335,11 +335,11 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
             },
             {
                 "package": "isa2",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "keypress",
@@ -359,19 +359,19 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
             },
             {
                 "package": "liteq",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "lpSolve",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "oskeyring",
@@ -399,11 +399,11 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
             },
             {
                 "package": "pingr",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "pkgcache",
@@ -415,11 +415,11 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
             },
             {
                 "package": "pkgconfig",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "pkgsearch",
@@ -431,11 +431,11 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
             },
             {
                 "package": "praise",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "presser",
@@ -447,19 +447,19 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
             },
             {
                 "package": "prettycode",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "prettyunits",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "processx",
@@ -471,11 +471,11 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
             },
             {
                 "package": "progress",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "ps",
@@ -497,17 +497,17 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "package": "rcorpora",
                 "any": true,
                 "ok": 5,
-                "note": 7,
+                "note": 6,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "rematch2",
                 "any": true,
-                "ok": 11,
+                "ok": 10,
                 "note": 1,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "rhub",
@@ -520,18 +520,18 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
             {
                 "package": "rversions",
                 "any": false,
-                "ok": 12,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
                 "error": 0
             },
             {
                 "package": "sankey",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "secret",
@@ -551,11 +551,11 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
             },
             {
                 "package": "showimage",
-                "any": false,
-                "ok": 12,
+                "any": true,
+                "ok": 11,
                 "note": 0,
                 "warn": 0,
-                "error": 0
+                "error": 1
             },
             {
                 "package": "tracer",
@@ -811,8 +811,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_igraph.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "NOTE",
-                        "number_checks": 7
+                        "number_checks": 6
                     },
                     {
                         "category": "OK",
@@ -837,8 +841,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_isa2.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -874,8 +882,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_liteq.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -885,8 +897,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_lpSolve.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -933,8 +949,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_pingr.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -959,8 +979,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_pkgconfig.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -981,8 +1005,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_praise.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1007,8 +1035,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_prettycode.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1018,8 +1050,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_prettyunits.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1040,8 +1076,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_progress.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1077,8 +1117,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_rcorpora.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "NOTE",
-                        "number_checks": 7
+                        "number_checks": 6
                     },
                     {
                         "category": "OK",
@@ -1092,12 +1136,16 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_rematch2.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "NOTE",
                         "number_checks": 1
                     },
                     {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 10
                     }
                 ],
                 "version": null
@@ -1119,7 +1167,7 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "check_result": [
                     {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1129,8 +1177,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_sankey.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1162,8 +1214,12 @@ date: Mon, 08 Feb 2021 12:54:59 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_showimage.html",
                 "check_result": [
                     {
+                        "category": "ERROR",
+                        "number_checks": 1
+                    },
+                    {
                         "category": "OK",
-                        "number_checks": 12
+                        "number_checks": 11
                     }
                 ],
                 "version": null
@@ -1277,7 +1333,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2021-02-08T12:02:33.558Z"
+[1] "2021-02-15T12:02:38.281Z"
 
 $data$table
         package   any ok note warn error
@@ -1298,36 +1354,36 @@ $data$table
 15        franc FALSE 12    0    0     0
 16           gh FALSE 12    0    0     0
 17     gitcreds FALSE 12    0    0     0
-18       igraph  TRUE  5    7    0     0
+18       igraph  TRUE  5    6    0     1
 19   igraphdata FALSE 12    0    0     0
-20         isa2 FALSE 12    0    0     0
+20         isa2  TRUE 11    0    0     1
 21     keypress FALSE 12    0    0     0
 22      keyring  TRUE 10    2    0     0
-23        liteq FALSE 12    0    0     0
-24      lpSolve FALSE 12    0    0     0
+23        liteq  TRUE 11    0    0     1
+24      lpSolve  TRUE 11    0    0     1
 25    oskeyring FALSE 12    0    0     0
 26          pak  TRUE 11    1    0     0
 27    parsedate FALSE 12    0    0     0
-28        pingr FALSE 12    0    0     0
+28        pingr  TRUE 11    0    0     1
 29     pkgcache  TRUE 11    0    0     1
-30    pkgconfig FALSE 12    0    0     0
+30    pkgconfig  TRUE 11    0    0     1
 31    pkgsearch FALSE 12    0    0     0
-32       praise FALSE 12    0    0     0
+32       praise  TRUE 11    0    0     1
 33      presser  TRUE 11    0    0     1
-34   prettycode FALSE 12    0    0     0
-35  prettyunits FALSE 12    0    0     0
+34   prettycode  TRUE 11    0    0     1
+35  prettyunits  TRUE 11    0    0     1
 36     processx FALSE 12    0    0     0
-37     progress FALSE 12    0    0     0
+37     progress  TRUE 11    0    0     1
 38           ps FALSE 12    0    0     0
 39    rcmdcheck  TRUE 11    1    0     0
-40     rcorpora  TRUE  5    7    0     0
-41     rematch2  TRUE 11    1    0     0
+40     rcorpora  TRUE  5    6    0     1
+41     rematch2  TRUE 10    1    0     1
 42         rhub FALSE 12    0    0     0
-43    rversions FALSE 12    0    0     0
-44       sankey FALSE 12    0    0     0
+43    rversions FALSE 11    0    0     0
+44       sankey  TRUE 11    0    0     1
 45       secret FALSE 12    0    0     0
 46  sessioninfo FALSE 12    0    0     0
-47    showimage FALSE 12    0    0     0
+47    showimage  TRUE 11    0    0     1
 48       tracer FALSE 12    0    0     0
 49    webdriver FALSE 12    0    0     0
 50     webfakes  TRUE 11    0    0     1
@@ -1447,60 +1503,60 @@ $data$packages
 52 https://cloud.r-project.org/web/checks/check_results_xmlparsedata.html
 53        https://cloud.r-project.org/web/checks/check_results_xopen.html
 54          https://cloud.r-project.org/web/checks/check_results_zip.html
-       check_result version
-1            OK, 12      NA
-2            OK, 12      NA
-3            OK, 12      NA
-4            OK, 12      NA
-5            OK, 12      NA
-6            OK, 12      NA
-7            OK, 12      NA
-8            OK, 12      NA
-9            OK, 12      NA
-10           OK, 12      NA
-11 ERROR, OK, 1, 11      NA
-12           OK, 12      NA
-13           OK, 12      NA
-14           OK, 12      NA
-15           OK, 12      NA
-16           OK, 12      NA
-17           OK, 12      NA
-18   NOTE, OK, 7, 5      NA
-19           OK, 12      NA
-20           OK, 12      NA
-21           OK, 12      NA
-22  NOTE, OK, 2, 10      NA
-23           OK, 12      NA
-24           OK, 12      NA
-25           OK, 12      NA
-26  NOTE, OK, 1, 11      NA
-27           OK, 12      NA
-28           OK, 12      NA
-29 ERROR, OK, 1, 11      NA
-30           OK, 12      NA
-31           OK, 12      NA
-32           OK, 12      NA
-33 ERROR, OK, 1, 11      NA
-34           OK, 12      NA
-35           OK, 12      NA
-36           OK, 12      NA
-37           OK, 12      NA
-38           OK, 12      NA
-39  NOTE, OK, 1, 11      NA
-40   NOTE, OK, 7, 5      NA
-41  NOTE, OK, 1, 11      NA
-42           OK, 12      NA
-43           OK, 12      NA
-44           OK, 12      NA
-45           OK, 12      NA
-46           OK, 12      NA
-47           OK, 12      NA
-48           OK, 12      NA
-49           OK, 12      NA
-50 ERROR, OK, 1, 11      NA
-51           OK, 12      NA
-52           OK, 12      NA
-53           OK, 12      NA
-54 ERROR, OK, 1, 11      NA
+                check_result version
+1                     OK, 12      NA
+2                     OK, 12      NA
+3                     OK, 12      NA
+4                     OK, 12      NA
+5                     OK, 12      NA
+6                     OK, 12      NA
+7                     OK, 12      NA
+8                     OK, 12      NA
+9                     OK, 12      NA
+10                    OK, 12      NA
+11          ERROR, OK, 1, 11      NA
+12                    OK, 12      NA
+13                    OK, 12      NA
+14                    OK, 12      NA
+15                    OK, 12      NA
+16                    OK, 12      NA
+17                    OK, 12      NA
+18  ERROR, NOTE, OK, 1, 6, 5      NA
+19                    OK, 12      NA
+20          ERROR, OK, 1, 11      NA
+21                    OK, 12      NA
+22           NOTE, OK, 2, 10      NA
+23          ERROR, OK, 1, 11      NA
+24          ERROR, OK, 1, 11      NA
+25                    OK, 12      NA
+26           NOTE, OK, 1, 11      NA
+27                    OK, 12      NA
+28          ERROR, OK, 1, 11      NA
+29          ERROR, OK, 1, 11      NA
+30          ERROR, OK, 1, 11      NA
+31                    OK, 12      NA
+32          ERROR, OK, 1, 11      NA
+33          ERROR, OK, 1, 11      NA
+34          ERROR, OK, 1, 11      NA
+35          ERROR, OK, 1, 11      NA
+36                    OK, 12      NA
+37          ERROR, OK, 1, 11      NA
+38                    OK, 12      NA
+39           NOTE, OK, 1, 11      NA
+40  ERROR, NOTE, OK, 1, 6, 5      NA
+41 ERROR, NOTE, OK, 1, 1, 10      NA
+42                    OK, 12      NA
+43                    OK, 11      NA
+44          ERROR, OK, 1, 11      NA
+45                    OK, 12      NA
+46                    OK, 12      NA
+47          ERROR, OK, 1, 11      NA
+48                    OK, 12      NA
+49                    OK, 12      NA
+50          ERROR, OK, 1, 11      NA
+51                    OK, 12      NA
+52                    OK, 12      NA
+53                    OK, 12      NA
+54          ERROR, OK, 1, 11      NA
 
 ```
