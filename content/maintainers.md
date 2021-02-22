@@ -36,12 +36,12 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 1060
-date: Mon, 15 Feb 2021 12:59:45 GMT
+date: Mon, 22 Feb 2021 12:49:24 GMT
 
 ```
 ```json
 {
-    "found": 10596,
+    "found": 10659,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ date: Mon, 15 Feb 2021 12:59:45 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2021-02-15T12:02:37.645Z",
+            "date_updated": "2021-02-22T12:02:36.323Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ date: Mon, 15 Feb 2021 12:59:45 GMT
             "email": "s.greilich_at_dkfz.de",
             "name": "Steffen Greilich",
             "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
-            "date_updated": "2021-02-15T12:02:37.645Z",
+            "date_updated": "2021-02-22T12:02:36.323Z",
             "table": [
                 {
                     "package": "libamtrack",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10596
+[1] 10659
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2             https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html
               date_updated                         table
-1 2021-02-15T12:02:37.645Z    hypergea, TRUE, 6, 6, 0, 0
-2 2021-02-15T12:02:37.645Z libamtrack, TRUE, 2, 10, 0, 0
+1 2021-02-22T12:02:36.323Z    hypergea, TRUE, 6, 6, 0, 0
+2 2021-02-22T12:02:36.323Z libamtrack, TRUE, 2, 10, 0, 0
                                                                                                packages
 1      hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2 libamtrack, https://cloud.r-project.org/web/checks/check_results_libamtrack.html, NOTE, OK, 10, 2, NA
@@ -168,8 +168,8 @@ cache-control: public, must-revalidate, max-age=60
 content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
-content-length: 13895
-date: Mon, 15 Feb 2021 12:59:45 GMT
+content-length: 13819
+date: Mon, 22 Feb 2021 12:49:24 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ date: Mon, 15 Feb 2021 12:59:45 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2021-02-15T12:02:38.281Z",
+        "date_updated": "2021-02-22T12:02:36.929Z",
         "table": [
             {
                 "package": "asciicast",
@@ -359,19 +359,19 @@ date: Mon, 15 Feb 2021 12:59:45 GMT
             },
             {
                 "package": "liteq",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "lpSolve",
-                "any": true,
-                "ok": 11,
+                "any": false,
+                "ok": 12,
                 "note": 0,
                 "warn": 0,
-                "error": 1
+                "error": 0
             },
             {
                 "package": "oskeyring",
@@ -882,12 +882,8 @@ date: Mon, 15 Feb 2021 12:59:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_liteq.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -897,12 +893,8 @@ date: Mon, 15 Feb 2021 12:59:45 GMT
                 "url": "https://cloud.r-project.org/web/checks/check_results_lpSolve.html",
                 "check_result": [
                     {
-                        "category": "ERROR",
-                        "number_checks": 1
-                    },
-                    {
                         "category": "OK",
-                        "number_checks": 11
+                        "number_checks": 12
                     }
                 ],
                 "version": null
@@ -1333,7 +1325,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2021-02-15T12:02:38.281Z"
+[1] "2021-02-22T12:02:36.929Z"
 
 $data$table
         package   any ok note warn error
@@ -1359,8 +1351,8 @@ $data$table
 20         isa2  TRUE 11    0    0     1
 21     keypress FALSE 12    0    0     0
 22      keyring  TRUE 10    2    0     0
-23        liteq  TRUE 11    0    0     1
-24      lpSolve  TRUE 11    0    0     1
+23        liteq FALSE 12    0    0     0
+24      lpSolve FALSE 12    0    0     0
 25    oskeyring FALSE 12    0    0     0
 26          pak  TRUE 11    1    0     0
 27    parsedate FALSE 12    0    0     0
@@ -1526,8 +1518,8 @@ $data$packages
 20          ERROR, OK, 1, 11      NA
 21                    OK, 12      NA
 22           NOTE, OK, 2, 10      NA
-23          ERROR, OK, 1, 11      NA
-24          ERROR, OK, 1, 11      NA
+23                    OK, 12      NA
+24                    OK, 12      NA
 25                    OK, 12      NA
 26           NOTE, OK, 1, 11      NA
 27                    OK, 12      NA
