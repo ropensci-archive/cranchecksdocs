@@ -36,12 +36,12 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 1060
-date: Mon, 22 Feb 2021 12:49:24 GMT
+date: Mon, 01 Mar 2021 12:57:00 GMT
 
 ```
 ```json
 {
-    "found": 10659,
+    "found": 10698,
     "count": 2,
     "offset": 5,
     "error": null,
@@ -50,7 +50,7 @@ date: Mon, 22 Feb 2021 12:49:24 GMT
             "email": "markus.boenn.sf_at_googlemail.com",
             "name": "Markus Boenn",
             "url": "https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html",
-            "date_updated": "2021-02-22T12:02:36.323Z",
+            "date_updated": "2021-03-01T12:02:34.893Z",
             "table": [
                 {
                     "package": "hypergea",
@@ -83,7 +83,7 @@ date: Mon, 22 Feb 2021 12:49:24 GMT
             "email": "s.greilich_at_dkfz.de",
             "name": "Steffen Greilich",
             "url": "https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html",
-            "date_updated": "2021-02-22T12:02:36.323Z",
+            "date_updated": "2021-03-01T12:02:34.893Z",
             "table": [
                 {
                     "package": "libamtrack",
@@ -122,7 +122,7 @@ cchecks::cch_maintainers(limit = 2, offset = 5)
 ```
 ```r
 $found
-[1] 10659
+[1] 10698
 
 $count
 [1] 2
@@ -141,8 +141,8 @@ $data
 1 https://cloud.r-project.org/web/checks/check_results_markus.boenn.sf_at_googlemail.com.html
 2             https://cloud.r-project.org/web/checks/check_results_s.greilich_at_dkfz.de.html
               date_updated                         table
-1 2021-02-22T12:02:36.323Z    hypergea, TRUE, 6, 6, 0, 0
-2 2021-02-22T12:02:36.323Z libamtrack, TRUE, 2, 10, 0, 0
+1 2021-03-01T12:02:34.893Z    hypergea, TRUE, 6, 6, 0, 0
+2 2021-03-01T12:02:34.893Z libamtrack, TRUE, 2, 10, 0, 0
                                                                                                packages
 1      hypergea, https://cloud.r-project.org/web/checks/check_results_hypergea.html, NOTE, OK, 6, 6, NA
 2 libamtrack, https://cloud.r-project.org/web/checks/check_results_libamtrack.html, NOTE, OK, 10, 2, NA
@@ -169,7 +169,7 @@ content-type: application/json; charset=utf8
 server: Caddy
 x-content-type-options: nosniff
 content-length: 13819
-date: Mon, 22 Feb 2021 12:49:24 GMT
+date: Mon, 01 Mar 2021 12:57:00 GMT
 
 ```
 ```json
@@ -179,7 +179,7 @@ date: Mon, 22 Feb 2021 12:49:24 GMT
         "email": "csardi.gabor_at_gmail.com",
         "name": "Gábor Csárdi",
         "url": "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html",
-        "date_updated": "2021-02-22T12:02:36.929Z",
+        "date_updated": "2021-03-01T12:02:35.506Z",
         "table": [
             {
                 "package": "asciicast",
@@ -1325,7 +1325,7 @@ $data$url
 [1] "https://cloud.r-project.org/web/checks/check_results_csardi.gabor_at_gmail.com.html"
 
 $data$date_updated
-[1] "2021-02-22T12:02:36.929Z"
+[1] "2021-03-01T12:02:35.506Z"
 
 $data$table
         package   any ok note warn error
