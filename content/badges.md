@@ -37,11 +37,11 @@ curl https://cranchecks.info/badges/summary/rhub
 HTTP/2 200 
 cache-control: max-age=300, public
 content-type: image/svg+xml; charset=utf-8
-expires: Mon, 15 Mar 2021 13:04:31 GMT
+expires: Mon, 22 Mar 2021 13:05:17 GMT
 server: Caddy
 x-content-type-options: nosniff
 content-length: 855
-date: Mon, 15 Mar 2021 12:59:31 GMT
+date: Mon, 22 Mar 2021 13:00:17 GMT
 
 ```
 ```xml
@@ -93,11 +93,11 @@ curl https://cranchecks.info/badges/worst/rhub
 HTTP/2 200 
 cache-control: max-age=300, public
 content-type: image/svg+xml; charset=utf-8
-expires: Mon, 15 Mar 2021 13:04:31 GMT
+expires: Mon, 22 Mar 2021 13:05:17 GMT
 server: Caddy
 x-content-type-options: nosniff
 content-length: 855
-date: Mon, 15 Mar 2021 12:59:31 GMT
+date: Mon, 22 Mar 2021 13:00:17 GMT
 
 ```
 ```xml
@@ -149,11 +149,11 @@ curl https://cranchecks.info/badges/flavor/r-devel-linux-x86_64-debian-clang/rhu
 HTTP/2 200 
 cache-control: max-age=300, public
 content-type: image/svg+xml; charset=utf-8
-expires: Mon, 15 Mar 2021 13:04:31 GMT
+expires: Mon, 22 Mar 2021 13:05:17 GMT
 server: Caddy
 x-content-type-options: nosniff
 content-length: 855
-date: Mon, 15 Mar 2021 12:59:31 GMT
+date: Mon, 22 Mar 2021 13:00:17 GMT
 
 ```
 ```xml
