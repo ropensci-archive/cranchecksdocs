@@ -1,8 +1,5 @@
 base
 methods
-reprex
-usethis
-devtools
 datasets
 utils
 grDevices
