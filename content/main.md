@@ -24,16 +24,6 @@ remotes::install_github("ropenscilabs/cchecks")
 library("cchecks")
 ```
 
-## Authentication
-
-### Endpoints without authentication
-
-[docs/](#docs), [heartbeat/](#heartbeat), [maintainers/](#maintainers), [packages/](#packages), [history/](#history), [badges/](#badges), [search/](#search)
-
-### Endpoints with authentication
-
-[notifications/](#notifications)
-
 ## HTTP methods
 
 This is mostly a `read only` API. That is, we only allow `GET` (and `HEAD`) requests on this API.

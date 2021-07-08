@@ -23,31 +23,6 @@ args <- c("https://cranchecks.info/heartbeat")
 get_and_show(args)
 ```
 
-## 204 (No Content) 
-
-Given on a delete request, indicating success, response body should be empty.
-
-```{r, include=FALSE}
-email <- Sys.getenv("CCHECKS_EMAIL")
-token <- Sys.getenv("CCHECKS_TOKEN")
-cchecks::cchn_register(email = email, token = token)
-cchecks::cchn_rule_add(
-  email = "msmaellesalmon@gmail.com",
-  package = "ropenaq",
-  regex = "install failure",
-  quiet = TRUE
-  )
-```
-
-```{r, include=FALSE}
-Sys.setenv("rule_id" = tail(cchecks::cchn_rule_list()$data$id, n=1))
-```
-
-```{r, results="asis"}
-args <- c("-XDELETE", "-H", paste0('"Authorization: Bearer ', Sys.getenv("CCHECKS_TOKEN"), '"'), "\\\n", paste0("https://cranchecks.info/notifications/rules/", Sys.getenv("rule_id")))
-get_and_show(args)
-```
-
 ## 302 (Found) 
 
 The root `/`, redirects to `/heartbeat`, and `/docs` redirects to what you're reading right now.

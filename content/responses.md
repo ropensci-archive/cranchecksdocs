@@ -45,32 +45,9 @@ date: Mon, 22 Mar 2021 13:00:35 GMT
         "/badges/flavor/:flavor/:package",
         "/pkgs/:name/history",
         "/history/:date",
-        "/search",
-        "/notifications/rules",
-        "/notifications/rules/:id"
+        "/search"
     ]
 }
-```
-
-## 204 (No Content) 
-
-Given on a delete request, indicating success, response body should be empty.
-
-
-
-
-
-```shell
-curl -XDELETE -H "Authorization: Bearer ***" \
- https://cranchecks.info/notifications/rules/516
-```
-```yaml
-HTTP/2 204 
-access-control-allow-methods: DELETE
-server: Caddy
-x-content-type-options: nosniff
-date: Mon, 22 Mar 2021 13:00:35 GMT
-
 ```
 
 ## 302 (Found) 

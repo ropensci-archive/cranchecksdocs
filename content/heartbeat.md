@@ -45,9 +45,7 @@ date: Mon, 22 Mar 2021 13:00:18 GMT
         "/badges/flavor/:flavor/:package",
         "/pkgs/:name/history",
         "/history/:date",
-        "/search",
-        "/notifications/rules",
-        "/notifications/rules/:id"
+        "/search"
     ]
 }
 ```
@@ -64,6 +62,4 @@ $routes
  [7] "/maintainers/:email"             "/badges/:type/:package"         
  [9] "/badges/flavor/:flavor/:package" "/pkgs/:name/history"            
 [11] "/history/:date"                  "/search"                        
-[13] "/notifications/rules"            "/notifications/rules/:id"       
-
 ```
